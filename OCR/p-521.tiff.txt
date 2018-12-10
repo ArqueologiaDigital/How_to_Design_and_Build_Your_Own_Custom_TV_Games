@@ -1,0 +1,156 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NUMERICAL DESIGNATIONS — RESULTANT DISPLAVS'
+
+TRUTH TABLE 9358/5448, 7448
+
+DECIMAL
+OH
+
+51
+
+m
+FUNCTION
+
+x
+r-
+I
+z
+r-
+
+xxxxxxxx
+IIIIII’I‘FFF
+r-xrzr-xr-ztrz
+
+2:21:11:
+
+Irle-x
+I-I-xr-xl-xi-r-r-
+:rr-xxl-zxxr-
+
+I
+
+N
+H
+H
+H
+H
+H
+H
+H
+H
+H
+N
+H
+H
+H
+H
+N
+
+:IrI—le-rxzrrz
+
+xzzxzri-r-r'IIIII-r-r-
+Ir-
+rzxzxxxxxxxxzx
+
+rrrzl—rr-zxzrzr:
+
+I’r’l‘l'l‘Il'
+
+zrrr-i-I-zr-rIIIr-rzz
+r'r-
+
+:rl-rxxrxx
+:1:
+
+x
+I
+x
+:
+
+ 
+
+NOTES:
+
+(1) Ella?) is wired-AND logic servln as blanking input
+(—5-!) end/or ripple-blanking output (RBO . The blanking
+out (E) must be open or held at a HlGH level when
+output functions 0 through 15 are desired, and ripple-
+blanking input (Fiﬁ) must be open or at e HIGH level
+if blanking of a decimal O is not desired. X=input may he
+HIGH or LOW.
+When a LOW level is applied to the blanking input
+(forced condition) all segment outputs go to 3 LOW level,
+regardless of the state of any other input condition.
+When ripple-blanking input (m and inputs A, B, C,
+and D are at LOW level, with the lamp test input at HIGH
+level, all segment outputs go to a HIGH level and the
+ripple-blanking output (RBO) goes to e LOW level
+(response condition).
+(4) When the blanking Input/rippIa-blenking output (El—i
+HBO) Is open or held at 3 HIGH level, and a LOW level
+is applied to lamp-test input, ell segment outputs go to a
+LOW level.
+
+v
+
+(2
+
+(3
+
+v
+
+ 
+
+ABSOLUTE MAXIMUM RATINGS (above which the useful life may be impaired)
+
+Storage Temperature v65°C to +150°C
+Temperature (Ambient) Under Bias -55°C to +125°C
+VCC Pin Potential to Ground Pin —O.5 V to +7.0 V
+'lnput Voltage (dc) —O.5 v to +5.5 V
+“Input Current (dc) -30 mA to +5.0 mA
+Voltage Applied to Outputs (Output HIGH) -0.5 V to +VCC value
+Output Current (dc) (Output LOW) +30 mA
+
+'Either Input Voltage limit or Input Current limit is sufficient to protect the inputs.
+
+ 
+
+521
+

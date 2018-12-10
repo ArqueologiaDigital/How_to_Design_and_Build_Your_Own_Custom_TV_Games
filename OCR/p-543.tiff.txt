@@ -1,0 +1,154 @@
+Matrix _
+complex images in 4 x 4
+
+windowed 87
+display, windowing 86
+extended 64 cell 105
+extending 89
+128 cell extended foldover 110
+operations 1 17
+operations from 32 cell
+
+generator 100
+256 cell extended foldover 123
+
+Mechanical considerations 38
+Missile attack 11 234
+Modulator. RF 22, 30
+
+Motion control
+
+slipping counter horizontal 172
+slipping counter vertical 167
+system, tagalong 266
+tinkerbox 139
+simple player controlled 140
+
+Multiple parallel lines, broad bars 64
+
+N
+Narrow lines 57
+Nine hole of golf 334
+90 degree increment rotation 470
+Numeric character generation 381
+O
+128 cell extended foldover matrix 1 10
+Oscillator, 7-MHz 20
+i P A
+Parts, locating 17
+Pinball
+block diagram 446
+control board 438
+ﬁgure generator board 424
+game 421
+game scoring 434
+Player
+controls 236
+controls, adding inertia 147
+Position
+programmer. experiments 317
+programmers, universal 324
+
+programming from counters 316
+Potentiometer control of speed &
+
+direction 259
+Power supply 19, 22
+Program memory 224
+Programmable, figure position
+
+control 308
+Programming
+
+figure speed & direction 222
+initial position 217
+
+various initial positions, speed &
+
+directions 216
+R
+Raster, TV 1 1
+Rebound
+control system, flexible 420
+effects, figure 417
+Recipe
+for building rectangle or square71
+for horizontal line or bar 51
+
+for sculpturing rectangles or
+square 3
+
+for vertical line or bar 50
+Rectangle
+
+circuits 73
+
+building 70
+
+sculpturing 72
+Retrofit
+
+ambush 414
+
+golf 411
+
+scoring and timekeeping 411
+RP modulator 22, 30
+Rotation
+
+figure 470
+
+90 degree increment 470
+
+of 8 x 8 figure 477
+
+s
+
+Scoring
+
+and game control 395
+
+and timekeeping retrofit 411
+
+scheme 395
+
+the pinball game 434 '
+
+weighted 400
+Scorekeeping circuits 394
+Sculpturing
+
+rectangles 72
+
+rectangles or squares 73
+7-MHz oscillator 20
+Simple
+
+circuit for vertical motion 160
+
+player controlled motion 140
+Single-digit display circuit 385
+64 Cell generator 117
+64 cell generator circuit 118
+Slipping counter
+
+horizontal motion control 172
+
+motion control board 178
+
+vertical motion control 167
+Slow-motion figure generator 330
+
+Speed & direction, potentiometer
+
+control 259
+Source board, Horizontal 25
+Sourcebox organization 19
+Sounds
+
+deedle’deedle 497
+
+543
+
+ 
+

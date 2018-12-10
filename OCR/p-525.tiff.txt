@@ -1,0 +1,65 @@
+ 
+
+ 
+
+LOGIC DIAGRAM
+(EACH LATCH)
+
+(9375/5475, 7475
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ONLY)
+
+0 5
+C*“ To _43
+”OTHER
+LATCH
+O O
+
+ 
+
+CLOCK DATA
+
+ 
+
+ 
+
+ 
+
+DIP (TOP VIEW)
+
+9375/5475.
+7475
+
+ 
+
+Positive logic: Sea truth table.
+NC — No internal connection.
+
+ 
+
+ 
+
+ 
+
+525
+
+ 
+

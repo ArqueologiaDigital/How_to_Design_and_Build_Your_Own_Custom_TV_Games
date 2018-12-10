@@ -1,0 +1,96 @@
+Index
+
+ 
+
+A
+
+Adding inertia to player controls 147
+Address matrix concept 84
+Ambush 350
+
+block diagram & schematics 353
+
+retrofit 414
+
+wiring diagram 359
+Amplifier, audio 22
+Animation, figure 451, 452
+Assembling the systems 17
+Attack schematics, torpedo 275
+Audio amplifier 22
+Automatic
+
+ﬁgure motion 157
+
+stop circuits 184
+
+3
+
+Bars
+
+broad 60
+
+&rectangle windowing 127
+Basic
+
+game plan 234
+
+missile attack game 210
+
+video game system 14
+Block diagram
+
+& schematics, ambush 353
+
+golf 336
+
+golf wiring 350
+
+pinball 446
+
+torpedo attack 270
+Board
+
+pinball control 438
+
+bars 60
+
+bars & multiple parallel lines 64
+Building
+recipe for rectangle or square71
+
+rectangles 70
+C
+Circuits
+automatic stop 184
+boards for golf 337
+diagrams 245
+figure contact sensing 195
+flashing image 239
+‘manual start switch 182
+rectangle 73
+64 cell generator 118
+scorekeeping 394
+timekeeping 406
+Combining
+rotation & figure motion 483
+
+static figures on the screen 74
+Complex
+
+figures, manual control 151
+figure tinkerbox 80
+images in 4 x 4 windowed
+matrix 87
+static figures 79
+Composite video board, vertical
+source 30
+Concept, address matrix 84
+Construction & assembly hints 253
+Control
+board, pinball 438
+
+541
+
+ 
+

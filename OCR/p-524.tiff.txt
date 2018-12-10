@@ -1,0 +1,42 @@
+7475* Quad D Latch
+
+DESCRIPTION —The TTL/MSl 9375/5475, 7475 and 9377/5477, 7477
+are latches used as temporary storage for binary information between
+processing units and input/output or indicator units. information present
+at a data (D) input is transferred to the 0 output when the clock is HIGH
+and the 0 output will follow the data input as long as the clock remains
+HIGH. When the clock goes LOW, the information (that was present at the
+data input at the time the transition occurred) is retained at the 0 output
+until the clock is permitted to go HlGH.
+
+The 9375/5475, 7475 features complementary O and (-1 output from a 4-bit
+latch and is available in the 16-lead packages. For higher component density
+applications the 9377/5477, 7477 4-bit latch is available in the 14-Iead
+pukage with 5 outputs omitted.
+
+PIN NAMES LOADING
+01, Oz, 03, 04 Data Inputs 2 U.L.
+651.2 Clock 'lnput Latches 1 8: 2 4 U.L.
+CF34 Clock Input Latches 3 8t 4 4 U.L.
+O1, 02, 03. Q4 Latch Outputs 10 U.L.
+61, 62, G3, 54 Complementary Latch Outputs 10 U.L.
+
+Note: 1 Unit Load (U.L.) 3 40 HA HIGH/1.6 mA LOW
+
+TRUTH TABLE
+(Each Latch)
+
+NOTES:
+'n ‘n+1 t" = bit time heforoclock
+negativegomg transition.
+0 O tn.” = bit time after clock
+H H negative-going transition.
+
+L L
+
+ 
+
+524
+
+ 
+

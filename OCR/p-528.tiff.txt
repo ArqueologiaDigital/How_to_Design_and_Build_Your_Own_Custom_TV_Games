@@ -1,0 +1,155 @@
+7483* 4-Bit Binary Full Adder
+
+DESCRIPTION - The TTL/MSI 938354817483 is a Full Adder Which performs the addition of
+two 4-bit binary numbers. The sum (X) outputs are provided tor each bit and the resultant carry
+(Cal is obtained ham the fourth bit. Designed for medium to high speed, muitiple
+edd/seriel-cerrv eppiicetiont. the circuit utilized high speed, high fan out TTL. The im
+of e single-inversion, high speed, Deriington-connected serial-carry circuit within each
+the necessity Ior extensive "lookeheed" and cerrycasceding circuits.
+
+~bit, parallel-
+plementation
+
+ABSOLUTE MAXIMUM RATINGS (above which the useful life may be impaired)
+
+bit minimizes.
+
+ 
+
+Storage Temperature
+
+~65°C to +150°C
+Temperature (Ambient) Under Bias —55°C to +125°C
+VCC Pin Potential to Ground Pan —0.5 V to +7.0 V
+'Input Voltage (dc) —0.5 V to +5.5 V
+
+'Input Current (ch
+Voltage Applied to Outputs (Output HIGH)
+Output Current (dc) (Output LOW!
+
+--30 mA to +5.0 mA
+—0,5 V to *VCC value
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++30 mA
+
+'Either Input Voltage lumut or Input Current limit is sutlicient to protect the inputs.
+PIN NAMES LOADING
+A1.8t.A3,83 Data Inputs 4 U.L.
+A2.82.A4,84 Date Inputs 1 U.L.
+Cm Carry Input 4 U.L.
+21.22.33,!“ Sum Outputs 10 U.L.
+C4 Carry Out Bit 4 5 U.L.
+1 Unit Load (U.L.) - ‘0 uA HIGH/1.6 mA LOW
+
+LOGIC DIAGRAM
+
+At Btcm A2 B2 A3 33 :I; :l;
+"1 I I l 1
+£1 £2 £3 :4 C4
+
+ 
+
+ 
+
+528
+
+ 
+

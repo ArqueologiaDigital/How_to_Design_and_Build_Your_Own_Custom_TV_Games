@@ -1,0 +1,124 @@
+board, slipping counter
+
+motion 178
+figure motion 200
+game start/reset 181
+player 236
+scoring and game 395
+system, rebound, flexible 420
+
+Count
+
+sources 40
+source, horizontal 20
+source, vertical 20
+
+Counters, position programming 316
+CRT 14
+
+D
+Deedle-deedle sounds 497
+Delayed start/stop operations 186
+
+Design example 188
+Digit-generator circuits 384
+Display
+circuit, single digit 385
+circuit, two digit 391
+dual two-digit 392
+Dogfight 288
+block program 294
+schematics 296
+wiring diagram 304
+Dual two-digit display 392
+E
+8 X 16 expanded matrices 118
+Experiments with position pro-
+grammer 327
+Extended
+matrix, folding over 96
+64 cell matrices 105
+Extending matrix 89
+F
+Figure
+animation 451, 452
+motion, automatic 157
+contact sensing circuits 195
+generator board, pinball 424
+
+motion & rotation combining 483
+
+motion controls 200
+position control, pro-
+grammable 308
+rebound effects 417
+rotation 470
+rotation of 8 x 8 477
+Flashing image circuit 239
+
+Flexible rebound control system 420
+Foldover 64
+Folding over extended matrix 96
+
+542
+
+G
+Game
+and scoring control 395
+basic missile attack 210
+block diagram 239
+of tag 146
+pinball 421
+plan, basic 234
+scoring, pinball 434
+start/reset controls 181
+
+Generating numeric characters 381
+
+Generator
+board, pinball ﬁgure 424
+circuits, digit 384
+horizontal sync & blanking 20
+matrix operations from 32 cell 100
+64 cell 117
+slow motion figure 330
+vertical sync & blanking 22
+
+Golf
+
+block diagram 336
+nine hole 334
+retrofit 411
+wiring block diagram 350
+H
+Horizontal
+& vertical count binary out-
+puts 505
+& vertical lines, intersecting 54
+count source 20
+line or bar, Recipe 51
+sourceboard 25
+sync & blanking generator 20
+How to use this book 15
+
+I
+Initial position, programming 217
+Interesting patterns from static
+
+figures 75
+Irregular pattern of identical
+figures, windowing 127
+L
+Lines
+& bars 40
+bar tinkerbox 41
+& bars, widely separated 52
+narrow 57 ,
+Locating parts 17
+M
+Manual
+control of complex figures 151
+start switch circuits 182
+
+ 
+

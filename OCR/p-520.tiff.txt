@@ -1,0 +1,56 @@
+7448* BOD to 7-Segment Converter
+
+DESCRIPTION - The 9358/5448, 7448 and 9359/5449, 7449'are TTL,
+ECU to 7-Segment Decoders consisting of NAND gates, input buffers and
+seven AND-OR-INVERT gates. The 9358/5448, 7448 offers active HIGH,
+open-collector outputs for current-sourcing applications to drive logic
+circuits or discrete, active components. Seven NAND gates and one driver
+are connected in pairs to make BCD data and its complement available
+to the seven decoding AND-OR-INVERT gates. The remaining NAND gate
+and three input buffers provide Iemp test, blanking input/rippIe-blanking
+output and ripple-blanking input for the 9358/5448, 7448. Four NAND
+gates and four input buffers provide BCD data and its complement and a
+buffer provides blanking input for the 9359/5449, 7449.
+
+The circuits accept 4-bit binary-coded—decimal (BCD) and, depending on
+the state of the auxiliary inputs, decodes this data to drive other compon-
+ents. The relative positive~logic output levels, as well as conditions required
+at the auxiliary inputs are shown in the truth tables.
+
+The 9358/5448, 7448 circuit incorporates automatic leadﬂr‘g and/or trailing
+edge zero-blanking control lR—B—l and r30). Lamp test (LT) of these types
+may be performed at any time when the Film node is a HIGH level. They
+contain an overriding blanking input (El) which can be used to control the
+lamp intensity or to inhibit the outputs.
+
+PIN NAMES‘ LOADING
+A, B, C, D BCD Inputs 1 U.L.
+WET Ripple Blanking Input 1 U.L.
+Lamp Test Input 1 UL.
+ﬁlm Blanking Input or 2.6 U.L.
+Ripple Blanking Output 5 U.L.
+if Blanking Input 1 U.L.
+a to g Outputs 6 UL.
+
+DIP (TOP VIEW)
+
+  
+ 
+
+9358 5“! 1m .
+
+5 I nix
+LOGIC DIAGRAM GI v I n
+
+Positive logic :1 See truth table
+
+mum
+
+ 
+
+it NOT INCLUDED WITH THE 9359/5449
+
+520
+
+ 
+

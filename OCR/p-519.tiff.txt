@@ -1,0 +1,54 @@
+Appendix II
+Digital Integrated Circuits
+
+7400 Quad 2-input NAND
+
+7402 Quad 2-input NOR
+
+7404 Hex inverter
+
+7420 Dual 4-input NAND
+
+7427 Triple 3-input NOR
+
+7430 8-input NAND
+
+7448* BCD to 7-segment converter
+
+7474* Dual D flip-flop
+
+7475* Quad D latch
+
+7476* Dual JK flip-flop
+
+7483* 4-bit binary full adder
+
+7485 4-bit comparitor
+
+7486 Quad EXCLUSIVE OR
+
+7490* Decade counter
+
+7492* +6 counter
+
+7493* 4-bit binary counter
+74125 Quad 3-state buffer
+74147 Decimal-to-BCD converter
+74150 16:1 multiplexer
+74151 8:1 multiplexer
+74153 Dual 4:1 multiplexer
+74154 4—line to 16-line decoder
+74155 Dual 2-line to 4-line decoder
+74157 Quad 2:1 multiplexer
+74191“ Presettable binary up/down counter
+
+*designates le detailed in this appendix
+This appendix lists the digital le that are referenced within this
+
+book. Those marked with an asterisk (*) are detailed on sub-
+sequent pages.
+
+519
+
+ 
+

@@ -1,0 +1,89 @@
+from other sources 499
+Static figures 39
+
+complex 79
+
+interesting patterns 75
+
+on the screen, combining 74
+Stormtrooper
+
+attack 359
+
+attack wiring diagram 380
+Supply. power 19
+Switch inputs for figure positioning 315
+Sync mixer 22
+Systems
+
+assembling 1 7
+
+basic video game 14
+
+32, 64, 128 cell 117
+
+T
+
+Tag. game 146
+Tagalong
+
+feature 225
+
+motion control system 266
+Theory of operation 363
+32, 64, 128 cell system 117
+Timekeeping circuits 406
+Tinkerbox
+
+complex figure 80
+
+line/bar ‘ 41
+
+motion control 139
+Tones from v count signals 495
+Torpedo
+
+attack 253
+
+attack block diagram 9 270
+
+attack game panels 259
+
+attack schematics 275
+
+544
+
+attack wiring diagram 288
+TV raster 11
+Two-digit display circuit 391
+256 cell extended foldover matrix 123
+U
+Universal position programmers 324
+V
+V count signals, tones 495
+Vector logic , 290
+Vertical
+count source 20
+line or bar, recipe 50
+motion, simple circuit 160
+source & composite video
+board 30
+sync & blanking generator 22
+Video mixer 22
+W
+Windowing
+bar & rectangle 127
+irregular patterns of identical
+figures 1 27
+matrix display 86
+Wiring diagram
+ambush 359
+dogfight 304
+stormtrooper attack 380
+torpedo attack 288
+Weighted scoring 400
+
+Widely separated line & bars 52
+
+ 
+
