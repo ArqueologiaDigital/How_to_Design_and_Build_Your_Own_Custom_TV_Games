@@ -1,0 +1,123 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+M H P o "- END D c B A
+IIIlII I 3 II A...“
+leS-A
+LIZSBHS =7 I298ll5
+I
+'4 ms ‘ l4 ICS
+BOOUNT
+
+2 36' 7l'°l 2 3 GITIIOJ
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+w; l T”v
+
+ 
+
+ 
+
+ 
+
+ 
+
+£|-—->l<il
+til-+3!
+II}—
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+l9
+4‘ 6"“: 9 8 II
+5 ":93 IO [CS-C IC9'LDO————
+K c2 R, .3
+470
+
+ 
+
+ 
+
+ 
+
+Pinball Control Board
+
+The pinball control board in Fig. 10-14 is mainly responsible for
+controlling the motion of the ball ﬁgure and setting the score. The
+ball-rebound and scoring features are summarized in the table in Fig.
+10-133.
+
+Thetable shows that the vertical motion of the ball does not
+change at all if it is moving downward when it makes contact with
+TE, the top edge of the playing area. When the ball touches TE while
+
+438
+
+ 
+
+C LK I—_—_
+COMM *4. WEIGHTED SCORE ‘01
+-.— ICZ
+CIRCUIT '03
+(FIG. 941) [C4
+

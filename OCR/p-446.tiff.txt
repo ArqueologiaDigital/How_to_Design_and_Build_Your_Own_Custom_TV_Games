@@ -1,0 +1,50 @@
+ 
+
+   
+
+i
+
+   
+  
+ 
+
+SLIPPING COUNTER
+BOARD
+(FIG. 5-15)
+
+  
+  
+    
+ 
+       
+    
+   
+ 
+
+CONTROL
+BOARD
+(FIG. 10-14)
+
+19.:
+
+22
+
+ 
+
+256HM
+
+HMRST
+HML
+I28VM
+
+COUNTER BOARD
+(FIG. 10-12)
+
+ 
+
+ 
+
+‘ 446
+
+ 
+

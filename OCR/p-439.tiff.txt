@@ -1,0 +1,101 @@
+ 
+
+HGFE LKJI
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\M
+I
+l298.|l5 [29_8Il5
+1 I __Cl
+,4 ICT ,4 ICS T-OIMF
+a 3 6i 71:01 2 3 6171101
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+IC5, 6, 7, 8—7490 DECADE COUNTER
+lC9—74OO QUAD 2~lNPUT NAND
+
+ 
+
+ 
+
+Fig. 10-12. Pinball counter board schematic diagram
+
+moving upward, however, its direction is reversed. Neither kind of
+contact with TE causes a score.
+
+The second line in the table in Fig. 10-13a shows a more
+interesting set of effects whenever the ball makes contact with ﬁxed
+barriers A or B (designed A + B). If the ball is moving downward at
+the time, making contact with either A or B causes it to change to an
+upward direction and score 2 points. Further down the truth table, it
+can be seen that the ball traveling upward can contact either of the
+same two barriers, change its direction to down and score 4 points.
+
+A brief study of the table in Fig. 10—1321 can show the entire
+ball-motion and scoring rationale. The technical problem in this case
+is to know which barriers, edges, or paddles the ball touches. This
+can be done rather easily by means of the 3-line-to-8-line decoder
+shown in Fig. 10-13b.
+
+Whenever a hit occurs, but not one of the two sides, this IC is
+enabled. (Horizontal rebounding from the left and right sides of the
+playing area is handled separately.)
+
+The decoder circuit is addressed from the same three V-counts
+used for addressing the vertical portion of the ﬁgure matrix
+generator in Fig. 10-9. If a hit thus occurs when 128V, 64V, and 32V
+are all at logic 0, for example, the ball must be hitting the bottom
+edge of the playing area (BE), simply because that is the only ﬁgure
+being generated when 128V, 64V, and 32V are all at logic 0 at the
+same time.
+
+439
+

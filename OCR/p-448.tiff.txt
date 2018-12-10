@@ -1,0 +1,54 @@
+Once the PLAY ﬂip-ﬂop is set in this fashion, the only way it can
+be reset is by means of a negative-going pulse at the pin-5 input of
+ICl-B. Two conditions must be met before this can happen, how-
+ever. First, the ball counter must be showing numeral 5 as indicated
+by a logic 0 level at the END input and the pin-3 input of NOR gate
+IC6-A. Second, the ball must contact BE, the bottom edge of the
+screen, as signaled by a negative-going pulse at the pin-9 output of
+1C7. This pulse is effectively AN Ded with the E—N-ﬁ pulse at IC6-A to
+produce a positive-going pulse that indicates the end of a game
+sequence: end of play for the ﬁfth ball in the series.
+
+That same end-of—game pulse is inverted to a negative-going
+pulse by inverter IC9-E and ﬁnally resets the PLAY ﬂip-ﬂop so that
+the next game can be started by depressing the PLAY pushbutton.
+
+Once a game sequence is started, a new ball is la__ur_iched by
+depressing the BALL button. This action sets the R-Sflip-ﬂop
+composed of ICl—C and ICl-D. The pin—8 output of ICl-C is thus set
+to logic 1, and that logic level is fed to a 4-input NAN D gate, IC4-B.
+
+IC4-B considers four different game parameters simultane-
+ously, and the only way its output can be set to logic 0 (its active
+state) is by having the following parameters at logic 1: the PLAY
+output of ICl—A, the BALL-LAUNCH output of ICl—C, the END
+signal from the ball-counting circuit, and the TE contact signal from
+pin 10 of 1C7. The output of this 4—input NAND gate is normally at
+logic 1, dropping to 0 only when all four of these conditions are met.
+
+Whenever the output_of IC4-B does drop to logic 0, it sets the
+condition of yet another R-S f lip—ﬂop composed of ICZ-A and IC2-B.
+Setting this particular ﬂip-ﬂop causes the output of IC2—A to go to
+logic 1, thereby blanking the ball ﬁgure from the screen via the
+BBLANK terminal of the control board.
+
+Also note that a logic-0 level from IC4-B, the 4-input NAND
+gate, both generates a BCOUNT pulse and resets the BALL-
+LAUNCH ﬂip-ﬂop composed of ICl-C and ICl-D.
+
+What does all this mean? One thing it means is that a newly
+launched ball does not appear on the screen until it crosses TE while
+moving downward. The ﬂip-ﬂop responsible for blanking the ball
+ﬁgure is not set until 1C7 senses the ball ﬁgure crossing TE while
+moving downward.
+
+The same signal that unblanks the ball figure serves as a
+BCOUNT pulse that increments the ball counter, thus advancing the
+ball-count display on the screen. The BCOUNT pulse also resets the
+BALL—LAUN CH ﬂip-ﬂop (speciﬁcally at pin 13 of ICl-D), preparing
+it for the next ball-launching operation.
+
+448
+
+ 
+

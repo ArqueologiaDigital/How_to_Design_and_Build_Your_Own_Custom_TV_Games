@@ -1,0 +1,74 @@
+ 
+
+4V
+32V
+6V
+
+‘0
+0—0-0...
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+B TE = TOP EDGE A. e. c, D. E. F = FIXED PADDLES
+BE = BOTTOM EDGE PL = LEFT PADDLE (NORMAL POSITION)
+LE = LEFT EDGE 'pL1 = LEFT PADDLE (HIT POSITION)
+
+RE = RIGHT EDGE PR = RIGHT PADDLE (NORMAL POSITION)
+pal : RIGHT PADDLE (HIT POSITION)
+
+ 
+
+ 
+
+ 
+
+ 
+
+C DO=1ZBV D4=128V D8=1 D12=128V-—R
+
+D1=128V 05:128V 09:1 013:0
+
+02:128V 06: 28V D10=O 014:0
+D3=1 07:128V D11 :0 D15=128V'P
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 10-8. Pinball playing area figure. (a) Basic figure and relevant H- and
+V-count waveforms. (b) Nomenclature for the Pinball figure. (c) D-input prog-
+ramming for the playing-area matrix generator.
+
+ming, the ﬁgure is extended vertically by 128V: the upper half of the
+ﬁgure is generated while 128V is low, and the lower half is generated
+while 128V is high. This feature is implemented in Fig. 10-9 by the
+128V connection to a number of D inputs to 1C7.
+
+The paddle ﬁgures are to be in their resting position as long as
+the PADDLE button is not depressed, but then they should move to
+their center-screen positions when that button is depressed. This
+
+429
+
+ 
+

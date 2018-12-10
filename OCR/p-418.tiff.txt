@@ -1,0 +1,65 @@
+ 
+
+MOVE DOWN
+
+  
+
+VIDEO
+OUT
+
+ 
+  
+ 
+
+MOTION
+
+  
+
+OM
+FIG.
+
+   
+
+MOVE UP
+
+  
+
+ 
+
+ 
+
+ 
+
+Fig. 10-1. Basic block diagram for rebound effects.
+
+ﬁgure that is made movable from a motion—control circuit. The
+outputs of the three ﬁgure generators are combined in the game
+video circuit to produce a video output for displaying them on the TV
+screen.
+
+Whenever the ball ﬁgure and top ﬁgure meet, however, the
+TOP HIT block generates a logic level that sets the ball’s motion—
+control circuit for downward motion. Presumably the ball then
+moves in a downward direction until it contacts the bottom ﬁgure. At
+that moment, the BOTTOM HIT block generates a logic level that
+makes the motion control circuit move the ball ﬁgure upward.
+
+The ball can thus bounce up and down between the top and
+bottom ﬁgures at a rate determined by the hall’s velocity and the
+spacing between the ﬁxed lines.
+
+Of course the same general idea applies to horizontal ball
+motion, substituting left and right ﬁxed ﬁgures for the top and
+bottom ones, and using a horizontal-motion-control circuit. Figure
+10-2, however, shows the circuitry for the vertical ball-bouncing
+circuit.
+
+The ball ﬁgure in this instance is a simple 4H x 4V square, and
+the ﬁxed ﬁgures are white lines near the top and bottom of the
+screen. The horizontal position of the ball ﬁgure is ﬁxed near the
+center of the screen by the 128H signal being fed to a negative—edge
+
+418
+
+ 
+

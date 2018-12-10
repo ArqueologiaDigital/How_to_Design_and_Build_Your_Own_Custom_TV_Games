@@ -1,0 +1,65 @@
+ 
+
+ETC ETB ETA
+
+4V AOV
+8V A1V
+-‘ 16V A2V
+
+=1
+
+32V. 64V
+128V 2 O
+
+   
+
+AOH4H—ILJI—IL-IL—1UI—ILJL—II—ll—
+WWW
+
+ASH 32H ﬁg...
+
+A4H 64H
+
+ 
+
+128H. 256H 1
+
+AOH 4H AOV - 4V
+A1H ‘ 8H A1V = 8V
+A2H = Tm A2V = 16V
+A3H = 32H A3V = 32V
+AAH - 64H A4V : 64V
+ASH N. 1281—! ASV 128V
+ASH 256H
+
+ 
+
+Am. 4H IU—
+__i—
+
+A1H 8H
+
+1TH. 32H. 64H 1
+128H. 256H ,_ o
+
+ 
+
+ 
+
+ 
+
+Fig. 10-10. Figures. waveforms, and programming for the Pinball “ball in play"
+and scoring figures.
+
+In summary, the counter board in Fig. 10-12 keeps track of the
+weighted score and increments the ball count. Both counters are
+initially cleared to zero by depressing the PLAY pushbutton, the
+score counter increments 1, 2, or 4 points whenever the ball in play
+makes contact with certain objects in the playing area, and the ball
+counter increments each time a new ball is launched. The ball
+counter automatically stops the game when the ﬁfth ball is played.
+
+435
+
+ 
+

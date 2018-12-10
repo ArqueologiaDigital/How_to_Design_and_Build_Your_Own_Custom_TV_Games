@@ -1,0 +1,27 @@
+ 
+
+I28V
+
+64V 32V
+
+ 
+
+32H
+PADDLE
+
+ 
+
+ 
+
+The left and right edges of the playing area are generated as a
+single unit at IC5—A and IC6—D. They must be separated for rebound-
+ing purposes, however. This is accomplished by gating IC8-C with
+256H and IC8—B with a version of 256H that is ﬁrst inverted by
+IC8—A. It makes some sense that the system is generating the
+left-hand side of the playing area when 256H is at logic 0 and it is
+generating the right-hand half when 256H = 1.
+
+432
+
+ 
+

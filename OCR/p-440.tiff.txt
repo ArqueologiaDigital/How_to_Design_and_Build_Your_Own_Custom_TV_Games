@@ -1,0 +1,54 @@
+By the same token, suppose a hit occurs while 128V, 64V, and
+32V are all at logic 1. The only ﬁgures being generated at that
+moment are the paddles, PL and PR, or PL’ and PR’. Thus a hit
+under those circumstances must be the paddles, and nothing else.
+
+The outputs of the decoder in Fig. 10-13 thus indicate a hit and,
+more speciﬁcally, a hit against a particular object on the screen. The
+only relevant information missing is that telling Whether the ball is
+moving upward or downward at the time. And that little problem is
+solved by using a pair of identical decoders, one that is enabled only
+when the ball is moving upward and another that is enabled when the
+ball is moving downward. See IC7 and 1C8 on the control board in
+Fig. 10-14.
+
+Before it is possible to see exactly how the hit and scoring
+decoders do their jobs, it is necessary to explain the origins of signals
+detennining whether the ball is moving upward or downward at the
+time. Note the VC outputs in Fig. 10-14. These are the vertical
+speed and direction codes for the ball’s slipping-counter circuit.
+
+lVC and 4VC are ﬁxed at a logic-1 level, while 2VC is ﬁxed at
+logic 1. According to the vertical-speed control table in Fig. 7-22,
+this means the vertical section of the slipping counter will see either
+0101 or 1101, where the most-signiﬁcant bit (8VC) is the only one
+allowed to change. It turns out that the ball moves downward at a
+rate of about 0.64 frames per second when 8VC=0, and upward at
+the same rate when 8VC=1.
+
+- The 8VC output of the control board—or more speciﬁcally, the
+output of IC5-B—determines the hall’s direction of vertical motion:
+0 yields down, and 1 yields up.
+
+Now suppose the ball happens to be moving upward. The
+output of IC5—B is at logic 1, and the logic-1 level is fed back to the
+pin-5 input of NAND gate IC4—A. This particular NAND gate re-
+sponds with a logic-0 output only when three conditions are satisﬁed
+at the same time: the ball is moving downward, a hit pulse is taking
+place, and the hit is NOT against one of the sides of the playing area.
+ICS is thus the down-motion hit detector and score decoder.
+
+1C7, on the other hand, is the up-motion detector/ decoder
+which is enabled only when: the ball is moving upward (a logic 1 from
+IC5-A), a hit occurs, and the hit is NOT against one of the two sides
+of the playing area. The output of IC5-A, incidentally, is always the
+complement of that from lC5—B; therefore, it is virtually impossible
+to enable 1C7 and 1C8 at the same time.
+
+_ The next step in explaining the operation of this system is to
+work through the logic standing between the detector/decoders
+
+44o
+
+ 
+

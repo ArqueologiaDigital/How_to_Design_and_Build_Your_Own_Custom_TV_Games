@@ -1,0 +1,39 @@
+ 
+
+ 
+
+BALL FE
+
+lC1, 2—7400 QUAD 2-INPUT NAND
+
+lC3—7410 TRIPLE 3-INPUT NAND
+
+IC4—7420 DUAL 4-INPUT NAND
+
+ICS, 6—7402 QUAD 2—IN‘PUT NOR
+
+lC7, 8—74155 DUAL 2-LlNE-TO-4-LINE
+DECODER
+
+lC9—7404 HEX INVERTER
+
+l4 C
+2V0
+4VC
+8V0
+
+IHC
+2H0
+4H0
+8H0
+
+ 
+
+ 
+
+Fig. 10-14. Pinball control board schematic diagram.
+
+ 
+
+445
+

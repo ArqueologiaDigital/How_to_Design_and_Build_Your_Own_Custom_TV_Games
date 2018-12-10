@@ -1,0 +1,58 @@
+(IC7 and 1C8) and the output circuit that determines the ball’s
+direction of vertical travel (IC5-B).
+
+Suppose the ball is moving upward when it strikes the bottom of
+barrier A. According to the table in Fig. 10-13a, this particular
+situation should switch the ball’s vertical motion to downward and, at
+the same time, score 4 points.
+
+When the ball is moving downward, the pin-5 input of IC4-A is at
+logic 1 as explained earlier. And when the ball hits the A barrier (or
+any other one for that matter), the HIT input goes to logic 0, and
+inverter IC9—A inverts the signal to a positive-going pulse. Since the
+hit is not against one of the sides of the playing area, SIDES is at logic
+1, and it turns out that all inputs to IC4-A are at logic 1 as long as the
+371‘ pulse lasts. This NAND-gate action enables 1C8.
+
+From Fig. 10-8, it can be seen that the A barrier is being drawn
+on the screen as long as 128V=0, 64V=1, and 32V=O. These
+V-count lines to the select inputs of IC8 cause its pin-11 output to
+drop to logic 0, the active-low signal state for the decoders. The
+pin-5 output of that same IC is ﬁxed at that same time, so NAN D gate
+ICZ-D passes the pin-11 output of ICS as a positive-going pulse.
+
+This pulse is inverted again by inverter IC9-F, and then goes to
+the S1 connection on the weighted-scoring circuit. This accounts for
+an additional 4 points on the score readout.
+
+That same negative-going pulse from IC9-F also passes
+through NAND gate IC3-D, emerging as a positive-going pulse to
+the pin-6 input of IC5—B. IC5-B is one-half of an R-S ﬂip-ﬂop circuit
+that also includes IC5—A. The positive pulse at IC5-B in this case
+resets the ﬂip-ﬂop so that two things happen simultaneously: the
+output of IC5-B is switched to logic 0, thereby reversing the direc-
+tion of motion of the ball, and the output of IC5-B is switched to logic
+0, thereby reversing the direction of motion of the ball, and the
+output of IC5-A, is switched to logic 1 to enable the downward-
+motion decoder, 1C7.
+
+Recall that this entire sequence of activity began when an
+upward-moving ball hit barrier A. The ﬁnal results of this action is 4
+additional points in the score and changing the direction of ball motion
+from up to down.
+
+A similar kind of analysis shows that the decoders and logic
+circuits perform all the direction-changing and scoring operations
+speciﬁed in the table on Fig. 10-13a.
+
+All the operations described for the control board to this point
+have concerned the VC outputs and changes in the vertical direction.
+It can be seen that changes in the horizontal direction of ball motion is
+a bit more straightforward.
+
+ 
+
+442
+
+ 
+

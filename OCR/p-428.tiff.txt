@@ -1,0 +1,57 @@
+The waveforms shown in Fig. 10-8a and the matrix-
+programming parameters in Fig. 10—8c are vital to this ﬁgure-
+generating scheme. The truly unique feature, however, is the
+technique used for making the top and bottom edges, ﬁxed barriers,
+and paddle ﬁgures appear as lines instead of the usual matrix squares
+and rectangles. This will be explained in connection with the actual
+ﬁgure-generating circuit in Fig. 10-9.
+
+Note from the image and waveforms in Fig. 10-8a that a white
+line appears only where 16V makes a transition from 1 to 0. A line
+does not appear each time this sort of transition occurs, but it occurs
+only when 16V shows a 1-to-0 change.
+
+The horizontal TE line, for instance, begins as 16V goes from 1
+to O. This line, like all the others, is 4V wide; so its positioning
+\_Ie_r_tica1 size are fixed by the vertical-count speciﬁcations, 128V,
+64V, 32V, 16V, W, and EV. The horizontal length of the TE line, and
+indeed the ﬁeld of play, is one complete 128H cycle long, centered on
+the screen where 256H changes from black to white. Setting this
+length is a simple matter of doing an EXCLUSIVE OR operation on
+256H and 128H.
+
+The horizontal BE line is generated in a similar fashion. It is
+situated vertically where 16V makes a 1-to—_Q__transition. But in this
+case, the higher-order V-counts are 128V, 64V, and EV, putting it
+near the bottom of the screen. Its horizontal Width is also set by an
+EXCLUSIVE OR operation on 256H and 128H.
+
+Fixed barrier A occurs where ﬂgoes from 1_£o__0 while the
+higher-order vertical counts are at 128V, 64V, and 32V. Barrier B
+has the same vertical speciﬁcations, but _t_h_e two are separﬁeﬂ
+horizontally by having A occur at 128H and 64H, and B occur at 128H
+and 64H. Barrier B is actually nothing more than a mirror image of A.
+In fact the right-hand halves of TE and BE are mirror images of their
+left-hand halves.
+
+A similar kind of analysis can be apﬂied to any of the lines On the
+screen. They all occur at EVAW, and 4V (4V pulses high when 16V
+shows a transition) and are separated vertically by various combina—
+tions of higher order V-counts 128V, 64V, and 32V.
+
+All of this information is summarized in the D-programming
+speciﬁcations in Fig. 10-8c. This data sets the positions of all the
+ﬁgures in the playing area, using an 8 x 8 extended foldover format.
+The ﬁgures are narrowed vertically to 4V at the output of the matrix
+generator, 1C7 in Fig. 10-9.
+
+The 16: 1 data multiplexer in Fig. 10-9 uses the D-input speciﬁ-
+cations derived from the ﬁgure and wamms in Fig. 10—8a. As
+indicated by the presence of 128V and 128V in the data program-
+
+ 
+
+428
+
+ 
+

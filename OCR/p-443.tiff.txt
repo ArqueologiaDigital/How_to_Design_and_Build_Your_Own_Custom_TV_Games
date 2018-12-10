@@ -1,0 +1,55 @@
+The outputs controlling the ball’s horizontal motion are lHC
+through 8HC in Fig. 10-14. 1HC and 4HC are ﬁxed at logic 1, while
+2HC is ﬁxed at logic 0. Only the 8HC bit is concerned with the ball’s
+changes in horizontal motion.
+
+The horizontal motion codes to the horizontal portion of the
+slipping-counter board are thus 0101 or 1101, depending on whether
+the ball is to be moving to the right or left respectively. In either
+case, the horizontal velocity is 0.98 screens per second, and
+whether the ball is moving to the right or left is determined by the
+status of an R— S ﬂip- ﬂop composed of IC5-C and IC5- D.
+
+The inputs to this l__ittle hozi_z__ontal-direction control circuit are
+BALL (the ball ﬁgure), LT, and RT (signals indicating the two sides
+of the playing area.
+
+To see how this circuit works, suppose the ball ﬁgure is
+moving toward the right. This means the 8HC bit and the output of
+IC5—D are at logic 0; and since this is one output of a ﬂip-ﬂop, it
+follows that the output of ICS-C is at logic 1. Now there is a contact
+between the ball and the right-hand side of the playing area. IC6-D
+senses this particular hit, and generates a positive-going pulse that
+resets the ﬂip—ﬂop. This action resets the ﬂip—ﬂop, changing the
+direction of the hall’s horizontal motion to the left.
+
+The complementary action takes place as the ball strikes the
+left-hand side of the playing area. IC6-C senses the contact and
+changes the status of the ﬂip-ﬂop so that the ball moves to the right
+again.
+
+If the experimenter ﬁnds the ball speed seems too fast, the
+vertical- and horizontal—motion codes at lVC, 2VC, 4VC, 1HC,
+2HC, and 4HC can be changed, using the information in the speed-
+control table (Fig. 7-22) as a guide. The 8VC and 8HC bits should
+remain as shown in Fig. 10-14.
+
+The control circuit board also includes some housekeeping logic
+that is mainly concerned with starti_____ng and ending the game. Note,
+for instance, that the“ PLAY _a_nd BALLP signals from the control
+panel each go to a separate R-S lip—ﬂop—ICI -A and IC1- B, and
+IC1-C and ICl-D.
+
+Depressing the PLAY pushbutton on the control panel forces
+the PLAY input to the control board to logic 0, thus setting the
+output of IC1-A to logic 1 and the output of ICEto 0. The logic-0
+level from ICl-B leaves the board via the CLS connection and
+ultimately clears the ball counter and score counter on the score-
+counting board (Fig. 10-12). The ball count and score are thus
+cleared whenever the player depresses the PLAY pushbutton at the
+beginning of a new game sequence.
+
+443
+
+ 
+

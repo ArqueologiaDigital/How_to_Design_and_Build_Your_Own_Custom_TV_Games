@@ -1,0 +1,23 @@
+The ball—blanking ﬂip-ﬂop is reset only when the ball crosses BE
+(the bottom edge of the playing area) while traveling downward.
+This effect is detected by the pin—9 output of 1C7, the same one
+responsible for resetting the entire game at the end of play for the
+ﬁfth ball.
+
+Overall Pinball Block Diagram
+
+A ﬁnal wiring diagram for the pinball game appears in Fig.
+10-15. You will note that the game requires ﬁve circuit boards and a
+special control panel. Of course you should already have the
+slippingocounter board available from previous experiments and
+games.
+
+The slipping counter and control boards can be powered from
+one of the +5V sources, while the remaining boards ought to be
+connected to a second source to avoid overloading any one of the
+power supplies.
+
+449
+
+ 
+

@@ -1,0 +1,54 @@
+pulse generator made up of ICl-B and IC4-D. The vertical, movable
+portion of the ball ﬁgure comes from another pulse generator UCLA
+and IC4—C) which gets its input information from the 128V output of a
+vertical-slipping counter circuit.
+
+The ball ﬁgure is assembled at IC7—A and then inverted by
+IC6—B. One portion of this inverted ball signal goes to ICZ-A where it
+is essentially ORed with the top and bottom ﬁgures, and another
+portion goes to the bottom and top contact sensing circuits, IC3-A
+and ICS-B.
+
+The bottom ﬁgure in this case is simply the narrow 256V line,
+while the top ﬁgure is an 8V white line located about 8V from the top
+of the screen. The outputs from both of these fixed-ﬁgure
+generators are combined with the ball ﬁgure in ICZ-A to produce the
+game’s composite ﬁgure video signal.
+
+IC3-D and IC3-C make up an R-S ﬂip-ﬂop. This ﬂip-ﬂop is SET
+(output of IC3-D goes to logic 1) whenever IC3-B senses contact
+between the ball ﬁgure and the top ﬁgure. The ﬂip-ﬂop is then
+RESET (output of IC3—D goes to logic 0) whenever IC3-A senses
+contact between the ball ﬁgure and the bottom one.
+
+The table accompanying the circuit in Fig. 10-2 shows how the
+top and bottom contacts affect the vertical control word delivered to
+the vertical—slipping counter. Whenever top contact occurs, the VC
+control code is set to 0101. According to the speed and direction
+control table in Fig. 7-22, this means the movable ﬁgure (the ball in
+this case) is set for downward motion at the rate of 0.64 frames per
+second. Whenever bottom contact occurs, the V C control code is
+set to 1101, making the ball ﬁgure move upward at 0.64 ﬁames per
+second.
+
+Constructing the circuit as speciﬁed in Fig. 10—2 thus produces
+a bouncing-ball effect whereby the ball bounces vertically at a rate of
+about 1 H2.
+
+A FLEXIBLE REBOUND CONTROL SYSTEM
+
+Figure 10-3 shows a circuit that is adaptable for both horizontal
+and vertical rebounding of a single ﬁgure. There can be as many as
+four fixed-figure inputs: botm top, right, and left figures.
+Whenever the movable ﬁgure (FIG) makes contact with any one of
+the ﬁxed ﬁgures, an R-S ﬂip-ﬂop (ICl—B and ICl-D or ICZ-B and
+ICZ-D) is set to a state that reverses the direction of ﬁgure motion_.lf
+the ﬁgure is moving to the right and makes contact with the RT
+ﬁgure, for instance, the ﬂip-ﬂop composed of IC2-B and ICZ-D
+changes state and ultimately reverses the direction of horizontal
+motion.
+
+420
+
+ 
+

@@ -1,0 +1,55 @@
+effect is shown by the D-input speciﬁcations D12 = 128V? and
+D15 = 128V-P. This effect is implemented in Fig. 10-9 by ICl-A,
+ICl-B, and the three inverters associated with them.
+
+As long as the PADDLE button is not depressed, the PADDLE
+input to the ﬁgure board is at logic 1, thereby gating on ICl—A so that
+the 128V signal passes through to pin 19 of IC7, the D12 data input.
+The same logic level that gates on IC1-A, however, passes through
+inverter IC6-C to gate off ICl-B so that pin 16 of IC7 (the D15 input)
+sees a logic 0. Depressing the PADDLE button, on the other hand,
+sets the MDDLE input to logic 0 to reverse the situation, setting
+pin 19 at 0 and pin 16 at 128V. '
+
+The programming for D12 and D15 is thus determined by the
+status of the player’s PADDLE pushbutton, altering the horizontal
+position of the paddle ﬁgures accordingly.
+
+So much for the D-input programming for IC7. Now the device
+is addressed by appropriate combinations of 32H, 64H, 32V, and
+64V. Since the circuit is generating a vertically extended matrix, the
+V-count addresses go directly to the two higher-order address
+locations, pins 13 and 11 of IC7. The ﬁgure is folded in the
+horizontal—count direction, however, so the 32H and 64H address
+inputs must pass through a pair of EXCLUSIVE OR gates before
+applying them to the matrix-generating multiplexer. The foldover
+effect makes the horizontal addressing run in the normal up-counting
+fashion as long as 128H is low. But when this input goes to logic 1
+halfway across the playing area, it reverses the direction of horizon-
+tal addressing to create the mirrored left—hand half of the ﬁgure.
+
+The EXCLUSIVE OR gates for creating the foldover effect are
+IC5-B and IC5-C. The “gear shift” in this instance is the 256H
+connection that is common to both of them.
+
+You might ﬁnd it necessary to study the extension and foldover
+effects in greater detail in Chapter 4. Without understanding the
+basic principles involved here, there is little hope of understanding
+this particular circuit or, more importantly, you will ﬁnd it virtually
+impossible to modify the game or design any of your own.
+
+The pinball ﬁgure is not windowed at all in the vertical direction.
+It occupies the entire height of the screen. It must be windowed
+horizontally, however. And in this case it is windowed by means of
+another EXCLUSIVE OR operation on 256H and 128H. These
+speciﬁcations put the playing area near the center of the screen,
+spanning one complete 128H cycle.
+
+The windowing is implemented in Fig. 10-9 by the EXCLU-
+SIVE OR gate, IC5-A . After the output of this gate is inverted by
+IC6—D, it is applied to the enabling input of IC7 at pin 9.
+
+430
+
+ 
+

@@ -1,0 +1,73 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CONTROL CODE
+BEFORE AFTER
+1 8 4 2 I 8 4 2 I i
+DOWNL. o o l I I I I I P UP
+“93:8?
+LL I l LI.
+RIGHT o ' I o ' I o 0 LEFT
+0 I I I I o I I
+I o o o I o I 0
+STOP I o o I I O o I STOP
+I I 8 i <2 I. I 9 I I
+UP ,_ - ~ DOWN
+I I o o o I I O ’-
+OR E I I o I o I o I ‘2 0R
+LEFT I I I o o I o o ”-RIGHT
+i I I I I o o I I i
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 10-4. Motion code table for rebound effects based on slipping-counter
+motion.
+
+Figure 10-7a shows this pinball game as it appears on the
+screen. The main playing area is the black rectangle situated near
+the center of the screen. The ball is a 4H X 4V square that remains
+in the playing area by virtue of the rebounding effects. It rebounds to
+the left or right from the white sides of the playing area, and it
+rebounds up or down from the ﬁve ﬁxed barriers and either of the
+two movable paddles near the bottom of the screen.
+
+The player’s control panel is shown in Fig. 10-7b. It consists of
+three normally-open pushbuttons labeled PLAY, BALL and PAD-
+DLE. Depressing the PLAY button starts the playing action, setting
+the ball counter and score to zero. Depressing the BALL button
+launches a ball, and depressing the paddle button makes the two
+paddle figures move from their normal resting positions at the edges
+of the playing ﬁeld to the center as shown in Fig. 10-7a.
+
+Figure 10-7c shows the wiring diagram for this simple control
+panel.
+
+Figure Generator Board for Pinball
+
+The playing field is shown in much greater detail in Fig. 10—8a. A
+White line across the top of the screen, labeled TE, is the top of the
+playing area, while the line across the bottom, BE, is the bottom of
+the playing area. The left and right edges, LE and RE, aren’t lines at
+all, but rather borders marking the sides of the black playing field.
+
+424
+
+ 
+

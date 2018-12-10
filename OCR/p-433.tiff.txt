@@ -1,0 +1,86 @@
+ 
+
+256HM
+|28VM
+
+ 
+
+4i..__>BALL
+
+ 
+
+ 
+
+ 
+
+2 lC2-A 3 if
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+IC1, 2, 8—7400 QUAD 2—lNPUT NAND
+
+ 
+
+'3 m” 103—7420 DUAL 4—lNPUT NAND
+" lC4—-7402 QUAD 2—lNPUT NOR
+'2 lCS—7486 QUAD EXCLUSlVE—OR
+I lCS—7404 HEX INVERTER
+4 V TsT/ 107—74150 16:1 MULTIPLEXER
+
+ 
+
+ 
+
+Fig. 10-9. Pinball figure board schematic diagram.
+
+So when 256H is at logic 0, IC8—C is gated off, and the inversion
+of IC8-A inverts 256H to gate on IC8-B. Theﬁ output is thus
+enabled in its active-low format. When 256H goes to logic 1, signify-
+ing the right-hand half of the screen is being serviced, IC8-C is
+enabled and IC8—B is effectively switched off.
+
+That completes the theory of operation of the ﬁgure- generator
+portion of this pinball game.
+
+433
+
+ 
+
