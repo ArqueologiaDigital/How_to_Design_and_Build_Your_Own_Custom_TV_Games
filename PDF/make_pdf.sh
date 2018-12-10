@@ -1,16 +1,19 @@
+width=600
 echo "Generating lowres pages:"
-for ch in ../originais/ch*
+for ch in ../originais/*
 do
 for f in $ch/*.tiff
 do
     echo "Converting $f ..."
-    convert $f -resize 800 $f.lowres.jpg
+    convert $f -resize $width $f.lowres.jpg
 done
 
-echo "And now generating the lowres PDF..."
-chapter=`basename $ch`
-convert $ch/*.lowres.jpg How_to_Design_and_Build_Your_Own_Custom_TV_Games_$chapter.pdf
+echo "Generating $ch.pdf ..."
+convert $ch/*.lowres.jpg $ch.pdf
+mv $ch.pdf .
 rm $ch/*.lowres.jpg -f
 done
 
+echo "Generating the final PDF ..."
+pdfunite ch*.pdf How_to_Design_and_Build_Your_Own_Custom_TV_Games.pdf
 echo "done."
