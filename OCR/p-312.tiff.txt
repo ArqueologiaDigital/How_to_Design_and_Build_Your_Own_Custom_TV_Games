@@ -1,0 +1,56 @@
+you will ﬁnd the line is now 4H wide. Its position is then programmed
+by inputs 4P through 256P.
+
+The width of the line can thus be adjusted or programmed by
+connecting lower-order program inputs to their respective H—count
+inputs: IP to 1 and 1H, 2P to 2 and 2H, 4P to 4 and 4H, and so on.
+The more program inputs wired in this fashion, the wider the line.
+The position of that line is then adjusted by the higher-order program
+inputs not connected to their respective H-count sources.
+
+As a design example, suppose you want a vertical line 16H Wide
+just left of center of the screen. The NAND-gate speciﬁcations from ‘
+Chapter 3 would be 256H, 128H, and 64H, but in this case, the
+speciﬁcations are as follows: 1P=1=1H, 2P=2=2H, 4P=4=4H,
+and 8P=8=8H. To be sure, the comparator scheme calls for more
+more circuitry (the circuit in Fig. S-Za as opposed to a simple 3-input
+NAND gate), but the advantage is that the size and position of the
+line can be changed by simply altering the P inputs. And as described
+later in this chapter, the P inputs can be altered by other circuitry—
+the size and position of the line can be changed automatically. That is
+virtually impossible with the NAND-gate line-generating scheme in
+Chapter 3.
+
+After experimenting with the circuit in Fig. 8— 2a for a while, you
+will ﬁnd you can generate sets of parallel lines by ﬁxing certain
+program inputs to one particular logic level and connecting the P
+inputs on either side of it to their respective H-count signals.
+
+All of this applies equally well when orienting the comparator
+circuit around the V—count inputs. Figure 8-2b shows a pair of
+comparator circuits in block diagram form. The circuits are identical
+in every respect. The one generating horizontal parameters, how-
+ever, takes its Sourcebogﬁputs from the nine H-count lines and
+generates an active low HPP signal. The block generating vertical
+data ____takes its Sourcebox information from V- count and generates a
+VPP output signal.
+
+The simple circuits in Fig. 8—3 show several suggested
+techniques for combinirithe hgiz_ontal- and vertical-equality sig-
+nals. In Fig. 8-3a, the HPP and VPP signals are effectively ANDed
+together to yield a white rectangle. The size and position of this
+rectangle is determined by the horizontal- and vertical-program
+inputs.
+
+The circuit in Fig. 8-3b uses a pair of pulse generators to
+overcome a certain disadvantage inherent in the simple ANDing
+operation of Fig. 8-3a. Using the bar-positioning scheme described
+earlier in this section, you will ﬁnd that it is difﬁcult to position larger
+bars or rectangles exactly where you want them. A bar that is 64H
+
+ 
+
+312
+
+ 
+

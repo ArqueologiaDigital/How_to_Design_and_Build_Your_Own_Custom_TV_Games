@@ -1,0 +1,55 @@
+generating a large X ﬁgure that is, itself, made up of smaller X
+ﬁgures. Using the circuit in Fig. 4-35, 1C6 generates the little Xs,
+and IC5 determines the big X pattern. The designated pattern
+window inputs restrict the pattern to a single large X on the screen.
+If you understand how the basic complex-ﬁgure generators
+work, you can apply that knowledge to the complex—pattern
+generator. Any of the complex-pattern generators described in the
+ﬁrst part of this chapter can be used as window generators. It is
+possible, if not altogether practical, to create a 256-cell ﬁgure matrix
+using the circuit in Fig. 4-26, and then repeat that ﬁgure anywhere
+within another 256-cell windowing matrix. The result would be a
+full-screen, complex pattern of identical complex ﬁgures.
+
+ 
+
+SMALL X FIGURE (USE CIRCUIT IN FIG. 4-35)
+SELECT: SO = 8H WINDOW: FROM IC5
+
+S1=16H
+82=8V
+SS=16V
+
+D INPUTS: D1 =0 D8 =0
+D2=0 D11=0
+D4=0 D13=0
+D7=0 D14=0
+
+LARGE X PATTERN
+
+ 
+
+SELECT: WSO = 32H WINDOW: 256H
+
+WSI = 64H 128H
+W82 = 32V 128V
+W83 = 64V
+
+W INPUTS: W1 =0 W8 =0
+W2=O W11=0
+W4=0 W13=0
+W7=0 W14=0
+
+ 
+
+ 
+
+ 
+
+Fig. 4-36. Example of arranging a complex figure into a complex pattern, a large
+X built from smaller Xs.
+
+135
+
+ 
+

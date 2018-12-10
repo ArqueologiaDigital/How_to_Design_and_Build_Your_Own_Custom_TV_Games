@@ -1,0 +1,56 @@
+itself) can have precise control over the position via the comparators’
+program inputs. This feature will become especially valuable when
+working with ultra-slow-motion controls later in this chapter.
+
+The purpose of the most complex comparator output circuit in
+Fig. 8-3c might seem rather obscure at this point, but it is shown
+
+begs for the sake of completeness. The circuit is composed of two
+R-S f lip-ﬂops, each having one input taken from a comparator circuit.
+The ﬂip—ﬂops are reset by PRST pulses from an external source, and
+their outputs are effectively ANDed together by IC2-A.
+
+The ﬂip-ﬂop composed of ICl-A and ICl-B is set to its active
+state whenever it sees an HPP pulse from the horizontal-program
+comparator. Presumably, the occurrence of this pulse indicates the
+starting point of a figure’s horizontal dimension. That particular
+ﬂip-ﬂop then remains active until an external HPRST pulse occurs. If
+that reset pulse happens to be an inverted version of HRST from the
+Sourcebox, the bar begins at the point HPP occurs and ends at the
+right-hand side of the screen.
+
+The vertical'portion of this ﬂip-ﬂop circuit, built around ICl-C
+and ICl-D, is set in a similar fashion from the VPP signal from a
+vertical comparator. It is then reset by an external source such as an
+inverted VRST from the Sourcebox. The result in this instance is a
+vertical bar that begins when VPP occurs and runs to the bottom of
+the screen.
+
+ANDing the outputs of the two ﬂip-ﬂop sections then yields a
+rectangular ﬁgure having its upper left—hand corner ﬁxed at a point
+where HPP and VPP occur at the same time. If the ﬂip-ﬂops are then
+reset as described in the foregoing examples (inverted versions of
+HRST and VRST) the ﬁgure extends to the right and bottom of the
+screen. Of course it is possible to use alternate sources of HPRST
+and VPRST pulses to adjust the position of the ﬁgure’s right and
+bottom edges.
+
+This particular circuit will be used for programming the size and
+position of complex ﬁgures as described in Chapter 4.
+
+Figure 8-4 is a suggested circuit for a complete pro-
+grammable-position—control circuit. 1C1 and 1C2 accept horizontal-
+counting and programming information, while 1C3 and 1C4 handle the
+vertical programming. The outputs are delivered to pulse
+generators where the horizontal dimension of the rectangle is de-
+termined by the value of C1 and the vertical dimension by the value
+of C2.
+
+The circuit can be assembled on a 40-pin board (Radio Shack
+276-153) with plenty of room to spare. The arrangement calls for
+using all 40 pins, however.
+
+314
+
+ 
+

@@ -1,0 +1,56 @@
+Now suppose both missiles are launched, but the antiballistic
+missile misses the attacker. In this instance, the antiballistic missile
+continues its upward path until it reaches the top of the screen
+(decision A 2 TOP). The moment A = TOP, the antiballistic mis—
+sile is immediately reset to its initial position at the bottom of the
+screen, and Player A is free to reprogram the horizontal position and
+launch again.
+
+One of two things happen to the attack missile if the antiballistic
+missile misses it. The best thing, as far as Player B is concerned, is
+that his missile hits the target in the lower right-hand corner of the
+screen. This is the B=TARG condition. When that happens, the
+target ﬂashes to indicate a clean hit.
+
+Whether the attack missile hits the target or not, it continues its
+path across the screen until it reaches the B=EDGE condition. The
+“EDGE” is deﬁned as a line along the right-hand side and bottom of
+the screen. If Player A misses the attack missile and Player B misses
+the target, the attack missile will either fall short (hit the bottom of
+the screen) or overshoot (hit the right—hand side of the Screen.)
+
+In any case, the attack missile is immediately reset to its initial
+position upon reaching the right-hand edge or bottom of the screen.
+
+The attack missile, incidentally, is blanked from the screen as
+long as it is in its initial position. This feature allows Player B to adjust
+the initial launch altitude without tipping his hand to Player A. The
+antiballistic missile is never blanked from the screen.
+
+Player Controls
+
+Figure 7-2 shows the control panel and other relevant features
+for the antiballistic missile, Player A. Player A adjusts the horizontal
+position of the antiballistic missile anywhere in 16 different positions
+along the bottom of the screen.
+
+The idea is to set switches SF through SI to 1 of 16 different
+combinations of 1s and 0s, then momentarily depress the LOAD
+pushbutton. The ﬁgure of the antiballistic missile responds by mov-
+ing to the position speciﬁed by the switches. A bit of work with these
+switches will show exactly how they work.
+
+The antiballistic missile can be launched from its initial position
+by depressing the LAUNCH pushbutton. Once the missile is
+launched, all switches and buttons are locked out, making it impossi-
+ble to change the path of the antiballistic missile until it is automati-
+cally reset (by striking the attack missile or the top of the screen).
+
+The attack missile control panel is somewhat more complex
+because Player B has more initial parameters to control. See Fig.
+7-3.
+
+236
+
+ 
+

@@ -1,0 +1,55 @@
+and the switch is locked out so that the player cannot launch another
+rocket for a While.
+
+Now suppose the rocket misses its target and runs to the edge
+of the screen. That is the RESET condition in this particular case.
+When that happens, the control system initiates a delay interval,
+let’s say a delay of 5 seconds. Nothing more can happen until the
+delay interval is over, but as soon as that time period lapses, the ﬂow
+chart shows that the START switch is unlocked, thereby making it
+possible to restart another launch cycle.
+
+Working out a good ﬂow chart for start/ stop controls can save a
+lot of hassle, time, and money later on. Time spent working out the
+simplest ﬂow chart is thus time well spent. Perhaps equally impor-
+tant is the fact that building a ﬂow chart forces you to clarify your
+thoughts about what the control system should really do.
+
+After building the ﬂow chart, block out the process, referring to
+the control circuits presented in the ﬁrst part of this section. Figure
+6-5b shows a block diagram generated from the ﬂow chart.
+
+The system calls for a manual START switch that can be locked
+out. The circuit in Fig. 6-20 ﬁts this notion quite well. And since this
+particular start circuit generates positive-going pulses, the R-S
+ﬂip-ﬂop in Fig. 6—1b falls into place quite naturally. The inverted
+output of this ﬂip-ﬂop is then used for locking out the START switch.
+
+The noninverted output of the R-S ﬂip-ﬂop stage enables the
+game, whatever that game might be. The exact nature of the game
+isn’t relevant to the procedure at hand, but we can assume it
+eventually generates a set of parameters that call for resetting the
+controls. This reset parameter output from the game can thus
+initiate and automatically stop operation. The circuit in Fig. 6—3a ﬁts
+the bill in this case.
+
+The negative-going pulse from the auto stop circuit should then
+initiate a time delay of 5 seconds, and when that interval has lapsed,
+the positive-going pulse from Fig. 6-4 can reset the start-up ﬂip—ﬂop.
+The game is thus restarted and the START switch is enabled so the
+player can initiate another cycle.
+
+The block diagram in Fig. 6-5b thus transforms the basic ﬂow
+chart into a less abstract form. The next step is to make up a
+preliminary schematic diagram.
+
+The preliminary schematic shown in Fig. 6-6 merely replaces
+the blocks in Fig. 6-5b with the circuits speciﬁed for those blocks.
+The primary objective is to see what types of semiconductors are
+needed and how many have to be used. There is no real need to
+assign pin numbers and component values other than those that are
+
+190
+
+ 
+

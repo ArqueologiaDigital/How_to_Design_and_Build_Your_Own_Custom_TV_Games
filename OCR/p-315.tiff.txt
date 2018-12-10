@@ -1,0 +1,54 @@
+The program inputs can be selected by means of 18 different
+toggle switches, one to each of the P inputs. Certainly this would be
+a rather awkward scheme for programming the position of the
+ﬁgure, but it is an alternative that is suitable in some circumstances.
+See the suggested input switch circuit in Fig. 8-6.
+
+Figure 8-5 shows an alternative to the comparator positioning
+board in Fig. 8-4. The primary advantage of this alternate circuit is
+that it requires only 23 pins as opposed to the full complement of 40
+pins for the circuit in Fig. 8-4. The trick is to eliminate virtually all of
+the H— and V-count inputs by building a set of counters on the
+position-control board, itself.
+
+The horizontal counters are 1C5 and 1C6, and since they are
+clocked by 1H and reset by HRST from the Sourcebox, they follow
+the basic counting pattern of the H-count system in the Sourcebox.
+1C7 and IC8 perform the same function for the vertical—positioning
+circuit, being clocked by HRST and reset by VRST from the Source-
+box.
+
+Using on-board H— and V-count generators thus eliminates a lot
+of wiring between the board and Sourcebox. There are some trade-
+offs though. The H—count generator (1C5 and 106) generates count-
+ing signals between 2H and 256H. The lower—order 1H bit is not
+included in the comparison process in the horizontal section. Omit-
+ting the 1H comparison, however, only means that the ﬁgure is
+positioned with 2H precision. And that doesn’t pose many problems,
+in most instances.
+
+There are also only eight bits available for vertical positioning.
+In this case, the 256V bit is omitted. Since that particular signal is
+seldom useful at all, there is little lost by leaving it out of the
+comparison operation.
+
+Also note that the circuit in Fig. 8-5 requires eight ICs, rather
+than the seven in Fig. 8-4. And furthermore, you can see that the
+alternate circuit generates active-high HPP and VPP signals, rather
+than a composite—ﬁgure signal. Even so, these are rather minor
+compromises, considering how much easier it is to wire the circuit in
+Fig. 8-5 into a game system.
+
+Switch Inputs for Figure Positioning
+
+Figure 8-6 is a sketch of a circuit that can be used for entering as
+many as 18 position-control bits into either of the circuit boards in
+Figs. 8-4 and 8-5. The circuit is drawn speciﬁcally for the circuit in
+Fig. 8-4, but it can be interfaced with the simpler circuit in Fig. 8-5 by
+omitting the lHP position (89 and R9) and the 256VP position (810
+and R10).
+
+315
+
+ 
+

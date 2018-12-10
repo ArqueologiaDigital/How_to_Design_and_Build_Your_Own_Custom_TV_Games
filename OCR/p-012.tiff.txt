@@ -1,0 +1,56 @@
+the right-hand edge, it is ﬁrst blanked off and then sent back to the
+left-hand edge to begin the next scanning operation.
+
+This horizontal seaming operation continues until the beam
+reaches the lower right-hand edge, at which time it is blanked off and
+returned to the top to begin a new framing sequence.
+
+The raster as it appears on the screen is thus a series of straight
+lines that result from two different kinds of operations: a relatively
+fast horizontal scan, combined with a relatively slow vertical scan.
+The horizontal scanning is responsible for moving the beam from left
+to right, and the vertical seaming is responsible for setting each line
+a bit below the previous one.
+
+Figure 1-1b shows the sort of sawtooth waveform that is used
+for both horizontal and vertical scanning. As the sawtooth level rises
+with time, the beam responds by moving a proportional distance
+across the screen. Two such waveforms are required, one for the
+horizontal- and another for the vertical-scanning operations.
+
+The only difference between the horizontal- and vertical-
+sawtooth waveforms is their frequency. The horizontal sawtooth
+waveform runs at a frequency on the order of 15,750 Hz, while the
+vertical version runs at about 60 Hz. It can be reckoned from these
+ﬁgures that there are 262.5 horizontal scan lines for each vertical
+scan. The American television scheme, however, uses an interlaced
+scanning technique calling for two complete vertical scans for one
+frame.
+
+The framing rate is thus 30 Hz, and there are 525 horizontal
+lines (262.5 on the ﬁrst ﬁeld and another 262.5 on the interlaced
+ﬁeld) in each complete frame.
+
+None of the TV game schemes in this book use interlaced
+scanning, so the ﬁgures relevant to our purposes are the 15,750 Hz
+horizontal-scanning rate and the 60-Hz vertical-scanning rate.
+
+The horizontal— and vertical-sawtooth waveforms are gener-
+ated within the receiver by the horizontal and vertical oscillators.
+When receiving a TV signal from a broadcast station or TV game
+system, these oscillators must be synchronized in order to hold the
+picture together properly. Vertical rolling or horizontal tearing of a
+video signal are familiar signs of a loss of sync from the incoming
+video signal.
+
+Figure 1-1c shows a typical video signal as it arrives from a
+conventional TV station. The horizontal-sync pulses ride in a pig-
+gyback fashion on the horizontal-blanking pulses. Since there are far
+more horizontal-scanning operations than vertical ones, it follows
+that the composite video signal is dominated by horizontal sync and
+blanking pulses.
+
+12
+
+ 
+

@@ -1,0 +1,115 @@
+ 
+
+128H
+
+V ‘
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘—‘_E:_
+FIST
+
+ 
+
+ 
+
+GAME
+VID OUT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+BG
+
+ 
+
+ 
+
+ 
+
+ 
+
+BVINT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEE
+
+ICS—D
+ICI, 2—7400 QUAD 2-INPUT NAND
+IC3—7402 QUAD 2-INPUT NOR
+|C4——7486 QUAD EXCLUSIVE-OR
+ICS—7410 TRIPLE 3-INPUT NAND
+IC6—7404 HEX INVERTER
+IC7, 8, 9—7485 QUAD COMPARATOR
+* NOTE: SELECT CS FOR BALL WIDTH
+
+SELECT C4 FOFI BALL HEIGHT
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 8-19. Figure board schematic for Golf
+
+345
+
+ 
+

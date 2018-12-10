@@ -1,0 +1,40 @@
+ 
+
+Chapter 5
+
+Building Motion-Control Circuits
+
+ 
+
+Motion makes TV games. Without some player-controlled and au-
+tomatic motion, today’s video game business would not exist. Given
+the choice between a system that only generates complex static
+ﬁgures and one that generates very simple ﬁgures that move, most
+people would choose the system that includes the motion feature.
+
+The ﬁgures for the original table tennis, squash, and hockey
+games were exceedingly simple—merely rectangles and lines. But
+the player-controlled paddle motion and the automatic ball motion
+gives these games their real appeal. No one seems to care whether
+the ball is round or square. Motion makes the game.
+
+You can build some good video games around the player—
+controlled and automatic motion circuits described in this chapter.
+There is no real need to generate the complex ﬁgures featured in
+Chapter 4. ‘
+
+At some point in your experience with custom video games,
+however, you will most likely ﬁnd that adding one or two complex
+ﬁgures makes the games more fun and interesting.
+
+Work through the descriptions and experiments in this chapter,
+carefully noting the special features of each one. There are a number
+of options offered here, and that implies that some motion-control
+circuits are better than others under certain circumstances.
+
+Get a good understanding of all the motion circuits now, and you
+will be able to design more effective and efﬁcient game circuits later
+on.
+
+137
+

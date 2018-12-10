@@ -1,0 +1,53 @@
+directed to the loading inputs of the slipping counter Whenever the
+initializing control input is at logic 1.
+
+When the initializing control input is at logic 1, ICl-A is effec-
+tively opened so that inverted versions of the slipping—counter reset
+pulses emerge from its output. While the initializing control is at logic
+1, however, inverter ICZ-A switches that logic level to 0, as far as
+the pin-9 input of ICl-C is concerned. ICl-C is thus effectively gated
+off, thereby preventing any initializing reset pulses from reaching
+ICl-B. Setting the initializing control input to logic 1 blocks any
+incoming initializing reset pulses, but allows negative-going
+slipping-counter reset pulses to appear at the output of ICl-B.
+These pulses are applied to the loading line of the slipping-counter
+circuit, letting it operate in its normal, motion-generating mode.
+
+Setting the initializing control input to logic 0 completely
+changes the situation. In this case, ICl-A is gated off by the logic—0
+level appearing at its pin-2 input, but IC1-C is gated on by virtue of
+the logic-1 level now appearing at its pin—9 input. Inverted versions
+of the initializing reset pulses thus appear at the output of ICl-B.
+
+In short, the circuit in Fig. 6-11 is simply a digital selector
+circuit. It selects one of two sources of reset pulses, depending on
+the logic level present at the initializing control input.
+
+Note how this selector circuit is applied to a vertical-slipping
+counter in Fig. 6—12. As long as the INTC (initializing-control) input
+is at logic 1, IC3—B is gated on, and the normal reset pulses from
+ICE—A appear at the output of IC3-C and the load inputs of the
+counters. The circuit thus operates in its normal slipping—counter
+mode as long as INTC = 1.
+
+Changing INTC to logic 0 gates off IC3-A, however, and deliv-
+ers an alternate set of reset pulses to the load inputs of the counters.
+These reset pulses at the INTP input generally come from the
+Sourcebox unit, so they always occur at some particular vertical
+position on the screen. And when these pulses are applied to the
+slipping counter, it follows that the counter will be reset at that
+particular point on the screen.
+
+There can be no motion effect from the slipping counter as long
+as it is being reset from INTP, even if the VC inputs are set for fast
+motion in either direction. Motion begins only when INTC is set to
+logic 1, thereby allowing the counters to be reset in the normal
+fashion from IC3-A.
+
+Why not breadboard the circuit in Fig. 6-12 and try it for
+yourself. For the purposes of this experiment, connect VRST from
+the Sourcebox through an inverter to the INTP connection.
+Whenever the ﬁgure is to be initialized (INTC set to logic 0), the
+
+201
+

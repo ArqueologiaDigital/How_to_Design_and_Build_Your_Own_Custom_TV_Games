@@ -1,0 +1,55 @@
+with black lines on a white background, by inverting the composite
+signal before applying it to the GAME VID IN terminal of the
+Sourcebox unit.
+
+Figure 3-7b is a key circuit in designing all kinds of video games
+and effects, so it should be clearly marked for future reference.
+
+Building Narrow Lines More Efficiently
+
+One of the features of the line-building procedure outlined thus
+far in this chapter is that the Width of the line depends on the number
+of horizontal— or vertical-count inputs used. The narrower the line is
+supposed to be, the more inputs one must use.
+
+Now this calls for using a lot of inputs to make very narrow
+lines. It would be nice if there were some way to modify the
+technique to reduce the number of count inputs required for making
+narrow lines. Fortunately, there is such a technique, and it quite
+often reduces the number of inputs to just two or three.
+
+Figure 3-9 shows a T inkerbox technique for generating narrow
+lines. Use the 8-input NAN D gate to determine the inputs required
+for setting the position of the line. If you are working with a vertical
+line, adjust the position of the white bar so that its left-hand edge
+marks the place where the narrow line is to begin. When working
+with vertical lines, the narrow line will begin at the top of the
+position-determining white bar.
+
+After setting the starting point of the narrow line as shown in
+Fig. 3-9a, remove the output inverter stage, and connect the output
+of the NAN D gate to a combination RC and logic circuit as shown in
+Fig. 3-9b.
+
+The output from the ﬁnal inverter stage in Fig. 3-9b is a white
+line that begins at the same time the original white bar does, but it
+ends at some time equal to or less than the original bar. The duration
+(or width) of the line is determined by the time constant of compo-
+nents R and C.
+
+One convenient way to ﬁx the width of the line is by setting R
+equal to 470 ohms and then varying the value of C until the line has
+the desired Width. For vertical lines, the value of C will be on the
+order of 0.002 “F. The value of R can be changed a little bit too, but
+it should always remain between 100 and 470 ohms for the most
+reliable operation.
+
+In summary, the starting point of the narrow line is determined
+by the starting point of a white bar, a white bar that is developed by
+one of the recipes for vertical or horizontal bars. The cutoff time of
+the line is then determined by the values of R and C in Fig. 3-9b.
+
+57
+
+ 
+

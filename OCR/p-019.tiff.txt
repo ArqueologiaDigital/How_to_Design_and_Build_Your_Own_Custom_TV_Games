@@ -1,0 +1,39 @@
+Chapter 2
+The Sourcebox Unit
+
+ 
+
+The Sourcebox unit described in this chapter contains all the cir-
+cuitry common to virtually all the TV games described in this book. It
+is the interface unit that stands between the game itself and the TV
+receiver. The Sourcebox unit, for instance, generates all the sync
+and blanking signals that synchronize both the TV raster and the
+game operations. Unless this system is built and made to operate
+properly, the experimenter cannot hope to make any real progress
+in his or her understanding of anything else that follows.
+
+This chapter describes the theory of operation, shows com-
+plete circuit detail, and provides some practical hints on construc-
+tion. The opening section of Chapter 2 gives the experimenter an
+opportunity to test the system.
+
+The block diagram in Fig. 2-1 shows the basic circuits contained
+in the Sourcebox unit. The purpose of each block might be self-
+evident to anyone who has made a thorough study of the material in
+Chapter 1. The following sections of this chapter, however, describe
+the purpose and theory of each block in some detail. The construc-
+tion hints are inserted at appropriate places in the discuSsion, rather
+than at the end of the chapter.
+
+SOURCEBDX ORGANIZATION V
+
+The Sourcebox unit is organized into 10 basic circuits as de-
+scribed here:
+
+1. Power supply —The power supply provides DC voltage
+levels to all of the circuits in the Sourcebox unit as well as
+
+_19
+
+ 
+

@@ -1,0 +1,57 @@
+puts, the ball travels twice as fast as it does when these circuits are
+not selected.
+
+In this particular Golf game, the ball’s speed data is taken from
+the 2x vector multiplier circuits until it touches the green. As soon
+as the ball touches the green, the speed and direction data is selected
+directly from the PHC and PVC inputs, giving the impression the ball
+speed is cut in half.
+
+These three sources of speed and direction information—the
+stop code, 2x vector speed, and normal speed—are the only ones
+used in this particular game. There are provisions on the board,
+however, for a fourth option.
+
+The fourth option is a rebound effect that is called up whenever
+the ball strikes an obstacle on the course. Since the obstacles are not
+included in this game format, the rebound circuitry is not used. A
+later chapter, however, takes up the subject of rebound effects, and
+the obstacle feature will be added to the Golf game at that time.
+
+For the time being, it is sufficient to say that the ball speed and
+direction selectors can take their information from the RHC and
+RVC inputs. The obstacle contact input, B0, is normally pulled down
+to logic 0 by R1; so as long as no connection is made to that input, the
+obstacle rebound inputs (the RHC and RVC inputs) are never
+selected.
+
+The circuit in Fig. 8-20 thus has provisions for selecting one of
+four sources of speed and direction information, but only three are
+used in this version of the Golf game.
+
+The sources of ball speed and direction information that reach
+the HC and VC outputs are determined by the BT and BG inputs.
+For the present time, the special rebound-selecting input, BO, will
+be ignored. The function table in Fig. 8-21 shows the relationship
+between the BT and BG inputs and the ball-speed and direction
+information selected at the HC and VC outputs. .
+
+Recall that the BT signal is an active-high logic level that stands
+at logic 1 as long as the ball—travel timer is activated. This logic-1
+level indicates the ball is supposed to be in motion. The ball is not
+supposed to be moving as long as BT=O.
+
+The BG input to the control board is a logic level that indicates
+Whether or not the ball is on the green. When the ball is NOT on the
+green, BG=0, but as soon as the ball makes contact with the green,
+BG switches to logic 1.
+
+According to the function table in Fig. 8-21, then, the circuit
+selects the slipping-counter stop code (1001) whenever BT=0. The
+ball, in other words, should stop moving whenever the ball-travel
+timer is not timing 3 SWING operation.
+
+349
+
+ 
+

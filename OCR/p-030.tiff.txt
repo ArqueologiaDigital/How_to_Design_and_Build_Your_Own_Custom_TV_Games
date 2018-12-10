@@ -1,0 +1,59 @@
+ 
+
+I I I
+H BLANK —l——|—-———|——
+
+___.___. |
+H SYNC -|-——-|__—
+
+ 
+
+ 
+
+H-COUNT o 32 64 so
+
+ 
+
+ 
+
+ 
+
+Fig. 25. Horizontal blanking and sync waveforms.
+
+The volume control, speaker, and ampliﬁer arrangement are
+shown in more detail in Fig. 2-6. Control R5 should be mounted on
+the front panel of the Sourcebox, while the loudspeaker can be
+positioned at any convenient place inside the box.
+
+VERTICAL SOURCE AND COMPOSITE VIDEO BOARD
+
+The circuit in Fig. 2-7 shows the complete schematic diagram
+for the vertical-count source and composite video generator. The
+vertical-count source consists of 1C1, 1C2, 1C3, IC4-A, and 1C5. The
+remainder of the circuit is responsible for composite video opera-
+tions.
+
+The vertical-count source is a 9-bit binary counter made up of
+two 4—bit counters and a toggled J -K ﬂip-ﬂop, 1C3. The natural
+counting range for a 9-bit counter is between 0 and 511; but like the
+horizontal-count generator, this circuit is ﬁxed so that it counts a
+much more limited range. ' _
+
+Note that the two counters, 1C1 and 1C2, are cleared by the Q
+output of ICS, while the J -K ﬂip-ﬂop (1C3) is cleared to zero by the Q
+output of 1C5. 1C5 is a positive-edge triggered D flip-ﬂop having a Q
+output that takes on the logic level of its D input whenever the CLK
+input shows a positive-going edge. The ﬂip-ﬂop in this case is
+clocked by HRST from the Horizontal Source board-at a frequency
+very close to 15,750 Hz.
+
+NAN D gate IC4-A keeps the D input to 1C5 pulled up to logic 1
+most of the time, so the repeated HRST pulses at the CLK input
+keep the Q output of ICS ﬁxed at logic 1 most of the time. There is a
+time, however, when the D input to 1C5 is set to logic 0: when the
+1V, 4V and 256V inputs to IC4—A show logic 1 at the same time. This
+
+30
+
+ 
+

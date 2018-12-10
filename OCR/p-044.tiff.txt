@@ -1,0 +1,55 @@
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+Integrated Circuits =‘ ._
+
+ICI——7404 HEX INVERTER
+
+     
+
+ 
+
+102—7420 DUAL 4—INPUT NAND 14 '04
+ICS—7430 8-INPUT NAND .___1_‘ 3
+104-7400 QUAD 2-INPUT NAND 2
+I03
+4
+6
+___5__
+9 I
+8
+_.__l?_.
+11
+A
+
+ 
+
+7
+
+HARDWARE :-
+
+2 EA. EXPERIMENTER IC SOCKET BOARD (RADIO SHACK 276-172)
+1 IC SOCKET BUS STRIP (RADIO SHACK 276-173)
+
+1 44-TERMINAL EDGE CARD (RADIO SHACK 276-153)
+
+ 
+
+ 
+
+ 
+
+Fig. 3-2. Most-used ICs for the Line/Bar Tinkerbox assembly. Other useful IC’s
+include a 7486 quad EXCLUSIVE-OR and a 7402 quad 2-input NOR gate.
+
+44
+
+ 
+

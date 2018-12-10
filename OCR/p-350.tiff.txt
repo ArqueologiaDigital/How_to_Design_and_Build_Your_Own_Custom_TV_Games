@@ -1,0 +1,72 @@
+ 
+
+ 
+
+HC OUTPUTS VC OUTPUTS BALL MOTION
+
+ 
+
+O 0 STOP CODE STOP CODE STOP
+0 I STOP CODE STOP CODE STOP
+I 0 2X PHC CODE 2X PVC CODE FAST—BALL NOT ON GREEN
+
+1 I .PHC CODE PVC CODE SLOW—BALL ON GREEN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NOTE: THESE FUNCTIONS ASSUME THE REBOUND SELECT
+INPUT. BO, IIS FIXED AT LOGIC 0
+
+ 
+
+ 
+
+ 
+
+Fig. 8-21. Functions for Golf speed control.
+
+The circuit then selects the 2x vector-multiplier function
+Whenever BT=1 and BG=O. Interpreting this in terms of game
+operations, that means the ball is in ﬂight, but has not yet touched
+the green. The ball travels in a direction, but at twice the speed,
+dictated by the outputs of the A/D converter.
+
+The selector circuit then takes its data directly from the A/D
+converter whenever BT=1 and BG=1. This status occurs
+whenever the ball is moving and touching the green. The overall
+effect is that it travels in the same direction, but at half the speed, it
+has during free ﬂight off the green.
+
+Golf Wiring Block Diagram
+
+Figure 8-22 shows the wiring block diagram for this particular
+Golf game. The system requires four circuit boards of the type
+speciﬁed throughout this book (Radio Shack’s 276— 153 40— —pin plug-in
+boards).
+
+The power-supply loading can be balanced reasonably well by
+operating the slipping-counter board from one supply and the three
+remaining boards and control panel from another l-A supply.
+
+The obstacle inputs are not shown here because they should be
+left unconnected for this version of golf. A later chapter will show
+how to use these RHC and RVC connections on the control board.
+
+AMBUSH
+
+Ambush is a one-player game that takes advantage of position
+programming in a rather unique way. The game is a variation of the
+old arcade game where the player is supposed to shoot at bad guys
+
+350
+

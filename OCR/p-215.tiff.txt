@@ -1,0 +1,116 @@
+it
+
+H
+
+ 
+
+102.3 g...VML gggggggg
+4 14 +5v
+_ ram 7 T
+‘ VMRST SPEED CONTROL 7
+
+2 1 PROGRAMMING
+lC7-A ‘07-F
+
+MOTION CONTROL BOARD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8
+ﬁg } 12 .
+IC4- A GAME ViD
+
+ 
+
+l
+7
+l'°-‘l
+aux
+5.3
+U)
+0’ 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+OUT
+Ica-B 9 W
+6 __ 8
+10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+G'VOI
+‘1
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 6-16. Schematic diagram for the basic missile attack game.
+
+215
+
+ 
+

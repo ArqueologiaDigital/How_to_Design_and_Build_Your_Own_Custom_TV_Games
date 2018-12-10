@@ -1,0 +1,37 @@
+sequence. (See the application of HIT in connection with the
+Stormtrooper board in Fig. 8-31.)
+
+Finally, recall that the game is automatically stopped under any
+one of three conditions: (1) all stormtroopers are killed, (2) good guy
+is hit, or (3) the line of stormtroopers reaches the good guy’s
+position. These three conditions come together at IC4—C in Fig.
+8-32. The BALL input from the Stormtrooper board senses when all
+troopers are killed off, the output of IC6-F senses the condition
+where the good guy is hit, and IC3-D senses the condition where the
+vertical components of the stormtroopers and good guy are on the
+same level—the stormtroopers reach the good guy’s position.
+
+The output of IC4—C goes to logic 1 whenever any one of these
+
+three resetting conditions occurs, and the signal is inverted to the
+required RST signal by IC6-E.
+
+ 
+
+Stormtrooper Attack Wiring Diagram
+
+This is a relatively simple game, considering its special slow-
+motion and memory features. It can be built around three circuit
+boards as shown in Fig. 8-33, and put into action after selecting the
+values of C4 and C5 on the Control board.
+
+Since the circuit does not use any of the power-gobbling slipping
+counters, the +5V power sources from Sourcebox can be rather
+evenly divided between the boards and control panel.
+
+380
+
+-.:M‘
+
+ 
+

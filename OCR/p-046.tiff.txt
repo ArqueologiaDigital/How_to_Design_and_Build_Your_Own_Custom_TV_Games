@@ -1,0 +1,55 @@
+Now wire the circuit in Fig. 3-4b. There are two inputs in this
+instance. The waveform from 256H is applied to an inverter circuit
+and then to one input of the 8—input NAND gate. The other input,
+128H, goes directly to a second input of the NAND gate. The little
+screen ﬁgures accompanying the diagram in Fig. 3-4b show the
+patterns appearing on the TV screen as GAME VID IN is connected
+to various test points.
+
+The essential point to note in Fig. 3-4 is the fact that thegutput
+ﬁgure shows a white bar only where the white bars for 256H and
+128H overlap. In digital logic terminology, this circuit ANDs to-
+gether the two signals appearing at the input of the NAND gate.
+
+It is impossible to build the single white bar generated as the
+output of this circuit from any one horizontal-count output.
+
+What would happen if both inputs are inverted before applying
+them to the NAND gate? Figure 3—4c demonstrates the answer to
+that question. The NAN D_gat_e does the same job as before, but now
+the whites for '2'5—613 and 128H overlap only at the right-hand edge of
+the screen.
+
+Play with this basic idea, using various combinations of inverted
+and noninverted H inputs to the NAND gate. You might be puzzled
+with some of the results at this point, but the exact procedures for
+generating a vertical line at one desired place on the screen are
+outlined in great detail later in this section.
+
+Incidentally, if you happen to stumble across some patterns that
+look especially useful or interesting for later work, take careful note
+of the circuit connections. Keep the results recorded in a notebook
+for future reference.
+
+Figure 3-5 shows some similar tricks with the vertical-count
+signals. In Fig. 3-5a, the inputs are 128V and 64V; and as in the case
+of the horizontal demonstrations, the overall result is a white bar
+appearing at the location where the white bars at the inputs overlap.
+
+White playing with various combinations of V signals, re-
+member that 256V is not a very useful or interesting waveform. An
+inverted version of the 256V signal has little noticeable effect on
+these demonstrations, while a noninverted version applied to the
+input of the NAN D gate blanks out just about all the useful working
+area of the screen.
+
+The Tinkerbox, as described to this point, can be the source of
+a whole evenings entertainment for you. Your family and friends
+might not be overly impressed with the results at this time, but as
+long as you are having fun with the system and learning things as you
+progress, that is all that really counts.
+
+46
+
+ 
+

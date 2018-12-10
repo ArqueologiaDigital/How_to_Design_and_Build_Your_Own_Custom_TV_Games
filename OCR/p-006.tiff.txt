@@ -1,0 +1,38 @@
+the designer as well as others who have an opportunity to enjoy
+them.
+
+The game systems as they are presented here might seem
+rather cumbersome compared to the slick, cassette-programmed
+game systems on the market today. But how creative can one be
+with someone else’s prescribed programs? Sure it is possible to get a
+dozen games on one program tape, but it really doesn’t take long to
+want more. The game-design scheme presented in this book is
+wholly open-ended—there is no real limit to the number and types of
+games that can come from it. It’s all a matter of learning how to
+design the games and exercising some degree of creativity and
+imagination.
+
+It is not necessary to have a great deal of know-how concerning
+digital electronics to begin the work in this book. The ﬁrst few
+chapters have been planned with the digital novice in mind. As the
+work progresses, however, the need for learning more about basic
+digital electronics becomes more apparent. Unfortunately, a book of
+this size cannot stand up as both a design manual for Video games and
+a text book on basic digital electronics.
+
+While the information regarding game design is thus adequate
+for building custom games of any sort, a reader not fully acquainted
+with basic digital electronics will eventually become lost without the
+aid of a good digital reference text. This, however, should not
+discourage a beginner in the digital business. Rather, it should
+provide some motivation and direction for learning more about digital
+electronics in general.
+
+What better way to learn digital electronics than by seeing each
+newly learned fact transformed into moving image on the TV
+screen?
+
+David L. Heiserman
+
+ 
+

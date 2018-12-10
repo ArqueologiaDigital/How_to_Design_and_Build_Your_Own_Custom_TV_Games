@@ -1,0 +1,55 @@
+converting it to an unregulated +18 VDC. Transformer T1 steps
+down the 120 VAC from the line cord to about 12.6 VAC at its
+secondary. The system is fused by F 1, and then the lower AC
+voltage is rectiﬁed by a full-wave bridge rectiﬁer assembly, BRL
+
+The +18-V peaks from the bridge circuit are then ﬁltered to an
+unregulated 18 VDC by C1 before the voltage is applied to three
++5—V, l-A regulators, VRl through VR3. The DC output from VR1
+supplies its regulated 5—V level to circuits within the Sourcebox unit,
+including the audio ampliﬁer. This particular +5-V source is also
+accessible to the outside for operating relatively low-power circuits.
+
+The regulated outputs from VR2 and VR3 are used only for
+powering external game circuits and design breadboards. Some of
+the more involved video games described later in this book call for
+using all three voltage regulators to their maximum l-A capacity. In
+fact any experimenter contemplating designs for very elaborate
+games should count on constructing an outboard 5-V regulated
+supply capable of providing an additional one or two amps.
+
+The rf modulator assembly, described in more detail later in this
+chapter, uses a separate 1. 5—V AA battery as a power supply. Using
+a battery for this particular application ensures a clean, ripple-free
+modulated video waveform. For the sake of convenience, the bat-
+tery supply for the rf modulator is switched on and off by means of
+the same toggle switch that applies 120 VAC to the 5-V power
+supply section.
+
+The line cord is fed through the back of the Sourcebox housing,
+using a plastic strain relief (Radio Shack 278-1636) to prevent abra-
+sion of the insulation and possible strain on the connections to the
+switch and power transformer.
+
+Power switch 81 should be mounted at some convenient place
+on the front panel of the Sourcebox housing, preferably under the
+neon POWER ON indicator lamp.
+
+Power transformer T1 should be mounted on the bottom,
+inside surface of the Sourcebox housing. The rectiﬁer assembly,
+fuse and fuse holder, and all four ﬁlter capacitors can be mounted to a
+small perfboard or custom PC board. This compact power supply
+board can then be mounted near the power transformer, using
+insulated standoffs to prevent any short-circuit conditions to the
+Sourcebox housing.
+
+The 5-V regulator assemblies tend to run a bit hot at times. To
+reduce the chances of destroying them by overheating, it is a good
+idea to mount them directly to the inside surface of the metal
+Sourcebox housing, or to afﬁx a small heat sink to each of them. See
+the dimensions for one of the three heat sinks in Fig. 2-3. Similar
+
+24
+
+ 
+

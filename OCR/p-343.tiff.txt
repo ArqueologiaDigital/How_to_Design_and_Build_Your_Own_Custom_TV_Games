@@ -1,0 +1,56 @@
+signals from the Sourcebox unit. Recall that the “C” inputs come
+from the program counter on the logic board in Fig. 8-18.
+
+These two comparators are programmed so that the horizontal
+positions of the green can be in any one of seven positions on the
+right-hand side of the screen. The vertical positions can be any one
+of four possible between the top and bottom. That all ﬁgures out to
+28 possible positions, but the program counter allows only nine of
+them. It is left to the reader to analyze the programming as shown in
+Fig. 8-19, and perhaps alter it to suit his own notions of where the
+green should appear.
+
+1C8 uses the “C” states from the program counter to position
+the ball when it is ﬁrst set on the tee. There are seven possible
+positions between the top and bottom of the screen, but only one
+horizontal position that is determined by the H-count inputs at
+IC5-C.
+
+The initial position information for the ball is transformed into a
+brief pulse by sets of pulse generators, and then leaves the board as
+slipping-counter initializing pulse BHINTP and BVINTP.
+
+The foregoing discussion summarizes the purpose and applica-
+tion of the comparator-type programming circuits. Recall that the
+holes are counted by the program counter circuit in Fig. 8-18. The
+outputs of that counter, CA through CD, are then used as program
+inputs to three comparator circuits. The comparators then deter-
+mine the relative positions of the green and the initial position of the
+ball. All that remains as far as the circuit in Fig. 8-19 is concerned is
+to see how the ﬁgures themselves are formed.
+
+The horizontal component of the green ﬁgure emerges from pin
+6 of comparator 1C7, and the vertical component of that same ﬁgure
+comes from pin 6 of 1C9. These two outputs are NANDed together
+in ICZ—B to form an active-low version of the green ﬁgure.
+
+The outputs of the comparators also go to an input of two
+3-input NAND gates, IC5-A and IC5—B. These two gates are re-
+sponsible for generating the little black hole that always appears near
+the center of the green. IC5—A generates the horizontal component
+of the hole, while IC5-B generates the vertical component.
+
+These two hole components are effectively ANDed together in
+IC3-B to generate an active-high version of the hole ﬁgure. The
+green and hole figures are then combined at IC3-C to produce the
+image of a white green with a black hole in the center of it. Of course
+the position of this composite green-and-hole ﬁgure is determined by
+the programming of comparators 1C7 and 1C9.
+
+The ball ﬁgure is formed by the most-signiﬁcant-bit outputs of
+the slipping—counter board. Each time the horizontal-slipping
+
+343
+
+ 
+

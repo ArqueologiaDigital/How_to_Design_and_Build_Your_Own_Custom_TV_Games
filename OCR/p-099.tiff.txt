@@ -1,0 +1,75 @@
+ 
+
+SELECT:
+
+so = 16H F 64H
+S1 = 32H F 64H
+06 D7 D7F $2=1sv
+$3 = 32V
+DiO Dil DI IF 3" wmoow: 255:4
+
+, 128H‘
+m4 DIS 7 _ 128V
+
+- . . ~ “ ‘ D INPUTS: oo =TsTiV
+, 03E _ Dt =0
+
+_ 02 =6—4V
+
+04E 07E " D3 =64V
+
+‘ D6 =64—V
+
+08E DIIE l 09 “ﬂ!
+
+, D12 = 64V
+
+’ D13 = 64V
+
+DIZE ~- ,_ m4 = 64V
+
+DZ D3 03F
+
+   
+
+ 
+
+ 
+
+ 
+
+Fig. 4-12. Figure and speciﬁcations for a racing car, using the 8 x 8 extended
+foldover matrix circuit.
+
+Finally, set the select and window speciﬁcations as shown. (The
+select statement SO=16H F 64H can be interpreted as meaning, “SO
+equals 16H folded by 64H”).
+
+Using these speciﬁcations, you will ﬁnd a large white square
+near the lower right-hand corner of the screen.
+
+To begin getting a feeling for how this 8 X8 extended foldover
+matrix works, connect the D inputs of the multiplexer to logic zero,
+beginning with D0 and working up toward D15. When you connect
+D0 to logic 0, you should see four black squares appearing at DO,
+DOF, DOE, and DOEF. In fact four black squares should appear
+anytime one of the multiplexer’s D inputs is connected to a logic-0
+source. The four squares represent the original D position, its
+extended counterpart, and foldover versions of both the original and
+extended squares.
+
+Whenever any of the D inputs are connected to 64V, you should
+see a pair of black squares in the upper half of the matrix. The one on
+the right side is a mirror-image of the one on the left. And in the same
+fashion, connecting any of the multiplexer’s D inputs to an inverted
+version of 64V creates a pair of black squares in the bottom half of the
+matrix.
+
+The four rules for generating a 4XS extended matrix pattern
+apply here; so if you have mastered the earlier procedure, you are
+fully prepared to begin building extended foldover patterns.
+
+99
+
+ 
+

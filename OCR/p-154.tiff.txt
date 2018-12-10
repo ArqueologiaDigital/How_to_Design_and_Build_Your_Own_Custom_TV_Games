@@ -1,0 +1,57 @@
+moved up and down the screen. The output of the timer in this
+instance, however, clears a set of two counters (1C3 and 1C4) and
+holds the outputs at zero.
+
+As soon as the timing interval is over, the output of ICZ-A drops
+to logic 0, and the two counters are allowed to count in response to
+HRST signals from the Sourcebox unit.
+
+The counters continue running through the remainder of the
+vertical-scanning interval—until a VRST signal marks the end of a
+frame.
+
+The two counter ICs actually generate an alternate set of
+V-count pulses. These signals have the same frequency and count—
+ing format as the V-count signals from the Sourcebox. But rather
+than beginning their count from VRST, these motion-control
+V-count signals begin the moment IC2-A completes its timing inter-
+val. To distinguish these motion—control V-count signals from their
+counterparts from the Sourcebox, the motion-control vertical-count
+signals are labeled 1VM, 2VV, 4VM, and so on through 128VM.
+(256VM is not included in this format because 256V signals are
+rarely used in generating any of the complex ﬁgures described in
+Chapter 4.)
+
+1C7, an 8-input NAND gate, is included in Fig. 5-7 only for
+experimental purposes. It is normally part of the windowing circuit
+for a complex-ﬁgure matrix generator.
+
+E up the circuit in Fig. 5-7a, and connect the output of 1C7 to
+the CE connection of a multiplexer. You can then use this motion-
+control scheme to position any complex ﬁgure along a vertical line.
+See an example in Fig. 5-8.
+
+The circuit in Fig. 58 generates the ﬁgure of a rocket that can
+be positioned and moved up and down on the screen by means of the
+VERTICAL POSITION control, R1.
+
+Note from the complex-ﬁgure speciﬁcations in Fig. 5—8 that the
+matrix generator is seeing its SO input as 4H folded by 8H. Both of
+these horizontal-count signals come directly from the Sourcebox.
+The vertical—select inputs, however, come from the vertical-motion
+control circuit, 4VM, 8VM, and 16VM.
+
+The circuit thus generates a 4x16 extended foldover matrix
+that derives its horizontal components directly from the Sourcebox
+and its vertical components from the counters in Fig. 5-7a.
+
+Once you get the vertical movable rocket image on the
+screen, you can adjust its range of motion by selecting alternate
+values of C2 and R2. You will also ﬁnd that changing either or both of
+the inverted VM connections to the window section of the circuit
+modiﬁes the range of vertical control.
+
+154
+
+ 
+

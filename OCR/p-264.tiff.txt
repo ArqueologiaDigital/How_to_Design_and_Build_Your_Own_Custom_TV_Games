@@ -1,0 +1,55 @@
+The timing interval of the monostable multivibrator is deter-
+mined by the values of R2, R3, and C3. Normally the controls are
+adjusted so that the count reaches any number between 5 and 15,
+the normal operating range for the binary numbers fed to the speed
+and direction control inputs of the slipping counters.
+
+So let’s suppose the player wants to stop the motion of a ﬁgure
+on the screen. All he has to do is adjust the value of R2 so that the
+counter increments to the binary equivalent of 9 (_the_stop code)
+during the monostable’s timing interval. When the 128P pulse oc-
+curs, then, the counter is cleared to zero, then allowed to count at
+the 2V rate until the timing interval is over. To stop the motion of the
+ﬁgure, the counting interval should be terminated with the counter
+showing an output of 1001 (decimal 9).
+
+The counter then holds that number until 138—? occurs once
+again. And if the player has not changed the position of the control,
+the counter repeats its count—to—9 sequence.
+
+If the player then wants to move the ﬁgure to the right at a
+relatively high speed, he adjusts the control so that the monostable’s
+output timing is a bit shorter, short enough to stop the counting
+operation at a number such as 0101 (decimal 5).
+
+If, on the other hand, the player wants to move the ﬁgure to the
+left, he adjusts R2 for a slightly longer timing interval from 1C3,
+letting the counter run to perhaps 1101 (decimal 13).
+
+Recall that the horizontal-slipping counter samples its speed
+and direction codes during the vertical-blanking interval. This circuit
+has its 4-bit output established before vertical blanking occurs, and it
+holds that number through blanking and, in fact, all the way to the
+end of WV.
+
+The vertical-slipping counter samples its 4-bit control input
+continuously. And since the output of 1C4 in Fig. 7-12 spends some
+of its time counting, it yields some undesirable and confusing
+vertical-motion effects on the screen. It is thus necessary to load the
+output of 1C4 into a temporary memory circuit when it is being used
+in conjunction with a vertical-slipping-counter circuit. 1C5 shown in
+the insert in Fig. 7-12 is a quad D latch that performs this function.
+
+The outputs of 1C4 are connected to the corresponding inputs
+of ICS for vertical-motion control. The latch is normally in its mem-
+ory mode, keeping the four VC outputs stable through the counter’s
+up-counting functions. The count output is then updated whenever
+the VRST pulse occurs.
+
+The TRIM potentiometer in Fig. 7—12 is used for adjusting the
+control range of the main control potentiometer. First set the main
+
+264
+
+ 
+

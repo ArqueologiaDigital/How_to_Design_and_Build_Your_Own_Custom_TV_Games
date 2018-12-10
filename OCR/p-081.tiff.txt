@@ -1,0 +1,71 @@
+For the sake of readers who have no special knowledge of
+digital electronics, the operation of the 16: 1 multiplexer circuit calls
+for'some special consideration. The truth table in Fig. 4-2 repre-
+sents the operation of a 74150 16:1 multiplexer IC. Note that the
+device has 16 separate data in_p_uts, labeled D0 through D15. There
+is a single output, however, M. Then notice thergare four select
+inputs, SO through S3, and a chip-enable input, CE. All of those
+terminals, plus two more for +5V and COMM, add up to 24 pins.
+
+» According to the truth table ﬂig. 4-2, the M output of this IC
+is always at logic 1 whenever the CE input is at logic 1. The X_s_i_n the
+select _<_:91umns mean those inputs are not relevant as long as CE=1.
+
+' The CE input, in effect, is capable of disablingthe chip altogether—
+as long as CE=1, to be speciﬁc. Setting the CE input to logic 0 thus
+enables the IC fogﬁ normal multiplexing operations.
+
+Suppose the CE input is set to logic 0. Whenever that is the
+case, output M is equal to an inverted version of one of the 16 D
+inputs. Furthermore, the D input that appears inverted at the M
+output depends on the status of the select inputs. If the select inputs
+are all set to logic 0, for instance, an inverted version of input DO
+
+ 
+
+ 
+
+ 
+
+OUT
+
+INPUTS PUT
+CT? 88168 M
+1 XXXX 1
+0 0000 T36
+0 0001 E
+o 0010 '9?
+o 001 1 I93 Fig. 4-2. Operating truth table for the
+0 0 1 0 0 9}; 74150. 16:1 digital multiplexer. '
+o 0101 pg
+0 0110 P_6_
+o 0111 9_7_
+0 1000 pg
+0 1 001 pl
+0 1010 _D_19_
+0 1011 D11
+0 1100 E
+0 1101 2112
+0 1110 915
+0 1111 015
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+81
+
+ 
+

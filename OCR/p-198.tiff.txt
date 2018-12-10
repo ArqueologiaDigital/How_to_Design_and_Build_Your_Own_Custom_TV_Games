@@ -1,0 +1,58 @@
+images happens to have an active-high (white-on-black) format.
+Whenever the Video data for these two images rise to logic 1 at the
+same time, the CON output generates negative-going (active-low)
+contact pulses at the horizontal-scanning rate.
+
+Whether you should use the circuit in Fig. 6-8a or Fig. 6-8c for
+sensing contact between two ﬁgures depends on whether the availa-
+ble image information is active low or active high.
+
+The circuit in Fig. 6-8d is simply another example of how
+contact-sensing circuits can be applied. In this instance, it is more
+efﬁcient to use the NAN D—gate sensing circuit from Fig. 6-8c. Here,
+the idea is to sense contact between images A and C or B and C.
+Apparently any contact between images A and B is not relevant to
+the game.
+
+The video information for images A, B, and C is effectively
+ORed at the 3-input NAN D gate, IC5-A. The output of this gate is an
+active-high composite game signal.
+
+Images A and B are ORed together at IC3—A, and the resulting
+active-high signal is applied to one input of the contact-sensing
+circuit, IC3—B. The other input to this contact-sensing gate is an
+active-high version of image C. Thus if image A or image B (or both)
+come into contact with image C, the output of IC3-B generates
+nega_t_i1e:going pulses. When neither A nor B are touching image C,
+the CON output rests at logic 1.
+
+The circuits in Figs. 6—8a and 6-8c are “universal” contact-
+sensing circuits. Figures 6-8b and 6-8d merely illustrate where the
+contact sensors are inserted into the game scheme and, incidentally,
+two speciﬁc applications.
+
+Before leaving the subject of contact sensing, why not try
+working out a scheme that includes some contact sensing and an
+automatically controlled response. The ﬂow chart in Fig. 6-9a repre-
+sents a portion of a game where contact between two images causes
+one of them to be blanked from the screen. This might be part of a
+target game where the player launches a rocket at a moving target. If
+the rocket touches the target, the target is blanked from the screen
+until some reset action is initiated.
+
+According to the ﬂowchart, the target (image A) is reset so that
+it appears on the screen. The play then begins, and continues until
+image B touches the target. When the contact occurs, image A is
+blanked from the screen. The circles at the top and bottom of the
+ﬂow chart imply that these operations are just part of a larger game
+and control scheme.
+
+The ﬂow chart is translated into a block diagram in Fig. 6-9b.
+The information for image A must pass through a gate before it is
+
+ 
+
+198
+
+ 
+

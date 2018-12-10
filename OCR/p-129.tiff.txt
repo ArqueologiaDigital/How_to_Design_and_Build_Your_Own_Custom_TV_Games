@@ -1,0 +1,69 @@
+described in Chapter 3, but make certain they deliver a black-on-
+white signal to the CE input of your multiplexer in the complex-ﬁgure
+generator.
+
+Let’s look at that last statement a little closer. The multgilexer
+(complex—ﬁgure generator) is windowed ON whenever its CE input
+is pulled down to logic 0. This principle has been used in all of the
+examples thus far in this chapter. The multiplexer is thus enabled
+whenever the windowing circuit generates a logic 0. Or in other
+words, the complex ﬁgure will appear on the screen any time the
+windowing circuit shows a black bar or rectangle.
+
+Of course the windowing black bar or rectangle must have a size
+equal to or greater than that of the ﬁgure it is controlling. Making the
+windows too small cuts off part of the ﬁgure, while making the
+windows too large allows two or more of the ﬁgures to appear
+hooked together. (The latter condition might be something of an
+advantage in certain instances, however).
+
+You ought to be anxious to experiment with this idea now; so
+start by building the matrix generator circuit in Fig. 4-5, making no
+
+ 
+
+H AND Y INPUTS
+AS NECESSARY
+
+W
+
+r_i__
+
+ 
+
+————->
+
+OUTPUT
+
+TO CE
+0 F
+MULTIPLEXER
+
+ 
+
+ 
+
+ 
+
+ 
+
+IMAGE COMPLEX-FIGURE
+
+WINDOWING GENERATOR
+CIRCUIT ClRCUlT
+
+WINDOW
+SIGNAL
+
+ 
+
+ 
+
+ 
+
+Fig. 4-32. Block diagram of circuitry for repeating complex ﬁgures on the screen.
+
+129
+
+ 
+

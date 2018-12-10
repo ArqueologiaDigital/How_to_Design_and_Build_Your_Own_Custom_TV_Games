@@ -1,0 +1,55 @@
+logic circuit, which determines the DT ﬁgure to be displayed. The
+same ﬁring pulse from the DT launch panel goes to a simple pulse
+generator and releases the initialization operation on a vertical-
+slipping counter. The vertical component of the selected DT ﬁgure
+thus begins moving upward from its initial position at the bottom of
+the screen. The rate of motion is internally ﬁxed at a moderately high
+speed.
+
+The DT horizontal-position-logic circuit thus determines which
+one of the four DTs are ﬁred, while the DT initialization logic and
+vertical’slipping counter determine when and how rapidly the DT
+ﬁgure moves up the screen. The horizontal and vertical components
+of the selected DT ﬁgure are combined in the DT ﬁgure logic block to
+form a complete image.
+
+The DT figure continues moving up the screen until a
+negative-going DTRST pulse appears at the initialization-logic block.
+At that moment, the DT ﬁgure is blanked from the screen and the
+whole DT system is re-initialized until the defensive player launches
+another one.
+
+The attack craft and attack torpedo block diagram is somewhat
+more involved. Note ﬁrst in Fig. 7 -15b that this system includes the
+tagalong scheme represented by the tagalong control board, the
+primary ﬁgure slipping counter, and the secondary ﬁgure slipping
+counter. The video information for the two ﬁgures are taken from
+their respective slipping counters and formed into images by the AC
+and AT ﬁgure logic blocks.
+
+A pulse generator taking its input from 128V generates both the
+13—813 and PVINT pulses required for the tagalong scheme.
+Whenever the position of the primary ﬁgure is to be initialized, its
+vertical position is thus ﬁxed at the point where the 128V count
+makes a transition from O to 1, near the middle of the screen.
+
+The HINTP pulse generator merely ﬁxes the horizontal posi-
+tion of the primary ﬁgure whenever it is initialized. In this case, the
+ﬁgure is initialized at the end of HBLAN K, or at the left-hand edge of
+the screen.
+
+The attack control panel provides horizontal and vertical infor-
+mation from a pair of potenitometers or a joystick. These signals
+control the motion in the same fashion as R1 and R3 in Fig. 7-13.
+
+The AT ﬂip-ﬂop circuit determines whether the secondary
+ﬁgure, the attack torpedo, is synchronized with the primary ﬁgure or
+free to move on its own accord. An ATLAUN CH pulse from the
+attack-control panel sets this ﬂip-ﬂop to a condition that allows the
+attack t_o__rp__e§o to leave the primary ﬁgure. This is accomplished by
+setting FIRE to logic 0. The secondary ﬁgure then remains indepen-
+
+271
+
+ 
+

@@ -1,0 +1,57 @@
+counter is reset, for instance, the 256HM signal makes a negative—
+going transition that is transformed into a brief negative—going pulse
+by the action of lCl-B and ICE-E. This little pulse ﬁxes the horizontal
+component of the ball’s image on the screen. ICZ—D and ICES-F
+perform the same pulse-generating function, determining the verti—
+cal component of the ball ﬁgure from 128VM.
+
+The two components of the ball image are combined at IC3-A,
+producing an active-high ball ﬁgure. This ﬁgure goes to several
+different gates, including IC6-B where it is combined with the
+green-and-hole image to create the game’s composite video-output
+signal. That particular EXCLUSIVE-OR gate, incidentally, is also
+responsible for switching the color of the ball so that it always
+appears with a color that is the complement of its background—
+white when on a black background, and black when on a white
+background.
+
+The ball ﬁgure also goes to one input of ICZ-A. This gate acts as
+a contact sensor that responds whenever the ball touches the hole.
+(Recall that the output of IC3-B is the hole ﬁgure.)
+
+The primary purpose of the game control board in Fig. 8-20 is to
+control the ball motion once it leaves the initial tee position. When
+the ball is in its initial position, it is held motionless by the synchroniz-
+ing effects of initializing pulses (HINTP and VIN TP) to the slipping-
+counter circuit. Once the player depresses the SWING button,
+however, the ball can move and it is no longer under control of the
+initialization circuitry until the player makes the hole and depresses
+the TEE button. The game-control board handles the ball’s motion
+once it is off the initial tee.
+
+The control board does its job by feeding HC and VC speed and
+control signals to,the slipping-counter board. The action of these
+control signals has been described in detail in Chapter 5. It can be
+seen from Fig. 8-20 that a complete set, lHC through 8HC and 1VC
+through 8VC, leaves this board.
+
+This circuit is unique among slipping-counter control-word
+generators described thus far inasmuch as it can generate any one of
+four sets of control words. It can generate a stop code (1001), a
+full-speed code, a half—speed code and a special rebound code that
+Will be used in a later version of this golf game.
+
+ICs 6, 7, 8, and 9 in Fig. 8-20 are the selector circuits for these
+four speed codes. They are actually dual 4:1 multiplexers that select
+one of four different input logic levels, according to the status of 2-bit
+selector inputs at pins 2 and 14 in each case. a _
+
+The output of ICZ-A goes to E? input of an R—S flip-ﬂop
+composed of ICl-C and ICl-D. The RST output of that flip—ﬂop is set
+
+ 
+
+346
+
+ 
+

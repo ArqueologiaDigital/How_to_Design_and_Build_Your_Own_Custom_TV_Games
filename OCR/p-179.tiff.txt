@@ -1,0 +1,27 @@
+vertical-count signals 1V, 2V, 4V, and 8V. Of course +5V and
+COMM should be included on this list.
+
+The control inputs are lHC, ZHC, 4HC, and BBC for horizontal
+motion, and WC, 2VC, 4VC, and 8VC for vertical motion. The
+motion-control codes for these two sets of inputs are included in
+Figs. 5-14 and 5-13 respectively.
+
+The slipping-counter outputs are designated lHM through
+256HM for horizontal counting, and IVM through 128VM for verti-
+cal counting. These outputs can be used for generating lines, bars,
+rectangles, and complex ﬁgures, as described in Chapters 3 and 4.
+Merely substitute the HM signals for H-count speciﬁcations and VM
+signals for the corresponding V-count speciﬁcations.
+
+The scheme is left programmable to some extent. The idea
+here is to give the experimenter the greatest possible amount of
+ﬂexibility with this one circuit board. To operate the system in the
+normal fashion, merely connect the HMRST output to BEE, and
+VHRST to WE. (Leaving these points “programmable” allows the
+experimenter to insert other kinds of reset circuits that initialize the
+position of the movable ﬁgure.)
+
+179
+
+ 
+

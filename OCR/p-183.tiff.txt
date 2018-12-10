@@ -1,0 +1,86 @@
+ 
+
+lC‘l-A
+
+—}
+
+ 
+
+PLAY
+
+ 
+
+ 
+
+a:
+>|
+II
+—4
+
+ 
+
+(a)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+__u __.:>~- —...
+STOP
+
+IC1 -B
+
+IC2-A
+ﬂ— —— PLAY
+START
+
+(b)
+
+_l'L _.p-.A—Y
+STOP [(32.3
+
+ 
+
+ 
+
+ 
+
+Fig. 6-1. Start/reset circuits. (at) A ﬁg flip-flop triggered by negative-going
+pulses. (b) is R-S flip-flop triggered by positive-going pulses.
+
+will appear at the output of this circuit, but it is effectively “ﬁltered”
+by the ﬂip-ﬂop stage that follows it.
+
+Since the signal from the circuit in Fig. 6-2a is an active—low,
+START level, it can be directly connected to the START input of the
+ﬂip-ﬂop in Fig. 6-1a.
+
+The start circuit in Fig. 6-2b is a bit more complicated. In this
+case, however, depressing the START button generates a START
+pulse having a duration roughly equal to the time constant of R2 and
+C1. The button must be released before it is possible to generate
+another START pulse.
+
+This circuit will show some contact-bouncing effects, but again,
+the ﬂip—ﬂop following that stage Will eliminate these undesirable
+effects. The active-low nature of the pulse from this start circuit
+makes it directly compatible with the ﬂip-ﬂop in Fig. 6-1a.
+
+The start circuit in Fig. 6-2c uses a 555-type timer to generate
+the START pulse. If the LOCK input is ﬁxed at logic 1, this circuit
+generates a clean, positive-going pulse each time the START button
+
+183
+
+ 
+

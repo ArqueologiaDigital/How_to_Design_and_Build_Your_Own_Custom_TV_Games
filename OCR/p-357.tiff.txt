@@ -1,0 +1,163 @@
+ 
+
+trm '7‘-
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 4 6
+ICE-B
+C3 5‘
+
+.0I #F R4
+-.- 470.9.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+IC1, 2, 3—7400 QUAD 2-INPUT NAND
+lC4—7404 HEX INVERTER
+lCS—7420 DUAL 4-INPUT NAND
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ICE, 7, 8—556 DUAL TIMER
+(R8 1:R9
+6 4 '4 MM 1th
+5 I0 9 BG FLASH
+| 35-1
+lC7—A —-0 Ic7-B 8:Rlo
+L 4’470K
+t-
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12
+TCG
+IFLF
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+=47o
+RI8
+'M 015
+9 9 '4 8.05;;F l2
+'6‘” 12 .0 icec IC2-D
+!3 ms
++ =7 470 '3
+curl} '
+4.7/.LF'
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 8-25. Control board schematic for Ambush.
+
+The circuits for indicating the start of a new game and the end of a
+bad guy’s death scene have been described already.
+
+IC8-B is responsible for keeping a bad guy on the screen for no
+more than 5 seconds. This timer is initiated whenever a new bad guy
+appears on the screen, but since it is connected as an interruptable
+
+357
+
+ 
+

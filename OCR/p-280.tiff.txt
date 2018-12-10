@@ -1,0 +1,55 @@
+the pulse generator, mad_e up of ICl-A and ICS—A. That particular
+pulse sets the status of a R-Sf lip-ﬂop (lCZ-A and ICZ-B) to its ﬁring
+mode—one where pin 3 of ICZ-A is set to logic 1 and pin 6 goes to
+logic 0.
+
+Putting this all together, depressing any one of the DT ﬁring
+switches ultimately sets the DT system to its ﬁring mode, and a DT
+ﬁgure is launched. _ _
+
+The DT system is reset to its initial condition whenever the R-S
+ﬂip-ﬂop receives a negative-going DTRST pulse at pin 5 of IC2-B;
+
+The output of the ﬁ-gfﬁp-ﬂop controls the operation of a ﬁgure
+initialization circuit made up of ICZ—C, ICZ-D, and IC3—A. This part of
+the circuit is in the initialization mode wheneveg a DT ﬁgures is not in
+ﬂight. In this instance, pin 6 of IC2-B in the RS flip-ﬂop is at logic 1,
+thus allowing an inverted version of VRST to pass through ICZ-D
+and IC3—A to the loading or reset inputs of a pair of vertical-slipping
+counters, 1C8 and ICQ. This forces the vertical positon of all DT
+ﬁgures to the bottom of the screen.
+
+Whenever a DT ﬁgure is ﬁred, the initialization circuit is
+switched to a condition whereby the slipping counters are loaded
+with reset pulses from IC3-B. Under this particular set of conditions,
+the slipping counters let the DT ﬁgure move up the screen at a rate
+determined by the hard-wired logic levels at preset inputs (pins 15,
+1, 10, and 9) of the two slipping counters.
+
+The DT circuitry described to this point merely determined
+whether or not a DT ﬁgure is ﬁred and how fast it moves up the
+screen. The next part of the problem is to see how one of the four
+possible DT ﬁgures is selected.
+
+The DT ﬁgure selection circuitry is built around the four EXC—
+LUSIVE OR gates in 1C6, the three NAND gates that feed them,
+and the 4-input NAND gate at their outputs.
+
+To see how this ﬁgure-selection scheme works, suppose the
+defensive player depressed the FIRE 1 pushbutton. This action pulls
+the logic level of 81 input down to logic 0, causing a logic-1 level to
+appear at the output of IC4-A as described previously. The output of
+this gate is returned to pins 4 and 13 of ICIO, the gate inputs of a 4-bit
+data latch. The pattern of logic levels present at the S inputs is thus
+latched in IC10, and remains ﬁxed at the outputs of IClO even after
+the player releases the ﬁring button. ,
+
+In this particular example described here, the defensive player
+has depressed the FIRE 1 button on his control panel, so the 4-bit
+latch is loaded with a logic 0 at pin 9 of IClO and logic ls at the three
+. remaining outputs.
+
+280
+
+ 
+

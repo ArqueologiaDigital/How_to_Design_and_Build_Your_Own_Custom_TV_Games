@@ -1,0 +1,125 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+IC1, 2—741 91 4-BIT COUNTER
+
+lCS—7476 DUAL J-K FLIP-FLOP
+lC4—74157 QUAD 2:1 DATA SELECTOR
+105—7410 TRIPLE 3-INPUT NAND
+106—7430 B-INPUT NAND
+
+2 6 7168
+HC-K 14 MMTZ 17
+4 101 13 .
+HBLANK..__O U“) L g -—-—o
+VBLANK..L 151 10 9 SE11 4
+1V_2 '
+2v.__§_ 7
+4 7 9 12 -
+4V—:— 8 1 16
+8V-— I04 3
+'05 ‘4 15 14 1o "'
+2 511 36 13
+~1HC
+2HC e T=+5v
+4H0
+8H0
+
+._L= COMM
+
+ 
+
+1C4 is a quad 2:1 multiplexer. It is a circuit that works very
+much like a 4-pole double-throw selector switch. When its input at
+pin 1 is at logic 1, the inputs at pins 3, 6, 10, and 13 appear at its
+outputs (pins 4, 7, 9, and 12 respectively). Note that these inputs are
+fixed at the circuit’s stop code for the four lower-order bits: 1001. So
+as long as the signal at pin 1 of IC4 is at logic 1, the slipping counter is
+
+loaded with its stop code.
+
+174
+
+ 
+

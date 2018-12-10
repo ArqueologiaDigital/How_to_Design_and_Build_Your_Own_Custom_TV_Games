@@ -1,0 +1,57 @@
+is depressed. The button must be released before it is possible to
+generate another pulse.
+
+The width of the pulse in this case is determined by the values of
+R3 and C2. Using the values shown here, the pulse duration is on the
+order. of 10 ms.
+
+The LOCK input makes it possible to lock out the START
+button action as long as LOCK is at logic 0. This is a handy feature in
+games where it is desirable to prevent a player from initiating a
+certain playing cycle until something else takes place.
+
+The fact that the circuit in Fig. 6-2c generates an active-high,
+positive-going pulse makes it directly compatible with the ﬂip-ﬂop
+circuit in Fig. 6—1b.
+
+Comparing the features of the three circuits in Fig. 6-2, the one
+in Fig. 6-2a is the simplest, but it should not be used in instances
+where an automatic reset action might take place before the player
+has a chance to release the START pushbutton.
+
+The circuit in Fig. 6-2b should be used where there is a possibil-
+ity that automatic reset will occur before the START button is
+released. It does not have any provision for automatic lockout.
+
+The circuit in Fig. 6—2c has none of the disadvantages of the two
+other circuits, plus it features an optional lockout input. (If the
+lockout feature isn’t to be used, that terminal should be connected to
++5V.)
+
+When selecting the circuit most appropriate for your game
+design, consider the complexity, polarity of the outputs, and re-
+quirements of the game.
+
+These three circuits, incidentally, can be used in the same ways
+for manually resetting game operations. Simply switch the START
+and START labels to STOP and STOP respectively.
+
+Automatic Stop Circuits
+
+Games, or cycles within games, can be stopped or reset au-
+tomatically by means of the circuits in Fig. 6-3. These are both
+pulse-generating circuits: The active-high STOP pulse from the
+circuit in Fig. 6-3b is directly compatible with the ﬂip-ﬂop circuit in
+Fig. 6—1b, while the active-low output from the circuit in Fig. 6-3a is
+compatible with that in Fig. 6-1a.
+
+In both cases, the stopping action is initiated whenever a given
+set of stop conditions are met within the system. ICl-A in Fig. 6-3a,
+for example, normally shows a logic-1 output. Whenever all the
+inputs to this NAN D gate ﬁnd their way to a logic-1 state (presuma-
+bly at the time all the conditions for automatic resetting are met), the
+
+184
+
+ 
+

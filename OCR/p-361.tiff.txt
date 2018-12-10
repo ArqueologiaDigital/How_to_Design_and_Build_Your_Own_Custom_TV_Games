@@ -1,0 +1,110 @@
+ 
+
+BG FLASH
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘ l4
+lCI-B 6
+_7
+GAMEVID
+OUT
+>GV=BV
+"\
+. ‘L ‘L
+1; 1;R2 ‘:R3 4R4 2
+4 [4 'M‘ ‘ 1 IO 'M ' ll ——
+6 5 f,‘ e 9 '3 ICI~D GHIT
+l l\ E
+IC7~A '2‘" [07-53 J
+—‘
+7 Jul: .IMF
+
+ 
+
+ 
+
+ 
+
+ 
+
+|C4,5—7485 4-BIT MAGNITUDE COMPARATOR
+lCS——7475 4-BIT LATCH
+lC7—556 DUAL TIMER
+
+ 
+
+ 
+
+Fig. 8-26: Figure board schematic for Ambush
+
+361
+
+ 
+

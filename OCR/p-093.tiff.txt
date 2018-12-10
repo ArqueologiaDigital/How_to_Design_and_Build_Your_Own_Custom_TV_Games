@@ -1,0 +1,67 @@
+16 cells in the upper half of the matrix. But notice that it is not
+possible to darken any of the extended-matrix cells in the lower half
+of the rectangle.
+
+Next, run the 64V source through an inverter to obtain a 64V
+signal. Connect that 64V signal to the D inputs of the multiplexer and
+note the response on the screen. It turns out that 64V Inputs darken
+cells in the lower half of the rectangle, leaving those in the upper half
+unaffected. __
+
+Connect various combinations of logic 0, 64V, and 64V to the D
+inputs of the multiplexer. Observe the response in each case, and
+continue experimenting in this fashion until you are convinced you
+understand the behavior of this valuable extended-matrix technique.
+
+The general rules for designing ﬁgures using the extended-
+matrix technique go something like this:
+
+- If a cell in the top half of the matrix and its extended
+counterpart in the bottom half are to be white, make no
+connections to that position on the multiplexer’s D inputs.
+
+ 
+
+SELECT: SD = 16H
+81 = 32H
+
+sz=1sv
+D4 DS 06 D7 33:32v
+
+DO DI D2 D3
+
+08 ' DII WINDOW: 253E
+» 128H
+
+64H
+
+__ 128Y
+
+DIE 02E 03E DINPUTS: DQ =0
+010 = o
+D7E D4 =€4Tf
+D5 =§ﬂ
+D6 =e4v
+DHE D13764V
+Dt4=64V
+55 DiS=64V
+
+  
+ 
+
+D iNPUTS NOT DESIGNATED
+HERE ARE TO BE AT
+LOGIC 1
+
+ 
+
+ 
+
+ 
+
+Fig. 4-9. Speciﬁcations fora stylized S figure built within a4 x 8 extended matrix.
+
+93
+
+ 
+

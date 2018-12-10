@@ -1,0 +1,106 @@
+breadboard arrangement, then use the speciﬁcations shown in Fig.
+4-18 to generate an extended 8x8 matrix.
+
+After assembling this particular circuit (using the speciﬁcations
+in Fig. 4-18, but leaving all the D inputs unconnected) you should see
+a white square pattern on the screen.
+
+Connecting any one of the D inputs to logic 0 then creates a little
+black square at the corresponding matrix position. From this point,
+you can generate any complex ﬁgure you choose, using the same
+general procedures outlined for the 32-cell extended-matrix circuits.
+
+Figure 4-19 shows the speciﬁcations for generatingthe ﬁgure of
+a little dog. This nonsymmetrical ﬁgure has far more detail than is
+possible with any of the ﬁgure-generating circuits described in the
+ﬁrst part of this chapter. And of course that is the whole point of
+using this more complex matrix-generator circuit.
+
+While working with this extended 8 X8 matrix pattern, bear in
+mind that your select speciﬁcations determine the size of the matrix,
+the window speciﬁcations determine the position on the screen, and
+the D inputs determine the pattern itself.
+
+You can have a lot of fun generating your own ﬁgures within this
+matrix. Spend a great deal of time playing with it, sharpening your
+ability to generate any desired ﬁgure as quickly and effectively as
+possible. Time spent on the project at this point will pay off big
+
+ 
+
+ 
+
+DO on 02 03 04 05 D6 D7 SELECT: 33:2:
+
+D8 D9 DlO Dll D|2 Dl3 Dl4 D|5 :gﬂw
+
+S4 =16\I
+
+ 
+
+ 
+
+DIS DI? Dl8 DlS D20 DZI D22 D23
+WINDOW: 256H
+
+T58?
+W
+128V
+DOE DIE DZE D3E 04E 05E DSE D7E W
+
+ 
+
+024 D25 D26‘ DZ? 028 029 D30 D3|
+
+ 
+
+ 
+
+08E D9E DIOE DIIE DlZE DlsE DI4E DI5E DINPUTS:1,0,32V,§§V
+AS REQUIRED
+
+ 
+
+DISE DITE DIBE DI9E 0?”: ONE 022E 023E
+
+ 
+
+ 
+
+024E 025E UZSE D27E PBE 9F 030E D3IE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 4-18. Matrix conﬁguration and sample speciﬁcations for a 16 x 4 extended
+matrix.
+
+108
+
+ 
+

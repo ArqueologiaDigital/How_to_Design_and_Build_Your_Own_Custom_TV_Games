@@ -1,0 +1,54 @@
+The important point, however, is that the D/A converter trans-
+lates any one of eight possible combinations of three binary inputs
+into a voltage level proportional to the size of the binary number. A
+3-bit input of 0000, for example, yields a relatively low voltage at pin
+3 of ICl-A, thereby making the multivibrator run at a rate faster than
+that determined by the setting of R1 alone. As the 3—bit input is
+incremented upward toward the slowest speed code (111, or deci~
+mal 1), the voltage at pin 3 of ICl-A increases toward +5V, thereby
+causing the multivibrator to run at a correspondingly slower speed.
+
+If a ﬁgure is to be manually controlled, potentiometer speed
+controls are most appropriate, and the circuit in Fig. 8—14 can be
+constructed as shown there. If, on the other hand, the ﬁgure speed
+is to be controlled from some source of 3-bit binary numbers, the
+multivibrators in Fig. 8—14 should have control voltage inputs as
+
+modiﬁed by the circuit in Fig. 8—15.
+
+I When using the circuit in Fig. 8—15, set the PC inputs to 111 and
+carefully adjust the speed-trim resistor for the slowest motion you
+want to see. Then set the PC inputs to 000 and, if necessary,
+readjust the speed-trim resistor for the fastest speed you want.
+Switch the PC inputs back and forth between 000 and 111, ﬁne-
+tuning the speed—trim potentiometer until you get the two extremes
+of motion speed appropriate for the game at hand. Once the speed-
+trim resistor is set, it should not be accessible for readjustment from
+any of the players’ controls.
+
+Two more bits can be added to this 3-bit speed-control scheme.
+One additional bit, designated PC3 in Fig. 8-15 can go to the DIR
+connection to control the direction of motion. A ﬁfth bit, PC4, can go
+to the STOP connection for determining whether the ﬁgure will
+move or be stopped on the screen. The 5-bit digital word that results
+is thus capable of controlling both the speed and direction of motion.
+Of course two sets of these control words are required for both '
+horizontal- and vertical—motion control.
+
+The three video games described in the remainder of this
+chapter illustrate applications of all the position-programming
+schemes.
+
+NINE HOLES 0F GOLF
+
+The Golf game featured in this section exempliﬁes the applica-
+tion of a counter/ comparator circuit as a game programmer. The
+game consists of nine different patterns, each setting a different
+position of a golf green, hole, and tee. Every time the player
+depresses a TEE pushbutton, a different hole, green, and tee
+conﬁguration appears on the screen.
+
+334
+
+ 
+

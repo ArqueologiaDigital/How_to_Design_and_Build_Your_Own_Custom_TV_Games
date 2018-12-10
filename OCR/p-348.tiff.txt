@@ -1,0 +1,55 @@
+to logic 1 whenever the player depresses the TEE pushbutton. RST
+then remains at logic 1 until the ball makes contact with the hole,
+indicatﬂg the completion of one hole of golf.
+
+RST is connected to the reset input of the ball travel timer,
+IC5-B in Fig. 8-18. So when the ball ﬁgure makes contact with the
+hole, the ball-travel timer is effectively locked out, making it impos-
+sible to move the ball by depressing the SWING pushbutton. This
+lack of action is a clear indication the player has been successful at
+hitting the hole. __
+
+The only way to unlatch the RST signal is by depressing the
+TEE switch, which moves the ball off the hole and to the initial
+position for the next hole of golf.
+
+Finally, the ball ﬁgure from IC3-A goes through inverter IC6—D
+and to one input of NOR gate IC3-D. Here the ball ﬁgure is effec-
+tively AN Ded with the green ﬁgure to produce a BG signal, a logic
+level indicating the ball is on the green. This signal is used for slowing
+down the speed of the ball and shortening the travel time. Exactly
+how this signal shortens the travel time has already been described
+in connection with the ball-travel timer circuit in Fig. 8-18. The ball
+slowing effect will be described as part of the theory of operation for
+the Game Control board that follows.
+
+Before seeing how one of four different sets of control words is
+selected, we ought to see exactly what the four options are.
+
+This speed control system must include stop-code words for
+the HC and VC outputs. This stop code is necessary for stopping the
+motion of the ball whenever the ball-travel timer ends its timing
+operation.
+
+There must also be provisions for selecting one of two sources
+of ball—speed information, one coming directly from the A/D conver-
+ter and another that multiplies the speed from the A/ D converter by
+two. The two speeds are necessary for running the ball at full speed
+until it reaches the green, where the speed should be effectively cut
+in half.
+
+Some circuitry in Fig. 8-20 handles the two-speed information
+in the same way it is handled for the Dogﬁght game in Chapter 7. The
+, idea is to automatically change the speed of the ball vector without
+changing its direction, and that is accomplished by means of the
+circuit ﬁrst described in Fig. 7-23.
+
+The circuit in Fig. 8—20 includes two of these 2x speed and
+direction multipliers. One of these handles the PHC input data and
+the other works with PVC data. Whenever the outputs of these two
+circuits are directed through the selectors to the HC and VC out-
+
+348
+
+ 
+

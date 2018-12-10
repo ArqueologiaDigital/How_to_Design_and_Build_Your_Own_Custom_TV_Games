@@ -1,0 +1,57 @@
+its Q output is set to logic 0. This Q output from IC7-A is connected
+to the reset inputs of all four timer circuits. And when Q is set to zero
+by the contact detector, it disables all four timers, sweeping the
+rectangles into the systems horizontal and vertical blanking regions.
+
+Whenever the two rectangles touch, then, they both disappear
+from the screen. That is a clear indication that contact has been
+made. Resetting the game is a matter of ﬁrst adjusting at least one of
+the motion controls to a different position, and then striking the
+RESET switch.
+
+Striking the RESET pushbutton sets the Q output of 1C7 -A
+back to logic 1. This enables the timers to allow another “tag” play to
+begin. One of the controls must be changed before hitting the
+RESET button, however. Without changing one of the controls, the
+system would remain in its “tag” mode and the rectangles could not
+appear on the screen.
+
+A somewhat reﬁned and more challenging version of this tag
+game is presented in a later chapter.
+
+The circuit in Fig. 5-5 uses only seven ICs. These ICs and the
+associated components (except the player controls) can be mounted
+
+on the standard plug-in board. (Radio Shack 276—153). Using the pin
+numbers speciﬁed in parentheses, the board can be plugged directly
+into the Sourcebox unit.
+
+The two sets of player controls can be mounted in separate
+projectboxes. Cables running between the circuit board and project
+boxes require only three wires: one for +5V and one to each of the
+two ﬁxed timing resistors (R2 and R4 for player A, and R6 and R8 for
+player B).
+
+The players can toss a coin to see who is “it,” then that player
+chases the other around the screen until a “tag” is made. The players
+can then switch roles. Obstacle and timing circuits described later in
+this book can enhance the quality of the game quite a bit. This one,
+though, represents the simplest sort of TV game that has any real
+playing interest.
+
+ADDING “lNERTIA” TO THE PLAYER CONTROLS
+
+The player—controlled positioning circuits described thus far in
+this chapter have an unrealistic quickness about them. It is possible
+to drive the rectangle across the screen in a mere fraction of a
+second. The simple modiﬁcation described here gives the controls
+some inertia, lending a more realistic kind of motion to the rectangle.
+
+The circuit in Fig. 5-6 is built around the monostable timer that
+is used in all previous player-controlled circuits. The timing interval,
+however, is adjusted in this instance by R7 instead of R1.
+
+147
+
+ 
+

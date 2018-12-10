@@ -1,0 +1,52 @@
+ 
+
+     
+ 
+     
+  
+      
+   
+
+UUT
+
+16V
+(28) 1O
+
+  
+
+5)
+13
+
+  
+
+D15
+
+32V ic1+
+
+12
+(16)
+OUTPUT
+4v 8V
+
+Q9)
+(30)
+
+  
+
+15 141311
+
+ 
+ 
+  
+
+NUMEFIALS IN PARENTHESES
+INDILATE CARD PIN NUMBERS
+
+ 
+
+ 
+
+Fig. 5-11. Complete cirCuit diagram for building a horizontally movable car
+
+ 
+

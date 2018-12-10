@@ -1,0 +1,55 @@
+stances can represent a score for the defensive player because they
+lead to a destruction of the attack craft.
+
+A defense torpedo that has been ﬁred is reset under either of
+two conditions: AC=DT or DT=TOP. In the ﬁrst case, the defen-
+sive player has successfully stopped an attack by hitting the attack
+craft with a torpedo. If a defense torpedo misses its target, how—
+ever, it continues its steady upward motion until it reaches the top of
+the screen as deﬁned by DT=TOP LOGIC. The TOP in this case is
+determined by VBLANK and a TOP PULSE GENERATOR.
+
+The four ﬁgures to be displayed (the target, attack craft, attack
+torpedo, and defense torpedo) are combined in the GAME VID
+OUTPUT LOGIC block to yield a composite game—video signal.
+
+Torpedo Attack Schematics
+
+The complete Torpedo Attack game system requires three
+circuit boards for the tagalong feature, three special game—control
+boards, and two player-control panels. As described earlier in this
+section, the tagalong feature is made up of a pair of identical
+slipping-counter boards (Fig. 5-15) and a tagalong—control board
+(Fig. 7-13). Figure 7-14 shows the complete wiring detail for these
+three tagalong boards.
+
+' The three special control boards for Torpedo Attack are shown
+in schematic form in Figs. 7-16, 7 -17, and 7-18. The control panels
+are described in connection with the schematics and layouts in Fig.
+7-11.
+
+The wiring block diagram in Fig. 7-19 shows the wiring detail
+between the tagalong assembly, the three special control boards,
+and the control panels.
+
+The circuit board in Fig. 7-16 contains all the components for
+the DT (defense torpedo) ﬁgures. The defense player’s four ﬁring
+buttons are connected to inputs 81 through S4. These inputs are
+normally pulled up to logic 1 by the four 2.2-k0. resistors connected
+to +5V. Whenever the defense player depresses one of his four
+ﬁring buttons, the logic level at the corresponding S input to the DT
+control board is forced to logic 0.
+
+IC4-A in Fig. 7 -16 functions as an OR gate when used with this
+active-low input format. Its main job is to sense the fact that the
+defense player has depressed any one of the four ﬁring buttons.
+
+Depressing any one of the four DT ﬁring buttons thus causes
+IC4—A to generate a positive-going logic level which is then inverted
+to a negative-going level by inverter IC5-C. This negative-going
+logic level is then transformed into a brief negative-going pulse by
+
+275
+
+ 
+

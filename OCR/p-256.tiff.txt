@@ -1,0 +1,135 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2
+5 I I I I I > > E
+IBLAUNCHIIHIIIII
+
+5 z VEL M
+
+(a 35 53 3A _“
+
+E __‘ l\ ..___.
+
+E ’2 9" SC ATTACK MISSILE ._________
+
+< 8 SD CONTROL
+
+SE BOARD
+(FIG. 7-17)
+2 ___.___
+(E)
+O 32H1
+I ALAUNCH
+_l \ BRST
+Lg P03 BFIG
+3(- SF BBLANK
+
+g g <3? SG B=TARG
+
+u; ._. :7 SH (FIG. 7-6) AFIG
+
+j 5 Q I ANTIBALISITIC ARST
+
+0- 0 ‘b S MISSILE CONTROL «.______
+
+i 3': ' 1' ' ' 5'
+I I— >
+
+8 a E g E ‘52 5—
+
+N v- > 8
+
+ 
+
+target image located in the lower right-hand corner of the screen.
+Unlike the Attack Missile game just described, the aggressor in this
+case has full control over his craft during the torpedo run.
+
+The second player’s objective is to defend the target by launch~
+ing defense torpedos (DT) at the aggressor’s attack craft. The
+horizontal positions of the four defense torpedoes are ﬁxed, but the
+
+256
+
+ 
+

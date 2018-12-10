@@ -1,0 +1,53 @@
+signiﬁcant bit. The circuit also generates a vertical-reset
+pulse (VRST) that is used for clocking the vertical sync and
+blanking generator as well as some of the game circuits.
+
+6. Vertical sync and blanking generator—This circuit gener-
+ates vertical sync and blanking pulses. The vertical-sync
+pulse ultimately initiates vertical retrace of the TV’s elec-
+tron beam. The vertical-blanking pulse (VBLAN K) is used
+for blanking the beam through vertical retrace and operat-
+ing some of the game circuits.
+
+7. Sync mixer—The sync mixer circuit combines the horizon-
+tal and vertical sync and blanking pulses to create a compo-
+site sync signal. This signal is practically identical to the
+sync signals from commercial TV stations. There is one
+important exception, however; this system does not have
+provisions for interlaced scanning. Few video games call
+for the higher degree of image resolution that charac-
+terizes commercial interlaced scanning.
+
+8. Video mixer-The video mixer combines the sync and
+blanking pulses with game video information to provide a
+complete, composite video signal.
+
+9. RF modulator—The rf modulator is responsible for
+amplitude modulating the composite Video signal with an rf
+frequency tuned to TV channels 2, 3, or 4. This part of the
+Sourcebox unit makes it possible to connect the game
+system to the VHF antenna terminals of any standard TV
+receiver.
+
+NOTE: FCC REGULATIONS PROHIBIT CONNECT-
+ING THE OUTPUT OF ANY RF MODULATOR TO THE
+TERMINALS OF AN EXTERNAL ANTENNA. The an-
+tenna must be disconnected before the modulator is ﬁxed
+to the TV receiver.
+
+10. Audio ampliﬁer—The audio for TV games is not carried via
+the composite TV signal through the receiver’s own audio
+system. Any audio special effects for a TV game are gener—
+ated by the game system and merely ampliﬁed and repro-
+duced by a small loudspeaker in the Sourcebox unit.
+
+POWER SUPPLY
+
+The power supply, illustrated in Fig. 2—2, services both the
+Sourcebox unit and external game circuits. This is a conventional IC
+power supply, taking its main power from the utility lines and
+
+22
+
+ 
+

@@ -1,0 +1,49 @@
+ 
+
+05
+
+D9 0|2 0|?) D|4
+
+017 ¥ 020 '
+
+022 023
+
+025 J 028 029 030 03|
+DOE DIE 02E 03E 04E 05E
+
+08E 09E 0I|E l2E BE
+
+0|7E
+
+ 
+
+ 
+
+SELECT: so = 8H WINDOW: 256H
+S1 = 16H TBH‘
+$2 = 32H W
+33 = 8V 128V
+84 = 16V W
+D INPUTS: 02 = 32v 016 = 32v
+03 = 32v 018 = 0
+D4 = 32v 019 = o
+06 = o 020 = 32v
+07 = o 021 = 32v
+08 = 32v 022 = 32v
+010 = 32v 023 = 32v
+011 = 32v 024 = o
+014 =3_2V 026 = o
+015 = o 027 = o
+028 = 52V
+031 = 527
+
+ 
+
+ 
+
+Fig. 4-19. Figure of a dog built within a 8 x 8 extended matrix.
+
+109
+
+ 
+

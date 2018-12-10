@@ -1,0 +1,52 @@
+output of that gate suddenly drops to logic 0. This transition from 1 to
+0 initiates a short, active-low pulse at the STOP output.
+
+The STOP pulse from the circuit in Fig. 6-3a lasts only as long
+as the time constant of C1 and R1 allow. To get another pulse, one or
+more of the input parameters must return to logic 0. And after that,
+another pulse can be generated when all the inputs go to logic 1 once
+again.
+
+The circuit in Fig. 6—3b uses a 555-type timer to generate an
+active—high STOP pulse. This pulse is initiated whenever the de-
+vice’s TRIG and RST inputs see a transition from logic 0 to logic 1.
+The pulse has a duration roughly equal to the product of R1 times C1.
+And for most purposes, the values shown in the diagram are suitable
+for generating a 10 ms pulse.
+
+The input to the timer circuit makes the critical O-to-l transition
+whenever the two active—low stop parameters at NOR gate IC2-A
+are at logic 0 at the same time. The alternate circuit, made up of
+NAND gate ICZ-A and an inverter, do the same job, with the
+advantage of being able to work with more than two input paramet-
+ers at the same time. If you use the NAN D/invert combination
+(instead of the N OR—gate version) the STOP pulse is initiated
+whenever all the active-low stop parameters go to logic 0 at the same
+time.
+
+Both of these circuits generate an output pulse whenever the
+input stop parameters—conditions sensed Within the game cycle—
+are met. Both generate a single pulse that can occur again only after
+the game has left the reset condition and enters it again.
+
+The RESET output in Fig. 6-3a and the RESET terminal in Fig.
+6—3b aren’t used often, but they can be handy in a few instances.
+These logic levels merely indicate whether or not the system is in its
+reset condition, or to be more precise, whether or not the system is
+ready to enter its reset condition.
+
+Either of the circuits in Fig. 6-3 can be used for automatic start
+operations as well. It’s all a matter of connecting the pulse outputs to
+the appropriate START inputs in Fig. 6-1.
+
+Delayed Start/Stop Operations
+
+It is frequently desirable to insert a time delay between the
+moment a particular game response occurs and the initiation of a new
+game or game cycle. In a typical table-tennis game, for instance,
+there is a short time delay inserted between the time a player misses
+
+186
+
+ 
+

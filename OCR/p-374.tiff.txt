@@ -1,0 +1,53 @@
+design a game having this special ﬁgure-eliminating feature—an
+elementary memory system—ought to build this game and work
+through the circuitry first hand.
+
+The Control board in Fig. 8-32 handles most of the control
+functions for the Stormtrooper Attack game. Whenever the game is
+in progress, for instance, ICl—A senses an alignment between the
+horizontal components of the good guy and any one of the
+stormtroopers visible on the screen. Whenever this sort of align-
+ment occurs, a negative-going pulse from ICl-A initiates a 0.1-
+second monostable timer, ICS-A. And when this short timing inter-
+val elapses, the output at pin 5 of ICS—A initiates yet another timing
+operation from IC8-B. The timing interval in this case is close to 0. 5
+second.
+
+What is the purpose of these sequential timers? These timers
+are responsible for making the stormtroopers ﬁre at the good guy
+whenever he crosses the path of any one of them. The ﬁrst timer
+inserts the crucial 0.1-second delay that gives the good guy a chance
+to ﬁre a round and get out of the way. ICS—B then times the interval
+the stormtroopers’ ray beam appears on the screen.
+
+Both of tthe stormtrooper beam timers are disabled
+whenever the CLR signal to them is at logic 0. This particular
+condition occurs between the time the game is automatically reset
+and the player depresses the START button. The stormtroopers, in
+other words, cannot ﬁre at the good guy until the game is started,
+thus giving the good guy a chance to take his initial defensive position
+without getting blasted off the screen before the attack really starts.
+Be careful, though. The stormtroopers might ﬁre a volley the instant
+the game is started.
+
+The pulse-generator circuit composed of ICl-B and IC6-A ﬁxes
+the width of the stormtroopers beam. The width of the beam can be
+selected by the value of C4, the larger the value, the wider the beam.
+
+This pulse generator~ is put into action on the negative-going
+(leading) edge of every SH pulse from the multiplexer circuit in Fig.
+8-31. The beam, in other words, always appears to come from the
+left—hand edge of an advancing stormtrooper ﬁgure. Thus the
+stormtroopers are all right-handed, a fact that might help the good
+guy’s strategy.
+
+The R-S flip-ﬂop made up of ICl-C and ICl-D determines
+where the stormtroopers’ beams begin and end. The SV signal to
+one of the inputs to this ﬂip—ﬂop ensures that the beam always starts
+from the line of stormtroopers, and the VRST input makes certain
+the beams travel all the way to the bottom of the screen.
+
+374
+
+ 
+

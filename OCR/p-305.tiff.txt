@@ -1,0 +1,14 @@
+connected directly to logic 1, or +5V. This connection disables the
+primary-figure-initializing circuit so that the game procedes continu-
+ously. There is never any condition that calls for initializing the
+positions of either primary ﬁgure.
+
+This system uses a total of eight circuit boards and two control
+panels: two slipping counter and one tagalong control for each
+player, as well as a vector and ﬁgure board. The tagalong system for
+Player A should be operated from the +5V source for Game A, and
+the tagalong system for Player B should operate from the Game-B
+supply. The vector board, ﬁgure board, and two control panels must
+then be powered from an auxiliary +5-V, l-A supply. Of course all
+COMM connections should be connected together.
+

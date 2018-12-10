@@ -1,0 +1,64 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+256H
+8 2 I:
+“33 1 256” (INPUT AND OUTPUT)
+‘ OUTPUT __
+256H
+A
+lC1-B 256“
+2 3 —— __
+25611 1 256H-128H [- 256H
+I 2 ; lC‘l-A
+128H 8 1 2
+128H
+OUTPUT
+256H-128H
+(OUTPUT)
+B
+256H
+
+256H 2 3 /
+1
+4|: 5 I 2
+__ 8 1 2
+128H
+/OUTPUT
+
+256H'128H
+
+128H
+
+ 
+
+Elm
+[I]
+
+256H-128H
+(OUTPUT)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3-4. Some vertical lines and bars from the Tinkerbox assembly. (a) A
+twice-inverted 256H signal yields a 256H pattern on the screen. (b) A NAND gate
+followed by an inverter combine two different horizontal-count signals such that
+the resultant is a white area where two white areas of the original signals overlap.
+(c) Another example of creating a moderately narrow, vertical white bar where
+two input signals have overlapping white areas.
+
+47
+

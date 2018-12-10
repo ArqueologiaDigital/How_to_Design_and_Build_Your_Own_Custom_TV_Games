@@ -1,0 +1,55 @@
+SA and SB, are used for setting the rate of descent, but that
+parameter is loaded into the system by depressing the DESCENT
+pushbutton.
+
+The attack missile is then launched by depressing the LAUNCH
+pushbutton. Once the LAUNCH button is depressed, Player B is
+committed to the path he programmed just prior to the launching
+operation. All controls are locked out until the attack missile is
+blanked and reset to its initial position.
+
+There are a number of different attack velocities, rates of
+descent and initial altitudes that direct the attack missile to the
+target. Player B’s task is to come up with one of these proper
+combinations that avoids the antiballistic missile. Part of Player B's
+strategy, however, might be to throw Player A out of position with a
+false run, then make a deadly strike the next time around.
+
+The Flashing Image Circuit
+
+The only portion of this game that has not beem considered in
+some detail in earlier chapters is the one that causes the images to
+ﬂash when they are hit. The attack missile ﬂashes whenever the
+antiballistic missile hits it, and the target ﬂashes whenever the attack
+missile hits it. In either case, the ﬂashing effect serves as positive
+conﬁrmation of a score.
+
+Figure 7 -4 illustrates the basic image-ﬂashing circuit that will be
+used in a number of different games throughout this book. The IC in
+this case is a 556 dual timer. Section ICl-A is connected as a
+monostable multivibrator that is triggered into action by a brief
+negative-going signal, FLASH START.
+
+The output of ICl-A can be used for resetting or timing other
+game operations, but more importantly, this timing allows a free-
+running multivibrator to generate a pulsing output signal. Whenever
+this oscillator, ICl-B, is gated off, it delivers a logic-0 level to one
+input of 1C2. In the case of a NOR gate, this means the gate is open,
+allowing an inverted version of an IMAGE signal to pass through
+uninterrupted.
+
+The moment the oscillator is gated on, however, it generates
+sequences of 1 and 0 outputs, thereby interrupting the IMAGE
+signal at the same rate. The overall effect is that the IMAGE is
+ﬂashed on and off at a rate determined by the values of R2, R3, and
+C2, and for a period of time determined by the values of R1 and C1.
+
+Game Block Diagram
+
+Figure 7-5 shows the three major portions of the Missile Attack
+H game. The ﬁrst diagram, Fig. 7-5a, represents the main control
+
+239
+
+ 
+

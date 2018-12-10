@@ -1,0 +1,55 @@
+So there are three basic elements that make up the
+stormtroopers’ beams. ICl-A and the two timers determine when
+the stormtroopers ﬁre and the duration of their volley, ICl-B and
+IC6-A determine the horizontal position and width of each beam,
+while ICl-C and ICl-D ﬁx the position and length of the beam in the
+vertical plane. All three of these Stormtrooper beam parameters are
+NANDed together at IC4—A, resulting in the complete video infor—
+mation for that part of the game.
+
+A dead stormtrooper, incidentally, cannot ﬁre a round at the
+good guy simply because the SH pulse at ICl-B cannot occur. That
+particular pulse is eliminated at the Stormtrooper board.
+
+Whenever the good guy depresses his FIRE button, the timer
+circuit on the Figure board (1C3 in Fig. 8—30) generates a GFP pulse
+that lasts about 0. 5 second. This positive-going level is fed to pin 3 of
+IC4-B to determine the good guy’s ﬁring-time interval.
+
+The R-S ﬂip-ﬂop built around ICZ-B and ICZ-C ﬁxes the vertical
+length of the good guy’s beam. The SV input to this ﬂip-ﬂop always
+starts the good guy’s beam at the line of stormtroopers, and the GV
+input ends the beam at the good guy’s position. The good guy’s beam
+is actually drawn from the line of stormtroopers to the good guy, but
+the visual impression is that the good guy is ﬁring upward on the
+screen, and it is a visual impression that is more important in this
+case.
+
+The pulse generator composed of ICZ-D and IC6-C ﬁx the
+ho'ﬂontal position of the good guy’s beam. The circuit operates from
+a CH signal, making the beam appear from the left-hand edge of the
+good-guy ﬁgure. The good guy, in other words, is a southpaw.
+
+You should be able to see that the good guy’s beam circuit is
+practically identical to that of the stormtroopers. The only real
+difference is that the stormtroopers ﬁre automatically after a 0.1-
+second delay, whereas the good guy ﬁres at any time the play
+depresses the FIRE pushbutton.
+
+The good guy’s beam parameters are all combined in IC4-B to
+create his beam video signal. The width of the good guy’s beam is
+determined by the value of CS.
+
+Thus far we have accounted only for the two beam ﬁgures
+generated at the Control board. We have yet to see exactly how the
+good—guy and stormtrooper video signals are assembled.
+
+_The _h_o_rizontal and vertical components of the good-guy ﬁgure
+(GH and GV) are effectively AN Ded at IC7-B, then passed to the
+blanking gate, IC2-A. An active-low version of the good-guy ﬁgure
+emerges from IC2—A as long as the pin-1 input to that gate is resting
+
+375
+
+ 
+

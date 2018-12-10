@@ -1,0 +1,54 @@
+of horizontal— and vertical-blanking pulses and any game video
+applied from external circuitry to IC9—A.
+
+These two sets of waveforms—the composite sync from 1C7 -B
+and video and blanking pulses—are ﬁnally amplitude modulated at
+the 3-state buffer, IC8-A. A precise analysis of this operation is left
+to experimenters who have some experience with Boolean algebra.
+The overall effect, however, is shown in Fig. 2-9(b).
+
+The composite video waveform in Fig. 2-9(b) clearly shows
+three distinct voltage levels. The highest voltage level, about +5V,
+is the domain of the blacker-than-black sync pulses. At the other
+extreme is the white-video information, at about 0V. Black-video
+information and the blanking pulses fall between these two ex-
+tremes, occuring only when the 3-state buffer is put into its high-
+impedance state by the output of IC6-D.
+
+The vertical— count and composite-video board in Fig. 2-7 can
+be assembled on the same kind of 44-pin edge card that the horizon-
+tal section is. Both boards should be situated in their respective
+edge-card connectors in the Sourcebox housing.
+
+ 
+
+HORIZONTAL-
+SYNC PULSES
+
+/1\\ .m
+
+VERTICAL (OUTPUT lC7-A)
+SYNC
+SYNC
+BLACKER
+THAN BLACK—I- / PULSE
+BLACK —>
+WHlTE —>
+BLANKING
+PEDESTAL VIDEO
+3 iNFO
+(CUTPUT lCB—A)
+
+ 
+
+ 
+
+ 
+
+Fig. 2-9. Composite waveforms. (a) Composite sync. (b) Composite video to the
+modulator.
+
+35
+
+ 
+

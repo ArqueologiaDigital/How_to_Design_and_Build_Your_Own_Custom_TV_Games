@@ -1,0 +1,58 @@
+and clock pulses are applied to the CLK input. The counter counts up
+or down, depending on the logic level applied at the U/D terminal.
+Setting U/ D to logic 0 lets the counter count up, and setting it to logic
+1 makes it count down, or backwards.
+
+The counter can be preset to any desired count by applying the
+desired binary count at the preset inputs, PA through PD, and
+pulling the L input down to logic 0.
+
+. The counting operation can be stopped and held at any desired
+count by raising the ENAB input to logic 1. Counting then resumes
+from that point as soon as ENAB is returned to O.
+
+The ripple-clock, RC, and maximum/minimum, M/ M, outputs
+perform special cascading and output control functions that will be
+described in detail when considering the actual circuits that use
+them.
+
+ 
+
+SIMPLE PLAYER-CONTROLLED MOTION
+
+Let’s get some motion on the screen as quickly and simply as
+possible. To do this, tinker together the circuit shown in Fig. 5-2.
+
+This circuit generates a narrow horizontal or vertical bar on the
+screen. The horizontal version can be moved vertically anywhere on
+the screen by means of the 500 k0. potentiometer control, R1. And
+when you build the vertical version, you will ﬁnd you can move that
+bar horizontally across the screen.
+
+The heart of this system is a 555 timer. The circuit in Fig. 5-2
+calls for using one-half of a 556 dual timer which, in essence,
+performs the job of a single 555 device.
+
+The monostable timing is initiated by the HRST or VRST pulse
+from the Sourcebox unit, and the actual amount of timing is deter-
+mined by R1, R2, and C2. When generating a movable horizontal
+bar, trigger the circuit from VRST and ﬁx the values of R2 and C2 to
+3.3 k!) and 0.047 uF. To generate a movable vertical bar, initiate the
+timer from HRST and ﬁx the values of R2 and C2 at 33 kit and 100
+pF. Note that potentiometer R1, the motion control adjustment, is
+500 k!) in either case.
+
+So here is what happens: A vertical or horizontal reset pulse
+initiates the monostable timing. It sets the pino5 output terminal
+from logic 0 to logic 1, where it remains until the timing interval is
+over. If the circuit is triggered by HRST, this timing interval takes
+place with every horizontal scan line. Triggering the circuit from
+VRST causes the timing to take place once each vertical frame.
+
+The NAND gate (IC3—A), inverter, and associated RC compo-
+nents make up a pulse-shortening circuit that functions exactly as
+
+140
+
+ 
+

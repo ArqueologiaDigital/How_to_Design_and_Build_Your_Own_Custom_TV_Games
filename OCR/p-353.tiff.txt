@@ -1,0 +1,52 @@
+ 
+
+ 
+
+MOVE
+
+START FIRE
+
+ 
+
+ 
+
+ 
+
++5V
+
+MOVE
+
+POS
+
+ 
+
+W
+GOOD GUY
+AREA
+
+ 
+
+ 
+
+ 
+
+Fig. 8-23. Control panel diagram and schematic, and screen diagram for Am-
+bush.
+
+Providing the good guy isn’t hit, the game runs for about 3
+minutes before it is reset. The player then totals up the number of
+
+successful shots, and depresses the START button to begin another
+game.
+
+Ambush Block Diagram and Schematics
+
+The block diagram and schematics for the two special circuit
+boards are shown in Figs. 8-24 through 8-26. The wiring block
+diagram is in Fig. 8-27. Use all of these ﬁgures when studying the
+theory of operation of this particular video game.
+
+353
+
+ 
+

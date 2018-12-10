@@ -1,0 +1,82 @@
+ 
+
+ 
+
+(31)
+
+ﬁ— VML
+
+F 2 (30)
+5 $31
+VMR§T
+
+3
+
+_ 4
+L (2)
+
+x 5
+
+ 
+
+ 
+
+7 ICB-B
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+O)
+\I
+
+a;
+i—
+ll
+
+ 
+
+ 
+
+104 ‘2
+
+ 
+
+1C1. 2, 3, 4—74191 4-BIT BINARY
+9 5 11 COUNTER
+T I05-7430 8—INPUT NAND
+lC6—74157 QUAD 2:1 DATA
+SELECTOR
+IC7—7476 DUAL J-K FLIP-FLOP
+108—7410 TRIPLE 3-iNPUT NAND
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 5-15. Schematic diagram for a siipping-cou nter motion control circuit board
+
+177
+
+ 
+

@@ -1,0 +1,56 @@
+this chapter. The missile launching and initializing circuits, for exam-
+ple, appear at the top of the schematic diagram. The six NAND gates
+and two inverters are simply one-for-one combinations of the sim-
+pler circuits speciﬁed in the block diagram for LAUNCH “A”, R-S
+FLIP-FLOP, and “A” INIT.
+
+IC8-A deﬁnes the vertical information for the antiballistic mis-
+sile. And using the three VM inputs speciﬁed at the input of IC8-A, it
+generates a movable horizontal bar that is 32VM pulses tall. The
+horizontal position of the antiballisﬁc missile is taken from the point
+on the screen where 256H makes the transition from black to white,
+near the middle of the screen. This 256H signal from the Sourcebox
+is inverted by IC6-C to create a negative-going edge that triggers
+the pulse—shortening circuit composed of IC2-C and IC7—E. The
+value of C2 determines the width of the image. A value of 0. 002 ,u.F is
+speciﬁed here, but you might want to change that value to generate a
+ﬁgure width more suitable to your own ideas about how the ﬁgure
+should look.
+
+The vertical and horizontal components for the antiballistic
+missile ﬁgure are effectively ANDed together in IC5-A, and an
+inverted (black-on—white) version of the ﬁgure is sent to a NAND
+gate (IC3-C), where it is uprighted and combined with the attack-
+missile ﬁgure.
+
+The attack-missile ﬁgure is generated in a similar fashion. Its
+movable horizontal components are deﬁned by the HM inputs to
+IC9-A. This particular set of HM inputs create an image that is
+32HM pulses long in the horizontal direction. You might want to
+double its length by omitting the 32HM connection to IC9-A.
+
+ICZ—D is responsible for ﬁxing the altitude of the attack missile.
+The inputs in this case are 128V and 64V from the Sourcebox. These
+particular inputs, working in conjunction with the pulse-shortening
+circuit made up of IC3-A and IC7-B, create a thin horizontal line
+about one-fourth the distance from the top of the screen. This ﬁxes
+the altitude of the attack missile. The vertical height of the attack
+missile can be adjusted by means of C3. ICS-B combines the horizon-
+tal and vertical components of the attack-missile ﬁgure.
+
+The attack—missile ﬁgure must pass through IC4-D before it can
+be combined with the antiballistic missile at IC3-C. The image of the
+attack missile will indeed appear at GAME VID OUT as long as pin
+14 of IC4—D is at logic 1. If there is ever a contact between the two
+missile images, as sensed by IC4-A, pin 14 of IC4-D drops to logic 0,
+thereby blanking the image of the attack missile from the screen.
+
+The attack missile then remains blanked until its “invisible”
+image reaches the right-hand side of the screen, as deﬁned by
+
+ 
+
+213
+
+ 
+

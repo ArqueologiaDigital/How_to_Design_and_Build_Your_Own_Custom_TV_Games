@@ -1,0 +1,55 @@
+the screen when the wiper arm of R7 is to COMM, and it should
+move to the extreme right-hand side when the wiper arm of R7 is to
++5V.
+
+Once you have set the position of R1 to your satisfaction, don’t
+move it again. Remove the jumper from R7 and position the line on
+the screen by means of that control.
+
+With this preliminary alignment job out of the way, insert
+capacitors C7 and C8 as shown in Fig. 5-6. As you adjust R7 now,
+you will ﬁnd that the line responds as through it has some “slop” or
+inertia. The line’s response, in other words, is not immediately
+coupled to changes at the position control.
+
+While the values of “inertia” resistors R8 and R9 are critical to
+the alignment of the timer, the values of C7 and C8 are not. You can
+change the values of those capacitors to get the amount of inertia you
+want. The larger the values of C7 and C8, the more inertia the line
+seems to have.
+
+The vertical positioning circuits can be modiﬁed in a similar
+fashion, triggering with VRST and changing the value of C2 from 100
+13F to 0.047 p.F. The initial alignment procedure is the same one
+already described for the “sloppy” horizontal position control circuit.
+
+MANUAL CONTROL OF COMPLEX FIGURES
+
+The material in this section describes one technique for moving
+complex ﬁgures to any desired point on the screen. This technique is
+an extension of the rectangle-motion scheme already discussed in
+this chapter. But rather than using a monostable multivibrator to
+generate the object itself, the monostable effectively “tells" a
+counter when to begin counting or when to reset to zero. The
+timer-controlled counter then provides select and windowing infor-
+mation for a matrix generator—any of the complex ﬁgure matrix
+generators in Chapter 4.
+
+Figure 5-7 shOWS a simpliﬁed block diagram and a complete
+schematic for a circuit that lets the player move any complex ﬁgure in
+a vertical direction.
+
+Monostable multivibrator ICZ-A is triggered on each time a
+VRST pulse appears at its TRIG input. Or to put it in the context of
+the TV raster, this timer begins timing each time the raster reaches
+the bottom of the screen.
+
+The timer's output remains at logic 1 through the vertical-
+blanking interval and into some portion of the vertical—scanning
+interval determined by the values of C2, R2, and R1. A very similar
+timing circuit in Fig. 5-2 generates a horizontal line that can be
+
+151
+
+ 
+

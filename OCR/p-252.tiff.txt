@@ -1,0 +1,58 @@
+the attack missile is in its reset condition, the player can load data
+from switches SA and SB into this latch by depressing either the
+VELOCITY or DESCENT LOAD pushbuttons.
+
+Depressing the VELOCITY button, for example, feeds the
+logic levels from SA and SB into ICE) and through that set of latches to
+the 1HC and 2HC outputs. Releasing the VELOCITY button then
+latches that 2-bit data in place by allowing the output of ICZ-B to fall
+to logic 0.
+
+Depressing the DESCENT button, on the other hand, feeds
+the logic levels from SA and SB into 1C9 and to outputs 1VC and
+2VC. This data is latched the moment Player B releases the DES
+CENT pushbutton.
+
+The entire latch circuit is ﬁxed in its memory mode whenever
+the attack missile is launched. Launching the missile feeds a logic-1
+level to pin 2 of IC2-A and pin 5 of ICZ-B, placing both halves of the
+latch circuit into the memory mode and disabling the effect of the
+velocity- and descent-control switches.
+
+Once launched, the attack missile falls at a rate determined by
+the data latched at the 1VC and 2VC outputs of 1C9, and it travels
+horizontally at a rate determined by the 1HC and 2HC outputs of that
+same latch. The initial altitude was originally determined by the
+settings of switches SC through SE.
+
+While most of the circuitry in Fig. 7-7 deals with controlling the
+operation of the attack missile, there is room on the board for a
+couple of other circuits.
+
+1C6 ﬁxes the position and size of the target image, while 1C5
+determines the position and size of the attack missile, itself.
+
+The information from these two 8-input NAND gates is effec-
+tively AN Ded together in ICZ-D to sense contact between the target
+and attack-missile images.
+
+The circuit in Fig. 7-8 is mainly responsible for sensing contact
+between the images and taking the appropriate action. ICI-A, for
+instance, deﬁnes the right-hand edge of the screen, while ICl-B
+deﬁnes the bottom. These two edge-parameters are combined in
+IC3-A to yield an active-high (noninverted) deﬁnition of EDGE for
+the attack missile. These three ICs are embodied in the block labeled
+“edge logic” in Fig. 7-5c. V
+
+IC8-A deﬁnes the top of the screen for the antiballistic missile.
+Its active-low (inverted) output is combined withan inverted version
+of the AF IG signal in IC4—A to detect contact between the antiballis-
+tic missile and the top of the screen.
+
+IC5-A and IC5-C detect contact between the attack missile, the
+edge of the screen, and the antiballistic missile, respectively. If.
+
+252
+
+ 
+

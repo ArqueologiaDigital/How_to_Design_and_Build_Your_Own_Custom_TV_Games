@@ -1,0 +1,90 @@
+ 
+
+ 
+
+SELECT: SO:16H
+S1=32H
+$2=1ev
+
+D4 05 06‘ D7 ss=3av
+
+DO Dl DZ D3
+
+ 
+
+ 
+
+WlNDOW: 256H
+08 D9 010 DH 72%
+
+64H
+DI2 013 DI4 DIS 128V
+
+ 
+
+ 
+
+DOE DlE DZE DBE DINPUTS:
+1,0, 64V, on W,
+
+D4E 055 06E 07E AS REQU'RED
+
+ 
+
+ 
+
+D8E 09E lDlOE DllE
+
+ 
+
+DIZE DISE ‘DI4E DI5E
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4 x 8 EXTENDED MATRIX
+
+ 
+
+ 
+
+ 
+
+Fig. 4-8. A 4 x 8 extended matrix from a basic 16-cell circuit. The Select,
+Window and D-input specifications are merely examples.
+
+Note that the extended—matrix pattern in Fig. 4-8 shows the
+usual 16 cells arranged in a 4X4 pattern at the top of the rectangle.
+The bottom half of the rectangle is composed of another 4 x4 matrix
+with cells designated DOE, DlE, DZE, etc. The “E” sufﬁx indicates
+an extended matrix cell, and whenever one of the cells in the top half
+of the matrix is blackened by setting that D input to logic 0, its
+extended counterpart in the bottom half of the matrix is also black-
+ened.
+
+While this procedure for generating two black squares at the
+same time is a cute trick, it isn’t really very useful (unless the ﬁgure
+you want to create happens to be a symmetrical one). So here is the
+clincher. Remove any logic-0 connections to the D inputs of the
+multiplexer and connect one end of the jumper wire to the 64V
+source. Connect the other end of this jumper to the D0 input of the
+multiplexer, and presto! There is a single black square in matrix
+position D0. You are no longer getting the two-square effect you
+found when connecting the D inputs to logic 0.
+
+Try touching this 64V source to the multiplexer’s D inputs, one
+at a time and in succession. You will be able to blacken any one of the
+
+92
+
+ 
+

@@ -1,0 +1,72 @@
+ 
+
+ 
+
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++5vT
+oo— 8 24 12
+D1— 7
+02___ 6 74150
+03 __ 5 MULTIPLEXER
+04— 4
+05- 3
+De— 2
+DATA INPUTS _ 07-— 1
+(MATRIX LOCATIONS) 08.. 23 1o
+09— 22 MVID
+D10 _ 21 I05 (OUTPUT)
+D11 ~— 20 7
+012 — 19
+013 — 18
+1 —- 17
+z 3112— 16
+WINDOW .3. 14 L-
+INPUTS .5. CE
+5 9
+H- AND v- -6-
+COUNT SIGNALS '71- 7 15] 14|13|11|
+AS NECESSARY 72— so 31 32 $3
+— :" LN—‘J
+I03 "ADDRESS" INPUTS
+
+ 
+
+ 
+
+ 
+
+Fig. 4-5. The basic 16-celi matrix generator circuit.
+
+now ﬁlled with White cells because any unconnected input of a TTL
+IC automatically assumes a logic-1 condition.
+
+Connect a single jumper wire to COMM and touch the free end
+to various D inputs on the multiplexer. You will ﬁnd that applying a
+logic-0 level to the D inputs in this fashion causes the corresponding
+matrix cell on the screen to go black. Connect the jumper to D0
+through D15 in succession, and you will see a black square moving
+through the matrix as you go.
+
+Building Complex Images in the 4x4 Windowed Matrix
+
+Building complex ﬁgures using the circuit in Fig. 4-5 is a matter
+of eliminating white cells by connecting their corresponding D inputs
+to logic 0. And if you are really putting your heart into the project,
+you can have a good hour or so of fun playing with this scheme.
+
+87
+
+ 
+

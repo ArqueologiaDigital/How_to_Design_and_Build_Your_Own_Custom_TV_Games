@@ -1,0 +1,73 @@
+practice it turns out that an experimenter can generate a vast variety
+of interesting and useful video game ﬁgures with it. How about that
+cowboy ﬁgure speciﬁed in Fig. 4—24?
+
+Turn your imagination loose on this matrix and see how many
+fascinating symmetrical ﬁgures you can generate. The principles for
+designing ﬁgures around this 8X16 extended foldover matrix with
+vertical symmetry are much the same as those for working out
+
+ 
+
+     
+
+DI DZ 03
+SELECT: 80 = 8H F 32H
+
+S1 =16H F 32H
+05 06 D7 32 = av
+
+53 = 16V
+
+09 mo on 08F 34 =32v
+WINDOW: 256H
+
+013 014 MS 2; 128,4
+
+763i
+
+m7 D|8 019 128V
+
+64V
+
+D2l 022 D23 DATA N: 1, 0, 64V, 34—.
+
+   
+
+025 D26 027 AS REQUIRED
+
+029 030 D3]
+
+DIE DZE
+
+05E 065 D 8H
+
+D95 DH
+32H
+
+DBE
+
+Di8E 16H
+
+8V
+16V
+32V
+
+ 
+
+8 x 16 EXTENDED
+FOLDOVEF MATRIX
+
+ 
+
+ 
+
+ 
+
+Fig. 4-23. Configuration, circuit, and sample speciﬁcations for an 8 x 16 ex-
+tended foldover matrix.
+
+115
+
+ 
+

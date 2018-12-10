@@ -1,0 +1,58 @@
+rows the bar from the left-hand side, while adding an inverted
+version of the next-lower-order H input narrows the bar from the
+right. There is no reason why you cannot use combinations of
+inverted and noninverted H inputs to place a white bar in virtually any
+position in the white ﬁeld of the basic 2‘56ﬁ pattern. And if you want
+the bar to appear on the left-hand side of the screen, begin with 256H
+instead of 256H. Furthermore, you can set the width of the white bar
+by the number of H inputs you use: the larger the number of
+H-count inputs, the narrower the bar becomes.
+
+Now you are in a position to try some design work of your own.
+Remove all inputs to the NAND gate and use a grease pencil to mark
+a point on the TV screen where you want a vertical line to appear.
+Indicate the desired width too.
+
+Apply the 256H signal to the NAND gate. If your mark is in the
+white area, that is the proper input signal. If your mark is in the black
+area, however, you must apply 256H to the NAND gate (by running
+it through an inverter before applying it to the NAN D gate).
+
+Once you have the mark in a white ﬁeld, add 1281-1 to the NAN D
+gate. Again, if the mark appears in the resulting White ﬁeld, you are
+ready to add the next-lower-order signal, but if it is in a black area,
+128H must be run through an inverter before applying it to the
+NAND gate.
+
+Continue this procedure, adding successively lower-order H
+inputs, inverting them when necessary, until the resulting white bar
+has the position and width you indicated with the grease pencil on the
+screen. Allowing a small percentage of placement error, you will be
+able to place a single vertical line of any desired width anywhere on
+the screen.
+
+This entire process can be summarized as a recipe for building a
+vertical line or bar, using the NAN D/invert circuit on the Tinkerbox
+assembly.
+
+Recipe for a Vertical Line or Bar
+
+Begin with a white screen, assuming it is actually a full-screen
+vertical bar.
+
+1. Is that big bar to be narrowed in from the left or right?
+
+If from the left, use 256H
+If from the right, use 256H
+
+2. Is the resulting white bar to be further narrowed from the
+left or right?
+If from the left, use 128i
+If from the right, use 128H
+
+50
+
+ 
+
+ 
+

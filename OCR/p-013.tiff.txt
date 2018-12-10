@@ -1,0 +1,146 @@
+ 
+
+I‘——' 5 UNITS ———>I
+
+___;—\__‘_>h‘
+w—
+
+""— — '— SCAN LINES
+
+ 
+
+    
+
+_—__,___
+
+ 
+
+/"/
+r
+
+4 ,
+UNITS HORIZONTAL
+
+RETRACE
+
+ 
+
+ 
+
+ 
+
+SCAN
+\ RETRACE
+
+HORIZONTAL FREQUENCY = 15,750 Hz
+VERTICAL FREQUENCY = 60 H2
+
+HORIZONTAL
+SYNC
+
+/
+8%an
+WHITE—> VERTICAL
+
+/ HORIZONTAL SYNC AND BLANK
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+  
+   
+ 
+  
+ 
+    
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+BLANK
+VIDEO C
+INFORMATION
+HOR. k HOR.
+osc. ’ AMP
+I HORIZONTAL
+HORIZONTAL DEFLECTION COIL
+/stc
+VIDEO VIDEO
+_+ ;
+TUNER DETECTOR AMP
+AND
+iF STAGES
+VERTICAL VX1330
+\
+SYNC BLANKING
+V SIGNALS VERTICAL
+DEFLECTION
+COIL
+VERT. _ VERT.
+OSC. ’ AMP
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 1—1. Generating the TV raster. (a) The basic raster as it appears on the
+screen. (b) The sawtooth waveform characteristic of horizontal and vertical
+raster scanning. (c) A composite video waveform. (d) TV receiver block diagrarr
+showing sections relevant to TV games.
+
+13
+
+ 
+

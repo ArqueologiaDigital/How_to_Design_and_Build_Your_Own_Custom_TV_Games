@@ -1,0 +1,55 @@
+Whenever you adjust R2 so that the bar moves downward, you
+are really setting the oscillator frequency above 60—Hz. The faster
+the downward motion, the farther the frequency is above (SO-Hz.
+
+So what you have here is a variable frequency oscillator that has
+a middle frequency of about 60-Hz. Varying the frequency either
+way from that 60-H2 point causes the figure to move up or down the
+screen at a rate determined by the deviation from the basic 60-Hz
+rate.
+
+Use the windowing inputs to 1C3 to narrow the bar in the
+horizontal direction. With the values shown in Fig. 5—12, you should
+be able to see a nice square if you window the bar with 256H, 128H,
+and 64H.
+
+The vertical height of the rectangle is determined by the value
+of R7. Reducing the value of R7 reduces the height of the rectangle,
+and increasing its value increases the height of the rectangle. Unfor-
+tunately, any change in the value of R7 causes a change in the
+oscillator’s frequency. So whenever you change the value of R7 to
+change the height of the rectangle, you must change the value of R6
+by a proportional amount, but in the opposite direction.
+
+Play with the values of R7 and R6 to alter the height of the
+rectangle and yet maintain complete control over the direction and
+speed of vertical motion.
+
+Resistors R1 and R2 ﬁx the range of speed control that is
+possible with R2. If these values are too small, you will ﬁnd that the
+control is too sensitive, making the rectangle move so fast that it
+creates an unintelligible visual impression. Tinker with the values of
+R1 and R2 to get the range of speed control that seems most
+suitable.
+
+If you would like to indulge in a bit of mathematics, consider the
+following equation: 5 = O6-f, where s is the time it takes the re-
+ctangle to make an excusion up or down the screen and f is the
+frequency of the oscillator. If s is a negative number, it means the
+ﬁgure moves downward, but if s is positive, the ﬁgure moves
+upward.
+
+What, then, is the oscillator frequency if the ﬁgure is to move
+upward and cross the screen in about 1 second? Solving the equation
+and substituting +1 for 5 yields 59 Hz. What is the operating
+frequency if the rectangle is to move downward across the screen in
+1 second? Rearranging the equation to solve for f: f = 60-5; and
+substituting —- 1 for 3 yields 1‘ = 60-(— 1) or 61 Hz.
+
+The real reason for indulging in this bit of algebra is to show that
+most games require a maximum deviation of 1 Hz around the basic 60
+
+164
+
+ 
+

@@ -1,0 +1,25 @@
+ 
+
+ 
+
+102
+
+6 911141
+
+ 
+
+ 
+
+ 
+
+Position Programming From Counters
+
+In the context of the comparator positioning circuits described
+thus far in this chapter, it is possible to specify the positioning
+information from a switch panel (Fig. 8-6, for example) or from any
+other source of logic levels. Some of those “other sources” include
+
+316
+
+ 
+

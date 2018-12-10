@@ -1,0 +1,115 @@
+ 
+
+MAN UAL
+START
+
+LOCK OUT
+START SW
+
+i
+
+START
+A GAME
+
+;
+
+DELAY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+     
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+UNLOCK
+' START sw
+START
+FIG. 6-2c .i‘i. FIG. 6-“: FIG. 6-3a
+PLAY
+MANUAL .———> -—-> GAME —->
+START n-s _ AUTO
+WITH STOP FLIP-FLOP PLAY STOP
+LOCKOUT *
+_i'L_ YFIG. 6-4
+DELAY
+_____________.__‘—.
+TIME
+DELAY
+
+ 
+
+ 
+
+ 
+
+ 
+
+v
+
+Fig. 6-5. Basic flowchart for control circuit designs. (a) A typical scheme using
+manual start and automatic reset with time delay. (b) Corresponding block
+
+diagram.
+peculiar to the system being designed. In this case, the only unique
+control parameter is the length of the reset time delay. We have
+speciﬁed 5 seconds, so the preliminary schematic shows the values
+of R and C that are appropriate for this delay interval, 470 k!) anle
+[AR
+
+Another problem became apparent while setting up the prelimi-
+nary drawing. This particular scheme ought to have a power-on
+
+ 
+
+ 
+
+191
+
+ 
+

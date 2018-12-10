@@ -1,0 +1,143 @@
+ 
+
+_ SELECT: WINDOW:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+so : 2H "ﬁe-H
+s1 : 4H 128H
+$2 : 8H 64H
+83 = 2V 32H
+54 : 4v 125v
+ss : av 64V
+32v
+0 lNPUTS:
+
+Do = 0 1 033 : o
+01 = o 039 : o
+04 = o 040 : o
+
+05 : 0 D41 = 1'EV
+
+05 : o 043 : TN
+
+07 : 0 045 : 16V
+08 : TeV D46 : o
+
+58 59 012 = W 047 :16v
+
+l
+
+D13=16 D48=0
+014 :0 051 : W
+015:0 052:0
+015:0 D53=16V
+017:16v 055:W
+j_ 020:0 056:0
+:65 WE l8E 195 Z , _ 021:0 057:°_.
+~ :: ' 022:0 060:16v
+‘ "f 023:0 052:1Tv
+.245. 2557 26E 275 285 , 024:0 063:0
+. 025:0
+325 335 545 355 36E -: 029:0
+‘ i ' 030:0
+405 415 425 435 445 455 555 47E 031:0
+. . ~ 032:0
+033:0
+485 495 505 515 525 555 545 555 034=W
+D36=16V
+037:0 B
+
+ 
+
+ 
+
+25 55
+
+ 
+
+:55 95 105 115 ‘
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+56E 57E 58E 595 60E 6lE 626 63E
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 4-28. Sample complex figures in the 8 x 16 extended matrix. (51) Left
+footprint. Folding this figure by means of 64H creates a pair of footprints—left
+and right. See circuit in Fig. 4-31. (b) Profile of a cowboy.
+
+ 
+
+ 
+
+idea is to ﬁrst build the circuit for generating the desired ﬁgure, using
+the techniques already described in this chapter. Then some rather
+simple logic circuits can be added to the window inputs to create any
+number of the ﬁgures on the screen and in any desired pattern.
+To get a ﬁrst-hand, practical View of this procedure, build up
+any of the simpler complex—ﬁgure circuits and display the image on
+
+125
+
+ 
+

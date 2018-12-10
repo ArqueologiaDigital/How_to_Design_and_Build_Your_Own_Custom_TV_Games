@@ -1,0 +1,61 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+l r1
+Do— a 24 12 -
+D1—— 7
+02—— 6
+D3-— 5
+D4— 4
+D5— 3
+V 06— 2 KA— T0
+T0 COMM D7— 1 1o ——->-GAME VID IN
+(LOGIC 0) ‘ 08—. 23 (OUTPUT)
+AS DESIRED 09—— 22
+010— 21
+D11 -— 20 lC5
+D12— 19
+D13—— 18
+D14 -- 17
+_D15— 16
+_. 9
+CE
+= 15|14|13|11l
+so 31 82 so
+W
+TO H- on V-COUNT
+SOURCES (SEE TEXT)
+
+ 
+
+ 
+
+ 
+
+Fig. 4-3. Pinout and nomenclature for the 74150 multiplexer.
+
+to logic 0, the point in the horizontal-count format that initiates the
+horizontal blanking interval. The blanking interval continues through
+the time the multiplexer is scanning D0, D1, and D2. But once the
+count reaches a point where the multiplexer is scanning the D3
+input, the horizontal blanking interval is over. Segments represent-
+ing inputs D3 through D15 thus appear in the useful working area of
+the screen.
+
+When you connected the D8 input to COMM (logic 0), nothing
+really happens until the H-count inputs to the multiplexer reached
+the D8 scanning position. At that moment, an inverted version of the
+
+83
+
+ 
+

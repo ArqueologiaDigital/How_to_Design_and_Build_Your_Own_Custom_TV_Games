@@ -1,0 +1,41 @@
+10
+11
+
+12
+
+A Collection of War Games 233
+Missile Attack ll—Torpedo Attack—Dogfight
+
+Programmable Position and Motion Controls................... 30']
+A Programmable Figure Position Control —Universal Position
+Programmers—Nine Holes of Golf—Ambush—Stormtrooper At~
+
+tack
+
+Scoring and Timekeeping 381
+Generating Numeric Characters—Digit-Generator Circuits—
+Scorekeeping Circuits—Timekeeping Circuits—Retrofitting Scor
+
+ing and Timekeeping to Existing Games
+
+Figure Rebound Effects 411
+A Flexible Rebound Control System--A Pinball Game
+
+Animation and Rotation of Complex Figures..................... 451
+Figure Animation—Figure Rotation—Combining Rotation and Fi-
+gure Motion Across the Screen
+
+Sound Effects ..... ....... ......... . 495
+Tones From the V-Count Signals—Sounds From Sources Other
+Than V-Count Sources
+
+Appendices
+
+l—Binary 0utputs......... .................. . ................ 507
+
+2—Digital integrated Circu|t5519
+
+Index .......... 541
+
+ 
+

@@ -1,0 +1,53 @@
+Then consider the typical table-tennis game. Whenever the ball
+is served, the machine ought to be able to set the ball’s vertical
+position and direction just before the serving operation takes place.
+
+The circuits described in this chapter show how to program a
+wide variety of initial positions, speeds, and directions. The exam—
+ples are oriented toward manual, or player, controls, but it turns out
+that the schemes for automatically setting these parameters aren’t
+much different.
+
+Programming the Initial Position
+
+The circuit in Fig. 6-17 shows four SPDT switches, labeled A
+through D, each connected to one input of an EXCLUSIVE OR gate.
+The second input to each of the gates goes to a source of count
+pulses from the Sourcebox, 32H, 64H, 128H, and 256H in this
+particular example. The outputs of the four EXCLUSIVE OR gates
+are NANDed together at a 4-input NAND gate, IC2-A. '
+
+One of the most useful properties of an EXCLUSIVE OR gate is
+that it can operate as an inverter or noninverter, depending on the
+logic level presented to the second input. Consider ICl—D in Fig.
+6-17. Whenever the A switch is set to its “1” position, the 32H signal
+applied to the other input emerges from the gate with the same
+phase as the input. Setting switch A to its “0” position, however,
+causes IC1-D to invert its 32H input.
+
+An EXCLUSIVE OR gate thus passes a noninverted version of
+its signal input whenever the control input is at logic 1, but it inverts
+the signal whenever the control input is at logic 0.
+
+The circuit in Fig. 6—17 is capable of generating vertical bars on
+the screen that are 32H wide and positioned at any 1 of 16 different
+locations. The table accompanying the schematic shows all possible
+combinations of switch settings and the output speciﬁcations that
+result. If, for example, D =_O_E_hile C = B = A = 1, the effect
+would be the same as applying 256H, 128H, 64H, and 32H directly to
+the inputs of the NAND gate.
+
+If you want to check out this circuit in a rather simple fashion,
+run the output of the NAND gate through an inverter and to the
+GAME VID IN connection on the Sourcebox. You will indeed ﬁnd
+that you can create a white vertical bar that has a position on the
+screen determined by the settings of switches A through D. In a
+sense, this circuit is a switch-programmable line generator. Of
+course you can apply any combination of H- and V-count inputs to the
+four signal inputs to create horizontal and vertical lines. You can also
+expand the circuit to accommodate eight signal inputs by using eight
+
+217
+
+ 
+

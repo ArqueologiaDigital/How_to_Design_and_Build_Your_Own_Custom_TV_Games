@@ -1,0 +1,276 @@
+ 
+
+ 
+
+03
+
+D3F
+
+‘ {HF DOF
+
+ 
+
+D7
+
+07F
+
+D5F D4?
+
+ 
+
+Dll
+
+DHF
+
+119: 056;
+
+ 
+
+' 015
+
+DI5F :
+
+ 
+
+DIS
+
+D|9F
+
+DI8F
+
+0171= 131?“;
+
+ 
+
+’ 023
+
+DZBF
+
+0211: DZOF
+
+ 
+
+027F
+
+0.25:3
+
+pair-i 0241:
+
+ 
+
+DSI
+
+DBIF
+
+03°F
+
+bar D28F
+
+ 
+
+ 
+
+D3E
+
+DSEF
+
+DZEF
+
+DIEF’ DOEF
+
+ 
+
+07E
+
+D7 ES
+
+D6EF
+
+D§EE D4EF
+
+ 
+
+'_ 09E
+
+DDE
+
+DUE
+
+DHEF
+
+DIOEF
+
+DSEF DSEF
+
+ 
+
+013E
+
+ 
+
+DI4E
+
+H58
+
+015125101451:
+
+ 
+
+DISEF DIZEF
+
+ 
+
+'DITEV
+
+DIBE
+
+0195
+
+DBEF
+
+D|8EF
+
+DUEFDISEF
+
+ 
+
+021E
+
+022E
+
+023E
+
+0216.!- m
+
+ 
+
+Hat? UZZEF
+
+ 
+
+024E
+
+125E
+
+026E
+
+027E
+
+ 
+
+Udftl'
+
+ 
+
+028E
+
+ 
+
+029E
+
+ 
+
+030E
+
+ 
+
+ 
+
+0315
+
+DSIEF
+
+ 
+
+ 
+
+DSUhr
+
+ 
+
+DZSEF Dd
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SELECT.
+80 2 8H F 32H
+81 = 16H F 32H
+32 = 8V
+83 = 16V
+84 = 32V
+
+1.: . ;;; 'WlNDOW: 256H
+£913? 913?
+
+128H
+W
+128V
+
+64V
+
+D INPUTS:
+D1
+D2
+D4
+DS
+DB
+DQ
+
+0030
+I *1
+<
+
+II II II II II ll
+00)
+4:.
+<
+
+‘3
+O
+
+l
+92%
+<<
+
+011 =W
+012 = 0
+
+D13 = 64V
+014 = 54v
+015 = 64V
+D16 = 0
+
+D17 =EZV
+D19 = EN
+020 :34?
+021 = 0
+
+D22 = 64V
+023 =W
+D24 =E4T
+025 = 0
+
+025 = 64V
+027 =E‘W
+029 = 64V
+030 = 64V
+031 :55?!
+
+ 
+
+Fig. 4-24. A cowboy figure built within an 8 x 16 extended foldeer matrix.
+
+116
+
+ 
+
+ 
+

@@ -1,0 +1,62 @@
+V...
+
+more of these basrc static ﬁgures must be combined on the screen to
+' make up a more useful and interesting game pattern.
+
+Speaking in digital terms, the process of combining two or more
+static ﬁgures on the screen is a matter of ORing together the
+individual elements. In terms of Tinkerbox technology, this means
+running the output of each ﬁgure-generating circuit to a separate
+input of a NAND gate. If the output of that NAND gate is then
+inverted, the resulting signal is a composite image.
+
+The circuit in Fig. 3-20 shows how four different static ﬁgures
+can be combined into a single, composite video waveform. The
+procedure takes advantage of De Morgan’s theorem, where a
+NAN D gate performs an OR operation if the inputs are in an inverted
+form.
+
+Most of the line, bar, and rectangle generators in this chapter
+yield inverted signals (black and white) anyway, so the NAND—gate
+circuit is the most convenient and efﬁcient one for this particular job.
+Note that the output of the NAND gate is an “upright" or white-on-
+black signal.
+
+SOME INTERESTING PATTERNS
+FROM STATIC-FIGURE COMPONENTS
+Figure 3-21 shows a variety of circuits that create some fas-
+
+cinating images on the screen. The basic idea is to combine a certain
+horizontal-count input with a vertical-count input of the same order,
+64H with 64V, for instance.
+
+- The circuits built around NAND gates produce a regular pattern
+of squares on the screen. If the video signal is taken directly from the
+output of this NAN D gate, the result is a set of black squares on a
+
+ 
+
+BLACK ON-WHITE
+STATIC FIGURES
+IN
+
+ 
+
+1/2-7420
+
+L WHITE-ON-BLACK
+COMPOSITE IMAGE
+_._I—_ m”
+
+ 
+
+ 
+
+ 
+
+Fig. 3-20. Combining two or more figures into a single video signal
+
+75
+
+ 
+

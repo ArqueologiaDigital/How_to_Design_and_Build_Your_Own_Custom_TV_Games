@@ -1,0 +1,56 @@
+You can actually build any of your favorite complex ﬁgures and
+move them vertically on the screen by simply substituting VM
+connections for the V-count speciﬁcations you speciﬁed for static
+complex ﬁgures.
+
+Of course you can introduce some “intertia” into the vertical
+motion by modifying the timer circuit to work like that shown in Fig.
+5-6.
+
+The basic vertical-motion control circuit in Fig. 5-7 will play a
+vital role in all the table tennis games described later in this book.
+
+The circuit for generating complex ﬁgures that are manually
+adjustable in the horizontal directions is practically identical to the
+vertical-motion circuit. The basic idea, in fact, is exactly the same.
+
+As shown in Fig. 5-9a, a monostable multivibrator is triggered
+by the HRST signal, a pulse that occurs at the end of each horizontal
+scan. And although the horizontal-motion counters (IC’s 5, 6, and
+8A) receive HCLK pulses continuously, the timer holds the HM
+count at zero until the HTIME output of ICZ-B drops to zero. At that
+moment, the HM counters begin running, generating a delayed
+version of the standard horizontal-count signals.
+
+You can build any of the complex-ﬁgure generators described in
+Chapter 4, then attach it to this horizontal—motion control circuit as
+shown in the block diagram in Fig. 5-9b. Note that all of the
+horizontal-count speciﬁcations come from the horizontal-motion
+counters, while the vertical-count speciﬁcations come from the
+Sourcebox.
+
+The player can adjust or move the complex ﬁgure back and forth
+across the screen by means of the HORIZONTAL POSITION
+control, R3. As in the case of the verﬁcal-motion-control circuit, the
+range of horizontal motion can be modiﬁed by selecting alternate
+values of R4 and C4.
+
+Figure 5-10 shows the block diagram and basic matrix speciﬁca-
+tions for generating a racing-car ﬁgure. The car in this instance is
+movable in the horizontal directions. You can use the same general
+scheme, however, to generate a horizontally movable version of any
+complex ﬁgure you choose.
+
+Figure 5-11 is a complete schematic diagram for the movable
+racing car, including the matrix-generating circuit. This particular
+circuit will be used later in this chapter for making a popular racing
+game.
+
+Using the pin numbers designated in parentheses, this circuit
+can be permanently mounted to a plug-in card (Radio Shack 276-153)
+and plugged into the receptacle on the Sourcebox Unit.
+
+156
+
+ 
+

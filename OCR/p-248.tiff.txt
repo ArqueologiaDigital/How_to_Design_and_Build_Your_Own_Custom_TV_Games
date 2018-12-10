@@ -1,0 +1,43 @@
+ 
+
++5V
+
+3 C1 12 5:
+
+13 1
+1 3
+
+ 
+
+2 .omF Ice-F 2 ICZ-A
+—A —LAUNCH 7 R7
+=47on
+
+ARST
+
+VRST
+
+POS
+
++5V
+
+SF
+256H
+
+SG
+128H
+
+SH
+64H
+
+SI
+32H
+
+lCS-B
+
+ 
+
+248
+
+ 
+

@@ -1,0 +1,70 @@
+important when attempting to build more-complex ﬁgures such as
+racing cars, people, airplanes, rockets, tanks, and so on.
+
+To see how the foldover progadure works,_s_tg)pose yo_u have
+built a vertical white line using 256H, 128H, 64H, and 32H. As
+shown in Fig. 3-15a, these inputs occupy all four inputs of a 4-input
+NAND gate on the Tinkerbox assembly. If the output of this gate is
+run through an inverter before it is applied to GAME VID IN, it
+generates a moderately narrow white line that is just a bit left of
+center. See Fig. 3-15b.
+
+Now modify the inputs to the line-generating NAN D gate by
+running them through a set of EXCLUSIVE-OR gates (at 7486 quad
+2-input EXCLUSIVE-OR). As long as the control input to the 7486
+
+ 
+
+  
+     
+    
+ 
+
+255” WHITE VERTICAL
+
+8 BAR LEFT OF
+CENTER
+
+(OUTPUT)
+
+128H
+64H
+
+/\
+
+7486
+QUAD EXCLUSIVE-OR
+
+32H
+
+ 
+
+ 
+
+ 
+
+256H
+128H
+. 8 8
+3 4 1 4 7 OUTP T
+64H __DO 0 : i: ( U )
+. 9 8 5
+5 6 12 CONTROL = o:
+32H 11 WHITE BAR
+‘ 13 LEFT OF CENTER
+CONTROL = 1
+.__ WHITE BAR
+CONTROL B RIGHT OF CENTER
+
+ 
+
+ 
+
+ 
+
+Fig. 3-15. The basic foldover bandrawlng technique. (a) Circuit for establishing
+the size and position of the left-hand half of the image. (b) Final circuit for
+doubling or folding over the original image.
+
+67
+

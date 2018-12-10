@@ -1,0 +1,68 @@
+ 
+
+    
+   
+   
+
+20—
+19-
+15 ' HORIZONTAL SEC/30R = 7.7If
+17 - VERTICAL SEC/SCR = 4.26/f
+16 -1 f = MULTlVlBRATOR
+‘5‘ FREQUENCY IN kHz
+14-
+13—
+z A 12—-
+E E 11—
+g g 10- HORIZONTAL MOTION
+Eu: ”8: 3: VERTICAL MOTION
+g L”, 7.
+6—
+5..
+4 _
+3...
+2—
+1 —
+DIIIIIIIIIIIIIIIIIIII
+
+ 
+
+ 
+
+2 3
+MULTIVIBRATOR FREQUENCY
+
+ 
+
+ 
+
+ 
+
+Fig. 8-13. Curves and equations for determining the screen cycle time of a slow
+motion ﬁgure generator.
+
+Where this is the case, the universal programmer comes to the
+rescue.
+
+The circuit in Fig. 8-14 shows a practical motion-control circuit
+built around a pair of universal-position programmers. Two of the
+circuits in Fig. 8-9 are required in this case, one for controlling
+vertical motion and another for controlling the horizontal component
+of ﬁgure motion.
+
+Both motion circuits are clocked from their own multivibrators:
+ICl-A for generating vertical-speed pulses and ICl-B for generating
+MCLK pulses for the horizontal-position programmer. The two
+position programmers share a common position-initializing circuit
+built around IC2-A and ICZ-B. The idea here is to load some pre-
+scribed position codes into the position programmers whenever a
+negative-going pulse occurs at the INT input, pin 1 of IC2-A. All
+counting action stops as long as the system remains in this initializing
+mode, and the position programmers take their positioning informa-
+tion directly from their respective PD inputs.
+
+A negtive-going pulse at the system’s MOVE input, however,
+sets the PL inputs Of the two programmers to logic 1, thereby
+
+331
+

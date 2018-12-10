@@ -1,0 +1,26 @@
+ 
+
+ 
+
+EE‘R'
+
+ 
+
+ 
+
+Fig. 8-31. Stormtrooper board schematic.
+
+1C4 in Fig. 8-31 is responsible for sensing the condition where
+all eight stormtroopers are successfully eliminated. The inputs to
+this NAND gate come from the Qoutputs of the ﬂip-ﬂops. When
+these active-low outputs all reach a logic-1 state, the output of 1C4
+drops to logic 0 to create the BALL signal, one of the three condi-
+tions required for resetting the game sequence.
+
+The operation of the Stormtrooper board in Fig. 8-31 is far
+more difﬁcult to explain than to use. Any experimenter hoping to
+
+373
+
+ 
+

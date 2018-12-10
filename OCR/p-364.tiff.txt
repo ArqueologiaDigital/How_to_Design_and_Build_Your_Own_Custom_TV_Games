@@ -1,0 +1,54 @@
+killed stormtroopers from the S KILL memory. The S MOTION
+control block is responsible for generating the downward motion of
+the stormtroopers, while the SH LOGIC block generates the hori-
+zontal component of those figures. Assuming none of the
+stormtroopers have been shot yet, S KILL memory allows all eight
+ﬁgures to appear on the screen. Outputs from the S MOTION
+CONTROL AND S KILL memory are combined in the S FIG logic
+block to generate the complete set of stormtrooper ﬁgures.
+
+The good guy’s position at the bottom of the screen is ﬁxed by
+V-count inputs and G POSITION logic. Motion back and forth across
+the screen is controlled by the MOTION control on the panel and the
+G MOTION control circuit. The complete good— guy ﬁgure is formed
+by the G FIG LOGIC block.
+
+Now suppose the good guy is lining up for his ﬁrst shot at one of
+the stormtroopers. The player depresses the FIRE button, and the
+G FIRES block generates a 0.5-second signal that is transformed
+into the image of a narrow beam by G BEAM logic. This logic circuit
+makes the beam appear to come from the good-guy ﬁgure and
+extend to the advancing front of the stormtroopers. If the good guy
+is lined up properly with one of the stormtroopers during that
+0.5—second interval, the SH=GH block senses that fact and the HIT
+block generates a scoring pulse for the good guy.
+
+A pulse from the HIT block both blanks the stormtrooper
+ﬁgures at S HIDE (they all seem to take cover when the good guy
+ﬁres, and eliminates the ﬁgure of the stricken enemy from S KILL
+MEMORY. The stormtrooper images reappear with the dead one
+missing. '
+
+The trickiest part of the game is that the stormtroopers shoot
+back at the good guy. Whenever the good guy crosses the path of
+any one of the live stormtroopers (sensed by SH=GH), they pause
+for 0.1 second before they all ﬁre a beam at the good guy. The TIME
+DELAY block inserts this brief delay before initiating the S FIRE
+interval. S BEAM LOGIC generates the stormtroopers’ beam
+image that appears to come from each of the live stormtroopers and
+toward the good guy’s position on the screen.
+
+GHIT logic senses a contact between any one of the
+stormtrooper’s beam and the good guy. This spells disaster for the
+good guy because a signal from GHIT automatically stops the game,
+resetting the position of any remaining stormtroopers to the top of
+the screen.
+
+If the good guy is successful in his attempt to kill off all eight of
+the stormtroopers, the ALL S DEAD block senses the condition and
+ends the game.
+
+364
+
+ 
+

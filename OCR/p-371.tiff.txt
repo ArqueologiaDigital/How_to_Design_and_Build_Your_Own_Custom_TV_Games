@@ -1,0 +1,51 @@
+Putting this information all together, the three address lines to
+the scanning system causes 1C3 to generate a sequence of outputs
+representing the horizontal position of each stormtrooper, the ﬂip-
+ﬂops determine whether the stormtrooper being scanned is sup-
+posed to be dead or alive, and the multiplexer reassembles the
+information into a single string of sequential dead-or-alive informa-
+tion.
+
+ICZ—A uses 128H and 256H inputs to window the line of
+stormtrooper ﬁgures. This EXCLUSIVE-OR gate makes certain
+there are never more than eight stormtroopers on the screen at any
+given time, and causes them to appear fairly well centered where the
+128H and 256H signals have opposite colors. This windowing infor-
+mation from lCZ—A is combined with a HIT signal (HIT inverted by
+ICZ—C) at ICl-B. The interaction between the HIT signal and win—
+dow information will be described in a moment.
+
+The stormtrooper information at 1C5 is also windowed by the
+output of ICZ-A, but the windowing information in this case is further
+reﬁned by the 8H and 16H inputs to ICl-A. These two additional
+windowing parameters reduce the horizontal size of each
+stormtrooper to 8H and inserts a 24H blank space between each of
+them. The 24H blank is inserted so that the good guy has a chance to
+slip between two adjacent stormtroopers without getting shot by
+one of them.
+
+Now suppose the game is reset for any one of three reasons: (1)
+all eight stormtroopers are successfully killed, (2) any one of them
+reaches the bottom of the screen, or (3) the good guy is shot by one
+of the stormtroopers. This reset condition sets CLR in Fig. 8-31 to
+logic 0, where it remains until the player depresses the START
+button to begin another attack sequence. While CLR remains at logic
+0, the preset inputs to all eight J -K ﬂip-ﬂops are pulled down to logic
+0. And taking for granted that all eight outputs from 1C3 are at logic 1
+at the time, the ﬂip-ﬂops are all set to a state where their Q outputs
+to the multiplexer are at logic 1. Ultimately, this means all eight
+stormtrooper figures can appear on the screen. In fact any
+stormtrooper ﬁgure remains on the screen as long as the Q output of
+its corresponding flip-ﬂop is at logic 1.
+
+The ﬂip-ﬂops then remain in their “alive” logic-1 states until a
+successful HIT occurs. Whenever the good guy manages to shoot a
+given stormtrooper, {HIT pulse occurs at the windowing input (pins
+2 and 14) of 1C3. The addressing scheme for the demultiplexer
+works in such a way that its output is scanning the stormtrooper that
+is hit, thereby setting its ﬂip-ﬂop to a logic-0 state. This indicates a
+
+371
+
+ 
+

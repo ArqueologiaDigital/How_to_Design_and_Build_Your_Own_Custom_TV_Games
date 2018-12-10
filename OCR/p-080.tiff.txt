@@ -1,0 +1,97 @@
+ 
+
+VCC 24 12 ‘
+
+DO COMM =
+01
+02
+03
+04
+05
+06
+D7 10
+08
+09
+D10
+8 20——« on
+10 19—— 012
+12 18—— 013
+014
+‘3 15—-— ms
+7 '62 15 104 9—0 SE
+= [01—7404 HEX INVERTER = ISO 31 $2 I s
+ICZ—7400 QUAD 2-INPUT NAND ‘5 M 13 11
+103—7430 a-iuPUT NAND
+
+104—7486 QUAD EXCLUSIVE-OR
+lCS—7415O 16:1 MULTIPLEXER
+
+ 
+
+ 
+
+lCt 7
+
+14
+
+El
+
+ 
+
+W
+t
+
+..
+..
+.4
+..
+
+d
+
+\l
+
+I
+la; IBIS Lola: |1> m d
+
+ 
+
+I05
+
+ 
+
+ 
+
+ 
+
+(A)
+
+ 
+
+ 
+
+ 
+
+Fig. 4-1. Most-used IC components for the Complex~Figure Tinkerbox.
+
+as part of the discussions in this chapter can be modiﬁed at a later
+time so that they can be moved freely around the screen. Keep a
+good set of notes concerning the speciﬁcations for interesting and
+potentially useful ﬁgures. Such notes will prove invaluable when you
+decide to work out a TV game of your own.
+
+COMPLEX-FIGURE TINKERBOX
+
+Assemble a Tinkerbox assembly similar to the one described in
+Chapter 3 for building lines, bars, and rectangles. As indicated in the
+parts list in Fig. 4—1, you need at least one 7450 16: 1 multiplexer and
+a 7486 quad EXCLUSIVE-OR in addition to the inverters and NAN D
+gates prescribed for the Line/Bar Tinkerbox. There will be a need
+for as many as four 7450 multiplexers for performing the more
+advanced experiments in this chapter. But since these large 24-pin
+ICs take up so much space on the breadboard, it is a good idea to
+attach them to the board only as they are needed.
+
+80
+
+ 
+

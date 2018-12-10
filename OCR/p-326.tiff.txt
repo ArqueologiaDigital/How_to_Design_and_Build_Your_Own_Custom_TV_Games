@@ -1,0 +1,54 @@
+plus a lot, lot more. As shown, the circuit is capable of generating
+either a HPP or VPP black bar on the screen, depending on whether
+H— or V-count data is applied to the inputs of ICl and 1C2. If these
+inputs are from H-count sources 1H through 256H, the circuit
+outputs a HPP vertical bar. If the inputs to 1C1 and 1C2 are from the
+V—count Sources, it outputs VPP horizontal bars.
+
+1C1 and 1C2 are 4-bit magnitude comparators that are basically
+used in the same fashion described earlier in this chapter. IC3 and
+1C4, used in conjunction with ﬂip-ﬂop IC5—A, make up a 9-bit pre-
+settable up/down binary counter system. These counters, among
+other things, can be used for counter-position programming as
+described in the previous section.
+
+The table in Fig. 8-10 shows the various operating modes for
+the counters and interprets them in terms of position-programmer
+functions.
+
+The ﬁrst line of the function table shows a loading function
+whereby any 9-bit combination of PD inputs is loaded into the
+counters and fed directly to the comparators. If the PD inputs are all
+set to logic 0, for instance, this loading operation tells the com-
+parators to respond to H- or V—count inputs 0000 0000 0.
+
+As indicated on the ﬁrst line of the function table, the loading
+function is established by simply setting the PL input to logic 0. All
+other control inputs are then irrelevant. This function is normally
+used in conjunction with the program memory function_listed on the
+second line. Here the RUN input is ﬁxed at logic 1 and PL is retumed'
+to logic 1. Any 9-bit combination of logic levels loaded into the
+counters and _(_:_omparators while PL is at logic 0 is then remem-
+bered” when PL is set to logic 1. You can change the PD inputs and
+clock the circuit if you want, but the stored data will remain in the
+system as long as RUN=1 and PL=1. This sort of register of
+memory function is not readily available with any of the other
+position-programming schemes described to this point.
+
+Before investigating the real implications of this combination of
+loading and memory functions, it would be a good idea to preview the
+other two possible operating modes, the ones listed on the last two
+lines of the function table. _
+
+The system is taken from its loading mode by setting PL to 1,
+and then it can be taken from its memory mode by setting RUN to
+logic 0. With RUN =0 and PL=1, the counters can be incremented or
+decremented by pulses at the MCLK input. Whether the counters
+increment (up count) or decrement (down count) depends on the
+logic level at DIR. If DIR=O, the counters clock upward, but if
+DIR=1, the counters clock downward. ‘
+
+326
+
+ 
+

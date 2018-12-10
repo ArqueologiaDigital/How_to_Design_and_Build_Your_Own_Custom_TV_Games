@@ -1,0 +1,58 @@
+there is contact between the attack missile and the edge of the
+screen, the output of IC5-A goes to logic 1 and ultimately through
+IC3-B as a pulse for resetting the position of the attack missile.
+
+If, on the other hand, there is contact between the two missiles,
+the output of IC5-C goes to logic 1. This signal is inverted by IC5-D
+and applied to the trigger input of ﬂashing-timer IC7-A. The output
+of that timer enables the missile-ﬂashing IC, 1C7 -B. This rectangular
+waveform is inverted by 102-13 and applied to the attack-missile-
+logic circuit, IC1-C. When the ﬂashing interval is over, the
+negative-going edge of the timing pulse at pin 5 of IC7-A is shaped
+and applied as one of two attack-missile-reset pulses to IC3-B.
+
+Contact between the attack missile and the target is sensed by
+ICZ-D in Fig. 7-7. This pulse is inverted by IC4-C in Fig. 7-8 and
+used for enabling the target—ﬂashing timer, IC6-A. The ﬂashing
+output from IC6—B modulates the target image from TARG at
+IC4-D, where it is then inverted and ORed with the image informa-
+tion for the two missiles in IC8-B.
+
+A complete slipping-counter board is an integral part of the
+system, as shown in the wiring block diagram in Fig. 7 -9. This board
+is already described in connection with the circuit diagram in Fig.
+5-15. Figure 7-9 merely shows how it is interfaced with the three
+game boards just described.
+
+Note carefully the programming of the 4HC, 8HC, 4VC, and
+8VC connections to the slipping-counter board in Fig. 7-9. These
+connections must be made in order to make the attack missile move
+in the proper directions at all times.
+
+ 
+
+Construction and Assembly Hints
+
+Each of the boards described in this section can be built on a 4-
+by 4-inch plug-in boards (Radio Shack 276-153) and interconnected
+by means of edge-card connectors (Radio Shack 276-1551).
+
+The connections on an additional mother board can be used for
+interfacing the game circuits with the Sourcebox unit.
+
+The slipping-counter board should take its +5V source from the
+GAME-A power supply in the Sourcebox. The three other boards
+can then operate most effectively from the GAME-B power supply.
+
+The two control panels can be built into small aluminum project
+boxes.
+
+TDRPEDO ATTACK
+
+Here is another two-player war game. One player controls the
+motion of an attack craft (AC), and his goal is to lob a torpedo at a
+
+253
+
+ 
+

@@ -1,0 +1,100 @@
+'—HoLK
+—HBLANK
+-HRST
+—VBLANK
+-8V
+
+-4v
+
+—2v
+
+—1v
+
+_+5v
+-COMM
+
+ 
+
+VMRST “
+HMRST 8HC
+VML 4HC
+HML 8VC
+1VC 4VC
+
+2VC SLIPPING COUNTER _
+1HC BOARD "
+2HC (HG. 5-15)
+256HM
+128HM
+64HM
+
+32HM
+128VM
+64VM
+32VM
+
+16VM ‘
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GAME LOGIC GAME
+BOARD VIDEO
+(FIG. 7-8)
+
+ 
+
+II > >
+$8$8$9
+N1- F
+
++5V
+COMM
+
+ 
+
+ 
+
+Fig. 7-9. Wiring diagram for the Missile Attack ll game.
+
+DT player can launch them one at a time in any sequence and any
+number of times.
+
+The really unique feature of this Torpedo Attack game, how-
+ever, is that it marks our ﬁrst application of the tagalong feature
+described brieﬂy in Chapter 6. The attack craft carries the attack
+torpedo in the tagalong fashion. When the aggressor launches his
+
+257
+
+ 
+

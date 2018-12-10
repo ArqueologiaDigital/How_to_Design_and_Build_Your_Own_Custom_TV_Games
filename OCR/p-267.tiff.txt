@@ -1,0 +1,58 @@
+Suppose the secondary ﬁgure (the attack torpedo in this case) is
+supposed to be taging alongwith the primary ﬁgure (the attack
+craft). In this instance, the FIRE input to 1C6, IC7, and ICQ is at logic
+1. This particular logic level sets memory latches 106 and IC7 to
+their “read” modes—they are passing any 4-bit words at their inputs
+directly to their outputs. In other words, any change in the 4-bit
+words from 1C3 and 1C5 appears immediately at the outputs of IC6
+and IC7 respectively.
+
+The output designations from 1C6 and IC7 imply they are 4-bit
+motion-control words for the horizontal— and vertical-slipping coun-
+ters on the secondary-ﬁgure slipping-counter—motion board. ISHC
+through SSHC from 1C6, for instance, are connected to the IHC
+through 8HC control terminals of the horizontal counter, while 18VC
+through 8SVC go to their respective vertical-counting-control in-
+puts, lVC through 8VC.
+
+The two 4-bit motion-control words for the primary-ﬁgure
+slipping-counter board are taken ahead of ICs 6 and 7. These outputs
+are designated 1PVC through 8PVC and 1PHC through SPHC.
+
+As long as FIRE is at logic 1, then, both motion-control boards
+
+see the same sets of motion-control codes, and whatever changes in
+motion are prescribed for the primary ﬁgure are likewise delivered
+to the secondary ﬁgure.
+___;l‘he 2:1 multiplexer, _I_§_S_9_,_ also works under the control of the
+FIRE signal. As long as F IRE=1, slipping-counter synchronizing
+pulses for the primary and secondary figure are identical:
+PHML=SHML, m=SVMl.. The primary and secondary ﬁ-
+gures thus appear at the same place on the screen.
+
+As long as m=L the player has complete control over the
+motion of both the primary and secondary ﬁgures by means of
+controls R1 and R3. And what’s more, the secondary ﬁgure is always
+superimposed on the primary one. The latter follows the former,
+wherever it might go.
+
+The picture changes completely, however, when m is set to
+logic 0. The player still has complete control over the primary ﬁgure
+as before, but now latches IC6 and IC7 are set to their memory
+modes. The 4-bit motion-control words appearing at their outputs
+are ﬁxed at the values present the moment FIRE changed from 1 to
+0.
+
+ 
+
+ 
+
+The result is that the secondary ﬁgure continues moving in the
+direction and at a speed speciﬁed at the moment FIR—E is changed
+from 1 to 0. The player has no control over the motion of the
+secondary ﬁgure then.
+
+267
+
+ 
+

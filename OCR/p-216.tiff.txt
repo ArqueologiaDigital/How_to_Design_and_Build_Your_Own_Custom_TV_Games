@@ -1,0 +1,53 @@
+IC8-B. IC5—C detects any contact between the attack missile and the
+right-hand side of the screen, resetting the ﬂip-ﬂop composed of
+IC4-B and IC4—C to a state where pin 14 of IC4-D returns to logic 1,
+unblanking the attack-missile image once again.
+
+The insert in Fig. 6—16 shows a suggested set of connections for
+setting the speed and direction of the two missiles. The speed and
+direction of the antiballistic missile are set by the VC connections. In
+this case, 8VC must remain connected to +5V (logic 1) to make
+certain it always moves upward. (See the vertical direction and
+speed speciﬁcations in Fig. 5-13.) The three remaining VC connec-
+tions are set for a rather high launch velocity. These can be changed
+to suit your own ideas about how fast the rocket should rise,
+however.
+
+The HC inputs determine the speed and direction of the attack
+missile. 8HC must remain at logic 0 to make the missile move from
+left to right, but the other HC inputs can be changed to alter the
+speed.
+
+Incidentally, the fact that the speed of both missiles can be
+changed by modifying the three lower-order VC and HC inputs to the
+motion~control board foreshadows some interesting control circuits
+to be described in the next section of this chapter. Wouldn’t it be nice
+if the game were expanded so that two players can compete by
+manually adjusting the speed of their respective missiles?
+
+The entire circuit in Fig. 6-16 can be constructed on a 44-pin, 4-
+by 4—inch circuit boardv(Radi0 Shack 276-153).,Then the board, along
+with the motion-control board described in Fig. 5-15, can be
+mounted in a simple Gamebox unit. The Gamebox can then be
+plugged into the plug receptacle on the Sourcebox.
+
+PROGRAMMING VARIABLE INITIAI.
+POSITIONS, SPEED AND DIRECTION
+
+Virtually all of the motion-control circuits described thus far in
+this chapter have ﬁxed initial-position parameters as well as a ﬁxed
+speed and direction program. It turns out to be rather simple,
+however, to make the initial positions, ﬁgure speed, and direction
+programmable, either by a player or by the internal game-control
+system.
+
+Take, for example, the missile-attack game described in the
+last section. It is possible to add a lot more interest by making the
+attack missile programmable as far as the attack altitude and velocity
+are concerned. Of course the direction of attack can be varied as
+well, but that wouldn’t be altogether appropriate in this case.
+
+216
+
+ 
+

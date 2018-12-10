@@ -1,0 +1,90 @@
+(32)
+(28) (29) (30) (31) 255V
+16V 32v 64V 128V
+
+Y
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CKB ‘ ICZ
+_.__c c I03
+14 CKA R01 R02 5
+1o 5 2 3]
+L———K
+12 13 C
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CSYNC
+
+ 
+
+ 
+
+    
+
+IC1. 2—7493 4-BIT BINARY
+COUNTER
+lC3—7476 DUAL J-K FLIP-FLOP
+lC4—7410 TRIPLE 3-INPUT NAND
+GAME lCS—7474 DUAL-D FLIP-FLOP
+VIDEO ICS. 9~7402 QUAD 2-INPUT NOR
+[CF—7486 QUAD EXCLUSlVE~OR
+108—74125 QUAD 3-STATE BUFFER
+
+ 
+
+ 
+
+Fig. 2-7. Vertica‘ source and composite video board schematic.
+
+33
+
+ 
+

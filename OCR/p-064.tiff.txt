@@ -1,0 +1,53 @@
+A slightly different approach to generating broad white bars
+calls for a special IC device, a 7474 dual D ﬂip-ﬂop. Figure 3-13
+shows the basic layout and truth table for this nice little device.
+
+In the context of drawing wide bars on the screen, the D-type
+ﬂip-ﬂop works like a short-term memory circuit that remembers
+whatever logic level (1 or 0) is present at its D input the instant its
+CLK input makes a transition from 1 to 0. The Q output responds
+directly to any changes at the D input as long as CLK is at logic 0. As
+soon as CLK returns to logic 0, however, the circuit “remembers”
+the D input it saw just before that 1-to-0 transition took place at
+CLK. D remains ﬁxed at that output level until CLK is pulled up to
+logic 1 again.
+
+The simple circuit in Fig. 3-14 is just one example of how a D
+ﬂip-ﬂop can be used for generating a wide, white vertical bar on the
+screen. The D input in this instance is an inverted version of the
+256H signal. The CLK input is 128H.
+
+Whenever 128H is at logic 1 (white) any logic level present at
+the D input is transferrred immediately to the Circuit’s Q output. The
+ﬁrst time 128H goes white in Fig. 3-14, it so happens 256H is white;
+thus, the circuit generates a white bar that begins as 128H goes
+white the ﬁrst time.
+
+The output then remains white while 128H makes an alterna-
+tion from white to black. The second time 128H goes white, 256H
+has switched to black, so the output of the D ﬂip-ﬂop circuit is
+switched to logic 0 (black on the screen). __
+
+It is left to the experimenter to decide whether the R-S or
+D-type ﬂip—ﬂop is best under speciﬁc conditions. Neither is better
+under all circumstances.
+
+Building Broad Bars and Multiple Parallel Lines by Foldover
+
+There is yet another technique for building bars and parallel
+lines on the screen. This technique still uses the basic Tinkerbox
+approach to getting things started, but it calls for an additional IC to
+complete the job.
+
+Understand from the outset that this foldover technique is
+useful only under certain circumstances described later in this sec-
+tion. Usually it is simpler and more effective to use a straight
+Tinkerbox, RC-modiﬁed, or ﬂip—ﬂop-modiﬁed technique. The fold-
+over procedure is presented here for two reasons: ﬁrst, it com-
+pletes the list of possible ways to generate bars and lines; and
+second, it introduces a digital principle that Will become especially
+
+64
+
+ 
+

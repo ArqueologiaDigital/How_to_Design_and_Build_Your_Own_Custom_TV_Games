@@ -1,0 +1,56 @@
+however, add some interest by changing the attack missile’s motion
+parameters. But that is the subject of the reﬁnements described
+later in this chapter.
+
+The block diagram in Fig. 6-15b shows the main control ele-
+ments for this missile attack game. The circuit has only one control
+input, the LAUNCH “A” block in the upper left-hand corner of the
+diagram. The sole output is the GAME VIDEO terminal at the
+center right. Also note that the system uses the slipping-counter—
+motion~control board from Fig. 5-15. The vertical counter on that
+board ﬁxes the speed and direction of the image A antiballistic
+missile, while the horizontal-slipping counter ﬁxes the motion of the
+image B attack missile.
+
+The purpose of most of the blocks in Fig. 6-15b can be related to
+the flow chart. Some of the blocks perform operations that are
+outside the realm of direct control operations, so we ought to take a
+moment to look at them a bit closer.
+
+The “A” IMAGE block, for instance, generates the image of the
+antiballistic missile. Since this little rectangular ﬁgure moves in the
+vertical direction only, the only slipping—counter inputs required are
+those for generating the ﬁgure’s vertical—position information—
+some VM count signals from the motion-control board. The ﬁgure’s
+horizontal position is ﬁxed by H—count pulses from the Sourcebox.
+
+The “B” IMAGE block performs the same general function,
+generating the attack-missile image. In this case, the motion is in a
+horizontal direction, so this block must include HM inputs from the
+motion-control board. V—count signals from the Sourcebox ﬁx the
+missile’s vertical position, or altitude.
+
+The game must include provisions for sensing a contact bet-
+ween the antiballistic missile and the top of the screen. Recall that
+this event occurs only when the missile is ﬁred, but misses the attack
+missile. The “top of the screen” is deﬁned by the “A” TOP LOGIC
+block, and is based purely on V-count data from the Sourcebox unit.
+
+And ﬁnally, there must be some means for sensing a contact
+between the attack missile and the right-hand side of the screen.
+The “B” EDGE LOGIC block deﬁnes the right-hand side of the
+screen, and this is a simple matter of NAN Ding together the approp-
+riate H-count signals from the Sourcebox.
+
+A preliminary analysis of the circuit shows that two circuit
+boards are required for this particular game. One board is the
+motion-control board shown in Fig. 5-15, and the other is the game
+control scheme in Fig. 6-16.
+
+Most of the circuitry in Fig. 6-16 can be related directly to the
+block diagram and then to speciﬁc control circuits described earlier in
+
+212
+
+ 
+

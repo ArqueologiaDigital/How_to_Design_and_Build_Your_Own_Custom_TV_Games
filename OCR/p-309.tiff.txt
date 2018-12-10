@@ -1,0 +1,57 @@
+determining the size and position of the ﬁgure. In a manner of
+speaking, it is a programmable-ﬁgure size and position control.
+
+The circuit in Fig. 8-2 shows a complete ﬁgure-programming
+circuit for either the horizontal or vertical parameters for ﬁxing the
+position and size of a line/bar ﬁgure on the screen.
+
+The circuit has two sets of inputs. The inputs labeled 1, 2, 4. . . ,
+256 go to their respective connections from the H— or V—count
+terminals of the Sourcebox unit. If the circuit is being used to
+generate horizontal parameters, for example, input 1 goes to 1H,
+input 2 goes to 2H, and so on.
+
+A second set of nine inputs labeled 1P through 256P generally
+go to ﬁxed 1 or O logic levels.
+
+These inputs are continuously compared in 1C1, 1C2, and
+IC4-A. 1C1 compares the four lower-order bits, and when they are
+equal, it delivers an A=B logic level to IC2 where the 16, 32, 64, and
+128 bits are compared. If the ﬁrst eight pairs of inputs are equal, 1C2
+then generates an A=B output from its pin—6 connection.
+
+1C1 and 1C2 are 4-bit magnitude comparators that are cascaded
+to perform 8-bit comparison. The two IC’s compare the eight
+lower—order H- or V-count signals with the eight corresponding logic
+levels at the P inputs. IC4-A, in conjunction with an inverter function
+at IC4-B, make up a 1-bit magnitude comparator for the 256 bit. If
+the 256 bit from the Sourcebox is the same as the 1 or 0 logic level at
+the 256P input, the output of IC4-B goes to logic 1.
+
+IC3—A thus sees two comparison signals. If all eight of the
+lower-order bits are equal and the 265-bit inputs are equal, IC3-A
+generates a logic-0 level as long as that condition exists.
+
+Putting this information all together, the circuit in Fig. 8-2a
+works as a 9-bit magnitude comparator, generating a logic-0 output
+only when the signals from the Sourcebox have logic levels that are
+identical to those set at the nine P inputs.
+
+Use the circuit in Fig. 8—23 as the basis of an experiment with
+the magnitude comparator scheme. Connect the Sourcebox inputs
+to the H-count signals and make provisions for either grounding or
+connecting the P inputs to +5V. If the PP output is connected
+directly to the GAME VID IN connection on the Sourcebox, you will
+be working with a ﬁne, black horizontal line on a white background.
+Running PP through another inverter before applying the signal to
+Sourcebox will generate a white line on a black ﬁeld.
+
+In any event, you will ﬁnd you are working with a vertical line
+that is 1H wide. To get the experiment started, connect the P inputs
+to the following pattern of Is (+5V or no connection at all) and Os
+(ground connection): 100001010, where the bit on the left is the
+
+309
+
+ 
+

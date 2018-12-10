@@ -1,0 +1,54 @@
+ 
+
+These start and reset operations can be wholly manual, fully
+automatic, or a combination of the two. In any case, start and reset
+controls are generally built around a ﬂip-ﬂop circuit.
+
+The ﬂip-ﬂop circuits in Fig. 6-1 are properly classiﬁed as 3:8
+ﬂip-ﬂops. To be more precise, the circuit in Fig. 6-1a is an R-S
+ﬂip-ﬂop, while the one in Fig. 6-1b is an R—S ﬂip-ﬂop. The outputs in
+both examples are compliments of one another, one is always at logic
+1, while tl_i_e_other is at logic 0.
+
+The R-S f lip-ﬂop in Fig. 6-1a is set and reset by means of
+negative-going (active-low) input pulses. Whenever the START
+input is pulled down to logic 0 and‘STOPis held at logic 1. the PLAY
+output goes to 1 and the PLAY output switches to logic 0. As long as
+STOP remains at logic 1, the outputs hold, or remember, this
+condition, even after START returns to logic 1.
+
+The outputs can then be reversed onlyby pulling STOP down to
+logic 0, while holding START at logic 1.
+
+The R—S ﬂip-ﬂop in Fig. 6-1b works exactly the same way, but in
+this case the inputs are active high. The outputs are set and reset by
+means of positive-going pulses at the START and STOP inputs.
+Whenever START is pulled up to logic 1, for instance, the PLAY
+output responds by going to logic 1. At that same time, PLAYgoes
+to logic 0. The circuit then remains in that particular output state as
+long as STOP remains at logic 0. The START input can switch
+between 1 and 0 any number of times, but PLAY remains at logic 1 as
+long as STOP is held at 0.
+
+You will ﬁnd the simple arrangements in Fig. 6-1 appearing one
+or more times in just about every full-scale TV game presented in
+this book. The only real difference between the two circuits is the
+polarity of their input waveforms. One uses negative-going pulses,
+while the other uses positive-going pulses. The choice of using one
+circuit or the other depends largely on the polarity of the input pulses
+that are available from the circuits that operate them.
+
+Manual Start Switch Circuits
+
+Many games begin with a player depressing a start pushbutton,
+and in some instances, cycles within a game are initiated that way.
+The circuits in Fig. 6—2 show how to interface a START pushbutton
+with the ﬂip-ﬂop circuits in Fig. 6-1.
+
+The circuit in Fig. 6-2a is the simplest of the three. In this case,
+resistor R1 keeps the START logic level normally pulled up to logic
+1. Depressing the START button pulls that logic level down to logic
+0, where it remains until the button is released. Any contact bounce
+
+182
+

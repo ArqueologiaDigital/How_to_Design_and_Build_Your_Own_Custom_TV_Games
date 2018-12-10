@@ -1,0 +1,56 @@
+four switches. As shown in the example in Fig. 6-20, a player can
+enter vertical-motion data by ﬁrst setting the positions of the data
+select switches (SA through SD) to the desired combinations of 15
+and 0s and then depressing the LOAD V MOTION pushbutton for a
+moment. Depressing that particular button ultimately applies a
+logic-1 level to the control inputs of 1C2, thereby writing that combi-
+nation of Is and Os into the memory. The VC outputs of 1C2 then
+retain that data until the LOAD V MOTION button is depressed
+agam.
+
+Vertical-position data can be entered in the same fashion, de-
+pressing LOAD V POSITION in this case.
+
+The data from the select switches can be loaded into the output
+latches in any desired sequence and at any time. Some speciﬁc
+examples cited later in this book include some special automatic
+controls for locking out the programming operations through certain
+critical phases of the game.
+
+THE TAGALDNG FEATURE
+
+You might be familiar with commercial TV games that have a
+movable ﬁgure that can be positioned anywhere on the screen by
+means of a player control. This ﬁgure, however, also carries a
+“missile” of its own. The missile goes wherever the primary ﬁgure
+goes—at least until the player “launches” it.
+
+For our purposes here, we will refer to this notion of one ﬁgure
+being carried along by another as a tagalong feature. In a sense, a
+secondary ﬁgure tags along with a primary movable ﬁgure until the
+player somehow indicates the secondary ﬁgure should “ y” on its
+own.
+
+The block diagram in Fig. 6-21a shows how the tagalong feature
+can be incorporated with a primary ﬁgure that moves in a horizontal
+direction. You can see that this particular circuit calls for two
+horizontal-slipping-counter circuits, one for the primary ﬁgure and
+another for the secondary, or tagalong, ﬁgure.
+
+For the sake of simplicity, the primary ﬁgure has no initialization
+circuitry. And since this is the case, the primary slipping counter
+generates HM outputs that deﬁne a continuous horizontal motion.
+(Of course the speed and direction of that motion is determined by
+the primary counter’s HC inputs.)
+
+As long as the INTC input to the secondary-ﬁgure initialization
+circuit is set at logic 0, the secondary slipping counter takes its reset
+pulses from HMRST output of the primary-ﬁgure counter. The
+secondary counter is thus synchronized to the primary counter,
+
+ 
+
+225
+
+ 
+

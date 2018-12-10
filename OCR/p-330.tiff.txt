@@ -1,0 +1,52 @@
+Figure 8-13 shows a set of curves that translate the multivi-
+brator’s operating frequency into numbers indicating the speed of
+the bar. Those numbers indicate the length of time required for
+making one complete cycle of motion across the screen. If, for
+example, the system is operating from H—count signals from the
+Sourcebox, and the multivibrator is operating at 1 kHz[, the Horizon-
+tal Motion curve shows that the bar will complete one cycle of
+horizontal motion across the screen in about 7.6 seconds.
+
+If the inputs to the comparators in Fig. 8—9 are taken from the
+V—count signals from the Sourcebox, the bar moves vertically at a
+rate shown by the Vertical Motion curve. In the case of vertical
+motion, setting the UP/ DOWN switch to UP causes the bar to move
+downward, while setting that switch to DOWN causes the bar to
+move upward. (If this seems to cause some confusion, simply bear in
+mind that the UP and DOWN designations on the direction switch
+indicate the direction of the counter, and not the direction of motion.
+
+A Slow-Motion Figure Generator
+
+A thoughtful reader ought to be asking some relevant questions
+at this pont. Why should I ever build a ﬁgure-motion-control circuit
+around a set of counter/comparator Circuits when the slipping
+counters are simpler? What can this universal position programmer
+do that cannot be done with the simpler positioning circuits de—
+scribed earlier in this chapter?
+
+Both questions can be answered in the following terms. The
+universal position programmer is, indeed, a more complicated sys-
+tem than any slipping counter and position programmer. The fact of
+the matter is, however, that this universal programmer can perform
+some operations that are virtually impossible with the simpler cir-
+cuits.
+
+The case in point is the speed of motion that can be generated
+by the programmer circuit in Fig. 8-9. The slipping-counter-
+motion—control circuit is analyzed in terms of its operating speeds in
+Fig. 7 -22. According to that table, the circuit cannot generate ﬁgure
+speeds less than 6.2 seconds per screen. The minimum cycle time
+for the ﬁgure is either inﬁnity (ﬁgure motionless) or 6.2 seconds.
+
+Using the universal programmer as a motion-control circuit,
+however, allows ﬁgure—cycling times on the order of 20 seconds. In
+essence, the universal programmer can be used as an ultra-slow-
+motion generator. Having a ﬁgure move across the screen in 6.2
+seconds (the greatest amount of time possible with a slipping-
+counter arrangement) might be too fast for many game applications.
+
+330
+
+ 
+

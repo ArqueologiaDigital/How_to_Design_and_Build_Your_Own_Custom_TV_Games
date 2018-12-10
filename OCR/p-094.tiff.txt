@@ -1,0 +1,54 @@
+- If a cell in the top half of the matrix and its extended
+counterpart in the bottom half are to be black, connect that
+position on the multiplexer’s D inputs to logic 0.
+
+- If a cell in the top half of the matrix is to be black and its
+extended counterpart in the bottom half of the matrix is to
+be white, connect a noninverted 64V source to the approp—
+riate D input on the multiplexer.
+
+o If a cell in the top half of the matrix is to be white and its
+extended counterpart in the bottom half of the matrix is to
+be black, connect an inverted 64V source to the appropriate
+D input on the multiplexer.
+
+This set of rules for designing static figures with the
+extended-matrix scheme might seem very complicated at ﬁrst, but it
+can become rather obvious after playing with the circuits for a while.
+
+Figure 4-9 shows the matrix pattern, select, window, and
+D-input speciﬁcations for generating a stylized S ﬁgure. Note that
+the speciﬁcations for the D inputs follow the general rules outlined
+above. Cells D0 and DOE, for example, are both white, so there is no
+need to make any connection to the DO input of the multiplexer.
+Locations D9 and D9E, on the other hand, are both black, so the D9
+input on the multiplexer is connected to logic 1.
+
+Cell positions D13 and D13E have opposite colors: D13 is black
+and its extended counterpart, D13E, is white; so a noninverted 64V
+signal is applied to the D13 input of the multiplexer. And ﬁnally, D4
+and D4E are to be white and black respectively, so an inverted 64V
+signal is fed to the D4 connection on the multiplexer.
+
+The two ﬁgures in Fig. 4-10 are examples of some 4 x8
+extended-matrix designs you might like to try. The question-mark
+ﬁgure is especially fun to see on the screen. You might want to use it
+as a rather novel response to some sort of questionable move in a TV
+game later on.
+
+After studying and applying this extended-matrix technique for
+a while, you will ﬁnd it rather easy to design ﬁgures of your own. Just
+copy the matrix pattern in Fig. 4—8 and blacken the appropriate cells
+with a pencil. Of course you don’t have to use the same select and
+window speciﬁcations shown in the examples here, but if you decide
+to change them, bear in mind that the matrix cannot be any larger
+than the one speciﬁed in these examples. Try it. You’ll ﬁnd it too tall
+to ﬁt on the screen. So it is possible to make the matrix much smaller
+by reducing the horizontal- and vertical-count speciﬁcations. Then,
+too, you can shift the position of the matrix by changing the window
+speciﬁcations.
+
+94
+
+ 
+

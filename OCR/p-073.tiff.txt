@@ -1,0 +1,56 @@
+64V or 6—3-43] signal to a second input of ICZ-B to make the rectangle
+pull down farther from the top or up from the bottom.
+
+Continue'adding more H and V inputs to their respective N AN D
+gates until the resulting rectangle has the relative dimensions and
+position you desire. I’ve called this asculpturz'ng technique because it
+gave the experimenter a feeling of sculpturing or trimming a ﬁgure
+on the screen.
+
+The general procedure for sculpturing a rectangle on the screen
+can be summarized in a basic “recipe.”
+
+Recipe for Sculpturing a Rectangle or Square
+
+Begin with a white screen, assuming it is actually a full—screen,
+white rectangle.
+
+1. Is that big white rectangle to be narrowed in from the left
+right?
+If from the left, use 2§§_I_-I__
+If from the right, use 256H
+
+2. Is the resulting vertical bar to be reduced down from the
+top or upward from the bottom?
+If from the top, use 128\[__
+If from the bottom, use 128V
+
+3. Is the resulting white square to be further narrowed from
+the left or right?
+If from the left, use IZ_S_l_l_
+If from the right, use 128H
+
+4. N ow is that white rectangle to be reduced downward from
+the top or upward from the bottom?
+If from the top, use 64V—
+If from the bottom, use 64V
+
+5. The white square can be sculptured further by alternately
+reducing its horizontal and vertical size and position.
+
+Simplifying the Final Rectangle Circuit
+
+All of the rectangle-building circuits described thus far use at
+least three inverter circuits, one from each of the line-generating
+NAND gates and one at the output of the NAND gate that combines
+the two lines. This circuit is quite appropriate when experimenting
+with various ways to build a desired rectangle, but there happens to
+be a simpler way to do the same job. This simpler operation calls for
+using an IC that is not included on the Tinkerbox parts list, but it
+ought to be speciﬁed in any ﬁnal circuit that is to be part of a
+permanent game system.
+
+73
+
+ 
+

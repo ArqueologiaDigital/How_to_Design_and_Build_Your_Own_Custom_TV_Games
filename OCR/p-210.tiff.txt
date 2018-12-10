@@ -1,0 +1,54 @@
+Perhaps it is time to get off the pabulum and on to the meat of
+TV—game design. The following section describes a missile-
+launching game that incorporates all the control features described
+thus far in this chapter. You will ﬁnd that the game action is rather
+nice, but the range of controls is somewhat limited. After describing
+this basic missile-attack game, we will return to a further discussion
+of more-elaborate initialization controls. These more sophisticated
+controls will then add an extra touch of interest and excitement to
+the basic missile game.
+
+A BASIC MISSILE ATTACK GAME
+
+The missile attack game described here uses two movable
+ﬁgures tentatively labeled image A and B. Image B is the attack
+missile that moves across the screen horizontally at a ﬁxed speed
+and altitude (the altitude and speed will be made programmable later
+on.) Image B is the antiballistic missile that is launched vertically by
+the player. The object of the game is to hit the attack missile with the
+antiballistic missile.
+
+Figure 6-15a is a ﬂow chart for the basic missile attack controls.
+The cycle is started as the player launches the antiballistic missile,
+image A. Presumably, the attack missile is appearing at the left-hand
+side of the screen at the time.
+
+If A = B (if the two images come into contact), the attack
+missile is blanked from the screen (BLANK B), and the antiballistic
+missile is reset to its initial position near the bottom center of the
+screen.
+
+Whether B is hit or not, it continues its horizontal motion across
+the screen. Ifit has been hit, it is blanked (invisible). But in any case,
+the motion continues until it reaches the right-hand side of the
+screen (B = EDGE). As soon as B reaches the edge of the screen,
+it is unblanked so that it becomes visible; and since its left-to~right
+motion is continuous,it immediately appearsin its attack position at
+the left-hand edge of the screen.
+
+That’s what happens if the player launches B so that it strikes
+the attack missile. But what happens if the player misses the missile?
+
+If the player misses the attack missile, image B continues to
+move upward until it reaches the top of the screen (A = TOP). At
+that moment, the position of that missile is initialized (INITIALIZE
+A) and ready for the next attack. If missed, the attack missile
+remains visible as it moves to the right-hand edge of the screen.
+
+Of course it is easy to begin beating this game every time since
+the attack missile ﬂies at a ﬁxed altitude and speed. You can,
+
+210
+
+ 
+

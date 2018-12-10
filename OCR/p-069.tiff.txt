@@ -1,0 +1,83 @@
+ 
+
+ 
+
+'01-A IC2-A
+
+128v 1 2 1 IC4.A
+64V 2 6 1 3
+r—
+4 2 HBAR
+32v j—
+
+:‘ (OUTPUT)
+
+3 9 '13 4 6
+‘ i > 010 5 :
+|C1 B [—12 j .048
+
+IC2—B
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+101—7404 HEX INVERTER
+IC2—7420 DUAL 4—INPUT NAND
+104—7400 QUAD 2-INPUT NAND
+
+ 
+
+ 
+
+ 
+
+ 
+
+A
+IC1-B
+4
+128V 3
+1 lC2—A
+IC1-A
+64V 1 'CS'A 2
+' 2
+HBAR
+(OUTPUT)
+3_2V__. 4 [01—7404 HEX INVERTER
+6 102—7420 DUAL 4-INPUT NAND
+5 105—7486 QUAD EXCLUSIVE-OR
+ICS—B
+B
+
+ 
+
+ 
+
+ 
+
+Fig. 3-16. Equivalent circuits for generating a wide, center-crossing white bar. (a)
+Flip-flop version. (b) Foldover version.
+
+69
+

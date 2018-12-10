@@ -1,0 +1,54 @@
+3. Is the resulting white bar to be further narrowed from the
+left or right?
+If from the left, use Ml
+If from the right, use 64H
+
+Continue including more H inputs, in decreasing order, until the
+desired line width and position is achieved. Remember that including
+an inverted H input narrows the bar from the right-hand side, while
+including a true (noninverted) H input narrows the bar from the left.
+Always begin with 256H and work one H input at a time toward 1H,
+but use as few inputs as possible to simplify the ﬁnal circuit design.
+
+After mastering the preceding technique for placing a vertical
+bar or line at any desired position on the screen, building horizontal
+bars will seem quite simple. Use the same combination of an 8-input
+NAN D gate followed by an inverter, but apply vertical-count asignals
+to the input of the NAND gate.
+
+Begin the process with 128V. (256V isn’t very useful because
+its ﬁrst white-to-black alternation takes place only four lines before
+vertical blanking begins at the bottom of the screen.) If the desired
+horizontal line is to appear in the white portion of 128V, you are
+ready for the next step. But if the line is to be in the black region of
+128V, invert that signal before applying it to the NAND gate.
+
+Continue adding inverted or noninverted V-count inputs, in
+decreasing order, until the resulting white bar has the desired
+position and width. Note that adding a noninverted V-count input
+narrows the bar from the top, and adding an inverted version of the
+same signal narrows the bar from the bottom.
+
+To check your understanding of the horizontal-bar-building
+procedure, make a grease-pencil mark on the screen where you
+would like a horizontal bar to appear. Then begin adding inverted or
+noninverted V-count inputs to the NAND gate, beginning with 128V
+and working downward through the lower-order V-counts signals.
+
+The process can be summarized in a recipe for building a
+horizontal line or bar.
+
+Recipe for 3 Horizontal Line or Bar
+
+Begin with a white screen, assuming it is actually a full-screen
+horizontal bar.
+1. Is that big bar to be narrowed from the bottom or top?
+If from the top, use 128V_____
+If from the bottom, use 128V
+2. Is the resulting white bar to be further narrowed from the
+top or bottom?
+
+51
+
+ 
+

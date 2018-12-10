@@ -1,0 +1,54 @@
+If from the top, use 64V___
+If from the bottom, use 64V
+3. Is the resulting white bar to be further narrowed from the
+top or bottom?
+If from the top, use 32V___
+If from the bottom, use 64V
+
+Continue using more V inputs, in decreasing sequence, until the
+desired horizontal line width and position is achieved. Bear in mind
+that including another inverted V input narrows the white bar from
+the bottom, while including another noninverted V input narrows the
+bar from the top.
+
+While experimenting with this general procedure for building
+vertical or horizontal lines, you might have noticed what happens
+whenever you skip over one of the lower—order signals. Try it. You
+will find that skipping one input in the normal sequence of high-to-
+lower-order inputs causes a pair of parallel lines to appear on the
+screen. Take note of this fact because it might be helpful to you later
+on.
+
+BUILDING WIDELY SEPARATE!) PARALLEL LINES AND BARS
+
+Single white vertical or horizontal lines might be useful for
+certain game designs, but it is more often desirable to create a pair of
+widely separated parallel lines. A case in point concerns building the
+border lines for many playing-ﬁeld type games. Such a border can be
+built from a combination of widely separated horizontal and vertical
+lines.
+
+Building a four-sided border ﬁgure is getting ahead of the
+discussion, however. You must ﬁrst learn how to put a pair of parallel
+lines of any desired width and spacing you choose on the screen.
+
+This procedure involves three basic steps. First, use the
+NAND/invert scheme on the Tinkerbox to create one of the two
+lines. Note the required inputs, then use the same circuit to create
+the second line. Finally, reduce the two circuits to their simplest
+possible circuit form and combine them in a Tinkerbox ORing circuit.
+Use the diagrams in Fig. 3-6 as a reference for studying and experi-
+menting with this procedure in greater detail.
+
+Suppose you want to place two parallel vertical lines on the
+screen. The two lines can have any desired width and relative
+position.
+
+Begin by building one of the two lines, using the NAND/invert
+circuit shown in Fig. 3-6a. Do this by using the Recipe for a Vertical
+Line or Bar described earlier in this chapter.
+
+52
+
+ 
+

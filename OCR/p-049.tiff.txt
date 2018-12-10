@@ -1,0 +1,72 @@
+ 
+
+ 
+
+ 
+
+1
+128V 2 128V
+64V
+
+lC1-A
+
+s 1 2
+103 64V
+/OUTPUT
+
+128V-64V 128V-64V
+(OUTPUT)
+
+A
+
+1
+4 .
+64v —3l><2:l: '01 A
+64V I03 8 1 2 E EN
+‘0143 / OUTPUT
+
+128V-64V .—
+‘ 128V-64V
+
+ 
+
+ 
+
+ 
+
+B
+
+ 
+
+ 
+
+ 
+
+Fig 3- 5. Some horizontal lines and bars from the vertical— count sources. (a) A
+wide white bar at the bottom of the screen representing the area where white
+
+areas ot128V and 64V overlap. (b) Building a broad, horizontal bar Iust below the
+center of the screen
+
+inverter ﬁrst. The inputs to the N AN D gate are now 256H and 128H.
+How has this inversion of the 1281-1 signal inﬂuenced the pattern on
+the screen?
+
+The white portion of the 256H signal is cut in two by a white/
+black alternation this time. Recall that connecting a noninverted
+version of 128H to the NAN D gate also cut the white portion of the
+256H image in two, but with a black-to-white alternation.
+
+Continue adding inverted versions of the H-count signals to the
+NAND gate until all eight inputs are used. If __y__ou are adding these
+inputs in decreasing order—from 128H to 64H, to 32H, to 16H,
+etc. —you will see that the white bar on the screen narrows in from
+the right-hand side. V
+
+As far as the line-building effect on the TV screen is concerned,
+adding a noninverted version of the next-lower-order H input nar-
+
+49
+
+ 
+

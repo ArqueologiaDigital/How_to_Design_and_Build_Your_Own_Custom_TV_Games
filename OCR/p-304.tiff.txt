@@ -1,0 +1,58 @@
+build the ﬁgures from the negative-going edges of the high-order bit
+on all four slipping counters. This rather simple procedure is im-
+plemented by the eight pulse generator circuits in Fig. 7-26.
+
+The trickiest part of this circuit is interpreting the meaning of
+the input designations. A256PHM at pin 1 of ICl—A, for instance,
+represents the 256HM output of Player A’s primary figure
+horizontal-slippng counter. By the same token, A128PVM is Player
+A’s 128VM signal from his primary-ﬁgure vertical-slipping counter.
+
+The outputs of these two pulse generators are effectively
+ANDed together in IC4-A to generate Player A’s primary-aircraft
+figure. The selected values of C1 and C2 determined the horizontal
+and vertical dimensions of that particular ﬁgure. The experimenter is
+free to select values that suit his own impression of how large the
+aircraft ﬁgures should be.
+
+Inputs A256SHM and AIZSSVM are the high—order counter
+outputs from Player A’s secondary-ﬁgure slipping counters. After
+shortening these pulses with a set of pulse generators, they are
+combined in IC4-B to yield the missile ﬁgure for Player A.
+
+Player B’s slipping-counter signals are handled in the same
+fashion, producing his missile ﬁgure from ICE-A and his aircraft
+figure from ICS-B.
+
+IC3—A in Fig. 7-26 senses contact between Player B’s missile
+and A’s aircraft. This is, in other words, the BM=AC LOGIC shown
+in the block diagram in Fig. 7 -24. In the same way, IC3-B signals any
+contact between Player B’s aircraft and A’s missile.
+
+A contact between a missile and the opponent’s aircraft initiates
+a timer circuit which, in turn, causes the image of the stricken
+aircraft to ﬂash on and off. Timer IC8—A, for instance, is initiated
+whenever B’s missile contacts A’s aircraft. ICS-B is then allowed to
+oscillate, alternately gating A’s images on and off at IC4—D.
+
+IC9‘A is another timer that controls oscillator ICQ-B. The
+action of these two devices is initiated whenever there is contact
+between A’s missile and B’s aircraft.
+
+The two pairs of images (Player A’s aircraft and missile, and B’s
+aircraft and missile) are combined at IC3-C to yield the games
+video-output signal.
+
+AMRST and BMRST are set to logic 0 whenever a missile
+scores, thereby returning the missle to its host aircraft.
+
+Dogfight Wiring Diagram
+
+Figure 7-27 shows the wiring diagram for the Dogﬁght game.
+One very important feature that might be easily overlooked is the
+fact that the PINTP connections on the two tagalong systems are
+
+304
+
+ 
+

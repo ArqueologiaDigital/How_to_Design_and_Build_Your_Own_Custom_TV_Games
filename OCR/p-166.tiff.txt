@@ -1,0 +1,55 @@
+Hz framing rate. That adds up to a 2 Hz bandwidth, or a maximum
+deviation of 2 Hz out of a possible 61 Hz. (Moving the ﬁgure any
+faster than one excursion per second is seldom necessary).
+
+The percentage of change of frequency, then, is on the order of
+3%, well within the guaranteed 2% frequency stability of the 556
+timer device.
+
+Now suppose you want to use the same kind of circuit for
+automatic horizontal control. That means you should build the same
+kind of circuit, but using timing values that set the oscillator’s base
+frequency at 15,750 Hz, the basic horizontal scan rate.
+
+As in the case of the vertical—motion-control circuit, the time
+required for making an excursion across the screen is given by
+s = 15, 7 50-f, where f is the oscillator frequency. If 3 turns out to be
+a negative number, it means the ﬁgure moves to the left. A positive
+value for 5 means the ﬁgure moves to the right. But let’s get to the
+point of all this.
+
+If you should want a l-second interval for moving the rectangle
+horizontally across the screen, you should be able to vary the
+oscillator frequency 1 Hz above or below 15, 750 Hz—between
+15,749 Hz and 15,751 Hz. The maximum percentage of change in
+this case is only slightly greater than one-tenth of 1%. Unfortunately
+the 556 timer and your regulated power supply cannot possibly hold
+that kind of tolerance.
+
+Trying to build a horizontal-motion-control circuit around the
+scheme in Fig. 5-12 will be a great disappointment. It is virtually
+impossible to get a stable ﬁgure on the screen.
+
+It is also difﬁcult to use the circuit in Fig. 5-12 for generating
+complex ﬁgures as described in connection with the positioning
+controls (Fig. 5-9a, for instance). The problem here is that the
+oscillator would have to run at the HRST frequency of about 15, 750
+Hz, and we have just gone through the mathematical agony of
+showing that the oscillator isn’t stable enough to get smooth control
+at that frequency.
+
+Then, too, the vertical speed control does not lend itself to
+convenient digital control, the sort of control that is necessary when
+the speed and direction of vertical motion is to be determined by the
+game circuit, rather than by a player.
+
+The circuit in Fig. 5—12 is thus wholly suitable for player-
+controlled motion of simple lines, bars, and rectangles in the vertical
+directions. It does not work very well for horizontal motion of any
+kind, vertical motion of complex ﬁgures, or vertical motion that is
+controlled by the game circuit itself.
+
+166
+
+ 
+

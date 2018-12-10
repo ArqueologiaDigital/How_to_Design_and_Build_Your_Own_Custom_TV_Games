@@ -1,0 +1,104 @@
+ 
+
+R1
+2.2K
+
+ 
+
+ 
+
+LAUNCH
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+A WIDTH
+ICZ-C 8
+CZ
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+
+12
+256HM—L
+
+mam—2—
+
+64HM——
+32HM —5—
+
+256H -’
+
+128H—p
+
+ 
+
+64H——
+
+ 
+
+214
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6
+[CS-B
+
+‘01, 2, 3. 4—7400 QUAD
+
+2-INPUT NAND
+[CS—7402 QUAD 2-INPUT NOR
+ICG, 7—7404 HEX INVERTER
+[CB—7410 TRIPLE 3-INPUT NAND
+ICQ—7420 DUAL 4‘INPUT NAND
+
+ 
+

@@ -1,0 +1,56 @@
+At the same time the latches are set to their memory mode, 1C9
+shifts the synchronizing pulses for the secondary ﬁgure from that of
+the primary ﬁgure to its own set of pulses, SHMRST and SVMRS T .
+
+The secondary ﬁgure thus ﬂies under its own set of motion
+codes and synchronizing pulses until FIRE is set to logic 1 again. The
+instant WEE is returned to logic 1, the secondary ﬁgure immediately
+snaps back to the primary ﬁgure, following the motion codes and
+synchronizing pulses speciﬁed for the primary ﬁgure.
+
+1C8 in Fig. 7-13 is simply the initialization control for the
+primary ﬁgure. As long as PIN TP is atlgg__i_c_0, this 2:1 multiplexer
+circuit directs initial-position pulses, PHINT and PVINT to the
+primary-figure’s reset inputs, thus holding the primary ﬁgure ﬁxed at
+one particular position on the screen. As soon as PINTP is set to
+logic 1, the primary ﬁgure is free to “ﬂy” under the control of the
+4-bit words from 1C3 and 1C5.
+
+Figure 7-14 shows a complete wiring block diagram for the
+tagalong system. The tagalong control board is the one just de-
+scribed in connection with the schematic in Fig. 7-13. The two
+slipping-counter boards are identical (Fig. 5-15), although board N o.
+1 is reserved for the primary ﬁgure and No. 2 for the secondary
+ﬁgure.
+
+All the wiring between the tagalong-control board and the two
+slipping-counter boards is necessary in any tagalong operation. The
+experimenter is free to use only those slipping-counter outputs that
+are required for a particular game, however.
+
+The slipping-counter boards consume a great deal of power
+from the power supply. In fact the two of them in Fig. 7-14 run a 5V,
+1A regulator to its limits. One power supply regulator must be
+dedicated to these slipping-counter boards, and the power for the
+tagalong-control board must be taken from a second regulator cir-
+cuit.
+
+ 
+
+Torpedo Attack Block Diagram
+
+We have had to depart from a detailed description of the tor-
+pedo game in order to discuss the operation of potentiometer-
+controlled speed and direction circuits as well as the basic tagalong
+control. It would probably be a good idea to refresh your ideas about
+the torpedo game, reviewing the action of the control panels and ﬂow
+chart, before resuming this particular discussion.
+
+Figure 7-15a shows the basic block diagram for the defense
+torpedo system. A command to launch any one of the four DTs
+comes from the DT launch panel goes to the DT horizontal position
+
+270
+
+ 
+

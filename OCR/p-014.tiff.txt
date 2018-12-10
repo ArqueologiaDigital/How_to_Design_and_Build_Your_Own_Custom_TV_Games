@@ -1,0 +1,54 @@
+The broad vertical sync and blanking pulse in Fig. 1-1c carries
+horizontal~sync pulses along its top. This is a feature that is neces-
+sary for maintaining horizontal sync during the relatively long verti-
+cal retrace time. Without maintaining horizontal sync during this
+time, the picture would tend to be torn out of sync in the upper
+left-hand comer of the screen, the place where the beam is located
+when it is no longer blanked.
+
+The block diagram in Fig. l-ld shows the portions of a TV
+receiver that are especially relevant to TV games. Horizontal- and
+vertical-sync pulses are taken from the video ampliﬁer and are used
+for synchronizing their respective sawtooth oscillators. Once the
+sawtooth waveforms have been ampliﬁed, they are applied to sets of
+coils (the yoke) around the neck of the CRT. The magnetic ﬁelds
+thus generated are responsible for positioning the electron beam.
+
+The actual video information and blanking signals are applied to
+the cathode of the CRT to modulate the brightness of the beam. The
+blanking pulses have a polarity that cuts off the beam completely.
+Lower voltages create varying degrees of gray and white. Referring
+to the composite video waveform in Fig. l-lc, the “black” voltage
+levels are near the top, while the “whites” are near the bottom.
+
+The video information, tucked between each horizontal-
+blanking pulse, thus creates shades of gray, the lower the voltage
+level, the whiter the spot on the screen.
+
+This is hardly a complete description of the TV system, but it
+does touch upon those principles relevant to understanding the
+operation of TV games. Readers interested in more details about TV
+systems should consult a good TV textbook.
+
+THE BASIC VIDEO GAME SYSTEM
+
+The whole point of the video game system is to create images
+on the screen that have shapes and motions relevant to a particular
+game scheme. These images, however, must be created in the
+context of a conventional TV system, and that means generating
+horizontal— and vertical-sync/blank pulses as well as game video
+information.
+
+It turns out that the game system must be under the control of
+its sync pulses at all times, so it is important to have a reliable and
+accurate source of such pulses, not only for operating the game, but
+also for controlling the beam on the screen of a conventional TV
+receiver.
+
+The whole game system is ultimately synchronized by a crystal
+oscillator. In this particular case, the oscillator runs at 14 MHz. The
+
+14
+
+ 
+

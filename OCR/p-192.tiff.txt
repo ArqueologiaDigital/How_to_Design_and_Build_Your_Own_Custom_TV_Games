@@ -1,0 +1,54 @@
+initializing circuit. Without this power-on feature, the player might
+ﬁnd he cannot initiate the game as soon as power is applied to the
+circuit. The ﬂip-ﬂop, in other words, might take on an initial state
+whereby the game is enabled and the START switch is locked out.
+This leads to the awkward possibility of never being able to get the
+game started. Of course different kinds of games present different
+start-up conditions, depending on the nature of the game, itself.
+
+The little circuit in Fig. 6-6b shows a power-on reset circuit that
+can be inserted between the output of the time delay circuit and the
+STOP input of the RS ﬂip-ﬂop. When power is ﬁrst applied to the
+game, the 0. Ol-ptF capacitor pulls the input of an inverter to logic 0
+for several microseconds. The inverter’s output thus rises to logic 1
+for that interval, guaranteeing a logic-0 output from the NOR gate.
+This pulse is then inverted again and applied to the STOP input of the
+R-S ﬂip-ﬂop. Any reset pulses to that ﬂip-ﬂop come only from the
+delay circuit, once the system has been initialized after tum-on.
+
+The most important reason for working out a preliminary draw-
+ing, however, is to give the designer an opportunity to optimize the
+number of IC chips required. As shown in the preliminary drawing in
+Fig. 6—6a, the circuit requires a total of 6 ICs: one package each of
+Z-input N ORs, 2-input NANDs, 4-input NANDs and inverters, and
+two packages of 556 dual timers. Using so many different kinds of IC
+logic packages, however, leaves plenty of spares. See the table in
+Fig. 6-6.
+
+Note that the circuit calls for only three inverters, and that
+there are three NAN D gates left over. Why not replace the inverters
+with NAND-gate versions of them. That eliminates one package of
+inverters and makes more efﬁcient use of the NAN D gates already
+available.
+
+Then, too, it is quite likely the game circuit will contain a spare
+4-input NAN D gate. That kind of gate at the input of the auto-stop
+circuit can be eliminated from the control circuit, leaving the job to be
+done on the game board, itself. That eliminates another IC package
+from the control circuit.
+
+Now the circuit requires only four IC packages. The ﬁnal step in
+the design procedure is to redraw the schematic, incorporating the
+modiﬁcations just described. The ﬁnal circuit appears in Fig. 6-7.
+
+After studying the ﬂow diagram, block diagram, and preliminary
+schematic, you should have no trouble understanding the operation
+of the control circuit in Fig. 6-7. R8 and C6 make up the power-on
+initializing circuit, ensuring the START switch is enabled the mo-
+ment power is ﬁrst applied. Depressing the START switch then
+enables the game. And whenever the RESET input indicates a
+
+192
+
+ 
+

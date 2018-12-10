@@ -1,0 +1,55 @@
+described in Chapter 3, Building Narrow Lines More Effectively.
+Without the pulse-shortening feature, you would ﬁnd that the circuit
+generates a broad white bar that begins at the top or left—hand side of
+the screen and extends for a distance ﬁxed by R1. While this might
+create an interesting, and perhaps potentially useful visual effect,
+the adjustable-width white bar has little application for player-
+controlled motion.
+
+The pulse-shortening circuit effectively generates a narrow
+white bar that always occurs at the end of the broad, adjustable-
+Width bar image from the timer.
+
+Timing resistor R3 has a value of 470 ohms for both the movable
+horizontal and vertical line. Capacitor C3, however, should be ﬁxed
+at about 0.004 “F for the movable vertical bar and at 1 ”F for a
+horizontal bar.
+
+Build the circuit shown in Fig. 5-‘2, setting the values ﬁrst for a
+movable horizontal bar and then again for a movable vertical bar. You
+can, of course, adjust or modify any of the recommended values of
+R2, C2, and C3 to create any special position and size effects. Just
+bear in mind that R2 and C2 inﬂuence the position and motion of the
+bar, while C3 determines its width.
+
+A movable line that spans the entire height or Width of the
+screen has limited usefulness for ordinary video games. The next
+phase of the development, then, is to Window the line, restricting its
+size a bit. Try the circuit in Fig. 5—3.
+
+The circuit in Fig. 53 generates an image that is quite familiar
+to anyone who has observed or played with commercial video
+games. If you don’t feel a bit of excitement when you see what you
+are creating on the screen with this circuit, you are probably missing
+the spirit of this whole enterprise.
+
+All you have to do is rig up the circuit in Fig. 5-2 to generate a
+movable horizontal bar, then window it with some H—count signals.
+The NOR gate in this instance effectively ANDs together the mova—
+ble bar and window signals, yielding an image that looks very much
+like the paddle devices for countless video games on the market
+today.
+
+Note that the “paddle” is movable along a ﬁxed vertical path.
+The vertical position of the image is determined by the setting of R1,
+while the window speciﬁcations determine the ﬁxed horizontal posi-
+tion and width. Capacitor C3 and resistor R3 in the monostable
+circuit ﬁx the height of the “paddle.”
+
+After playing with this circuit for a while, you might want to
+reorient it to create a “paddle” that is movable along a ﬁxed horizon-
+
+142
+
+ 
+

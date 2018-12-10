@@ -1,0 +1,84 @@
+ 
+
+DI
+
+03
+
+D7
+D9
+Dll
+DI?)
+Dl5
+DIE
+03E
+D4E D5E
+
+D6E 07E
+
+08E 09E
+
+ 
+
+DIF
+
+DSF 02F
+
+D5F n4?
+
+D7F DGF
+
+D9F 21:1;
+
+DIBF
+
+D|5F
+
+our:
+
+DIEF ’
+
+ 
+
+SELECT:
+
+SO =8H F 16H
+S1 =8V
+
+82 = 16V
+SS=32V
+
+WINDOW: 256H
+
+DINPUTS:
+
+DO =0
+
+D2 :0
+
+D4 =e4v
+08 =e4v
+D10=64V
+D11=W
+D12=64V
+D13=64—V
+D14=64V
+015=W
+
+ 
+
+Fig. 4-16. A vertical missle figure built within a 4 x 16 extended foldover matrix.
+
+Using this kind of parallel selection, the two multiplexers are
+always selected exactly the same way. If the system-select inputs
+happen to select D2 on 1C5 (pin 6), it must also be selec
+6) on 1C6. As far as system-
+
+104
+
+ 
+
+ 
+
+ting D18 (pin
+select inputs 80 through 83 are con-
+

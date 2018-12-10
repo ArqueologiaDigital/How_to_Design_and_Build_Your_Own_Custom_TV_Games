@@ -1,0 +1,53 @@
+at logic 1. And as long as ICZ-A is thus passing the good-guy ﬁgure,
+that ﬁgure is ORed with the other game components at IC5-A.
+
+The pin-1 input of ICZ-A drops to logic 0 and blanks the good-
+guy ﬁgure from the screen whenever he is hit by a beam from one of
+the stormtroopers. To see how this blanking feature works, ngtg
+that the pin-1 input of IC2-A is controlled by the output 3f_ a R-S
+ﬂip-ﬂop,IC3-A and IC3-B. A logic-0 input to IC3-B from CLR sets
+this ﬂip-ﬂop into a condition that places a logic-1 level at pin 1 of
+IC2-A, allowing the good guy ﬁgure to appear on the screen. The
+good guy, in other words, always appears on the screen whenever
+the game is started.
+
+The good guy is blanked from the screen whenever the pin-1
+input of IC3-A goes to logic 0. This happens only when one of the
+stormtroopers manages to kill the good guy. Recall that ICl-A
+senses an alignment between the horizontal components of one of
+the stormtroopers and the good guy. This logic-0 signal goes to pin 2
+of IC7—A where it is effectively ANDed with the stormtrooper beam
+signal from IC4-A. If the stormtrooper beam and alignment of the
+good guy and a stormtrooper occur at the same time, the output of
+IC7—A goes to logic 1. _ _.
+
+IC6—F inverts this good-guy-hit signal and sets the R—S flip-ﬂop
+to a condition that blanks good guy from the screen. Once the game
+is started, good guy remains visible on the screen until he is hit by a
+stormtrooper’s beam. If the good guy manages to avoid being hit, his
+ﬁgure remains on the screen throughout the game.
+
+The stormtroopers’ horizontal- and vertical-ﬁgure compo-
+nents, SH and SV, are combined at IC7-C and blanked at the
+appropriate time by IC7-C. The stormtrooper video signal is then
+applied to IC5—A, where it is combined with the beams and good-guy
+ﬁgure.
+
+Live stormtroopers are blanked off the screen whenever the
+good guy ﬁres a round. Note that GF P, the good-guy ﬁring signal, is
+applied to one input of 1C7 -C, creating a logic—1 level that blanks the
+stormtrooper ﬁgures as long as the 0. 5-second good-guy beam lasts.
+The visual impression is that the stormtroopers take cover every
+time the good guy ﬁres. Good guy can stillhit one of the troopers,
+even while taking cover, though.
+
+ICS-B is responsible for sensing a hit between the good guy’s
+ﬁring beam and a stormtrooper. This NAN D gate merely senses the
+simultaneous occurrence of horizontal alignment and the good guy’s
+ﬁring pulse. The resulting HIT signal is used for blanking the strick-
+en stormtrooper from the screen for the reaminder of the attack
+
+378
+
+ 
+

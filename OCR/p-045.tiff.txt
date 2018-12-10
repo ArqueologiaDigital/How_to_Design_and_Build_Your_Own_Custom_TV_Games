@@ -1,0 +1,116 @@
+So what is accomplished by the simple circuit in Fig. 3-4a? Not
+much in terms of building images for TV games. But the circuit does
+clearly demonstrate two important facts: a NAN D gate inverts logic
+levels (and hence reverses blacks and whites), and doubly inverting
+a signal returns it ot its original phase.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SECOND lC SOCKET
+SOURCEBOX EDGECARD BOARD FOR ICS
+CONNECTOR (USED AS PLUG)
+\ \ BUS STRIP
+"—‘l i"‘“—’i \ iC SOCKET
+BOARD
+J49 “”1 H I
+COMM (22) l l
+OOMM
+(42)
+23 ft“) Lil
+4H (40) 4H
+(39)
+8H (38) 8H
+16H (37) 16H
+32H (36) 32H
+64H (35) 64H
+128H (34) 128H
+256H (4) 256H
+HRST (3) HRST
+HBLANK HBLANK
+(24)
+123 ‘25) 3
+w v (26) 4v
+8V (27) 8V
+16V ﬁg: 16V
+32v (30) 32v
+64V (31) 64V
+128V (32) 128V
+255v A (19) - 256V
+VRST (20) VRST
+VBLANK VBLANK
+MOD (13) JUMPER MOD AND
+cv1o “4) I CVID TOGETHER
+GAME VID (16) FOR NORMAL OPERATlON
+m GAME ViD W
+|—-— 27 LENGTHS OF ——-I
+SOLID HOOKUP WiRE
+APPROX. 12- TO la—iNCH LONG
+
+ 
+
+ 
+
+ 
+
+Fig. 3-3. Signal and power supply connections between the Sourcebox unit and
+Tinkerbox assembly. Note that the Sourcebox MOD and CVID terminals are
+connected together at the Tinkerbox.
+
+45
+
+ 
+

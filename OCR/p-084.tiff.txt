@@ -1,0 +1,56 @@
+logic level applied to D8 (logic 1) was delivered to the GAME VID IN
+connection on the Sourcebox, thus generating a white line. A bit of
+white video appeared on the screen each time the horizontal trace
+reached a point where it selected the D8 input of the multiplexer.
+Moving the logic-0 input around to other D-input positions moved
+the active region to different locations on the horizontal traceﬁ
+
+Incidentally, any D input that is not connected anywhere acts as
+a logic-1 input. All D inputs that are not connected to COMM (logic
+0) thus generate black areas on the screen, and that is why this
+experiment shows a single white bar on a black ﬁeld.
+
+Connect more than one D input to logic 0 and note the effect. It
+is possible to ﬁll the screen with white bars if all 16 inputs are
+connected to COMM.
+
+. It is rather convenient to think of this multiplexer scheme as a
+type of memory circuit. The memory is capable of holding 16 bits of
+data, and each of the 16 data locations are addressed in sequence by
+the signals appearing at the multiplexer’s S inputs.
+
+Bear this in mind while substituting vertical-count inputs for the
+horizontal-count inputs at SO, SI, 82, and 83. Be sure to connect the
+highest-order V—count input to 83, the next-higher V-count to 82,
+and so on down the line to SO. Scrambling the sequence at this point
+might cause more confusion than anything else.
+
+THE ADDRESS MATRIX CONCEPT
+
+Since each of the 16 D inputs on the multiplexer represents 1 of
+16 different combinations of ls and Os applied to the S inputs, it is
+possible to organize those 16 locations into a matrix pattern.
+
+The experiments suggested in the previous section of this
+chapter assumed a matrix 1 unit wide and 16 units long. There was
+one string of 16 discrete segments across or down the screen,
+depending on whether the S inputs were connected to horizontal— or
+vertical—count sources.
+
+What do you suppose happens to the D-input addressing if two
+of the S inputs, say SO and $1, are connected to H—count inputs,
+while the two remaining S inputs, $2 and S3, are connected to
+V—count inputs? to be more speciﬁc, try this: connect SO to 16H, 81
+to 32H, S2 to 16V, and SB to 32V. Instead of generating a string of 16
+segments, you end up with a 4x4 matrix or graph. See Fig. 4-4a.
+
+The H—count pulses determine the horizontal positions on this
+little matrix, while the V-count pulses determine the vertical coordi-
+nates. Position D10, for instance, is enabled whenever the two
+H-count pulses show the decimal equivalent of 2 and the two V-count
+signals are at decimal 2. i
+
+84
+
+ 
+

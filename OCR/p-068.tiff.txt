@@ -1,0 +1,54 @@
+IC is connected to COMM (at logic 0) the white line appears at the
+same place on the screen it had before the EXCLUSIVE—OR gates
+were installed. But connecting that control line to +5V (logic 1), the
+line shifts to the right of center.
+
+What is happening here is a reversal of the horizontal-count
+sequence as the NAND gate sees it. Reversing or inverting the
+outputs from any digital counter circuit makes it appear to count
+backwards. So when the control input to the EXCLUSIVE-OR gates
+is a logic 0, the NAND gate sees the H-count inputs arriving in their
+normal up-coming sequence. Setting the control input to logic 1,
+however, creates the effect of a counter that is running backwards.
+In a sense, the NAND gate is fooled into reacting as though the
+horizontal count is running from right to left across the screen.
+
+Now connect the control input of the circuit to 256H. You will
+ﬁnd a pair of parallel vertical lines on the screen. This image is
+something like a mirror image. The line on the left is the real image,
+and the one on the right is its reﬂection. Unfortunately the dividing
+line is at the point where 256H changes from black to white, and that
+point is always a bit left of center.
+
+Used with H—count line drawings, the foldover technique yields
+a double pattern, with the right—hand half being a mirror image of the
+left-hand side.
+
+The trick works even better with vertical—count signals because
+the 128V dividing line is closer to the center of the screen.
+
+Create any pattern of horizontal parallel lines on the left side of
+the screen, then run the inputs to their line-generating NAN D gates.
+Using 256B as the control input, the result is a mirror image on the
+right side of the screen. Try using 128H as the control and you will
+ﬁnd the pattern repeating itself several times across the screen.
+
+This foldover technique can be used for generating a broad
+white bar if the inputs to the line-generating NAN D gate are
+speciﬁed so that they create a white bar that ends at the line where
+256H changes from black to white. The mirror image of a white bar
+ending at that line effectively extends the bar across that point and an
+equal distance into the right-hand side of the screen. The same sort
+of thing happens when folding over a horizontal white bar.
+
+Using the foldover technique is purely optional at this point.
+The ﬂip-ﬂop techniques are equally effective and often more effi—
+cient. Compare the two methods as shown in Fig. 3—16. Both circuits
+generate exactly the same horizontal white ba_r across the center of
+the screen. The scheme in Fig. 3-16a uses a R—Sflip-ﬂop, while the
+one in Fig. 3—16b uses the foldover technique.
+
+68
+
+ 
+

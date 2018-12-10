@@ -1,0 +1,57 @@
+number of cells available in the matrix, and unfortunately, the basic
+16-ce11 matrix is a bit too elementary to be of much use.
+
+It turns out, however, that it is possible to apply a simple
+matrix—extension procedure to double the number of cells in any
+basic matrix. Using this procedure, for instance, immediately trans—
+forms the 4x4 matrix shown in Fig. 4—4a into a 32—cell, 4x8 matrix
+(See Fig. 4—8).
+
+One of the special features of the matrix-extension technique
+used in this book is that it does not call for adding any hardware to the
+basic matrix-generating circuit. The circuit for generating the 32-cell
+matrix in Fig. 4-8 is exactly the same as that described in connection
+with the 16-cell circuit in Fig. 4—5.
+
+Thus it is possible to double the essential qualities of a matrix-
+generating circuit without having to add more hardware. And that is
+one ﬁne example of applied engineering efﬁciency.
+
+The only real difference between the speciﬁcations for a basic
+16-cell matrix and its 32-cell extended version is the D-input format.
+Whereas a basic matrix calls for inputs of either logic 0 or 1, the
+extended version calls for logic 1, 0, and inverted/noninverted
+vertical—count signals. Compare the D—input speciﬁcation for the
+4X8 extended matrix in Fig. 4-8 with those for the basic 4x4 matrix
+in Fig. 4-6.
+
+Rather than launching a highly technical theory of operation at
+this point, it is better (in this case anyway) to try the scheme ﬁrst.
+
+Using the circuit shown in Fig. 4—5, modify its select and
+Window speciﬁcations as prescribed in Fig. 4-8. Do not make any
+connections to the D inputs at this time.
+
+After carrying out this initial setup procedure, you should ﬁnd a
+4 x 16 white rectangle resting in the lower right-hand quadrant of the
+screen. This is the extended 4 X8 matrix having all D inputs equal to
+logic 1.
+
+Connect one end of a jumper wire to logic 0 (COMM) and touch
+the other end to the multiplexer’s D0 input. You will ﬁnd two black
+squares appearing on the screen. One is in the D0 position of the
+matrix and the other is in the DOE position. Here is the ﬁrst
+important point. A logic-0 level applied to any one of the 16 D inputs
+on the multiplexer creates 2 black squares. One of these squares
+appears in the designated D—input position, while the other appears
+in the corresponding extended-matrix position.
+
+Tap the logic—0 jumper wire to all 16 D inputs in succession and
+note how it eliminates 2 cells at one time. Of course you can connect
+all 16 D inputs to logic 0 and end up blacking out all 32 matrix cells-2
+at a time.
+
+91
+
+ 
+

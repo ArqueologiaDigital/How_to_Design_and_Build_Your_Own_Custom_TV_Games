@@ -1,0 +1,54 @@
+NAND gates ICl—C and ICl-D now see logic-0 levels at one of
+their two inputs, thereby guaranteeing logic-1 levels from those two
+gates. The output of ICl-B remains at logic 0 because its two inputs
+from the latch are still ﬁxed at logic 1.
+
+The EXCLUSIVE OR gates in 1C6 then produce a pattern of
+inverted and noninverted H—count signals. IC6-B and IC6-C both
+yield inverted versions of their respective H-count inputs, while
+IC6—A produces a noninverted version of 128H. Since IC6-D is
+permanently wired to invert its 32H input, it follows that the EXC-
+LUSIVl_3__(_)R corni___g__guration is producing H—count signals of 256H,
+128H, 64H, and 32H. NAN Ding these four signals together in IC4-B
+produces a DT image having its horizontal position determined by
+the four H-count parameters just described. That’s true if the player
+depresses the FIRE 1 button.
+
+The following list summarizes the H-count parameters from
+this DT selection circuit whenever the defensive player ﬁres any one
+of the four defense torpedoes:
+
+- Sl—m, 128H, (TATE, 37H
+~ s2—2—s‘6ﬁ, 1% w 3.211
+- 83—256H, 12E, 64H, §_2_§
+- S4—256H, 128H, 64H, 32H
+
+The output of 101-3 determines the horizontal position, or to
+be more speciﬁc, it determines which one of the four DT ﬁgures are
+ﬁred. The output of IC3-B at the vertical-slipping counter then
+determines the vertical position of the DT ﬁgure. These two ﬁgure
+parameters are ﬁrst transformed into pulses by a set of pulse
+generators, then applied to IC7-B where they are molded into the
+DT ﬁgure itself. The value of C2 ﬁxes the vertical height of DT,
+while C3 sets in width.
+
+The complete DT ﬁgure from IC7-B is inverted by IC7-C and
+sent to yet another NOR gate which, in effect, actually functions as a
+blanking gate for the DT ﬁgure. Some sort of DT ﬁgure data appears
+continuously at pin 3 of IC7-A, but the logic level at pin 2 is deter-
+mined by whether the system is in a ﬁring or DT initializing mode.
+
+A NOR gate of this type is effectively switched off whenever
+one of its inputs is at logic 1, a condition that occurs whenever the
+R-S f lip-ﬂop shows a logic-1 level from pin 6 of ICZ-B. Recall that this
+condition signiﬁes the DT ﬁgure is reset to its initial position. The
+DT ﬁgures are thus blanked from the screen until they are ﬁred.
+
+The circuit in Fig. 7-17 is basically a ﬁgure generating board.
+1C8 generates the target ﬁgure from the selection of H— and V-count
+signals shown at its inputs. The ACFIG signal from IC3-A is the
+
+281
+
+ 
+

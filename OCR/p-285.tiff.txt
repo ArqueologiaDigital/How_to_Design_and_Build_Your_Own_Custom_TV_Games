@@ -1,0 +1,65 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+  
+ 
+
+ 
+
+ 
+
+ 
+
+ICI, 2-7400 QUAD 2-INPUT NAND
+lat—7402 QUAD 2-INPUT NOR
+IC4—7404 HEX lNVERTER
+
+K36, 7—7420 DUAL 4-INPUT NAND
+108—4430 8~INPUT NAND
+
+ 
+ 
+
+‘NOTES:
+SELECT C1 FOR ACFiG LENGTH
+._.. SELECT CZ FOR ACFIG HEIGHT
+
+SELECT CS FOR ATFIG LENGTH
+SELECT 04 FOR ATFIG HEIGHT
+
+; FIRE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 7-17. Schematic diagram for the figure board.
+
+285
+
+ 
+

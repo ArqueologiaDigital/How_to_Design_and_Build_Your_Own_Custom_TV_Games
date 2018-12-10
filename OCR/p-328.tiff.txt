@@ -1,0 +1,104 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++5v
+SPEED'
+. R1
+8 500K R?
+i 47K , ,
+VBLAE’L_ 3 22K 22K 22K
+4 4
+ICB STOP DOWN ﬂ
+$43
+2 ‘ 15K 1 1 "i
+LOAD
+.1 C1 __ RUN UP
+200Hz TO 2 kHz DUE/P
+=1: .
+' —> DIR
+> RUN
+v ———-————-——-> MCLK
+->1PD
+22K —-> 2PD
+_, 4PD
+1PD —" 8P0
+PD INPUT 1 am
+. SWITCH PANEL
+—-r— 32PD
+° 1 —> 64PD
++128PD
+__ -—> 256PD
+
+ 
+
+ 
+
+ONE OF 9
+
+ 
+
+ 
+
+Fig. 8-11. Suggested input interface for experiments with the universal position
+
+programmer.
+
+set up the position-programming codes without having the ﬁgure
+jumping all over the screen. With the PD switches now set to a
+desired program combination, momentarily depress the LOAD
+pushbutton. You will see the bar on the screen jump immediately to
+the position you speciﬁed on the PD input switches.
+
+Try a few more positions, ﬁrst setting the codes on the PD
+switch panel and then depressing the LOAD pushbutton. The bar
+can indeed be set to any desired position on the screen with 1H
+
+precision.
+
+328
+
+ 
+
+ 
+

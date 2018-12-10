@@ -1,0 +1,56 @@
+symmetrical ﬁgures in the earlier section entitled Folding Over an
+Extended Matrix. The only difference here is that you are working
+With twice as many cells.
+
+Figure 4-25 shows the 128-cell extended foldover matrix
+oriented horizontally. The axis of symmetry in this case is a vertical
+line through the center of the image. Set up this matrix, using the
+EXCLUSIVE-OR circuit and speciﬁcations shown in Fig. 4-25. Then
+work out some ﬁgures of your own, bearing in mind that the right-
+hand half of the images must be mirror images of the left-hand half.
+
+Further Experiments With the 32-, 64-, 128~Cell System
+
+If you have been performing the experiments suggested in this
+chapter thus far, you most likely have the know-how and conﬁdence
+necessary for generating other matrix formats. What’s even more
+important is that you ought to be coming up with additional ideas you
+want to try, perhaps more-novel ideas than you have time to work
+on.
+
+Suppose, for instance, you are thinking about putting more than
+one kind of complex ﬁgure on the screen. How do you go about it?
+Well, you certainly have to build two different ﬁgure-generating
+circuits, one for each ﬁgure you want to put on the screen. After
+that, you must effectively OR together their outputs before applying
+the signal to the GAME VID IN terminal of the Sourcebox unit.
+
+Exactly how you should go about ORing together these signals
+depends on whether they emerge from the ﬁgure-generating sys-
+tems as white on black or black on white. All of the multiplexers in
+this chapter generate inverted, black-on-white signals, but the in-
+verter connected to the output of the multiplexer in Fig. 4-5 and the
+NAN D gate at the outputs of the multiplexers in Fig. 4-17 reverse
+the image so that it is properly shown as a white matrix on a black
+background.
+
+These “upright” signals can be ORed together (combined on
+the screen) by ﬁrst running them to separate inputs of a common
+NOR IC. The output of that NOR gate can then be inverted to yield a
+cemposite video signal having the proper white-on-black format.
+
+If you are confused about any procedure for combining complex
+ﬁgures on the screen, you ought to review the material in the section
+entitled COMBINING ANY NUMBER OF STATIC FIGURES ON
+THE SCREEN in Chapter 3. The procedures described there can be
+carried over to the circuits in this chapter.
+
+MATRIX OPERATIONS FROM 64-CELL GENERATORS
+
+The idea of expanding the cell-generating capacity by adding
+more multiplexer circuits can be extended indeﬁnately. Each new
+
+117
+
+ 
+

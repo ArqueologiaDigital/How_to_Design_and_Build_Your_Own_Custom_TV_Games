@@ -1,0 +1,53 @@
+Sketch the ﬁgure you want by darkening the appropriate cells
+on the matrix pattern, adjust the select and window as desired, and
+specify the D inputs according to your sketch and the four
+extended- matrix rules described earlier in this section.
+
+It 1s often helpful to build the original ﬁgure using a relatively
+large- scale matrix. After you are satisﬁed with the speciﬁcations,
+scale it down to size by lowering the order of the select mputs. The
+question mark in Fig. 4 10a, for example, turns out to be a rather
+large ﬁgure when built according to the select and window speciﬁca-
+tions shown in that diagram. It can be reduced 1n size a considerable
+amount by setting the select speciﬁcations to 4H, ﬂ 4V, and 8V,
+then setting the window to something like 256H, 128H, 64H, 32H,
+16H, 126V, 64V, _and 32V. The V— count sign__al to the D 1nputs should
+be 16V and 16V, rather than 64V and 64Vused for the larger
+version
+
+While you are having fun with this question mark, why not try
+something else? Use the small-ﬁgure select and D inputs as just
+described. But instead of using the 8-input NAN D gate to generate
+the little window, try replacing the NAND gate with an
+EXCLUSIVE- OR gate. Run 32H and 32V signals to the inputs of the
+EXCLUSIVE- OR gate, and connect the output of that gate to the CE
+terminal of the multiplexer. Cute, eh?
+
+Folding Over an Extended Matrix
+
+The matrix-extension procedure doubles the number of cells
+available for building matrix-oriented ﬁgures. That particular
+technique has no restrictions on the type of ﬁgures that can be
+generated, and it calls for no more hardware than is required for a
+basic matrix-generating circuit.
+
+A matrix foldover scheme described here doubles the number
+of cells once again. A basic 4 x4 matrix, for instance, can be doubled
+to a 4 X8 pattern by means of the matrix- extension procedure, and it
+can then be doubled to an 8X8 matrix by applying a foldover
+technique.
+
+There are some restrictions on the kind of ﬁgure that can be
+generated under foldover conditions, however, and the technique
+requires some additional EXCLUSIVE-OR gates. In spite of the
+restrictions and extra hardware, the foldover technique pays off
+quite often.
+
+The diagrams in Fig. 4—11 show the 8X8 extended foldover
+matrix pattern as well as the extra circuitry that must be added to the
+basic 4x4 matrix generator in Fig. 4-5.
+
+96
+
+ 
+

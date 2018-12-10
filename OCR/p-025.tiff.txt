@@ -1,0 +1,36 @@
+ 
+
+1/2"
+
+ 
+
+ 
+
+    
+
+HOMEMADE
+HEAT SINK
+
+5-V
+REGULATOR
+
+ 
+
+ 
+
+ 
+
+Fig. 2-3. Recommended heat sink for the voltage regulators.
+
+heat sinks are available commercially, but it is rather easy to cut and
+bend custom versions from standard 1/ 16-in. aluminum, stock.
+HORIZONTAL SOURCE BOARD
+
+Figure 2-4 is a complete schematic diagram for the circuit that
+generates all the horizontal counting, sync, blanking, and reset
+pulses. This particular circuit board also holds the audio ampliﬁer IC,
+
+25
+
+ 
+

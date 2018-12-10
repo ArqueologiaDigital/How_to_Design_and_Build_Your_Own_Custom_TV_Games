@@ -1,0 +1,58 @@
+whenever the attack missile contacts either the bottom or right-hand
+edge of the screen, and B=TARG generates a pulse Whenever the
+attack missile hits the target.
+
+Much of what remains to be explained in Fig. 7-50 can be
+determined from the ﬂow chart in Fig. 7 -1. The A—reset logic block,
+for instance, is responsible for resetting the position of the antiballis-
+tic missile whenever A=B or A=TOP. This reset pulse is desig-
+nated ARST.
+
+Whenever A=B occurs, the pulse from that block also initiates
+a ﬂash-time timer in the A=B ﬂash-time block. This block, in turn,
+generates a logic-1 level that entables the A=B ﬂasher. And when
+the timing is over, the pulse generator produces a brief pulse that
+ultimately resets the position of the attack missile.
+
+The attack missile is also reset the instant it reaches the bottom
+or right—hand edge of the screen. The BRST logic_b‘lgc.l_<wthus gener-
+ates a negative-going attack missile reset pulse (BRST) whenever
+the A=B ﬂash timing is over or the missile contacts the edge of the
+screen.
+
+Whenever the B=TARG block senses a contact between the
+attack missile and the target, it also initiates a ﬂash timer. This timer
+enables the B=TARG ﬂashing circuit which, in turn, switches the
+target-image data off and on in the target—ﬂash block.
+
+Returning to the attack-missile ﬁgure for a moment, note the
+B— ﬁgure ﬂash and blank block has two separate control inputs. The
+image data for the attack missile (BFIG) can be completely blanked
+off the screen while it is in its reset position. The BBLANK signal
+from the attack-missile control system is responsible for this blank-
+ing effect.
+
+The same attack missile image, however, is also blanked on and
+off by the A: B ﬂash circuit. In either case, the unblanked, blanked,
+or ﬂashing 1mage data __e_merges as the BIMAGE signal.
+
+The BIMAGE, AF IG and TIMAGE signals are all combined
+into the game’s composite ﬁgure video at the video- logic block.
+
+The ﬂashing circuits in Fig. 7 —5c are all described in connection
+with the circuit in Fig. 7-4; the top-, edge-, and target-logic blocks
+are variations of. the ﬁgure generators in Chapter 2. The contact-
+sensing circuits are generally described in Chapter 6.
+
+If you have been studying this book diligently, you will ﬁnd
+nothing new here at all.
+
+Circuit Diagrams
+
+Figures 7-6, 7-7, and 7-8 show the circuit diagrams for the
+Missile Attack 11 game. The game calls for four circuit boards, the
+
+245
+
+ 
+

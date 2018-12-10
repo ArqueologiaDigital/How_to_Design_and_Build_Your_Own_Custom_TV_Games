@@ -1,0 +1,80 @@
+ 
+
+NAND GATE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+As REQUIRED
+H on v
+INPUTS AS -— 1 'Cl'A
+NECESSARY M (OUTPUT)
+2 WHITE LINE
+A on BAR
+NAND
+GATE 1 [Cm “314‘
+H on V'— -- 3 c 1 2
+_ 2 —-l >o——-
+leAgTsﬁ} WHITE
+a Li
+NECESSARY IC4-A NA Row NE
+
+   
+
+ 
+
+4701!
+
+C 1-! .002 uf FOR VERTICAL
+= LINES, ABOUT 1 p.f
+
+FOR HORIZONTAL LINES
+
+ 
+
+ 
+
+ 
+
+Fig. 3-9. An RC technique for generating very narrow white lines. (a) Setting up
+the starting point of the line. (b) Modifying the circuit to make the line as narrow as
+desired.
+
+Any line that is narrowed by this RC technique can be combined
+with other lines by ﬁrst removing the output inverter and then
+applying the signal to one input of a NAND gate, the NAND gate
+used for combining lines from a number of line-generating circuits.
+See the example in Fig. 3-10. ‘
+
+Building Broad Bars More Effectively
+
+Anyone who has now experimented with the basic Tinkerbox
+technique for generating lines and bars might be picking up another
+shortcoming to the system: it is all but impossible to make a white
+bar that crosses the dividing line between black 256H and white
+256H.
+
+The dividing line between the black and white areas of the basic
+256H pattern is a unique point in the overall horizontal-count se-
+quence. At that particular point, every H-count signal switches from
+logic 1 to logic 0. They all make a transition from white to black. The
+signiﬁcance of this fact is that it requires some special logic trickery
+to make a wide white bar extend continuously through this unique
+dividing line; and that particular bit of trickery hasn’t been fully
+described yet.
+
+60
+
+ 
+

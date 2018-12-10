@@ -1,0 +1,62 @@
+Depressing the TEE pushbutton on the control panel generates
+a logic-0 level that is wired to the TEE input of this logic board. This
+action initiates a 10-ms monostable multivibrator action from IC5—A.
+The brief pulse from that IC increments the count of the program
+counter, 1C9.
+
+1C9 is simply a 4-bit binary counter that is wired to count nine
+different binary states, 0000 (decimal 0) through 1000 (decimal 8).
+Each time the player depresses his TEE pushbutton, ICE-A gener-
+ates a pulse that increments that counter. The program counter’s
+outputs are labeled CA through CD, where CA is the least-
+signiﬁcant bit. _ _
+
+Depressing the TEE switch also sets an R-S flip-ﬂop, com-
+posed of ICZ-A and ICZ-B, to a state where the output of ICZ-A goes
+to logic 0. This point is wired to the select input of a 2:1 multiplexer,
+pin 1 of 1C6. As long as pin 1 of 1C6 is ﬂgic OﬂTP and VINTP
+initializing pulses are directed to the HML and VML outputs of that
+IC. Since these outputs eventually ﬁnd their way to the slipping-
+counter board, it follows that depressing the TEE switch initializes
+the slipping counter which, in turn, initializes the position of the ball
+on its tee. This circuitry represents the ball initialization control
+section of the system.
+
+The ball—travel timer is built around IC5-B_ in Fig. 8-18. This is a
+monostable multivibrator that is initiated by a negative-going logic
+level from SWING. If the RST input at pin 10 of ICS—B is at logic 1,
+depressing the SWING switch starts the timing action.
+
+The SWING input is also connected to the reset input of the R—S
+ﬂip-ﬂop, IC2-A, and ICZ-B. So when the player depresses the
+SWING button on his control panel, the output of ICZ-A switches to
+logic 1, altering the state of 1C6 in such _a‘ way that the slipping
+counter takes its loading information from HMRST and VMRST. In '
+other words, if the position of the ball has just been initialized by
+depressing the TEE switch, depressing the SWING switch releases
+the ball so that it can move across the screen.
+
+Returning to the ball-travel timer, IC5-B, the time of travel is
+mainly determined by the values of R11 and CS. The input at pin 11
+inﬂuences the travel time as well, however. The BG input to this
+logic board goes to logic 1 only when the ball is touching the green.
+That logic-1 level is inverted to logic 0 by IC3-D and applied to pin 11
+of IC5—B through the BGT TRIM potentiometer, R12. Lowering the
+voltage at pin 11 in this fashion shortens the timing interval of the
+monostable, thus giving the impression the ball slows down when it
+touches the green.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+339
+
+ 
+

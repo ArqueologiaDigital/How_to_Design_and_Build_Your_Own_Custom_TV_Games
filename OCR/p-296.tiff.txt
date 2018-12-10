@@ -1,0 +1,56 @@
+ates AHOR and AVERT control information continuously.vThese
+lines are simply the potentiometer connections on Player A’s control
+panel.
+
+The A TAGALONG system transforms the AHOR and AVERT
+signals into motion~control codes for the slipping counters included
+in that system. The primary-ﬁgure motion codes are taken directly
+from the input data, while the secondary-ﬁgure codes are modiﬁed
+by the 2x vector logic block.
+
+Whenever Player A depresses his FIRE button, ATRIG in-
+itiates a monostable timer circuit, AM TIMER. This timer im-
+mediately releases the secondary ﬁgure from its host, causing the
+missile to leave the aircraft ﬁgure. The blocks labeled ACFIG
+LOGIC and AMFIG LOGIC generate the ﬁgures for Player A’s
+aircraft and missile respectively.
+
+The operation of Player B’s system is identical to this point,
+with the video information for his aircraft and missile coming from
+BCFIG LOGIC and BMFIG LOGIC.
+
+The AM=BC logic block senses contact between Player A’s
+missile and Player B’s craft. Whenever such a contact occurs, it
+indicates a score for Player A. The output of AM=BC both resets
+the AM TIMER (returning the A missile to AC) and causing the BC
+ﬁgure to ﬂash on the screen.
+
+The same sort of operations are involved in the BM=AC
+scheme. Whenever Player B’s missile strikes Player A’s craft, the
+BM=AC LOGIC block generates a pulse that both resets the posi-
+tion of Player B’s missile and makes Player A’s aircraft ﬁgure ﬂash on
+and off.
+
+All four game ﬁgures, the two aircraft and two missiles, are
+combined into the ﬁnal GAME VID in the GAME VID LOGIC block.
+
+Dogfight Schematics
+
+Figures 7-25 and 7—26 show the two special control circuit
+boards required for this Dogﬁght game. Most of the circuitry in Fig.
+7-25 is dedicated to performing the 2 x vector multiplying operations
+for both players. This particular circuit board also contains the ﬁring
+logic for both players and the 128P generator for the tagalong
+systems.
+
+The circuit in Fig. 7—26 contains all the ﬁgure—generating logic
+as well as the contact and ﬁgure—ﬂashing logic.
+
+Before explaining the theory of operation of these two boards,
+it is important to realize they are used with two identical sets of
+tagalong systems, one system for each of the two players. All input
+
+296
+
+ 
+

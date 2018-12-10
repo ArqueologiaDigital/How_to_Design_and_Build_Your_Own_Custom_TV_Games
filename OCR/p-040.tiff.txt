@@ -1,0 +1,54 @@
+None of the ﬁgure-building techniques is really any better than
+the others under all possible circumstances. The most appropriate
+technique depends on the size, position, general conﬁguration, com-
+plexity of the ﬁgure, and the role the ﬁgure is to play in the display.
+
+The selection of a ﬁgure-building technique thus calls for an
+intelligent decision on the part of the experimenter, so it is important
+to stﬁdy this entire chapter and the one that follows before making a
+ﬁrm commitment to the circuit for an original TV-game display.
+
+A prudent student of TV—game technology will breadboard the
+circuits as they are encountered in these chapters. Of course it takes
+longer to become acquainted with all the circuits this way, but this
+doing-whiIe-reading approach makes the learning process much
+easier, more effective, and a whole lot more fun. Try building the
+speciﬁc examples ﬁrst, then test your understanding by attempting
+to create a few static images of your own.
+
+LINES AND BARS DIRECTLY FROM THE COUNT SOURCES
+
+One of the simplest and most straightforward ways to create
+simple lines and bars on the screen is by combining the wave—forms
+already available from the Sourcebox unit. All of the horizontal-count
+outputs quite naturally generate alternate black and white vertical
+bars or lines on the screen, while the vertical-count outputs create
+horizontal bars.
+
+Figure 3—1 summarizes ﬁve different horizontal— and vertical-
+count signals as they appear on the TV screen. To view the ﬁgures
+as shown here, simply connect a jumper wire between the desig-
+nated horizontal- or vertical-count output and the GAME VID IN
+terminal on the Sourcebox unit. This procedure, incidentally, as—
+sumes the CVID and MOD terminals on the Sourcebox unit are
+jumpered together as described in the previous chapter.
+
+Note that the 256H display shows a vertical black bar that
+almost reaches the center of the screen. This is a clear indication
+that the 256H signal is at logic 0 through the ﬁrst half of each
+horizontal trace. (A logic-O video signal always creates a black area
+on the screen, and a logic-1 signal creates a white area).
+
+The ﬁgure for 128H shows twice as many vertical bars as the
+256H signal does. The reason is rather easy to understand: the
+128H frequency is twice that of the 256H count source. And in a
+similar manner, each lower-order H output shows about twice as
+many bars as the one preceding it. Outputs 8H, 4H, 2H, and 1H are
+not shown here because the lines are too ﬁne and closely spaced to
+make a meaningful picture in the book. Look at them on your own TV
+screen, however.
+
+40‘
+
+ 
+

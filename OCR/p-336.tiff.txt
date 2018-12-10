@@ -1,0 +1,56 @@
+As shown in Fig. 8-16, the player has a set of adjustments
+labeled UP/DOWN and LEFT/RIGHT. After teeing up the ball by
+depressing the TEE pushbutton, the player sets the controls for the
+relative speed and direction he wants the ball to take. When he is
+satisﬁed with those adjustments, he then depresses the SWING
+pushbutton. That action launches the ball, and it travels across the
+screen-presumably toward the green and hole—for a ﬁxed period
+of time.
+
+When the ball comes to a stop, the player adjusts the controls
+again, then depresses the SWING button. He continues this se-
+quence until the ball “falls into the hole.” When he makes the hole,
+the game is locked out, and can be resumed only by depressing the
+TEE pushbutton again. This action brings the programming feature
+into play: the;position of the ball is initialized on a new tee position,
+and the player faces an entirely different situation.
+
+The screen diagram in Fig. 8-16 shows just one of the nine
+different initial positions for the ball and green. After making the
+ninth hole, the 9-hole cycle begins all over again.
+
+Besides demonstrating a compelling application of the
+position-programming circuits, this game includes some new ideas
+about ﬁgure—speed control.
+
+As stated earlier, the ball travels for a ﬁxed period of time after
+the player depresses the SWING pushbutton. As long as the ball is
+not on the green, it travels at a relatively high velocity, but once on
+the green, its speed is cut in half and it moves for a shorter period of
+time.
+
+The ball color also changes as it moves onto the green. Nor~
+mally the ball appears as a small white square. The green is also
+white. But when the ball reaches the green, the ball color changes
+from white to black.
+
+The golf game, as described here, has no obstacles on the
+course, but the circuit boards include some terminals for adding
+obstacles later on. Numerals indicating the hole and score can also be
+added at a later time.
+
+Golf Block Diagram
+
+The basic block diagram for this Golf game is shown in Fig.
+8-17. When the player operates the TEE switch, the program
+counter advances to set up a new position for the green and hole.
+The ball position is also initialized at a point determined by the
+program counter and BALL H INITIAL POSITION logic.
+
+The ball then remains initialized until the player depresses the
+SWING switch. Depressing the SWING switch starts the BALL
+
+336
+
+ 
+

@@ -1,0 +1,137 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ce’ l- cs: l- 1‘
+470m: &0,uF
+
+L l4 CE 8" "'—""—l IC4-A
+2 lCl-A ._ c1
+EM 7 =7 W $3on
+— E e
+START 5 ICl-B .
+.l; .OIMF
+GV=
+' \_
++5v 7
+it R6-: R7«:
+22Kt'22K? ”‘1' I2 n
+"K a 9 13 101-0 ——
+GFIRE c4 19 Ice-B [35,
+.OWvF '2
+-—4I
+\—
+1 I4
+104-3 ,4
+VRST 3 6
+'30:" RIZ 3 Ice-A
+22K + IK +
+
+ 
+
+ 
+
+ 
+
+ 
+
+N
+0|
+l a:
+I
+
+I 5
+on
+I
+N
+
+ 
+
+a:
+'4:
+::
+ib
+
+0‘
+N
+3:
+'0!
+
+ 
+
+ 
+
+ 
+
+ 
+
+IC5—B in Fig. 8—25 determines when a new bad-guy ﬁgure is to L
+be selected. The input connections to this IC show the new ﬁgure is
+selected under any one of three game conditions: when the game is
+ﬁrst started, after a dead bad guy goes on to the hereafter, and after
+a bad guy has managed to survive on the screen for about 5 seconds.
+
+356
+
+ 
+

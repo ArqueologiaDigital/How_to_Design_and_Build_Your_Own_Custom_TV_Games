@@ -1,0 +1,56 @@
+A GAME OF TAG
+
+Pursuit games are among the most popular kinds of video
+games. Here is your chance to build one of them based on the
+player-controlled motion circuit described in the previous section of
+this chapter.
+
+The game calls for building two independent player-controlled
+motion circuits, one for player A an one for player B. The outputs of
+the two circuits are essentially ORed together so that each player
+can see and control the motion of his own little rectangle on the
+screen.
+
+Referring to the circuit in Fig. 5-5, player A’s circuit consists of
+timers IC1-A and ICl—B, pulse-shortening circuits IC3-A, IC5-C,
+IC3-B, and IC5—D, and NOR gate IC6-A. Player A controls the
+horizontal position of his square by means of R1 and the vertical
+position by means of R3.
+
+Player B’s circuit is identical to that of Player A: timers ICZ-A
+and ICZ-B, pulse—shortening elements IC3-C, IC5-E, IC3-D, and
+IC5-F, and NOR gate ICES-B. The horizontal and vertical motion
+controls in this case are R5 and R7.
+
+The outputs of the two players’ circuits (player A from pin 1 of
+IC6-A and player B from pin 4 of IC6-B) are ORed together by means
+of the N OR/invert operation of IC6-C and IC4-A. The signal at that
+output point is a white-on-black signal containing the video informa-
+tion for positioning the little rectangles for both players.
+
+Of course it would be possible to let the two players chase each
+other around the screen, counting on human judgement to deter-
+mine when a “tag” is made. One additional IC lets the machine
+determine a “tag."
+
+The “tag” detector in this instance is NAND gate IC4-B and one
+section of a dual J-K ﬂip-ﬂop, 1C7 -A. Now this contact-response
+circuit is the subject of a more detailed discussion later in this book,
+but since it adds a nice feature to the basic game, you ought to
+incorporate it at this point.
+
+Brieﬂy, you can see that IC4-B senses a condition where the
+players’ little rectangles touch one another. The two inputs to this
+gate are positive-going pulses, each indicating the position of the two
+rectangles. When they are at least partially superimposed, the
+output of IC4-B suddenly drops from its normal logic-1 state to logic
+0 (where it remains, incidentally, until the players move their re-
+ctangles apart).
+
+The instant the output of IC-B, the contact detector, shows a
+transition from logic 1 to 0, it clocks the ﬂip -ﬂop to a condition Where
+
+146
+
+ 
+

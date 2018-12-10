@@ -1,0 +1,69 @@
+ 
+
+ 
+
+ 
+
+SPEED AND
+DIRECTION
+
+RIGHT fig-i
+
+STOP
+
+on
+———— - --ooo :2
+O
+
+4HC
+
+N
+
+00" O O—'—O I
+O
+
+IHC
+
+ 
+
+ 
+
+ 
+
+-——oo oo——-—
+—o—o -—o-—o——
+
+LEFT ‘0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 5-14. A slipping-counter control for horizontal speed and direction.
+
+Setting the pin-1 control at logic 0, however, shifts the outputs
+to the four inputs appearing at pins 2, 5, 11, and 14. Since the logic
+level at pin 1 is determined by the output of a NAND gate, 1C6, it
+follows that the system sees something other than the stop code
+only when all inputs to the NAND gate are at logic 1. And these
+inputs come from VBLANK and a selection of V-count signals from
+the Sourcebox.
+
+175
+
+ 
+

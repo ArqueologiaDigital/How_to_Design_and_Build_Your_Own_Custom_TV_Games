@@ -1,0 +1,56 @@
+Contents
+
+ 
+
+Special Notes to the Reader ..................... .. ....................
+
+l
+2
+
+Television and Television Games
+The TV Raster—The Basic Video Game System—How to Use
+This Book—Locating Parts—Assembling the Systems
+
+The Sourcebox Umt
+Sourcebox Organization-—Power Supply—Horizontal Source
+Board—Vertical Source and Composite Video Board—The RF
+Modulator—Some Mechanical Considerations
+
+Building Static Figures ........ ......
+Lines and Bars Directly From the Count Sources—The Line/Bar
+Tinkerbox—Building Widely Separated Parallel Lines and
+Bars—Building Rectangles—Combining Any Numbers of Static
+Figures on the Screen—Some Interesting Patterns From Static-
+Figure Components
+
+Building More-Complex Static Figures..............................
+Complex-Figure Tinkerbox—The Address Matrix Concept—
+Matrix Operations From Bil-Cell Generators—Multiplying the
+Number of Identical Images on the Screen
+
+Building Motion-Control Circuits..... ...........
+Motion-Control Tinkerbox—Simple Player-Controlled Motion—A
+Game of Tag—Adding “Inertia” to the Player Controls—Manual
+Control of Complex Figures-Automatic Figure Motion
+
+Some Useful Game Control Schemes................................
+Game Start/Reset Controls—Figure-Contact~Sensing Circuits—
+lnitializing Figure Motion Controls—A Basic Missile Attack
+Game—Programming Variable initial Positions, Speed and
+Direction—The Tagalong Feature
+
+9
+11
+
+19
+
+39
+
+79
+
+137
+
+181
+
+ 
+

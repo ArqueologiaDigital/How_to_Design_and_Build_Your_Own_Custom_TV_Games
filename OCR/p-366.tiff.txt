@@ -1,0 +1,55 @@
+The GAME END block also responds to a condition signalled by
+the GV=SV block. The GV=SV block is responsible for sensing the
+fact that one or more of the live stormtroopers have reached the
+good guy’s position.
+
+The ﬁgure boardshgwn in Fig. 8-30 contains all the circuitry for
+the game’s master R—Sﬂip-flop control, stormtrooper motion,
+ﬁgure-position information for the good guy, and the good guy’s
+ﬁring circuit. __ _
+
+Depressing the START pushbutton sets the R—S flip—ﬂop,
+ICZ-A and ICZ-B, to a condition that allows counters 1C7 and 1C8 to
+increment (count upward) at a rate determined by VRST, 60 Hz.
+These counters provide position—programming information to com-
+parators 1C5 and 1C6. According to the equations in Fig. 8-13, the
+counter/ comparator system ought to move the stormtrooper
+ﬁgures through one complete screen cycle in 71 seconds. The
+stormtroopers, however, do not have to make one complete cycle
+before they reach the good guy’s position. So the actual playing time
+is no longer than about 60 seconds.
+
+The signal from pin 6 of 1C6 is thus a 1V-wide horizontal line that
+moves slowly down the screen. IC4—F inverts this signal and applies
+it to a monostable multivibrator, IC9—A, where the position pulse is
+transformed into a wider bar that is about 8V wide. This timer
+actually sets the height of the stormtrooper ﬁgures.
+
+Inverter IC4-A merely inverts the signal so that it has a phase
+that is appropriate for some of the control operations on the Control
+board in Fig. 8-32.
+
+IC9—B in Fig. 8-30 is part of a motion-control circuit described in
+Chapter 5. Its GHPOS input comes from the MOTION potentio-
+meter and lets the player set the horizontal position of the good-guy
+ﬁgure. Capacitor C2 is part of a pulse-generator circuit that ﬁxes the
+width of the good-guy ﬁgure.
+
+The horizontal position of the good guy is ﬁxed by the V-count
+inputs to ICI-A, and then transformed into a pulse by IC1-B and
+IC4—E. Capacitor C3 ﬁxes the height of the good-guy ﬁgure, while
+ICl-C is used merely for generating a CV signal for control pur-
+poses.
+
+IC3 is the FIRE timer for the good guy. Whenever the player
+depresses the FIRE pushbutton, this timer generates a positive
+GFP pu§e_that lasts about 0.5 second.
+
+A RST pulse at the input 9_f_I_C2-B signals the end of a game
+sequence, generating a logic-O CLR level that stops the counters and
+initializes the position of the stormtroopers.
+
+366
+
+ 
+

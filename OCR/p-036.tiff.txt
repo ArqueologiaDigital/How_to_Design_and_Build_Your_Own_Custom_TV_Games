@@ -1,0 +1,72 @@
+ 
+
+SOURCE BOX
+HORIZONTAL BOARD INTERFACE
+PLUG RF
+
+VERTICAL BOARD MODULATOR
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5V POWER SUPPLY
+REGULATORS
+
+POWER
+TRANSFORMER
+
+FRONT VIEW
+(PANEL REMOVED)
+
+ 
+
+P|N44—-> «PIN1
+
+\
+
+44-PIN I
+EDGE-CARD
+CONNECTOR
+
+(INTERFACE PLUG)
+
+REAR VIEW
+
+ANTENNA
+CONNECTION
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 2-10. Suggested cabinet layout for the Sourcebox unit.
+
+THE RF MODULATOR
+
+The rf modulator is responsible for modulating the composite
+video (CVID) from the vertical/video board at a VHF frequency that
+can be selected on TV channels 2, 3, or 4. In a word, the whole idea
+
+36
+
+ 
+

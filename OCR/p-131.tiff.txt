@@ -1,0 +1,86 @@
+ 
+
+SMALL Xs
+
+SELECT: 80 = 8H WINDOW:
+S1 = 16H NONE OR ANY
+
+$2 = 8V OF THE CIRCUITS
+SS = 16V BELOW
+
+D INPUTS: D1 =0 D8 =0
+02:0 D11=0
+D4=O 013:0
+
+ALL OTHER D INPUTS D7 = 0 D14 = 0
+
+NOT CONNECTED 0R AT
+LOGIC 1 A
+1
+323.; ~~ x
+3 14 '03 14
+
+ 
+
+ 
+
+64” 32H 1
+54v; 3 :ji 3
+___. >°—:. 32v 2 >—:—
+T0 CE OF TO CE OF
+
+7 MULTIPLEXER mm 7 MULTIPLEXER
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+ 
+
+ 
+
+ 
+
+ 
+
+—" __ '05 =- IC5
+B c
+32H
+32v
+1 r
+2 TO 55‘ OF
+IC4-B MULTIPLEXER
+4 «32-». ' cs
+64H 6 _
+5 ..
+64V
+7 D
+
+ 
+
+ 
+
+ 
+
+Fig. 4-33. Initial experiments with the ﬁne/rectangle pattern-repeating technique.
+
+(a) Matrix conﬁguration and sample speciﬁcations for an X figure. (b) Windowing
+
+circuit for creating rows and cqumns of ﬁgures. (c) Circuit for generating check-
+
+1{erboard patterns of figures. (d) Circuit for generating an interesting pattern of
+igures.
+
+131
+
+ 
+

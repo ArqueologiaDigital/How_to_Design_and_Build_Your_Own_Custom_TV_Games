@@ -1,0 +1,58 @@
+tively ANDed with the horizontal portion of the image at IC4-B. The
+noninverted version of the missile ﬁgure is then inverted by IC6—E
+before applying it to other portions of the system.
+
+The circuit in Fig. 7-7 deals mainly with the control aspects of
+the attack missile. The launching pulse is formed by ICl-A and IC4-A
+in a fashion identical to the launching circuit for the antiballistic
+missile. The F3 flip-ﬂop, composed of ICl-B and ICl-C, is set to its
+launch condition by the negative-going launch pulse from IC4—A, and
+it is reset by a negative—going version of the BRST pulse from the
+output of IC4—B.
+
+The initialization-control portion of the attack missile circuit is
+embodied in 1C8, actually a quad 2:1 multiplexer. Only two of the
+four sections are used here, but that is adequate for shifting the
+operation of the slipping-counter board (Fig. 5-15) between the
+initializing pulses and motion-generating pulses.
+
+The attack—missile system is initialized as long as the output
+from ICl-B is at logic 0, thereby directing vertical-synchronizing
+pulses to the VMRST and horizontal-synchronizing pulses to
+HMRST inputs of the slipping counter.
+
+The vertical-synchronizing pulses are taken from the initial-
+altitude circuit, 1C7 and IC3-A. Switches SC, SD, and SE on Player
+B’s control panel determine the pattern of V-count signals that reach
+the inputs of IC3-A. The output of IC3-A then determines where
+vertical reset for the attack missile takes place on the screen during
+reset.
+
+IC3-B determines the horizontal position of the attack missile
+through the reset phase of the operation. This is a position that is
+ﬁxed by the inverted H-count inputs to IC3-B, a position at the
+extreme left-hand edge of the screen. This position-determining
+signal from IC3-B is shortened by ICl-D and IC4-F before it is
+applied to the initialization— control circuit, 1C8.
+
+As long as the attack missile' is in its reset condition, then the
+slipping-counter board holds its position as determined vertically by
+the output of IC3- A and horizontally by the output of IC4-F.
+
+When the missile is launched, the output of ICl—B changes to a
+logic-1 condition, and the vertical— and ﬁrizontalﬂding signals for
+the slipping counter are taken from the VML and HML sources. The
+ﬁgure is thus free to move across the screen in a direction and at
+rates determined by the VC and HC inputs of the slipping-counter
+board.
+
+Player A has access to only the two lower-order speed control
+inputs for horizontal and vertical motion. The key to this part of the
+circuit lies in the operation of the quad D latch circuit, 1C9. As long as
+
+ 
+
+247
+
+ 
+

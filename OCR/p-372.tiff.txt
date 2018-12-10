@@ -1,0 +1,122 @@
+ 
+
+101—7410 TRIPLE 3-INPUT NAND
+lCZ—7486 QUAD EXCLUSIVE-OR '6 8 =
+103—74155 DUAL 1:4 DEMULTIPLEXER
+
+ 
+
+lC4—7430 8-INPUT NAND
+nos—74151 8:1 MULTIPLEXER H
+
+ 
+
+ICB.7,8,9——7476 DUAL J-K FLIP-FLOP '2
+
+ 
+
+ 
+
+ 
+
+32H _ .3 I03
+64H _ 3
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+I-HT'>
+
+lean-w )@ ‘
+256H 3 2
+[SH
+SH
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Lt
+
+ 
+
+I3
+
+6
+
+VRST
+
+ 
+
+:<u
+9:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+“dead” stormtrooper, and the multiplexer now sees a logic-0 input at
+that position on the screen. The figure for that particular
+stormtrooper is thus eliminated until the whole game sequence is
+reset again.
+
+As far as the player is concerned, he hopes to hit all eight
+stormtroopers before the game is automatically reset. If he is suc-
+cessful, the Q outputs of all eight ﬂip-ﬂops are ﬁnally set to logic 0,
+and no stormtrooper ﬁgures appear on the screen.
+
+372
+
+ 
+

@@ -1,0 +1,73 @@
+these line-generating NAND gates are inverted, then applied to a
+2—input NAN D gate. If the rectangle is to be white on a black ﬁeld,
+the, signal from the 2-input NAND gate is run through yet another
+inverter before applying it to GAME VID IN.
+
+One good way to build a rectangle is to sketch its outline on the
+TV screen with a grease pencil. Then work with the Tinkerbox
+circuit to build a white vertical bar that runs down through the
+rectangle drawing, ﬁtting the position and width as closely as possi-
+ble. That operation speciﬁes the rectangle’s vertical component.
+Write down the H—input speciﬁcations and repeat the operation,
+generating a horizontal bar that ﬁts the rectangle’s speciﬁed position
+and height. Again, mark down the V-input speciﬁcations.
+
+Reduce the two circuits to their simplest NAND-gate forms and
+feed their outputs to a 2-input NAND gate and inverter as shown in
+Fig. 3-18. If you’ve speciﬁed the vertical and horizontal inputs
+properly, there’s your rectangle on the screen.
+
+This rectangle—building procedure can be summarized as fol-
+lows.
+
+Recipe for Building a Rectangle or Square
+
+1. Build a horizontal white line or bar as described in Recipe
+for a Horizontal Line or Bar. The position of that bar
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+.J.
+2
+H-COUNT 7
+INPUTS — lC4-A
+5
+'— lCZ—A
+9
+'ﬁ lCZ-B “31-3
+10
+V-COUNT —
+lNPUTS .13.
+13
+_‘l
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3-18. A basic circuit for building rectangles.
+
+71
+
+ 
+

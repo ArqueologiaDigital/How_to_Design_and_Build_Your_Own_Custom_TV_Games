@@ -1,0 +1,55 @@
+A cursory study of the matrix pattern in Fig. 4-11 will show that
+the original 4x4 matrix is situated in the upper left-hand quadrant.
+The designations for each of the cells in this quadrant correspond
+exactly to the D inputs of the multiplexer in Fig. 4-5.
+
+Then notice that the lower left-hand quadrant of this matrix is an
+extended version of the upper left-hand quadrant. The left-hand half
+of this 8X8 matrix, in other words, is simply the 4x8 extended
+matrix described in the previous section of this chapter.
+
+The right-hand half of this matrix is the folded portion. The
+foldover cells all have an “F” sufﬁx to clearly indicate they belong to
+the folded half of the matrix.
+
+Compare the designations of the cells in the left-hand half of the
+matrix with those on the right and you will ﬁnd that the right-hand
+half of the diagram is really a mirror image of the other half. The
+folded cell D3F, for instance, is one cell to the right of the center line,
+while its originating counter-part, D3 is just left of center. D0 is in
+one upper corner, while the folded version of it appears in the
+opposite upper corner.
+
+The fact that the right-hand half of this 8 X8 matrix is a mirror
+image of the left-hand half means that any ﬁgure using this format
+must be symmetrical around the vertical center line. While this
+might seem to be a rather severe restriction at ﬁrst, it turns out that
+a great many interesting and useful ﬁgures do, indeed, have a
+symmetrical (mirror-image) quality. Look ahead to Fig. 4-12 for one
+good example.
+
+All that is required for achieving the foldover effect in this case
+is to run the 16H and 32H signal through EXCLUSIVE-OR gates
+before applying them to the SO and 81 select terminals of the
+multiplexer. One input of each of the EXCLUSIVE-0R gates is
+connected to 64H. So when 64H is at logic 0, noninverted versions of
+16H and 32H appear at select inputs SO and 81. When 64H switches
+to logic 1, however, SO and 81 see inverted versions of 16H and
+32H.
+
+The circuit thus generates the normal matrix and extended-
+matrix patterns as long as 64H is at logic 0, but as soon as 64H rises
+to logic 1, it effectively reverses the horizontal scanning operation.
+Along the ﬁrst row of cells, for instance, 80 and 51 see binary levels
+representing a normal count of 0, 1, 2, and 3. At the end of D3,
+though, the EXCLUSIVE-OR gates begin reversing the count: 3, 2
+1, O. A reversed image thus appears along the right-hand half of the
+matrix.
+
+Connect the basic 4x4 matrix-generating circuit shown in Fig.
+4-5, then add the two EXCLUSIVE-OR gates as shown in Fig. 4-10.
+
+98
+
+ 
+

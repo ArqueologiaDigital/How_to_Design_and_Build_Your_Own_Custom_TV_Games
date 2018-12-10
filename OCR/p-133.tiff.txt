@@ -1,0 +1,54 @@
+for TV games, many other games call for patterns of identical ﬁgures
+that are not in regular rows and columns. It is often more desirable to
+create irregular, or even random, patterns of identical ﬁgures,
+something that cannot be done with the bar-and—rectangle window-
+ing approach.
+
+It is possible to generate a complex pattern of complex, but
+identical, ﬁgures by windowing a ﬁgure-generating multiplexer cir-
+cuit with yet another multiplexer circuit. In other words, the window
+generator is, itself, a complex ﬁgure generator.
+
+Figure 4-35 illustrates this particular approach to generating
+some complex patterns. IC5 and IC6 are both 16:1 multiplexer
+circuits. IC6 generates the basic complex ﬁgure as described in the
+ﬁrst sections of this chapter. The inputs to SO through 83 determine
+the dimensions of the complex ﬁgure, While information at the D
+inputs determine what the ﬁgure will be.
+
+IC5 is a similar kind of circuit that generates a matrix of its own.
+The dimensions of this pattern matrix are determined by H- and
+V-count signals applied to pattern-select inputs W80 through W83,
+while the pattern, itself, is determined by the data applied to the ﬁeld
+pattern data inputs W0 through W15.
+
+Electrically speaking, the two multiplexer circuits are Virtually
+identical. They play two entirely different roles in the pattern—
+generating process, however. IC6 generates the basic ﬁgure, while
+IC5 determines where and how many identical ﬁgures appear on the
+screen.
+
+To see how this scheme works, program IC6 to generate the
+simple X pattern in Fig. 4-3321. As long as there are no connections to
+the inputs of IC5 and the pattern window NAND gate, you will see
+the basic X pattern repeated all over the screen.
+
+Now connect the pattern select inputs to IC5 as speciﬁed in Fig.
+4-35: W80 = 32H, W81 = 64H, W82 = 32V, and W83 = 64V.
+There will be no obvious change in the pattern on the screen,
+however, until one or more of the W inputs to IC5 is connected to
+logic 0. Every time you connect one of those W inputs to logic 0, you
+will ﬁnd some of the ﬁgures eliminated from the screen.
+
+IC5, itself, is serving the function of a complex figure
+generator. The “ﬁgure” in this instance is the desired pattern of cars
+on the screen. A logic 1, or no connection, to a W input allows the
+basic ﬁgure to appear at the corresponding matrix location. Setting a
+W input to logic 0, on the other hand, eliminates a ﬁgure at the matrix
+location. Using inverted or noninverted versions of 128H creates an
+extended window matrix. Figure 4-36 shows the speciﬁcations for
+
+133
+
+ 
+

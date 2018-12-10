@@ -1,0 +1,113 @@
+ 
+
+lC1—7404 HEX INVERTER
+
+IC2—556 DUAL TIMER
+
+ICS, 4—7493 4-BIT BINARY COUNTER
+[CS—7476 J—K FLvaFLOP
+
+106—7430 8-INPUT NAND
+
+lC7—7486 QUAD EXCLUSIVE-OR
+lCB—74150 16:1 MULTIPLEXER
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+32HM
+(1) +5V MOUNT R1 9
++5” (1) EXTERNALLY
+HORIZONTAL
+500K POSITION
+(22)" | < R1 CONTROL BHM
+.-—— (5)‘
+JUMPER: 4HM
+(43)
+HCLK ml “" (6)
+|1I12 8115 [129
+R2 ’ 14 ms 1
+3.3K
+(4) [4—414 .2 C 14
+5 2 6 5 [2 13 1o
+‘1 1
+I 1
+3 lCZ-A 2
+_ ___02
+C1 /\ /\100pF
+.01].LF 7 I |
+
+ 
+
+ 
+
+ 
+
+MOD CVID
+(13) (14)
+
+ 
+
+ 
+
+ 
+
+162
+
+ 
+

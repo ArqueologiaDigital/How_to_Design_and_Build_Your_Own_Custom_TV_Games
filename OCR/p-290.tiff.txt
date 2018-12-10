@@ -1,0 +1,65 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+QMSH BC > @SETAM > ( FLASH AC) ‘ RESETBM ’
+
+ 
+
+ 
+
+ 
+
+Fig. 7-20. Flowcharts for Dogﬁght.
+
+So the overall picture looks something like this. There are two
+aircraft ﬂying freely around the screen. A player can ﬁre a missile
+from his craft, and that missile ﬁgure leaves the primary craft in the
+same direction, but at twice the speed. The missile can ﬂy for about 1
+second before it is blanked from the screen and returned to the
+primary craft. If that missile happens to strike the opponent’s craft
+enroute, the opponent’s craft is destroyed (ﬂashed) and the missile
+is returned to its primary ﬁgure once again.
+
+The game can go on indeﬁnitely because this particular version
+has no provisions for keeping score and automatically resetting the
+game. These features can be added at a later time.
+
+The two identical control panels are quite simple, consisting
+only of a firing button and a set of ﬂight-path controls. The two
+potentiometers shown in Fig. 7—21 can be replaced with a joystick
+control to produce simpler and more realistic interaction between
+the control panels and activity on the screen.
+
+Vector Logic
+
+This Dogﬁght game is built around two identical sets of tagalong
+systems, one set for each player. And that means the experimenter
+must be prepared to install four slipping-counter boards (Fig. 5-15)
+and two tagalong-control boards (Fig. 7 - 13).
+
+The secondary ﬁgures in both systems tagalong with the prim-
+ary ﬁgures in the usual fashion until a player launches his missile. The
+
+290
+
+ 
+

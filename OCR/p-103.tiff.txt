@@ -1,0 +1,113 @@
+ 
+
+ 
+
+SELECT: $0 = 8H F 16H
+DO DI DIF DOF S1=8V
+
+S2=1GV
+DZ 03 03F DZF S3:32V
+
+ 
+
+ 
+
+WINDOW: 256H
+D4 D5 05F D4F “REEF-i
+
+547?
+DS D7 D7F D6F 3—2;;
+128V
+
+ 
+
+ 
+
+D8 D9 D9F D8F
+
+ 
+
+D INPUTS: 1, 0, 64V. EN,
+DIO DII DIIF DIOF AS REQUIRED
+
+ 
+
+DI2 Dl3 DI3F DI2F
+
+ 
+
+DI4 DIS DI5F DI4F
+
+ 
+
+DOE DIE DIEF DOEF
+
+ 
+
+ 
+
+DZE 03E DStf' DZEI'
+
+ 
+
+ 
+
+04E 05E 05:!- ME
+
+ 
+
+ 
+
+DSE D7E U7EF DGEF
+
+ 
+
+08E D9E DQEF D857
+
+ 
+
+DIOE DIIE DIIEF DIOEF
+
+ 
+
+ 
+
+ 
+
+DIZE DBE Iatr- zu-
+
+ 
+
+1 SV 82
+DI4E DI5E DI5EFDI4EF
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+32V-——-——-—-_ 53
+
+ 
+
+4 x 16 EXTENDED
+FOLDOVER MATRIX
+
+ 
+
+ 
+
+ 
+
+Fig. 4-15. Matrix conﬁguration, circuit, and sample speciﬁcaiions for a 4 x 16
+extended. foldover matrix.
+
+103
+
+ 
+

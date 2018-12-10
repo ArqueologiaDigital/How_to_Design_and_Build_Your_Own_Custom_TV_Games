@@ -1,0 +1,53 @@
+14-MHz pulses from the oscillator operate a 9-bit binary counter that
+ultimately yields the 15,750-Hz pulses required for horizontal syn-
+chronization. During the counting interval, however, the
+horizontal-count circuit generates a distinctive pattern of binary
+numbers that actually indicate the horizontal position of the beam on
+the screen. See Fig. 1-2.
+
+The 15, 7 50-Hz output of the horizontal-counting circuit clocks
+yet another 9-bit binary counter, the vertical-count circuit. This
+circuit utlimately produces the necessary 60 Hz vertical-sync pulse,
+but in the meantime, it also generates a 9—bit binary code that
+indicates the vertical position of the beam on the screen.
+
+In a manner of speaking, then, the TV game system always
+knows exactly where the beam is situated on the CRT screen. A pair
+of 9-bit binary numbers indicate the coordinates in a manner quite
+similar to the x, y coordinates of a conventional graphing scheme.
+
+Since the game system knows where the beam is located at any
+given moment, it is possible to generate White or black video levels
+to create images on the CRT.
+
+Notice in Fig. 1-2 that the sync pulses, blanking pulses, and
+game video information are combined to create the composite video
+signal. The only step remaining after that is to place the signal onto
+an rf carrier that will feed it through the tuner section of a conven-
+tional receiver. The rf modulator, incidentally, can be omitted from
+the system if the composite signal is applied directly to the video
+ampliﬁer in the TV set. This calls for some surgery on the receiver
+circuitry, and many experimenters are unable or unwilling to do that
+sort of job.
+
+As far as this book is concerned, the bulk of the circuits blocked
+out in Fig. 1-2 is the same for every game. Only the game video
+generator and external game controls change. Most of the circuitry
+is thus built into a permanent unit called the Sourcebox unit. This
+particular part of the system is described in great detail in Chapter 2.
+The remainder of the book deals with experiments, examples, and
+design hints for the game Video generator and external game con-
+trols, units that are plugged into the standard Sourcebox.
+
+HOW TO USE THIS BOOK
+
+This book leads the prospective TV game designer through a
+series of experiments, examples, and hints that are all intended to
+make game design possible and fun for just about anyone willing to
+make the effort. Generally speaking, the material (or “lessons,” if
+you will) are presented in order of importance. It would be difﬁcult,
+
+15
+
+ 
+

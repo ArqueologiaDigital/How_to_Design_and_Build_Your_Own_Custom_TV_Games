@@ -1,0 +1,158 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+» o z 2 » 3 4 5 6 7
+s 9133112151415
+"16. 27': 264 19 20" 21 22 23
+124325225. 2? 2e 29 5031'
+=§2 3384135 36 37 38 39
+40. $.42 43 44 45 4s 42
+'48 49 50 51 52 5575455
+E36 57 58 59 60 6| ﬁe :53
+year 25 56 4552 351215
+81:: tee; 105 IIE 125:336‘ 14E 15%
+382,412; l8E 195 2052:: 222352”
+3243:258 26E 271-: 28E 25255214:
+326 '33.; 5415 355 561-: :36 331-: (759:.
+43: 34$. 42: 43: 445. 451-: 4667/7411
+:48: 4g: soaksfgfsez .53: 15421355.:
+551-: 515 :SBE: 13592 605 6:: 622 635
+A
+
+SELECT: WINDOW:
+
+so = 8H
+S1216H
+82 = 32H
+83 = 8V
+S4 = 15V
+55 = 32v
+
+D INPUTS:
+D0 = 0
+Di = 0
+
+013:?5W~
+014 :W
+015:0
+D16=0
+017:0
+01s=e4v
+020=s4v
+021 =0 ,
+022:0
+023 =0
+024:0
+025 =0
+027=s4v
+D28=64V
+029 2W
+030 56737
+031:0
+032:0
+
+256H
+128H
+
+64H
+128V
+
+033 = 64V
+034 = o
+035 = 51V
+037 = 64V
+033 = W
+039 = 0
+040 = 0
+041 = o
+042 = o
+043 = W
+044 =_6—4V
+045 =e—4\T
+D46 2W
+047 = o
+048 = o
+049 2W
+050 = EN
+051 : E
+052 : 64V
+053 23557
+054 = o
+055 = o
+055 = 0
+057 = W
+058 = 64_V
+059 564—7
+D60 : 54v
+D61 =7§N
+062 = o
+063 = o
+
+ 
+
+The procedure for generating a single complex ﬁgure can re-
+quire quite a number of IC devices as clearly demonstrated through-
+out this chapter. There is no need, however, to build one complete
+matrix generator circuit for each ﬁgure that is to appear on the
+screen—at least not as long as the ﬁgures are all identical.
+
+It turns out that one complex—ﬁgure generator is sufﬁcient for
+creating any number of identical images on the screen. The general
+
+124
+
+ 
+

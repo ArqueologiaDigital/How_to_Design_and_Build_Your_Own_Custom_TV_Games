@@ -1,0 +1,107 @@
+ 
+
+ 
+
+sent-azim— 94 05 para? SELECT
+7 , > .— _, SO=16H
+’ 7 Sl=32H
+as as are on 012 m3 m4 13:5 52:6“
+’ S3=15VF64V
+
+WINDOW: 256H
+1st
+08E D9E DIOE DIIE DIZE DI3E Dl4E D|5E 128V
+
+ 
+
+ 
+
+ooe’ DIE 02!: use 048 DSE 06E 075
+
+ 
+
+ 
+
+ 
+
+DBEF oesr= DIOEFDIlEl- uzer Dist!- Dl‘itl- u5£F D 'NPUTS”
+
+. Do =0 DB =32v
+
+DOEF DlEF DZEFD3EF D4EF D5EFDGEF D7EF 01 =32V '39 =32V
+
+D2 =0 D10:32V
+03 =0 D11=32V
+
+DBF oeF DlOF DllF 0le DIBF Di4F 0151: D4 23W 014:3”
+
+06 =0 D15=32V
+DOF 01F 02F 03F 04F 05F D6F D7F D7 =33,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 4-14. Figure and speciﬁcations for an airplane, using a horizontally folded,
+8 x 8 extended matrix.
+
+trouble identifying the object presented on the screen. Even with 64
+cells available for building an image, the resolution is often so coarse
+that others might, indeed, have trouble seeing what the image is
+supposed to represent. When this is the case, it is time to move up to
+a matrix generator that yields a higher resolution.
+
+The circuit in Fig. 4-17 uses two 16:1 multiplexer circuits. The
+basic system generates 32 cells. (Note that there are 32 D inputs,
+labeled DO through D31.) If the matrix—extension technique is
+applied to this circuit, the number of available cells rises to 64. And if
+the foldover technique is also used, the system can generate a
+128-cell symmetrical ﬁgure.
+
+This system represents a 2:1 increase in image resolution over
+the basic 16-cell circuit in Fig. 4-5.
+
+1C6 and 1C6 are identical ICs. In fact they are the same multi-
+plexer IC used for all of the complex-ﬁgure circuits already described
+in this chapter. Note, however, that this system has ﬁve select
+inputs, SO through S4, while each multiplexer IC has input provisions
+for only four.
+
+We can take care of the four basic select inputs on each multi-
+plexer IC by connecting them in parallel: pin 15 of ICE to pin 15 of
+1C6, pin 14 of IC5 to pin 14 of 1C6, and so on. The parallel-connected
+select inputs on the two multiplexer ICs then go to system-select
+inputs SO through 83.
+
+102
+
+ 
+

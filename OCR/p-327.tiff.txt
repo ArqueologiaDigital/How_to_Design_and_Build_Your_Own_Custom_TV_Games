@@ -1,0 +1,85 @@
+ 
+
+ 
+
+CONTROL
+
+INPUTS OPERATING
+
+MODE
+
+ 
+
+LOAD PD INPUTS
+
+PROGRAM MEMORY
+INCREMEN l' (UP COUNT)
+DECREMENT (DOWN COUNT)
+
+X = NOT RELEVANT
+LOAD 0000 00000 TO CLEAR
+
+ox—‘x RUN
+dado PL
+doxx DIR
+QSXX MCLK
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 8-10. Function table for the universal position programmer.
+
+A particular count can be stopped and “remembered” by simply
+setting RUN to logic 1 at the appropriate time. If desired, the count
+can be resumed from that point by simply setting RUN to logic 0
+agam.
+
+Perhaps the best way to get a good feeling for how the universal
+position programmer works is by building the circuit in Fig. 8-9 onto
+a circuit board and interfacing it with the input controls shown in Fig.
+8-11. Building the position programmer onto a circuit board will not
+be a waste of time and effort because it will prove useful in some
+TV-game designs later on. The input circuits can be built in a
+breadboard fashion so that the parts can be used for other game
+purposes.
+
+For the sake of a preliminary set of experiments, connect the
+comparator inputs 1 through 128 to their respective H—count signals
+from the Sourcebox unit. This will provide an HPP output signal that
+ultimately appears as a ﬁne, black vertical line on the screen. The
+simple circuit in Fig. 8- 12 shows a technique for widening the bar and
+changing it to white on black for easier viewing.
+
+Experiments With a Position Programmer
+
+To begin the experiments, set the STOP/RUN switch to the
+logic-1 STOP position. Then set the nine PD input switches for some
+desired bar position. In the context of the presentation in Chapter 3,
+a logic—1 PD input is tantamount to a noninverted H-count signal,
+while a logic-0 input yields the effect of using an inverted H-count
+input.
+
+Note there is no response on the screen while adjusting the
+settings of the PD switches. This feature allows the experimenter to
+
+327
+
+ 
+

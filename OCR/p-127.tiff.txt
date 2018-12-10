@@ -1,0 +1,117 @@
+the screen without any windowing. You will ﬁnd that your ﬁgure is
+repeated a number of times in closely spaced rows and columns.
+
+The pattern of images on the screen might be rather interesting
+without the beneﬁt of windowing, but it is hardlyuseful in the context
+of a TV game. What remains to be done is selectively window some
+of those images, leaving some in place and eliminating the others.
+
+As is so often the case in this TV-game business, there are
+several different approaches to selecting the ﬁgures that are to
+appear on the screen. Study all the approaches presented here,
+doing as much hands-on experimenting as possible.
+
+Bar and Rectangle Windowing
+
+Figure 4-32 shows in a block diagram fashion how the image-
+windowing circuitry is interfaced with a complex-ﬁgure matrix
+generator. The 8-input NAN D gate normally shown as the window
+input for the complex-ﬁgure generators in this circuit is simply
+replaced with a different sort of windowing circuit.
+
+ 
+
+ 
+
+ 
+
+ 
+
+32 33 34 35 36 37 38 39 40 4! 42 43 44 45 45 ‘?
+
+ 
+
+48 49 50 5| 52 53 54 55 55 57 58 59 60 6! 62 63
+
+ 
+
+0E IE 25 3E 4E 5E 65 7E BE 95 log “5 [251331357155
+
+ 
+
+lGE I7E ISE [SE 205 215 225 23E 245 252 ZEEVETE 285 29E 305 3lE
+
+ 
+
+32E 33E 34E 35E 36E 37E 38E 39E 40E ME 42E 43E 44E 45E 465 315;
+
+ 
+
+ 
+
+435 495 so: 515 52: 53: :4: 551-: see 57E :0: 59: a6: GIE 63 E333
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SELECT: So = 2H WINDOW: 256H D INPUTS: DO — D 013 = 0 026 = 0 D47 = O
+
+51:41-1 ﬁ'sTi 01 :0 014:0 027:0 04a:‘aT/'
+$2 = 8H 64H 02 : av 01s : 0 02a : av 050 = W
+33 =16H 82H 03 : sv 01a : 8V 029 = 8V 052 :EV
+s4 = 2v 125v 04 : 13v 017 : av 030 = av 053 =W
+s5=4v 64V 05 =ev 01a=ev 031=8v 054 :W
+16V 06 =av 019:0 D32=8V 056 =EV
+
+07 = 020 = o 033 = ev 053 :W
+
+03 2. 021:0 D36=8V 060:§V
+
+09 : av 022 =W 037 = av 062 =§V
+010:0 023:0 D42=8V D63=8—V
+011 =av 024 :‘e‘v‘ D45=8V
+012 =av 025 =a—v 04e=sv
+
+ 
+
+ 
+
+ 
+
+Fig. 4-30. Figure of a battleship built in a 16 x 8 extended matrix.
+
+127
+
+ 
+

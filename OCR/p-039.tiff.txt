@@ -1,0 +1,38 @@
+Chapter 3
+Building Static Figures
+
+ 
+
+For the purposes of this book, static ﬁgures are considered any
+ﬁgures, no matter how simple or complex, that do not move on the
+screen. Such ﬁgures, in the context of TV games, can represent
+game boundaries, obstacles and nonmoving targets.
+
+A static ﬁgure, incidentally, does not have to be a visible one.
+Invisible ﬁgures can add an extra bit of challenge to an otherwise
+too-simple game; but more importantly, invisible lines and rectan-
+gles can serve as “windows” for conﬁning other images to a ﬁeld that
+is smaller than the TV screen.
+
+Static ﬁgures, whether visible or not, play invaluable roles in
+TV-games technology; and it turns out that building static ﬁgures can
+be a fascinating and rewarding pastime in itself.
+
+This chapter describes a number of basic techniques for build-
+ing static lines, bars, and rectangles, while the following chapter
+takes up the special subject of building complex static ﬁgures (cir-
+cles, ﬁgures with diagonal lines, images of people, rocket ships,
+cars, etc.).
+
+Each technique is illustrated with several speciﬁc examples,
+and the reader will ﬁnd the procedures used many times and in many
+different ways throughout the book. It is important to bear in mind,
+however, that the purpose of this book is to provide some guidelines
+for creating original TV games and displays. For that reason, alone,
+it is just as important to understand the essence of each ﬁgure-
+building technique as it is to see how the speciﬁc examples work.
+
+39
+
+ 
+

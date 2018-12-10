@@ -1,0 +1,53 @@
+Four more cloCk pulses after that, it appears in its full glory
+(uninterrupted by the top of the screen) at the left-hand side and
+slightly down from the top. The rectangle then moves to the right
+with each clock pulse until it is lost in horizontal blanking.
+
+Each clock pulse carries the rectangle to the right across the
+screen, and at the end of each of these excursions, it appears at the
+left again, but in a lower position. Out of the 256 possible positions
+available from the counters, 154 of them expose an uninterrupted
+rectangular ﬁgure.
+
+The only problem with this scheme is that so many combina-
+tions are lost in the blanking regions, but this is where the jumper
+option in Fig. 8-7 becomes an asset. The jumper sequence can be
+scrambled such that clearing the counters to 0000 0000 places the
+rectangle very near the middle of the screen. The next clock pulse
+might then position the ﬁgure in the upper right-hand corner, and the
+clock pulse after that might take it to the lower right-hand corner.
+The counters still count in their usual binary sequence, but mixing up
+the jumper programming places the ﬁgure into positions that do not
+necessarily follow an orderly, stepwise pattern. In effect, the ﬁgure
+can be made to skip around the screen and even disappear from View
+at times.
+
+Designing any game around this particular sort of counter/
+comparator scheme is a matter of ﬁrst determining the sequence of
+comparator inputs you want, then connecting jumpers in such a way
+that an orderly sequence of counts is transformed into your pre-
+scribed sequence of positions. The Golf game described later in this
+chapter uses this technique for placing the holes and tees of an
+18—hole golf game.
+
+Returning now to the fact that the ﬁgure can be moved in a
+stepwise and orderly fashion across the screen, doesn’t it seem
+possible this sort of counter/ comparator combination can be used for
+motion control? Indeed it can. The idea is to set up the programming
+so that the ﬁgure moves in very small increments across the screen.
+The rate of motion is determined by the frequency of the clocking
+operation, and the direction of motion is determined by whether the
+and comparators for generating ﬁgure motion on the screen.
+
+The section that follows deals with circuits that use counters
+and comparitors for generating ﬁgure motion on the screen.
+
+UNIVERSAL POSITION PROGRAMMERS
+
+The universal position programmer circuit shown in Fig. 8—9
+includes all the features of position programmers described thus far,
+
+324
+
+ 
+

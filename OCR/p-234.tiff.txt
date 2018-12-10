@@ -1,0 +1,53 @@
+This chapter strikes at the very heart of TV games, de-
+monstrating the essential control features without confusing the
+issue with a lot of added features (intended by others to make you
+buy the product or to keep on shoving quarters in the slot). You can
+add the razzle-dazzle later on it you want.
+
+MISSILE ATTACK ll
+
+Here is an extended version of the Missile Attack game already
+described in Chapter 6. This version requires two players, one for
+controlling the attack missile and another for controlling the antibal-
+listic missile. Player B’s task is to program the path of the attack
+missile, then launch it toward a target. The attack missile is always
+launched from the left-hand side of the screen and at an initial altitude
+programmed by Player B. The target is located at the lower right-
+hand corner of the screen, and Player B can strike that target using a
+wide variety of programmable velocities, initial altitudes, and rates
+of descent.
+
+Player A’s task is to protect the target by launching antiballistic
+missiles. The antiballistic missile can be launched only from the
+bottom of the screen, but Player A can program the horizontal
+position of his missile just prior to launching it.
+
+Neither player has any control over their respective missiles
+once they are launched.
+
+This game features a pair of program panels that add special
+interest to the whole affair. The players get the impression they are
+working with a computerized system in a fashion that is not found on
+any commercial TV games. This is not an easy game to play. It is a
+challenging game bound to spark the interest of players who like to
+think clearly, act quickly, push buttons, and throw switches.
+
+The Basic Game Plan
+
+The flow chart in Fig. 7-1 outlines the automatic control scheme
+for Missile Attack II. Under normal conditions, Player B launches
+the attack missile ﬁrst, presumably setting it on its path toward the
+target. Player A then responds by launching the antiballistic missile.
+
+Assuming both missiles are launched and set, the system en-
+ters a 4-point-decision—making mode. Suppose the antiballistic mis-
+sile strikes the attack missile before anything else happens. (This
+would be a score for Player A.) Whenever A = B, the image of the
+attack missile ﬂashes on the screen for about one-half second before
+it is reset to its initial position again. The antiballistic missile is
+immediately reset the moment A = B.
+
+234
+
+ 
+

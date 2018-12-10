@@ -1,0 +1,53 @@
+A ﬁgure for 256V is not shown here because it does not make a
+very interesting picture. It is at logic 0 through all but the last four
+lines of the display. Figure 3-1 does show what you should expect to
+see from 128V, 64V, 32V, and 16V.
+
+While inspecting these ﬁgures for yourself, take careful note of
+the fact that the bars for 64H and 64V are very close to the same
+size. The same is true for 32H and 32V, 16H and 16V, etc. From
+64H and 64V downward, the lines are about the same size when
+comparing an H output with its vertical counterpart.
+
+There is, however, an obvious difference between the sizes of
+the bars for 128H and 128V, and 256H and 256V. Keep these facts in
+mind for a time when you will be considering your own ﬁgure-
+building procedures.
+
+An experimenter can be justifiably proud of his system when
+seeing these basic horizontal— and vertical—count bars for the ﬁrst
+time. A lot of work and money has gone into building the Sourcebox,
+and this is the ﬁrst solid result of all that work. But looking at these
+bars and lines can become rather boring after a while. So now it is
+time to begin using these lines and bars as mere building blocks for
+creating more-useful and interesting ﬁgures.
+
+THE LINE/BAR TINKERBDX
+
+Figure 3—2 shows a schematic diagram, physical layout, and
+parts list for a breadboard system we shall call the Line/ Bar Tinker-
+box. It is simply a selection of ICs that are most useful for creating
+certain lines and bars at desired positions on the screen. The main
+purpose of this Tinkerbox is to let the experimenter ﬁnd out exactly
+what IC devices are necessary for building a desired line or bar on
+the screen. After taking careful note of how it is done with the
+Tinkerbox, the experimenter can transfer the ideas to a permanent
+cirucit.
+
+The ICs are plugged into a standard breadboard and bus-strip
+assembly. (See the parts list in Fig. 3—2 for catalog numbers.) The
+breadboard assembly is connected to the Sourcebox unit via a
+multiconductor cable or bundle of wires. These wires are connected
+to the Sourcebox output connector by means of a standard 22-pin
+edge-card PC board. Figure 3-3 shows a connection diagram that
+corresponds with the Sourcebox output terminal conﬁguration de—
+scribed in Chapter 2.
+
+To get a feeling for what the Tinkerbox can do and how to use it,
+connect the circuit shown in Fig. 8—4a. In this case, 256H is con-
+nected to pin 1 of 1C3, the 8-input NAND gate. If a test jumper is
+
+41
+
+ 
+

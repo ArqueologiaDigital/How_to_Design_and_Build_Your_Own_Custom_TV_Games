@@ -1,0 +1,56 @@
+ 
+
+lC4-A
+
+s 3 Q
+[___2_ (OUTPUT)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3-11. A basic R-S flip—ﬂop circuit and relevant waveforms.
+
+ICZ-A deﬁnes the starting point of the bar. Viewed on the TV
+screen, the output of this NAND gate appears as a relatively narrow
+black bar just left of the center of the screen. ICZ-A thus deﬁnes the
+starting point of the white bar being generated in this example.
+
+IC2-B in Fig. 3-12 generates the end—of-bar signal. Looking at
+the output of this NAN D gate on the screen, it appears as a relatively
+narrow black bar just right of the center of the screen. Combining
+these two black-bar signals in the R—S ﬂip-ﬂop ICs 4-A and 4-B,
+yields the ﬁnal reﬁllt.
+
+The same R-S technique can be applied to the task of generating
+broad vertical bars. The only real difference is that the inputs to the
+ﬁrst set of NAND gates come from vertical-count sources rather
+than horizontal-count sources.
+
+Try building some broad white bars, both horizontal and vertical
+
+ones, until you are conﬁdent you can handle the R-S ﬂip-ﬂop proce-
+dure.
+
+63
+
+ 
+

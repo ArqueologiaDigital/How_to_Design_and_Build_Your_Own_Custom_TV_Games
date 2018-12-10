@@ -1,0 +1,27 @@
+ﬁgure thus departs from its home, moving away in a direction and at a
+speed determined by the VC and HC inputs to the secondary ﬁgure
+slipping counter.
+
+Returning SINTC to logic 0 returns the secondary ﬁgure to its
+“home” at the primary ﬁgure, whether the primary ﬁgure has been
+initialized or not.
+
+The speed and direction of the secondary ﬁgure can be totally
+independent of the speed and direction of the primary ﬁgure. The
+relationships between the speed and direction of the two ﬁgures are
+strictly determined by the HC and VC inputs of the two pairs of
+slipping counters. In some instances, however, you might want the
+secondary ﬁgure to depart at a faster speed, but in the same direc-
+tion as the primary ﬁgure. In this case, connect together the 8VC
+and 8HC inputs to the two slipping counters. This will lock together
+their directions of travel. The settings of their three lower-order VC
+and HC inputs then determine the relative speeds after the secon—
+dary ﬁgure is launched.
+
+The Torpedo Attack and Dogﬁght games in Chapter 7 illustrate
+the application of tagalong circuits.
+
+231
+
+ 
+

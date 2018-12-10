@@ -1,0 +1,63 @@
+ 
+
+SMALL RACING CARS (USE CIRCUITS IN FIGS. 4-5
+
+AND 4-11)
+SELECT: so = 4H F 16H
+81 = 8H F 16H
+32 = 4v
+$3 = 3v
+
+WINDOW: 32H, 32v DlNPUTS: DO 4:W 09 =16V
+01:0 D12=16V
+02=W 013=1ev
+D3=16V 014=TST
+DG=W
+
+Fig. 4-34. Specifications for generating regular rows and columns of little racing
+cars.
+
+ 
+
+ 
+
+ 
+
+tions for doing this particular windowing job. Note that the smallest
+H-count window input is one step larger than the largest H-count
+speciﬁcation used for generating the ﬁgure. To be more speciﬁc, the
+ﬁgure—generating multiplexer circuit uses H—count inputs 4H, 8H,
+and 16H. The next larger H-count signal, 32H, is thus just large
+enough to cover the racing car ﬁgure.
+
+By the same token, the V-count windowing should begin with
+the V~count signal that is one step larger than the largest V-count
+used for generating ﬁgure. The largest V-count for the ﬁgure in this
+instance is 16V, the extension inputs to the D connections. The 32V
+signal is thus the appropriate one for windowing the images horizon-
+tally.
+
+The ﬁ_eld_ of cars can be limited to one part of the screen by
+including 256H and 128H at the windowing inputs. The two addi—
+tional windowing inputs restrict the ﬁeld of cars to a vertical “race
+track” situated just left of center.
+
+A general rule for windowing complex ﬁgures is emerging from
+this discussion. Always begin windowing, using H- and V-count
+signals one step higher than the largest used for generating the basic
+ﬁgure.
+
+If the basic ﬁgure is built within a 4 x8 matrix, for example, and
+the largest H- and V-count signals used for generating that ﬁgure are
+4H and 8V respectively, the windowing should begin with 8H and
+16V.
+
+Windowing for irregular Patterns of identical Figures
+
+While the notion of windowing a basic complex figure to get a
+particular pattern of rows and columns serves some useful purposes
+
+132
+
+ 
+

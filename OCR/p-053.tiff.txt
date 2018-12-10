@@ -1,0 +1,62 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+___J
+'64 ICI-A
+H OH H -——
+lNPUTS
+AS NEEDED "—
+—-—— OUTPUT
+(SINGLE VERTICAL
+~— LlNE)
+A
+LlNE1
+@TO4H
+INPUTS) [C40
+LINE 2
+(2 TO 4 H {
+P
+IN UTS) OUTPUT
+(PARALLEL VERTICAL
+B LINES)
+
+ 
+
+ 
+
+ 
+
+Fig. 3-6. Building white vertical lines and combining them into a single video
+signal. (a) Circuit for determining the horizontal—count specifications for each
+line. (b) Combining two simpliﬁed versions of the line—generating circuit.
+
+Once you have formed this line, take careful note of the exact
+H—count inputs you used, and show whether each of them should be
+inverted or noninverted.
+
+Unless you are trying to build an extremely narrow line, you
+won’t really need more than four combinations of inverted and
+noninverted inputs to the NAND gate. If it turns out that the line
+requires only two inputs, transfer the connections to the 8-input
+NAN D gate over to one of the 2-input NAND gates in 1C4. (Refer to
+Fig. 3-2 for the appropriate pin numbers.) If the line calls for three or
+
+53
+
+ 
+

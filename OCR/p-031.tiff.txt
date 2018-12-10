@@ -1,0 +1,53 @@
+ 
+
+condition represents count 261 from the vertical-count source, and it
+is responsible for clearing the counters back to zero.
+
+The vertical-count section thus generates 260 different pat-
+terns representing that many vertical lines on the screen.
+
+The vertical-blanking and sync pulses are generated in a fashion
+almost identical to the corresponding horizontal section. One differ-
+ence is that this circuit is built around a ﬂip—ﬂop triggered by
+positive-going, rather than negative-going, pulses.
+
+The VBLANK generating ﬂip-ﬂop is composed of NOR gates
+IC6-A and IC6—B. The pin-4 output of IC6B is at logic 0 most of the
+time, rising to logic 1 only when a VRST (vertical reset) pulse occurs
+at the Qoutput of 1C5. This pulse sets the pin-4 output of IC6—B to
+logic 1 and, as described earlier in this section, clears the vertical-
+count source to zero.
+
+The VBLANK signal remains at this logic-1 level until the 16 V
+signal at the input of IC6-B goes to logic 1. This action returns the
+pin-4 output of IC6-B to zero and, in fact, forces it to remain at 0 until
+another VRST pulse occurs.
+
+The VBLAN K signal thus goes to logic 1 the instant the vertical
+counters are reset to zero, and it remains in that condition until the
+counters increment to count 16. VBLANK can then be described as
+a positive-going pulse that lasts 16 HRST pulses.
+
+AUDIO IN
+AV
+R5* (9)
+50K —-‘ (21)
+C4
+__ __ * 80 LOUDSPEAKER
+_ _ _ (SUCH AS RADIO
+
+* MOUNTED ON SHACK 40-246)
+SOURCEBOX ENCLOSURE
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 2-6. The complete audio ampliﬁer system.
+
+31
+

@@ -1,0 +1,36 @@
+Chapter 1
+
+Television and Television Games
+
+ 
+
+Television has been an important part of home life in America for
+better than 25 years now, but television games, in their most popular
+forms, have been around for only a few years. It might seem that TV
+games could have been invented in the very early days of TV
+technology, but they were not. Why not? Because the right kind of
+game technology wasn’t available at an affordable cost until recently.
+
+This chapter describes the technologies of TV and TV games,
+showing in a very general way how modern TV games are interfaced
+with conventional TV receivers. Without at least a basic understand-
+ing of the interfacing problems, an experimenter can have little hope
+for designing custom TV games. One might be able to duplicate
+some of the speciﬁc game circuits shown in this book, but without
+that overall View of what-the system is doing, the whole point of
+investing money in this book will be lost.
+
+THE TV RASTER
+
+In the simplest terms, the TV raster is that pattern of ﬁne
+horizontal lines that can be seen on the screen of a TV receiver. The
+set generates these lines whether it is tuned to a station or not. The
+raster generating process is built into the TV set itself.
+
+_ As indicated in Fig. 1-1a, the raster is drawn on the screen, one
+horizontal line at a time, beginning near the upper left-hand comer
+and progressing toward the lower right-hand corner. Each horizon-
+tal line is drawn on the screen from left to right. As the beam reaches
+
+11
+

@@ -1,0 +1,55 @@
+The same sort of problem occurs when attempting to create a
+broad white horizontal bar that extends through the dividing line of
+the basic 128V image.
+
+The technique for generating relatively broad white bars, either
+vertical or horizontal, is the subject of this section. Besides allowing
+the experimenter to build broad White bars across the center of the
+screen, this technique often offers a more efﬁcient option to building
+broad white bars anywhere on the screen. _ __
+
+The basic idea, illustrated in Fig. 3—11, is to build a simple R-S
+ﬂip—ﬂop from a pair (1 2-input NAND gates. To see how this circuit
+works, suppose the Rand § inputs are normally at logic 1. If indeed
+this is the case, momentarily pulling the S input down to RETC 0 sets
+the Q input to logic 1, and Q remains at logic 1, even after S returns
+to logic 1. The only valid way to return the Q output to logic 0 once
+again is to pull the R input to logic 0 for _a_ moment. And after that, the
+Q output remains at logic 0 until the S input sees another logic-0
+pulse. _
+
+In summary, the Q output is set to logic 1 whenever the S inpu_t
+is pulsed with a logic-0 level, and Q is returned to logic 0 only when R
+is pulsed to logic 0. The Q output, as its name implies, is merely an
+inverted version of the Q output.
+
+What is the signiﬁcance of this circuit in the context of building
+broad white lines on the TV screen? It means that a White bar can be
+initiated at one point on the screen and terminated at any other point
+to the right of it. It is a matter of coming up with two narrow-line
+signals, one that switches on the white line and another that switches
+it off.
+
+Suppose, for example, you have built a Tinkerbox circuit that
+draws two parallel vertical lines on the screen. The width of the lines
+isn’t really important, just as long as they don’t overlap. Now con—
+nect__the output of the NAND gate generating the line on the left to
+the S input of the flip-ﬂop, and connect the output of the NAN D gate
+generating the second line to the R input. You will ﬁnd that the Q
+input of the ﬂip-ﬂop circuit generates a broad white, vertical bar that
+begins when the left-hand line begins and ends where the right-hand
+line begins.
+
+Any technique you use to generate a pair of parallel lines can be
+applied here. The resulting white bar will always cover the space
+between the beginning of the ﬁrst and last lines. This rule holds as
+long as (1) the two original parallel lines do not overlap and (2) there
+are only two parallel lines.
+
+Figure 3-12 shows one of the author’s circuits for building a
+white vertical bar that extends across the center of the screen.
+
+62
+
+ 
+

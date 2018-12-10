@@ -1,0 +1,54 @@
+portion for the antiballistic missile, Player A. Player B’s control
+circuitry is blocked out in Fig. 7 -5b. The overall game control
+scheme is shown in Fig. 7-5c.
+
+Referring to the block diagram in Fig. 7-5a, assume the antibal-
+listic missile is in its reset condition, resting at the bottom of the
+screen. TthLAUNCH signal is in a logic-1 condition at this time
+and the R-Siflip-flop is allowing two things to happen. First, it is
+enabling the horizontal position logic circuit so that Player A can
+manually adjust the horizontal position of his missile via the switches
+on his control panel. Second, the reset ﬂip-ﬂop is in a condition
+Where the initialization-control circuit is feeding VRST pulses to the
+vertical-slipping counter. The signiﬁcance of this latter condition is
+that the slipping counter is synchronized to the vertical-counting
+system in the Sourcebox. There is no vertical motion of the antibal-
+listic missile.
+
+’1 m. 0,. ﬁgure logic block is responsible for combining the antibal-
+listic missile’s'nmi'... val data (from the horizontal-position logic
+block) and its vertical data (from the VM outputs of the slipping
+counter) to create the image _o_1_1_tl_1e screen. The antiballistic missile’s
+ﬁgure signal is designated AF IG in Fig. 753.
+
+As long as the antiballisu'c missile is in its reset condition, then,
+it cannot move in a vertical direction because its vertical slipping
+counter is synchronized to the 60-Hz VRST signal from the Sour-
+cebox, but it can be manually moved in the horizontal direction by the
+control panel and horizontal-position logic circuit.
+
+Player A launches the antiballisﬁc missile by depressing his
+LAUNCH pushbutton. This action generates a brief negative-going
+pulse at ALAUNCH, setting the R-S flip-ﬂop to its launch mode.
+Two things happen then: The horizontal-position logic is locked out
+so that the player no longer has control over the missile’s horizontal
+position, and the initialization-control circuit is set to allow the
+slipping-counter action to take place. The antiballistic missile thus
+rises from the bottom of the screen at a rate determined by the VC
+programming of the vertical-slipping counter. (The programming for
+this counter is not shown in Fig. 7-Sa because it is internally ﬁxed at a
+relatively fast rate).
+
+All of the circuits blocked out inﬁig_ 7 -5a can be found in earlier
+chapters of this book. Look for the R-S f lip-ﬂop, horizontal-position
+logic, and initialization-control circuits in Chapter 6. The vertical-
+slipping counter is found in Chapter 5, and the ﬁgure logic is a simple
+variation of the basic ﬁgure-generating circuits in Chapter 3.
+
+Figure 7-5b outlines the main control circuits for the attack
+missile. This system includes elements that are nearly identical to
+
+240
+
+ 
+

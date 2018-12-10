@@ -1,0 +1,34 @@
+Preface
+
+ 
+
+America is a nation accustomed to fads. Novel ideas and products
+catch on rather quickly, sweeping the country with new products and
+services. More often than not, these fads gradually change form or
+fade away with time.
+
+TV games had all the earmarks of being one of these fads at
+ﬁrst. Once the idea caught on, video game products captured the
+fancy of all sorts of people—people willing to put out $50, $60 or, in
+some cases, more than a $100 to play the fascinating little games in
+their own homes.
+
+But it appears that TV games are here to stay. The games are
+becoming more sophisticated and diverse, and product sales
+skyrocket every Christmas. What’s more, commercial, coin-
+operated versions have already transformed the game arcade indus-
+try into something totally new and different. It now seems that video
+games are replacing the pinball machine as America’s number-one
+arcade game.
+
+This is a book about TV games. It shows how they work and,
+more importantly, how to design and build custom versions. This
+book is not merely a collection of complete TV game circuits. To be
+sure, there are a number of complete game circuits presented as
+design examples; the real emphasis is on designing and building
+custom TV games. In fact the reader will loose much of the fun of the
+whole thing by simply copying the circuits shown here.
+
+The whole idea of the book is to release the reader’s creative
+Instincts, transforming them into custom games that are a delight to
+

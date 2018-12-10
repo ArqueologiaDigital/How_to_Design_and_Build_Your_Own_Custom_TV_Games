@@ -1,0 +1,56 @@
+connections to the window inputs for the time being. If you use the
+select and D-input speciﬁcations in Fig. 4-33a, you will find the
+screen ﬁlled with rows and columns of hooke d-together Xs. (It gives
+the visual impression of a small checkerboard pattern, however).
+
+If you are having trouble visualizing the X5, window down to a
+single ﬁgure with 256H, 128H, 64H, 32H, 128V, 64V, and 32V. Now
+you should see a single X ﬁgure as shown in Fig. 4-33a. Remove all
+these window inputs before going on to the next step of this experi-
+ment.
+
+Now the idea is to selectively eliminate some of the KS, leaving
+behind a distinct pattern of them. First try applying 32H and 32V to
+the windowing NAND gate. You should ﬁnd that half the Xs are
+eliminated, getting rid of the confusing, hooked-together feature.
+What is left is a regular pattern of horizontal and vertical X lines.
+
+Including 64H and 64V with the 32H and 32V sources already
+connected to the window inputs increases the spacing between the
+rows and columns of X5. See this particular set of window speciﬁca-
+tions in Fig. 4-33b.
+
+Now remove the windowing NAND gate, 1C3, from the circuit
+and replace it with a 2-input EXCLUSIVE-OR gate. As described in
+connection with Fig. 3—21, you will be creating a checkerboard
+pattern, a checkerboard pattern of little Xs in this case. See the
+circuit and speciﬁcations in Fig. 4~33c.
+
+Try the windowing circuit in Fig. 4-33d for a touch of special
+interest, then try any of the other bar or line generators from
+Chapter 3.
+
+When you think you have mastered the art of setting patterns of
+identical, square matrix ﬁgures on the screen, move on to ﬁgures
+built within rectangular matrices. Most rectangular matrices de-
+scribed in this chapter use the extension technique, or a combination
+of extension and foldover. Such ﬁgures can be repeated any number
+of times on the screen using the bar-and—rectangle windowing pro-
+cedures. You will ﬁnd, however, that you must be careful when
+selecting the H- and V-count speciﬁcations for the windowing cir-
+cuitry.
+
+As an example of repeating the image of an extended foldover
+matrix, try the racing car ﬁgure in Fig. 4-12. Reduce the size of the
+basic ﬁgure matrix two orders of magnitude as indicated in Fig. 4-34.
+With no windowing at all, the little car appears repeated a large
+number of times on the screen. But the ﬁgures are hooked together
+in a fashion that makes the image about useless.
+
+The little ﬁgures can be separated by eliminating alternate rows
+and columns of them. The circuit in Fig. 4-34 shows the speciﬁca-
+
+130
+
+ 
+

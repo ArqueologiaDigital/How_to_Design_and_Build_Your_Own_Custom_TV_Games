@@ -1,0 +1,54 @@
+missile’s path enter motion data via a set of switches. The control
+input in this case is purely digital.
+
+Digital speed and direction controls, however, are not always
+the most appropriate. It is often more helpful and realistic to control
+the motion of a ﬁgure by means of dials—potentiometers, to be more
+speciﬁc.
+
+Figure 7-12 shows a relatively simple circuit that converts the
+digital motion-control input into an analog format. In essence, this
+circuit .converts the setting of a potentiometer into a 4-bit binary
+number for controlling the count length of a slipping counter. Using
+this scheme, a player controls the speed and direction of an image by
+turning the shaft of the variable resistor, R2.
+
+This elementary sort of A/D converter includes a 4-bit binary
+counter (1C4), a monostable multivibrator having an adjustable out-
+put timing interval (IC3), a clock-pulse gating circuit (ICZ-B), and a
+synchronizing-pulse generator (IC2-A and ICI-B). The inputs to the
+circuit are a 128V count pulse from the Sourcebox, a 2V count from
+Sourcebox, and the main control resistor, R2. The output is a 4-bit
+binary word that ultimately determines the speed and direction of
+motion of a ﬁgure on the screen. The 4-bit output is the one required
+for setting the count length of a slipping-counter circuit.
+
+Two such circuits are required where the player is to have
+control over both the horizontal and vertical components of motion.
+The horizontal control includes the components‘ shown in the main
+schematic in Fig. 7-12. 1C5, shown in the insert in Fig. 7-12, must be
+added for potentiometer control of the vertical-motion component.
+
+The waveforms in Fig. 7-12 illustrate the operation of the
+circuit. Whenever 128V makes a transition from logic 0 to logic 1
+(near the middle of the screen), the pulse generatgril‘CZ-A and
+ICl-B) generates a negative-going pulse, designated 128P through-
+out the remainder of this book.
+
+The monostable multivibrator is programmed such that_its_
+output timing interval is initiated on the trailing edge of the 128P
+pulse. See the second waveform in Fig. 7-12. With the pin-3 output
+of the monostable circuit thus set to logic 1, 2V pulses at pin 5 of
+IC2-B are allowed to pass to the clocking input of the counter circuit,
+1C4. The counter then increments at the 2V rate until the timing
+interval is over.
+
+When the timing interval is (ampleted, the counter holds its last
+4—bit output count until another 128? pulse occurs. That brief pulse
+clears the output of the counter to zero, letting the next counting
+interval begin from zero.
+
+263
+
+ 
+

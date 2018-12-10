@@ -1,0 +1,52 @@
+Torpedo Attack Wiring Diagram
+
+Figure 7-19 shows a recommended wiring diagram for this
+particular game. The tagalong system shown in this diagram is
+actually a composite of the three circuit boards and interconnections
+detailed previously in Fig. 7-14. Half the circuitry for this game can
+thus be used in other games, including the Dogﬁght system de-
+scribed in the section that follows.
+
+Using six circuit boards and two control panels pushes the
+system’s main power supply a bit beyond maximum capacity. Try
+operating one slipping-counter board and the tagalong board from
+the Game-A supply, and the second slipping-counter and Figure
+Boards (Fig. 7-17) from the Game-B supply. That leaves only the
+DT and Logic boards as well as the two control panels that must be
+operated from an auxiliary 5-V, l-A supply.
+
+DOGFIGHT
+
+Here is a popular video game adapted for the home experi~
+menter. The game requires two players, each controlling the ﬂight
+of an aircraft that is capable of ﬁring a missile at the other’s craft. The
+players have complete freedom to ﬂy their primary ﬁgure anywhere
+on the screen. This particular version has no barriers or borders to
+restrict the ﬂight.
+
+The special wrinkle in this game is the circuitry required for
+making the missile leave the craft at twice the craft’s speed and in the
+same direction. This involves the use of a 2 X vector multiplier circuit
+which, at first thought, might seem to be rather complicated, but it
+turns out that the circuitry isn’t very complicated at all.
+
+The ﬂow charts in Fig. 7 -20 show the control sequences for this
+Dogﬁght game. Since the two charts are identical, a careful study of
+one of them automatically leads to a complete understanding of the
+other.
+
+Suppose both players are piloting their primary ﬁgures (their
+respective “C” figures) around the screen, carrying their missiles in
+a tagalong fashion. N ow let Player A trigger his missile. According to
+the ﬂow chart on the left-hand side of Fig. 7-20, this action sets the
+AM (Player A’s missile) mode. One of two things can happen: that
+missile ﬁgure can come into contact with Player B’s craft (AM=BC)
+or A’s missile ﬂight time expires (AMT=O). In either case, the
+missile is immediately returned to the primary craft (RESET AM)
+but if the missile happens to hit the opponent’s craft, the destroyed
+craft is ﬂashed for about 1 second.
+
+288
+
+ 
+

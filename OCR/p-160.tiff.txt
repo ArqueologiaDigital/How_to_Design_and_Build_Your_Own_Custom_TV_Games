@@ -1,0 +1,53 @@
+tional board games from video games. Consider, for example, some
+of the programmable TV game systems on the market today. They
+boast of hundreds of different video games; yet, a good many of
+those same games could be played equally well on a sheet of paper.
+Games relying on automatic motion give TV games the special
+popularity they enjoy today.
+
+A Simple Circuit for Vertical Motion
+
+The simplest kind of video-motion-control circuit is one that
+involves vertical motion only. The simplicity of this form of automatic
+motion belies its usefulness, however. This simple circuit, combined
+with some player-controlled motion and interesting complex ﬁgures
+leads the experimenter to a wide variety of interesting games.
+Follow the discussion and experiments carefully, and you will most
+likely get a good impression of what you might be able to do on your
+own.
+
+The circuit in Fig. 5-12 allows the player to adjust the vertical
+direction and speed of a simple rectangular ﬁgure. The heart of the
+circuit is a free-running oscillator built around one section of a 556
+timer. The values are selected so that the oscillator runs at approxi-
+mately 60 Hz. There is no synchronization with the vertical—count
+sequence in the Sourcebox, so it is possible to vary the oscillator
+frequency above and below that 60-Hz rate.
+
+The primary purpose of ICZ and IC3 is to window the vertically
+moving rectangle so that it appears as a rectangle, rather than a
+narrow horizontal bar. Build this circuit and note the video signal as it
+is taken from pin 2 of inverter ICZ—A. You will ﬁnd a white horizontal
+bar that moves upward or downward on the screen at a rate deter-
+mined by the setting of R2.
+
+You should be able to adjust R2 so that the bar stands still at any
+desired point on the screen. There might be a slight drift in one
+direction or another, but remember that this is the simplest, and not
+the most precise, vertical-motion circuit.
+
+Whenever you make the bar stand still on the screen, the
+oscillator is running at the system’s vertical framing rate, about
+60—Hz rate.
+
+Adjust R2 a bit one way or another and you will ﬁnd the bar
+moving upward on the screen. The farther you move the control in
+that direction, the faster the motion. Whenever the bar is moving up
+the screen, the oscillator is running a bit slower than the 60-Hz
+vertical framing rate; and the faster the bar moves, the farther the
+frequency is from 60—Hz.
+
+160
+
+ 
+

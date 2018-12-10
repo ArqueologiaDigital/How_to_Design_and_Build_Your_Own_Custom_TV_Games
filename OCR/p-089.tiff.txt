@@ -1,0 +1,43 @@
+ 
+
+SELECT: $0 = 32H WINDOW: 256H
+$1 = 64H 128H
+82 = 32V 128V
+S3 = 64V
+D INPUTS: LOGIC 0 (COMM) YIELDS
+BLACK CELL
+
+LOGIC 1 (NO CONNECTION)
+YIELDS WHITE CELL
+
+D3
+
+09
+
+DIS DI4
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 4-6. Some experimental ﬁgures for the 16-ceil matrix generator. All of these
+figures use a 4 x 4 format.
+
+soon as the experiments seem to be getting a bit dull, move on to the
+next stage of the project, generating extended matrices.
+
+Extending the Matrix
+
+After experimenting with the basic 4 x4 matrix for a while, you
+will come to the conclusion that it is incapable of generating a very
+wide selection of interesting ﬁgures. The versatility, resolution, and
+overall quality of TV-game images is directly proportional to the
+
+89
+
+ 
+

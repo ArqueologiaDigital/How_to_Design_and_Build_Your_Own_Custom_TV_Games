@@ -1,0 +1,38 @@
+ 
+
+Chapter 6
+
+Some Useful Game Control Schemes
+
+ 
+
+Automatic motion is indeed the hallmark of video games, but au—
+tomatic game sequencing runs a close second. Most TV games
+employ automatic start-up and stop features, for example. Then
+there are other kinds of events and sequences of events that occur
+during a game, some manually controlled and others automatic.
+
+Consider the control schemes for a basic table tennis game.
+The game sequence is usually initiated manually by depressing a
+RESTART pushbutton, but it generally ends automatically as one
+player reaches a certain score. In some instances, the ball-serving
+sequence is initiated manually, while in other versions of the same
+game, the ball is served manually. But in either case, the serving
+sequence is terminated automatically as one player misses the ball.
+These operations are examples of game control schemes.
+
+Study the circuits in this chapter carefully. A proper under-
+standing of them will make it easier for you to understand the control
+features of sample games presented later in this book, and it will
+certainly make the process of designing your own games more fun,
+easier, and more efﬁcient.
+
+GAME START/RESET CONTROLS
+
+Most TV games begin with some kind of initial action some-
+where on the screen, and by the same token, most games include a
+critical point where the system is to be reset to begin another cycle
+of one game or begin a new game altogether.
+
+181
+

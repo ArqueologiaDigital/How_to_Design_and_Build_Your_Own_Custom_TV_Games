@@ -1,0 +1,54 @@
+interesting and exciting TV games. Unlike any of the commercial
+ﬁxed or programmable games on the market today, buildingyour
+own games gives you a range of game interfacing that grows to any
+degree of interest and excitement you choose. You certainly aren’t
+limited to a couple of joysticks and one or two pushbuttons. You can
+devise games having elaborate control terminals sporting a variety of
+programming switches, launch and ﬁring buttons, blinking warning
+lights, sirens—the whole works.
+
+You can build your own custom games that are as realistic or
+far-fetched as your imagination allows. And as clearly demonstrated
+(so far in this chapter, it is possible to begin with a rather simple game
+format and expand it almost without limit, adding more control
+circuits and reﬁning the action as time, knowledge and ﬁnances
+permit. Try that with a $200 programmable TV game set!
+
+A Simple Program Memory
+
+The prospect of being able to switch-program initial positions,
+speeds, and directions can soon lead to a situation where the players
+face a bewildering array of switches. While it might be neat to work
+with a lot of switches, having to set a lot of switch positions slows
+down the action in some cases.
+
+Suppose you devise a game calling for programming the initial
+position, direction, and speed of a ﬁgure that moves in both the
+horizontal and vertical directions. If the player is allowed complete
+freedom to choose these parameters, that adds up to 16 different
+control switches, 4 each for vertical motion, vertical initial position,
+horizontal motion, and horizontal initial position. Now you might like
+that idea, but it can be expensive, especially if there are two or more
+
+- players equipped with such a control panel.
+
+One way to reduce the number of switches required for this
+sort of game is by using a simple switch-position memory circuit. See
+Fig. 6-20.
+
+ICs 2 through 5 in this circuit are quad D latches. Any combina-
+tion of 1s and Os applied to the four input terminals (pins 2, 3, 6, and
+7) will appear immediately at the corresponding outputs (pins 16, 15,
+10 and 9) whenever the control inputs (pins 4 and 3) are pulled up to
+logic 1. When the control input is then returned to logic 0, the
+outputs retain the same logic levels written into them while the
+control was at logic 1. The memory circuit is then immune to any
+changes in the inputs as long as the control remains at logic 0.
+
+Whenever there is a need to switch-program more than one
+motion parameter, then, it is possible to do the job with a single set of
+
+224
+
+ 
+

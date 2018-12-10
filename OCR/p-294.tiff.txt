@@ -1,0 +1,55 @@
+The primary—ﬁgure control codes are translated into velocities
+in the VP column. This data is taken directly from the table in Fig.
+7-22. The 2VP column then shows the VP ﬁgure multiplied by 2.
+Multiplying a velocity vector changes only the speed and not the
+direction, so the 4-bit binary words on the right-hand side of the table
+in Fig. 7-23 show the control codes that suit the 2VP velocity
+ﬁgures. Again, this data is taken directly from Fig. 7-22. The M’
+column merely translates the control codes into their corresponding
+decimal values.
+
+What this table is saying is that when any primary ﬁgure is
+carrying along a secondary ﬁgure with one velocity component of
+M=12, the secondary ﬁgure should be launched with a velocity
+component of M=15. The secondary ﬁgure will move away in the
+same direction, but with twice the speed of the primary ﬁgure.
+
+Primary-ﬁgure M ﬁgures greater than 12 or less than 3 are
+considered invalid because the 2 x transformation calls for M’ values
+that are greater or less than a 4-bit binary format allows. A ﬁgure
+cannot go any faster than 1111 or 0000.
+
+The circuit in Fig. 723 shows how the primary-ﬁgure data is
+translated into a 2x format for its secondary ﬁgure. As long as the
+primary control data stays within its valid operating range of M=5
+through M=12, the circuit performs the prescribed transforma-
+tions.
+
+Interfacing this 2X vector circuit with the tagalong control
+system is a matter of removing the jumpers speciﬁed in Fig. 7-13 and
+connecting the PVC outputs of that circuit to the corresponding P
+inputs of the 2 x vector circuit. The four outputs of the vector circuit
+are then connected to their respective PVC’ connections in Fig.
+7-13.
+
+A second 2 x vector circuit can then be interfaced with the PH
+connections in a similar fashion.
+
+The secondary ﬁgure then tags along with its primary ﬁgure as
+long as the FIRE terminal in Fig. 7-13 is at logic 1. Even though the
+secondary ﬁgure is receiving control data that is different from the
+control data for the primary ﬁgure, the secondary ﬁgure is effec—
+tively initializedA the primary ﬁgure’s position.
+
+Setting FIRE to logic 0, however, loads latches IC6 and IC7 in
+Fig. 7-13 with the 2 X~transforrned~control data, and as a result, the
+secondary ﬁgure ﬂies away at twice its host’s speed.
+
+Dogfight Block Diagram
+The block diagram in Fig. 7-24 represents the Dogﬁght game
+described in this section. The PLAYER A CONTROLS block gener-
+
+294
+
+ 
+

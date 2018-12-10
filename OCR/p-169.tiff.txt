@@ -1,0 +1,55 @@
+Alter the phasing so that the slipping counter reaches a count of
+100 while the corresponding Sourcebox counter is at 50, and you will
+ﬁnd the image shifted 50 scan lines higher on the screen. The
+slipping counter in this case is running 50 HRST pulses ahead of the
+Sourcebox vertical-count generator.
+
+An image created by the VM outputs of the vertical slipping
+counter will be motionless on the screen as long as the frequency is
+identical to that of the vertical-count generator in the Sourcebox, but
+let the frequencies be different, and you will ﬁnd the image moving
+up or down the screen.
+
+Suppose the slipping counter has some provision for altering
+the number of HRST pulses it includes in one vertical frame. If this
+counter has a counting capacity of 262 instead of the usual 261, it
+resets one scan line later per frame. The overall effect is that any
+image created from the slipping—counter outputs moves down the
+screen at a slow but steady rate.
+
+There are two ways to consider this kind of motion effect. Both
+lead to the same conclusion, an it is left to the reader to use the point
+of view that suits his own way of thinking.
+
+One way to explain the steady downward motion just described
+is to consider that the slipping counter is running one HRST pulse
+farther out of phase each time one vertical frame is completed. And
+since the position of the image is determined by phase relationship
+between the slipping counter and Sourcebox, a continuous change in
+that phase relationship produces the effect of a steady motion.
+
+Another way to look at the situation is to consider that the
+slipping counter runs at a slightly different frequency than its coun-
+terpart in the Sourcebox. If the slipping counter is cycling at 262
+pulses per frame instead of 261, that means it is running at a slightly
+lower frequency. The slipping counter, in other Words, is running
+out of sync with the Sourcebox counter. And since it is running at a
+slightly lower frequency, the image “rolls” downward on the screen.
+
+Setting the slipping counter to count out 260 HRST pulses,
+instead of the 261 pulse-interval from the Sourcebox, the image will
+appear to move upward on the screen. The idea here is that the
+slipping counter is running at a higher frequency.
+
+The direction of motion is thus determined by whether the
+slipping counter is cycling at a higher or lower frequency than the
+corresponding counter in the Sourcebox. If the slipping counter is
+running at a higher frequency (short counting) the image moves
+upward, and if the slipping counter is running at a lower frequency
+(long counting) the image moved downward . Of course the image is
+motionless as long as the two frequencies are the same.
+
+169
+
+ 
+

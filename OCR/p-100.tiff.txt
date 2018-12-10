@@ -1,0 +1,54 @@
+The diagram in Fig. 4-12 is one example of an 8x8 extended
+foldover ﬁgure. The idea here is to build a ﬁgure of a racing car for a
+couple of different TV games. Using the select, window, and D
+inputs speciﬁed in that ﬁgure generates a rather large version of the
+car; so after you’ve tried building it for yourself (and maybe making a
+few style modiﬁcations), reduce its size by scaling down all of the
+speciﬁcations a notch or two.
+
+Why not try designing a few more interesting and potentially
+useful ﬁgures that are symmetrical about a vertical center line? Try a
+rocket, for instance, or some stars, squares with black centers, and
+triangles.
+
+Figure 4—13 shows the matrix and circuitry for converting the
+8XS extended foldover matrix to one having symmetry about a
+horizontal center line. Three lower-order horizontal—count inputs go
+to select inputs SO, 51, and 82, while S3 sees a folded version of
+16V. Note that the 32V signal that is used for generating the
+extended-matrix effect must also be folded before it is applied to the
+appropriate D inputs of the multiplexer circuit.
+
+An example of an 8x8 extended, horizontally folded image is
+shown in Fig. 4-14. As with every matrix-generated ﬁgure in this
+chapter, it can be reduced in size by scaling down all the vertical- and
+horizontal-count inputs. Using the speciﬁcations given in Fig. 4-14,
+the airplane occupies most of the lower right-hand quadrant of the
+screen.
+
+Figure 4-15 shows yet another version of the 64—cell extended
+foldover matrix built around the circuit in Fig. 4-5. In this instance
+the matrix is conﬁgured as a 4 X 16, with symmetry about the vertical
+axis. Using the select, window, and data speciﬁcations shown here,
+this particular matrix is quite useful for building missile images. See
+the suggested missile in Fig. 4-16.
+
+See if you can apply your understanding of how the foldover
+principle works to generate a missile image that ﬁts into a 16x4
+matrix that is folded along the horizontal center line.
+
+MATRIX OPERATIONS FROM A 32-CELL GENERATOR
+
+The circuit in Fig. 4-5 is a basic 16—cell matrix generator. By
+applying extended-matrix and matrix foldover procedures, it is pos-
+sible to build 32-cell and 64-cell matrices. The only restriction on the
+kinds of ﬁgures it can generate is that the 64—cell version is good only _
+for making symmetrical ﬁgures.
+
+And while it is a lot of fun to play with the system just described,
+personal experience with it shows that other people sometimes have
+
+100
+
+ 
+

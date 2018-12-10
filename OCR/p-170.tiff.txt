@@ -1,0 +1,55 @@
+Now the greater the frequency difference, the faster the appa-
+rent motion becomes. If the slipping counter is set so that it short-
+counts four pulses per frame, it moves upward about four times as
+fast as it does when short counting just one pulse per frame. Long
+counting four pulses per frame, by the same line of reasoning, makes
+
+' the image move downward rather rapidly.
+
+The table in Fig. 5-13 shows ﬁve 4-bit words that can be loaded
+into the vertical-motion-slipping-counter circuit. When that number
+is 1001 (decimal 9) the slipping counter runs at the same frequency
+as the vertical—count generator in the Sourcebox unit, and the result
+is a motionless image on the screen.
+
+Loading decimal 8, 7, 6, or 5, however, forces the slipping
+counter to long-count by 1, 2, 3, or 4 HRST pulses per frame,
+yielding an image that moves downward at the rate of 1, 2, 3, or 4
+scan lines per frame. (Since there are 60 frames completed each
+second, it is possible to calculate the time it takes the image to move
+down the screen.) '
+
+According to the table in Fig. 5-13, loading the decimal equiva-
+lents of 10, 11, 12, or 13 causes the image to move upward. The
+counter actually short-counts by 1, 2, 3, or 4 scan lines per frame in
+this instance.
+
+All of this discussion merely indicates what the circuit in Fig.
+5-13 does. Now it is time to investigate exactlyhow it does the job.
+
+Anyone familiar with the fundamentals of digital electronics
+ought to recognize the two-counter portion of the circuit as an 8—bit
+synchronous binary counter. The counters are clocked by the HRST
+input to pin 14 of both IC’s. Note, however, that the counters are
+disabled thrugh the VBLANK interval by means of the VBLANK
+signal applied to the G (enable) input of 1C1. The circuit is thus
+allowed to count at the HRST rate only as long as VBLANK is at logic
+O—at all times except through the VBLANK interval.
+
+The 2-input NAND gate normally shows a logic-1 output, drop—
+ping to logic 0 only when the counter outputs reach a maximum count
+of 11111111. At that instant, the 2-input NAND gate sees a pair of
+logic-1 inputs, and its output drops to 0.
+
+Whenever the output of IC3-A drops to logic 0, the two counter
+ICs are loaded with a certain set of binary numbers. 1C2 is always
+loaded with 0000 virtue of the fact that its preset inputs are perma-
+nently tied to logic-0 common. 1C1, however, is loaded with what-
+ever 4—bit number appears at its preset inputs, PA through PD, and
+that number is the motion code described in the table accompanying
+the diagram in Fig. 5-13.
+
+170
+
+ 
+

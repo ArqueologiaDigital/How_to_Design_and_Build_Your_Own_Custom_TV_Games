@@ -1,0 +1,101 @@
+ 
+
+PRESET
+
+ 
+
+INPUTS
+
+(a)
+
++VCC
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MODE
+
+ 
+
+ 
+
+ 
+
+STOP COUNT
+NORMAL UP COUNT
+NORMAL DOWN COUNT
+
+LOAD P INPUTS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+16
+CLK it? J3— RC
+—EN——AB J—c 12
+U/D ——5— —- MIM
+L 11 3
+PA‘l?’ -:;-QA m
+PB —-—-— 1—08 § §
+6
+PC 31— ----QC 8 5
+9 7 0
+PD -——I - GD
+8 INPUTS
+COMM m
+< D 3‘
+74191 ﬂ 3 4 :3
+PRESETTABLE BINARY I x x X
+UP/DOWN COUNTER
+16-PIN DIP 0 0 0 I
+o I'o l
+O X I X
+I_.,__U__I
+1 ~— DIS Vcc — 14
+2 —— THR DIS —— 13
+3 — cv THR — 12
+TIMER
+A 4 —— RST cv —— 11
+5 -—-OUT HST—— 10
+e -—- TRIG OUT— 9
+(b) 7 COMM TRIGI— 8
+556 DUAL TIMER
+14-PIN DIP
+O V
+1 -— COMM VCC — a
+2 -—TRIG ms— 7
+3 —- OUT THR ——- s
+4 — RST cv ——5
+555'TIMER
+8-PIN DIP
+
+“MER
+
+ 
+
+138
+
+ 
+
+ 
+
+ 
+

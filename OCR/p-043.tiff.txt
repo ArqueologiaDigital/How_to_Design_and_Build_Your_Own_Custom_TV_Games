@@ -1,0 +1,39 @@
+ 
+
+ 
+
+128V 64V
+
+ 
+
+32V 1 6V
+
+ 
+
+ 
+
+Fig. 3-1. Video images available directly from the horizontal and vertical‘count
+sources.
+
+connected from that input point and the GAME VID IN terminal on
+the Sourcebox, the screen will show the usual 256H pattern.
+
+But once that same signal passes through the NAN D gate, the
+blacks and whites are reversed. In digital terms, a NAN D gate with a
+single input works like a logic inverter—it reverses the logic-1 and -0
+levels.
+
+The signal from the NAND gate is then passed through an
+inverter circuit where the waveform is reversed once again. This
+operation brings the signal back to its original phase, thus creating an
+image on the screen that is in all respects the same as that created by
+the original 256H waveform.
+
+Any horizontal- or vertical-count waveform can be applied to
+the input of the circuit in Fig. 3—43, and emerge in its original form
+from the output of the inverter circuit, ICl—A.
+
+43
+
+ 
+

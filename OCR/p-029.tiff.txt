@@ -1,0 +1,132 @@
+ 
+
+ICG—7400 QUAD
+
+2-INPUT NAND
+NOTES:
+(1) NUMBERS IN PARENTHESES
+
+IC7—7404 HEX
+INVERTER
+
+ 
+
+ICB—LM386 AUDIO
+AMP
+
+INDICATE PLUG CONNECTION
+
+NUMBERS t
+(2) = i— COMM; = 5V I34)
+- 256H
+
+(3?) (36) (35) E
+R2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(38)
+1§I~I 32H 64H 12\§H ‘2.2K
+l—l7
+————___ 9 p
+12 9 8 11 """ J 11
+A B' c D
+1 CKB e “31-3
+14 I03 3
+CKA R01 R02 1
+1o 5 2 3 — K
+c
+13 8
+- ,HRST
+‘ (33)
+32H
+v +5v
+(1.44)' C2 + C3
+.01 10uF
+COMM #F — 16V
+———-——- (22.23)
+ECG-D HSYNC
+(32)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 2-4. Horizontal source board schematic diagram.
+
+29
+

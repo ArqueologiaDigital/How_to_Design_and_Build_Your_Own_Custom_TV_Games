@@ -1,0 +1,56 @@
+a white rectangle. Remove the grounding wire to D5 and note the
+effect. You’ll get backward block-Cs on the screen if you have left D6
+connected to logic 0.
+
+Play around with the logic levels at locations D1, D2, D5, D6,
+D9, and D10, and note the results. Keep a record of the connections
+that generate a pattern you think might be useful in the future. Avoid
+tampering with the matrix blocks surrounding the sides and bottom
+of the figure—unless you want the white areas of one matrix to butt
+up against white areﬁ of another one.
+
+Try running the M output of the multiplexer through an inverter
+before applying the signal to the GAME VID IN. You will ﬁnd that the
+blacks and whites are then reversed on the screen. Maybe some-
+time you will have a need for a black block-C on a white ﬁeld.
+
+Windowing the Matrix Display
+
+Having a number of identical ﬁgures on the screen at the same
+time might create some interesting visual impressions, but it is often
+confusing and usually undesirable to show more than one particular
+complex ﬁgure on the screen at any given time. Eliminating all but
+one of the matrix ﬁgures is a matter of building a window around the
+ﬁgure in the desired area of the screen.
+
+Figure 4—5 shows the standard 16-cell matrix circuit, including a
+windowing feature built around 1C5. Note that the output of ICS is
+connected directly to the CE input of the multiplexer. As long as this
+terminal is at logic 0, the multiplexer circuit generates its matrix
+video at M. The entire multiplexing operation is inhibited, however,
+when the output of the NAND gate rises to a logic-1 level.
+
+Now notice that the inputs to IC3 are horizontal- and vertical-
+count sources. An astute reader will recognize the fact that this
+NAN D operation is identical to the rectangle-building circuit de-
+scribed in Chapter 3. And that’s precisely what is involved in win-
+dowing the matrix display: building a rectangle that encloses one of
+the matrices and eliminates all the others.
+
+Connect the circuit shown in Fig. 4-5, using window and ad-
+dress inputs as follows: SO=32H, Sl =64H, SZ =32V, S3=64V; with
+window inputs 128H, 256H, and 128V. With no connections to the D
+inputs, you should see a white square in the lower right—hand quad—
+rant of the screen. Now the fun begins.
+
+The square on the screen represents the 4X4 matrix shown in
+Fig. 4-4a. Since the output of the multiplexer is now inverted before
+it is applied to GAME VID IN, it follows that logic-1 levels applied to
+the D inputs creates white matrix cells on the screen. The matrix is
+
+ 
+
+86
+
+ 
+

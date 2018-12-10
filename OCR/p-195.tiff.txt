@@ -1,0 +1,82 @@
+ 
+
+IC1, 2—556 DUAL TIMER
+lC3—7402 QUAD 2-INPUT NOR
+IC4—7400 QUAD 2-lNPUT NAND
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+14 '04-A lCS-C
+3 .1 8
+1o
+2
+T w _
+RS R6 R7 %R8
+470K 22K 10 1M 22K
+________+ 8 9
+13 104-8
+.__..__.___—n C4
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12 4
+~——-"" 102-8 5 i0- 6
+
+E5
+
+— mm: 7: 06
+T .inJ:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 6-7. Finalized schematic for the control operation described in connection
+with the ﬂowchart in Fig. 6-5a.
+
+FlGURE-CONTACT-SENSING CIRCUITS
+
+Most TV games are designed so that they carry out an automa—
+tic operation whenever two or more ﬁgures come into contact with
+one another on the screen. Suppose you are working up an auto
+racing game. The cycle begins with your opponents’ cars moving
+rapidly across the screen. And your job is to accelerate your car,
+moving into the trafﬁc without touching any of the other cars. If you
+are setting up this game right, things will start getting a little hairy as
+
+195
+
+ 
+

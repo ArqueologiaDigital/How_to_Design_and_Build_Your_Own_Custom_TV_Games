@@ -1,0 +1,56 @@
+cerned, they select the same data input on both ICs at the same
+time. The scheme works very much like a two-deck rotary switch.
+
+What, then, is the role of the S4 input? Ultimately, the purpose
+of the S4 input is to make certain the two multiplexers are never
+enabled at the same time. If this 5th—bit input happens to have a
+logic-0 level, for instance, it can enable multiplexer IC5 and disables
+1C6. Setting select input S4 to logic 1, on the other hand, makes it
+possible to disable IC5 and enable 1C6.
+
+ICs 5 and 6 are thus both disabled at the same time; or,
+according to the logic state of S4, one is enabled while the other is
+disabled. It is not possible to enable both multiplexers at the same
+time. (Both multiplexers are disabled by the window inputs, a circuit
+described a bit later in this section.)
+
+Now consider all ﬁve system-select inputs at the same time. As
+long as the S4 select input is at logic 0, the status of the four
+lower-order select inputs (SO through 83) select one of the 16 data
+inputs to IC5. An inverted version of that particular input to IC5
+appears inverted at pin 10 of that IC. 1C6, however, is disabled at
+that time. And though select inputs SO through S3 might be selecting
+one of the 16 inputs to 1C6, pin 10 of that IC remains ﬁxed at logic 1,
+the disabled output condition.
+
+IC5 and 1C6 change roles when S4 goes to logic 1. [CG then
+outputs its selected data to its pin-10 connection, and IC5 is disabled.
+
+Data inputs D0 through D15 are thus relevant only as long as
+select input S4 is at logic 0. In a similar fashion, data inputs D16
+through D31 are selected only as long as select input 84 is at logic 1.
+
+There are effectively 32 different data inputs to this system.
+One of these 32 different inputs appears at the input side of the
+output NAND gate, IC2—C, depending on the 5—bit binary code
+appearing at the system’s select inputs. There is a one-to-one
+correspondence between the 5-bit binary code presented at the
+select inputs and the data input being selected. Setting the select
+inputs to binary 20 (10100), for example, selects data input D20.
+
+The window input works much the same way as all the other
+ﬁgure—windowing circuits described earlier in this chapter and in
+Chapter 3. In this instance, however, the window circuit keeps both
+multiplexers disabled until the proper horizontal and vertical count is
+reached. At that moment, on multiplexer IC or the other is enabled,
+depending on the logic level of select input S4.
+
+Extended 64-Cell Matrices
+
+The circuit in Fig. 4-17 is the starting point for a number of
+complex—ﬁgure matrix conﬁgurations. Connect this circuit on your
+
+105
+
+ 
+

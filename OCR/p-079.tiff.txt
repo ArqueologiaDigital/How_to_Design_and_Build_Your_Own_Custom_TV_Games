@@ -1,0 +1,40 @@
+ 
+
+Chapter 4
+Building
+More-Complex Static Figures
+
+ 
+
+While it is possible to achieve a wide range of static patternsrusing
+the principles outlined in the previous chapter, they generally lack
+the interest that typiﬁes some of the better TV games on the market
+today. The line and bar patterns are all made from straight lines and
+right angles; and building something as geometrically simple as a
+triangle calls for an exceedingly complex Line/ Bar Tinkerbox cir
+cuit.
+
+This chapter presents one basic approach to building static
+ﬁgures of all kinds, geometric ﬁgures as well as an unlimited variety
+of far-more-interesting ﬁgures such as rockets, airplanes, tanks,
+people, guns, and so on. And to some extent, it is possible to use this
+technique to build up some of the more complicated line, bar, and
+rectangle ﬁgures described in the previous chapter.
+
+Although this chapter presents only one basic approach, I think
+you will ﬁnd it is adequate for just about any ﬁgure—building problem
+you might ever encounter. The range of possible ﬁgures that can be
+built is really limited only by your own understanding of how the
+scheme works and, of course, your own imagination.
+
+Follow the discussions carefully and in the sequence as pre-
+sented here. You might get the impression you are studying a
+textbook from time to time, but if you work out the speciﬁc examples
+and then try a few of your own, you’ll have a lot of fun learning how to
+build complex ﬁgures on the TV screen.
+
+This technique, incidentally, can be extended later on to include
+some animation and ﬁgure-motion effects. So the ﬁgures you create
+
+79
+

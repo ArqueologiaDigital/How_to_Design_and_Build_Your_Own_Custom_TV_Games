@@ -1,0 +1,54 @@
+control to one extreme position, then adjust R3 for the desired
+maximum speed in that direction. Then set R2 to its opposite
+extreme and adjust R3 again for the desired maximum speed. Work
+R2 back and forth between its extremes, gradually adjusting the
+trirnpot for the most useful control range.
+
+The main control, R2, is normally mounted externally on a
+separate control panel. The trimpot, however, is mounted to the
+circuit board.
+
+Figure 7-13 includes a pair of these motion-control circuits: one
+for the horizontal and another for the vertical motion of the attack
+craft. Note that the t_vgg_monostable multivibrators, ICl-A and
+IC1—B, share the same 128P inputs,and that R1 controls the horizon-
+tal component of motion and R3 controls the vertical component.
+Also note that the vertical-speed counter (1C4) is followed by the
+latch circuit, 1C5.
+
+This potentiometer-controlled motion interface circuit is an
+integral part of the attack craft control in the Torpedo Attack game.
+It will also be used a number of times in other game systems through
+the remainder of this book.
+
+A Complete Tagalong Motion Control System
+
+The attack craft in this game is to carry along an attack torpedo
+until the aggressor launches it, presumably toward the target image.
+Chapter 6 includes a general description of the tagalong process, but
+now it is time to look at one such system in much greater detail.
+
+The schematic diagram in Fig. 7-13 shows the tagalong-control
+portion of the system. Eventually we will show that this circuit
+interfaces with a pair of slipping-counter-control boards, one for the
+primary ﬁgure (the attack craft) and another for the secondary ﬁgure
+(the attack torpedo). See the slipping-counter schematic in Fig.
+5-15.
+
+Most of the circuitry in Fig. 7-13 is simply a pair of
+potentiometer-controlled elements that generate binary speed and,
+direction codes. ICI—A and 1C3, of instance, translate the setting of
+R1 into a 4—bit binary number representing the speed and direction of
+a ﬁgure in the horizontal plane. IC1-B, 1C4, and 1C5 do the same sort
+of job for motion in the vertical directions.
+
+N ow bear in mind that this circuit controls two separate
+slipping-counter boards. All of the input and output designations that
+include a P character indicate signals to or from the primary-ﬁgure
+slipping counter, while those including an S character indicate signals
+concerned with the secondary ﬁgure.
+
+266
+
+ 
+

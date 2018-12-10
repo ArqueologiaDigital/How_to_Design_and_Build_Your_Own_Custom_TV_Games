@@ -1,0 +1,55 @@
+Whenever the player depresses the START button on the
+control panel, a negative-gging logic level at pin 5 of ICl-B in Fig.
+8-25 sets the state of a R—S flip-ﬂop. The ﬂip—ﬂop responds by
+showing a negative-going edge at pin 3 of ICl-A. That edge-triggers
+a pulse-generator circuit composed of ICl-C and IC4-A. The brief
+negative-going pulse from that pulse generator triggers ICG-A, the
+game’s 3-minute master timer circuit. Depressing the START but-
+ton thus initiates a 3-minute monostable timing interval that can be
+interrupted only by a logic-0 level to pin 4 of that timer device. Of
+course that GHIT input indicates the good guy has been hit.
+
+Now note that the output of the master game timer (IC6-A,_pi_n
+5) goes to a pulse generator and then to the resetting input of the RS
+ﬂip—ﬂop (pin 1 of ICl-A). The game is thus reset whenever the
+output of IC6—A makes a transition from logic 1 to 0. And that occurs
+when (1) the 3-minute game time expires or (2) the good guy is shot.
+
+Depressing the START button also sends a logic 1 level to pin 8
+of IC6-B. This enables the monostable so that the good guy can ﬁre a
+shot by depressing the FIRE button. The shot is timed by IC6~B so
+that it lasts only about 1/10 second, but if GV=BV (good-guy
+vertical equals bad-guy vertical), the output of ICl-D registers a hit
+in favor of the good guy.
+
+The pulse from ICl-D initiates a l-second timing interval
+(monostable IC7—A) which, in turn, enables the bad-guy ﬂashing
+action of IC7-B. A pulse generator connected to the pin—5 output of
+the ﬂash timer generates a negative-going pulse and the end of the
+ﬂashing time, indicating it is time to call up a new bad guy ﬁgure.
+
+Once the game is started, then, the player can ﬁre at any time
+by depressing the FIRE pushbutton. If the bad-guy ﬁgure happens to
+be in the line of ﬁre at the time, the bad-guy ﬁgure ﬂashes on the
+screen and is replaced by another bad guy a second later.
+
+All of this assumes the good guy isn’t hit ﬁrst. Whenever the
+good guy is hit, the resulting logic-O level at pin 10 of IC6-B locks out
+the good guy’s ﬁring circuit. A dead man can’t ﬁre a gun, you see.
+
+IC8-A and its associated components in Fig. 8-25 are responsi-
+ble for setting the vertical position of the good guy by means of the
+MOVE control. A complete description of this “sloppy” control
+appears in conjunction with the circuit in Fig. 5-6. The value of C11 in
+this particular circuit can be selected to ﬁx the vertical size of the
+good-guy ﬁgure.
+
+IC5-A fixes the horizontal part of the good-guy figure.
+Capacitor C12 can be selected to scale the width of that ﬁgure. The
+vertical and horizontal components of the good-guy ﬁgure are thus
+available from pin 6 and pin 8 of 1C4.
+
+355
+
+ 
+

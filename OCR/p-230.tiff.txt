@@ -1,0 +1,56 @@
+forcing the secondary ﬁgure to follow the primary ﬁgure wherever it
+goes. And that is the main feature of the tagalong scheme—force the
+secondary counter to work in step with the primary-ﬁgure counter.
+
+Whenever the INTC input to the secondary initialization circuit
+is set to logic 1, however, the secondary horizontal-slipping counter
+begins taking reset pulses from its own reset circuit, thereby letting
+it run independent of the primary counter. The secondary ﬁgure thus
+takes off on its own, running away from the primary ﬁgure at a
+direction and speed determined by the HC inputs to the secondary
+counter.
+
+The secondary ﬁgure can be “reattached” to the primary ﬁgure
+by simply returning INTC to logic 0 once again.
+
+Since both the primary and secondary ﬁgures are locked to
+horizontal motion only, the vertical data for determining their re—
+spective lengths can be taken direction from the Sourcebox Vocount
+outputs.
+
+A scheme for launching a secondary ﬁgure from a primary ﬁgure
+moving in the vertical direction is identical to the one just described.
+The only practical difference is that one should use vertical counters
+and vertical-count parameters.
+
+Figure 6-21b is a block diagram of a tagalong system that allows
+two-dimensional motion (both horizontal and vertical) for the prim—
+ary and secondary ﬁgures. The primary ﬁgure is initialized by setting
+the PINTC input to logic 0. When this happens, the horizontal— and
+vertical-slipping counters in the primary ﬁgure slipping-counter cir-
+cuit are reset by external initialization pulses, HINTP and VINTP.
+And if the secondary ﬁgure is also initialized at the time (by setting
+SINTC to logic 0), the secondary slipping-counter board is seeing
+both horizontal- and vertical-reset pulses from the primary initializa-
+tion circuit.
+
+The two slipping-counter boards are thus synchronized, and
+the initial position of the primary ﬁgure is determining the position of
+the secondary ﬁgure.
+
+Once PIN TC is set to logic 1, the primary slipping counter
+begins taking reset pulses from its own reset-pulse system,_ causing
+the primary ﬁgure to begin moving in directions and at speeds
+determined by the VC and HC inputs to the primary ﬁgure slipping-
+counter board. Since SINTC is still at logic 0, the secondary ﬁgure
+slipping counter is still taking reset pulses from the primary circuit.
+The secondary ﬁgure is thus locked to the primary ﬁgure, following it
+wherever it goes.
+
+Whenever SINTC is set to logic 1, the secondary ﬁgure slipping
+counter is ﬁnally released from the primary circuit. The secondary
+
+230
+
+ 
+

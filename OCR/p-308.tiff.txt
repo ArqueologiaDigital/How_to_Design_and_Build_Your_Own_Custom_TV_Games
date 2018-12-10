@@ -1,0 +1,73 @@
+ 
+
+ASSUME CASCADING INPUTS ARE:
+
+Vcc (A=B)=1,(A<B)=O,(A>B)=0
+IF A = B, THEN OUTPUT (A = B) = 1
+
+OUTPUT (A < B) = o
+
+ 
+
+ 
+
+ 
+
+ 
+
+A0 10 16 OUTPUT (A>B)=o
+
+A1 —— 12
+23:1: lF A < 3, THEN OUTPUT (A = a) = o
+OUTPUT (A < a) = 1
+3° " 9 OUTPUT (A > a) = 0
+
+B1 —’ 11
+33: :4 lF A > B, THEN OUTPUT (A = B) = o
+OUTPUT (A < a) = o
+CASCADING A: g: 2 3 :2 :3 OUTPUT (A > B) = 1
+
+INPUTS A > 8-» 4 5 *A< B OUTPUTS
+8
+COMM
+7485 4-BIT
+COMPARATOR
+
+ 
+
+ 
+
+ 
+
+Fig. 8-1 . Pinout and operating features of the 74854-Bit magnitude comparator.
+
+When these two 4-bit numbers are applied to their respective
+inputs of the comparator, one of the three outputs switches to a
+logic-1 level. If the two numbers are exactly equal, output A=B goes
+to logic 1. If number A happens to be greater than B (A=1001 and
+B=0101, for example), output A > B goes to logic 1. And ﬁnally, if
+input A is less than B, output A < B goes to logic 1.
+
+The cascading inputs are used only when the comparator IC is
+being used with an identical unit to compare words having eight or
+more bits. Otherwise, cascading input A=B should be connected to
+logic 1, and the inequality cascading inputs should both be grounded.
+Circuits in the following sections of this chapter illustrate all these
+operating modes.
+
+A PROGRAMMABLE FIGURE POSITION CONTROL
+
+Chapter 3 deals with the basic circuitry for generating lines,
+bars, and rectangles on the screen. The logic—circuit designs in those
+instances determine both the size and position of the ﬁgures. Such
+ﬁgures can be placed anywhere on the screen by using the appro-
+priate set of H- and V-count inputs from the Sourcebox, but once
+they are ﬁxed, it is difﬁcult to change them on a ﬁnished circuit board.
+
+The circuit described here is generally more complicated than
+any in Chapter 3, but it is rather easy to change the parameters
+
+308
+
+ 
+

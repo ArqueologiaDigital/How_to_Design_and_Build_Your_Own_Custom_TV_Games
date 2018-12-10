@@ -1,0 +1,77 @@
+ 
+
+BLACK-ON-WHITE
+
+ 
+
+ 
+
+ 
+
+ 
+
+SQUARES
+16H WHITE-ON-BLACK
+15v SQUARES
+16” CHECKERBOARD
+16V
+
+‘/4~7485
+
+16H
+16V
+1/4-7486
+
+ 
+
+p‘CHECKERBOARD
+WITHIN
+
+SH 1“.7400 CHECKERBOARD
+8V 3 i >
+
+VII-7486
+
+ 
+
+16H —‘
+16V __
+
+ 
+
+    
+
+1/4-7400 1/6-7404
+
+ 
+
+33—DOCHECKERBOARD
+WITHIN
+
+“#7400 1/6‘7404 SQUARES
+8H
+8V
+
+1/4-7486
+
+ 
+
+ 
+
+ 
+
+Fig. 3-21. A few circuits for generating some special static-figure effects.
+
+white background. If, on the other hand, the signal from the NAND
+gate is inverted before applying to GAME VID IN, you will ﬁnd white
+squares on a black background.
+
+Combining a pair of horizontal— and vertical-count signals at the
+
+inputs of an EXCLUSIVE-OR gate produces a very distinctive
+checkerboard pattern.
+
+76
+
+ 
+

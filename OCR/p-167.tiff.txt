@@ -1,0 +1,53 @@
+Fortunately there is an alternate scheme that overcomes all
+three of these disadvantages. The principle involved here is com-
+monly‘called shying—counter motion. The idea is to build a horizon-
+tal— or vertical-counter circuit that is practically identical to those in
+the Sourcebox unit. The second counter circuit, however, runs out
+of sync with those in the Sourcebox. In effect, the images created by
+this slipping counter moves across the screen by virtue of the fact
+they are out of sync with the Sourcebox counters creating the raster
+pattern.
+
+Slipping-Counter Vertical Motion Control
+
+Figure 5-13 shows the basic circuit for vertical-slipping-counter
+motion. In a physical sense, it is a very simple circuit, composed of
+only three IC devices: two 74191 presettable 4—bit binary counters
+and a 7400 2—input NAND gate.
+
+Recall from the discussions in Chapter 2 that the Sourcebox unit
+generates a vertical-scanning ﬁeld composed of 261 lines. Sixteen of
+these lines are lost in the vertical retrace interval, but the point is
+that the vertical-count generator in the Sourcebox counts out 261
+HRST pulses per vertical frame.
+
+Now if you could build another vertical-count generator that
+counts out 261 HRST pulses per cycle, you would have a second
+source of vertical—count pulses. This new counter would run at the
+same rate as the one in the Sourcebox, but its reset point could occur
+anywhere in the vertical ﬁeld. This circuit, in other words, would run
+at the same frequency as the one in the Sourcebox, but out of
+phase—out of phase anywhere between 0 and 260 HRST vertical-
+clocking intervals.
+
+Next, suppose you use this out-of-phase vertical-count
+generator to create images on the screen. That image would be
+motionless on the screen, but it could be shifted up or down,
+depending on its phase relationship with the vertical-count generator
+in the Sourcebox. The greater the phase difference between the two
+counters, the greater the amount of shifting.
+
+As an example, let the slipping counter in Fig. 5-13 run at the
+same frequency as the vertical-count generator in the Sourcebox.
+But let the slipping counter run out of phase to the extent that it
+reaches a count of 100 while the corresponding vertical counter in
+the Sourcebox is at count 150. The slipping counter would thus be
+cycling 50 HRST pulses behind the Sourcebox counter, and any
+image created from the vertical-count outputs of the slipping counter
+would appear 50 scan lines lower on the screen than the same image
+created from the vertical-count outputs of the Sourcebox.
+
+167
+
+ 
+

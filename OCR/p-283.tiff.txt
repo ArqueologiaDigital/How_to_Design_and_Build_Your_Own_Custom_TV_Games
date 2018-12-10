@@ -1,0 +1,118 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4
+15 J11 16 8 “33-3
+12 12-15 6
+I08 ICQ ‘:-
+Jo
+1 14J15.I 1 1o 9
+l_9_ C21p.F
+8
+lC—C
+1o 3 )O‘ 5
+SELECT FOR 'C7'8 4
+DT HEIGHT 1.4700 7
+——|9
+14 12 .OOZuF
+‘0 13 I03-D ‘1
+13 «34-3
+03
+12 =7SELECT
+7 FOR DT
+
+ 
+
+IC1, 2, 3—7400 QUAD 2—INPUT NAND
+IC4—7420 DUAL 4-INPUT NAND
+ICS—7404 HEX INVERTER
+
+lC6—7486 QUAD EXCLUS|VE-OR
+IC7—7402 QUAD 2-INPUT NOR
+
+ICB, 9—7419 BINARY COUNTER
+lC10—7475 QUAD LATCH
+
+ 
+
+ 
+
+Fig. 7-16. Schematic diagram for the defense torpedo circuit board.
+
+283
+
+ 
+

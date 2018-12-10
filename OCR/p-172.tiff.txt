@@ -1,0 +1,55 @@
+rather simple circuit for achieving potentiometer control over slip-
+ping counters. But in instances where a player is to have manual
+control over vertical speed and direction, the control circuit in Fig.
+5-12 is the better choice, assuming, of course, the image is a simple
+line, bar, or rectangle.
+
+The digital speed and direction control feature of the slipping-
+counter circuit, on the other hand, is the better choice in games
+calling for automatic or machine control of vertical speed and direc-
+tion. The slipping-counter technique is also the only option open
+when the ﬁgure is more complex than a simple line, bar, or rectang-
+1e.
+
+Master the fundamentals of both vertical-control circuits and
+you will be fully prepared to handle any game-designing situation
+calling for vertical motion.
+
+SIipping-Counter-Horizontal-Motion Control
+
+While the experimenter might have several options when it
+comes to selecting vertical—motion-control circuits, no such options
+exist for controlling the speed and direction of horizontal motion.
+
+One might think the vertical—motion circuits described in this
+chapter could be modiﬁed to suit the needs for horizontal motion.
+The idea might be to simply substitute HCLK for HRST and
+HBLAN K for VBLAN K. This is not the case at all. Merely substitut-
+ing H-count parameters for V—count parameters creates an image on
+the screen that is, ﬁrst, quite confusing and, second, practically
+useless.
+
+The primary feature of horizontal counting is that the slipping
+counter must not be permitted to change its count length with every
+horizontal line. The horizontal-slipping counter must be loaded with
+its stop code for every visible scan line on the screen. If this is not
+done, the experimenter sees a series of diagonal lines, rather than
+straight vertical lines, moving across the screen.
+
+The horizontal-slipping counter must see its stop code at all
+times except during one particular scan line, preferably one that
+occurs during vertical blanking.
+
+If the horizontal—slipping counter is then loaded with a number
+that retards the horizontal timing, the vertical line will appear to
+move to the right. That retarded count, however, must occur only
+once during the scanning ﬁeld.
+
+0n the other hand, shortening the count during one particular
+scan line makes the vertical line appear to move to the left. Again,
+the counter must see its stop code at any other time.
+
+172
+
+ 
+

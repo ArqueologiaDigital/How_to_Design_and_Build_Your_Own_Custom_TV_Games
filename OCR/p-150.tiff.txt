@@ -1,0 +1,105 @@
+This technique takes advantage of the fact that a SSS-type timer
+can be adjusted by means of a voltage level applied to its control
+voltage input (pins 3 or 11 on the dual 556 version).
+
+Generally speaking, pulling the control voltage input closer to
+the positive supply voltage potential lengthens the timing interval.
+Pulling it closer to ground, on the other hand, shortens the timing
+interval.
+
+Thus it is possible to set the basic timing range by means of R1,
+R2, and C2, then vary the timing around that point by changing the
+voltage level to the control voltage input.
+
+Set up the circuit in Fig. 5-6, omitting capacitors C7 and C8 for
+the time being. Connect a temporary jumper wire to the wiper arm of
+control R7.
+
+Connect the loose end of the jumper wire to COMM, and adjust
+trimpot R1 so that the white vertical line appears at the extreme
+left-hand edge of the screen. Then connect the jumper to +5V
+instead of COMM. Adjust R1 until the vertical white line appears on
+the extreme right-hand side of the screen.
+
+You might have to repeat this operation a couple of times to get
+a perfect response. The line should appear at the left-hand edge of
+
+ 
+
++5V
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Lam
+i-soox
+TRIMPOT
+3: R2
+2.2K o a
+E lb
+14 lCi-A 14 E d
+6 5 i- E
+HRST a: V
+1 2 I PIN 2 (I) g
+=— 4 ' lCS-A 3 EL
+HORIZONTAL . RB R9 3 2 .‘G 6
+H. mm
+POSITION H7 3W2 2K” if E
+CONTROL 500K ' 9
+U U
+__. __ 4_
+C7 ’\ ca /'\ /\CZ
+470uF 22011. 100pF
+7
+_l-
+‘ADD c7; ca ONLY AFTER :-
+
+ 
+
+ADJUSTING R1 (SEE TEXT)
+
+VERTICAL POSITION CONTROL CIRCUIT lS IDENTICAL
+EXCEPT C2 = 0.04mi:
+
+ 
+
+ 
+
+ 
+
+Fig. 5-6. Adding the impression of inertia to a horizontal or vertical positioning
+control.
+
+150
+
+ 
+

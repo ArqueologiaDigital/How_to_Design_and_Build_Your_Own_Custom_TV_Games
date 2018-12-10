@@ -1,0 +1,51 @@
+about $10, the job of building one from scratch is hardly worth the
+trouble.
+
+Suitable modulators are now being used by microprocessor
+enthusiasts who want to interface their computer systems with a TV
+display. 80 the best source of modulators is the amateur computer
+shops now springing up all over the country. At the time of this
+writing, Radio Shack is planning to offer a suitable modulator in the
+near future. Although it is intended speciﬁcally for use with that
+company’s microprocessor system, it would serve our purposes
+quite well.
+
+Mount the modulator inside the Sourcebox unit, as far as
+possible from the master clock and crystal (to avoid possible rf
+interference between the two).
+
+SOME MECHANICAL CONSIDERATIONS
+
+All of the Sourcebox circuitry ﬁts quite nicely into Radio Shack’s
+“compact” 57/s-by 9- by His-inch cabinet (Radio Shack 270-281). See
+Fig. 2-10.
+
+The two major circuit boards can be inserted into 44-pin edge-
+card connectors mounted vertically on the inside rear surface of the
+cabinet. The rf modulator is likewise mounted on that surface, using
+a 2-terminal, feedthrough TV antenna connector (Radio Shack 274-
+663). The power supply components are mounted inside the cabinet
+as described earlier in this chapter.
+
+What has not been adequately described thus far is the means
+for getting access to the horizontal- and vertical-counting signals as
+well as any other system inputs and outputs that are vital to the
+operation of game systems. The most convenient way to interface
+the Sourcebox with the outside world is by means of another 44-pin
+edge-card connector that feeds through the back of the cabinet.
+
+All of the connections between the Sourcebox and outside
+world are made through this connector. Its solder connections are
+inside the cabinet, connected to the appropriate signal sources as
+suggested in Fig. 2-11. Getting access to these signals from the
+outside world is thus a simple matter of plugging the appropriate 4-
+by 4—inch 44-pin PC card into the plug on the back of the cabinet.
+
+No matter how you choose to arrange the circuitry for the
+Sourcebox unit, bear in mind that you must have convenient access
+to the supply voltages and signal connections listed in Fig. 2-11.
+
+38
+
+ 
+

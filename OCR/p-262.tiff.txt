@@ -1,0 +1,66 @@
+ 
+
+ 
+
+FIRE
+
+©99©
+
+ 
+
+ 
+
+ 
+
+DEFENSE TORPEDO (DT)
+LAUNCH PANEL
+
+S1 82 83 S4
+
+1111
+
+rig—{24:4
+
+A ALL SWITCHES N.O. PUSHBUTTONS
+(RADIO SHACK 275-1547)
+
+ 
+
+H
+I FIRE
+ATTACK CRAFT
+
+SPEED
+
+ 
+
+ 
+
+ 
+
+ATTACK CRAFT (AC) SPEED
+CONTROLS AND ATTACK
+TORPEDO (AT) LAUNCH PANEL
+
+ACV ACH AT LAUNCH
+
+500K 500K 1
+__ H LAUNCH
+
++5V l
+
+B _
+
+ 
+
+ 
+
+ 
+
+Fig. 7—11. Control panels for Torpedo Attack. (a) Defense torpedo panel and
+schematic. (b) Attack system panel and schematic diagram.
+
+262
+
+ 
+

@@ -1,0 +1,54 @@
+switching the circuits from their loading mode to their counting
+mode. The ﬁgure is thus free to move on the screen at speeds
+determined by the settings of R1 and R4.
+
+The direction of horizontal motion is set by the logic level at the
+H DIRECTION input: .1: left and 0=right. By the same token,
+the direction of vertical motion is set by the V DIRECTION input:
+1: up and 0 =down.
+
+The ﬁgure can be stopped at any point on the screen by setting
+the STOP input to logic 1. This action merely stops the motion. It
+does not initialize the position of the ﬁgure. Setting the STOP input
+to logic 1 is tantamount to entering the stop code (1001, or decimal 9)
+into a slipping-counter motion-control circuit.
+
+As shown in Fig. 8-14, the motion-control circuit is a hybrid
+analog and digital system. The speed of motion is determined by the
+setting of two potentiometers, a feature that is quite convenient for
+many game applications. The direction, stopping, and initializing
+controls, however, are purely digital in nature. This, too, is a nice
+feature in most instances.
+
+As demonstrated in earlier chapters, however, it is frequently
+necessary to control the speed of a ﬁgure from some internal cir-
+cuitry. Automatic speed control of this sort ought to be digital in
+nature. The circuit should be able to accept a binary word that
+determines the ﬁgure speed.
+
+Compare this situation with the speed-control scheme for a
+slipping counter. In the case of a slipping counter, the most natural
+way to control the speed of the ﬁgure is by entering a 4-bit binary
+word. The circuit is basically a digital one. Converting the slipping-
+counter motion-control system to one having potentiometer control
+is a tricky process calling for an analog-to-digital (A/D) converter
+circuit.
+
+The situation is just reversed for the universal position pro—
+grammer. This circuit most naturally accepts potentiometer speed
+controls. And Where it is necessary to control the speed in a digital
+fashion, it is necessary to add a digital-to-analog (D/A) converter.
+The circuit in Fig. 8-15 shows a simple D/ A converter scheme that is
+most appropriate for setting the motion speed.
+
+The D/A converter in this case is a binary ladder network
+composed of resistors R7 through R12. The PC inputs are eight
+possible combinations of Is and Os, as shown in the table accompany-
+ing the circuit. ICl-A is the same multivibrator having that designa-
+tion in Fig. 8—14. Two such circuits are thus required for full vertical-
+and horizontal-motion control.
+
+332
+
+ 
+

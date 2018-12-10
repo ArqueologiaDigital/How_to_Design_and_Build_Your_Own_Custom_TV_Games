@@ -1,0 +1,57 @@
+popping up at various places in the game area. Scoring is based on
+the number of bad guys that are hit during a speciﬁed game-playing
+time interval.
+
+This Ambush video game is only slightly different in that the bad
+guys shoot back. And if one of these villians hits the good guy (the
+player, of course), the game is over.
+
+The unique feature of this game in the context of position
+programming is that the positions of the bad guys are purely random.
+The position information is selected from a high-speed counter that
+is “read” only during a brief time when the game calls for displaying a
+new bad guy.
+
+While the playing is rather tricky, Ambush is one of the simplest
+games presented in this book. From a hardware point of View, it
+requires only two circuit boards and a player control panel.
+
+Figure 8-23 shows the control panel, the panel wiring, and one
+example of how the playing area looks.
+
+The player can move the good-guy ﬁgure vertically on the
+screen by means of the MOVE control. The player has no control
+over the horizontal position of that ﬁgure. It is ﬁxed by the game
+logic.
+
+The bad-guy ﬁgure can appear anywhere on the left-hand half of
+the screen, and shooting the bad guy is a matter of lining up the
+vertical position of the good guy and depressing the FIRE pushbut-
+ton. If the two figures aren’t lined up vertically—situated directly
+across from one another—when the player depressed the FIRE
+button, the shot misses, and the player cannot chalk up a score.
+
+Remember, though, that the bad guy shoots back. Whenever
+the game circuitry senses the two ﬁgures are lined up vertically
+(presumably because the player is attempting to shoot the bad guy),
+there is a ﬁxed 1/10 second delay before the bad guy ﬁres; and if the
+good guy hasn’t ﬁred yet and is still in the bad guy’s line of ﬁre, it’s all
+over. The bad guy scores a hit and the player must depress the
+START button to begin the game all over again.
+
+The general strategy, then, is to shoot at the bad guy while on
+the run up or down the screen. Don’t take more than 1/ 10 second to
+line up and shoot, or you’ll be dead.
+
+Whenever the player manages to shoot the bad guy, the bad-
+guy ﬁgure ﬂashes on the screen for a couple of seconds. The ﬂashing
+ﬁgure then disappears from View, immediately being replaced by
+another bad guy at some randomly determined position on the
+screen. If the bad guy isn’t shot within about 4 seconds, he disap-
+pears without ﬂashing, only to be replaced by another somewhere
+else on the screen.
+
+352
+
+ 
+

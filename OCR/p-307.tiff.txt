@@ -1,0 +1,38 @@
+Chapter 8
+
+Programmable
+Position and Motion Controls
+
+ 
+
+It is possible to realize some overall savings of time and money by
+using programmable ﬁgure—generating and motion-control circuits.
+The initial investment is larger because programmable circuits are
+generally more complicated than those designed for specific game
+applications. Being able to use the same circuitry for a number of
+different video game formats, however, soon lets the circuit pay for
+itself a number of times over.
+
+The circuits described here are close cousins of the fully pro-
+grammable TV game computer systems on the market today. The
+experimenter isn’t bound to a set of ﬁxed game formats; yet, the
+scheme goes a long way toward simplifying game design procedures
+and reducing the amount of new hardware for each game. It also
+turns out that these little programmable circuits can do some things
+that are terribly difﬁcult to do with the motion-control circuits de-
+scribed thus far.
+
+The digital device at the heart of this programmable-ﬁgure
+scheme is the 7485 4-bit magnitude comparator shown in Fig. 8-1.
+Basically, the circuit accepts two 4-bit binary words or numbers,
+compares their magnitudes, and generates an output specifying
+whether one is equal, greater or less than the other.
+
+One of the two input numbers is designated number A, and is
+composed of bits A0 through A3, with A0 being the least-signiﬁcant
+bit. The second input number is designated number B, and is com-
+posed of bits B0 through BB, with B3, with B0 being the least-
+significant bit.
+
+307
+

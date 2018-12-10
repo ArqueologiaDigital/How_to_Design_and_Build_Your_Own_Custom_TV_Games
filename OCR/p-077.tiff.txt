@@ -1,0 +1,14 @@
+Whether you use the NAN D-gate squares or EXCLUSIVE-0R
+checkerboard, the pattern becomes ﬁner as the input signals de-
+crease in order. A 32H, 32V checkerboard pattern, for instance, is
+much more coarse than one generated from 8H, 8V inputs.
+
+Checkerboards within checkerboards, checkerboards within
+squares, squares within checkerboards, and so on make some fas-
+cinating images on the screen. Many of them are potentially useful
+for special effects in TV games you will want to develop later on.
+
+77
+
+ 
+

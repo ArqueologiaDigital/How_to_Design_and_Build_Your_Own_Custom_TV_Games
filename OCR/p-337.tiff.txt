@@ -1,0 +1,74 @@
+ 
+
+ 
+
+TEE SWING
+
++5V COMM
+R/L l.\GREEN
+UP/DN "i “i WITH
+HOLE
+
+BALL
+I
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+VCONT
+
+ 
+
+HCONT TEE SWING
+(BLACK AND WHITE REVERSED)
+
+ 
+
+ 
+
+ 
+
+Fig. 8-16. Control panel diagram and schematic, and screen diagram for Golf.
+
+TRAVEL TIMER and allows the slipping counter to move the ball in
+a direction and at a speed determined by the settings of the player’s
+controls. When the ball timing interval is over, the BALL SPEED
+CONTROL sets the speed to zero, effectively stopping the ball on
+the screen. The ball then moves from that point when the player
+depresses the SWING button.
+
+When the ball reaches the green, the BALL 0N GREEN circuit
+generates logic levels that both change the color of the ball from
+white to black and slow down the ball speed and travel time.
+
+The ball can be putted on the green, presumably toward the
+hole. And once the SCORE block senses contact between the ball
+and hole, it resets the BALL TRAVEL TIMER to stop ball motion
+and lock out the SWING switch. The ball cannot be moved then until
+the whole system is reinitialized by depressing the TEE switch.
+
+Circuit Boards for Golf
+
+The golf game described in this chapter requires four circuit
+boards: those shown in Figs. 8-18, 8—19, 8-20, and a slipping-counter
+board from Fig. 5-15. The functional block diagram in Fig. 8-17 and
+the wiring diagram in Fig. 8-22 can be quite helpful for learning about
+the circuit boards shown here.
+
+The logic board in Fig. 8-18 includes the program counter, ball
+initialization control, ball travel timer, and A/D converter blocks
+shown on the functional block diagram.
+
+337
+
+ 
+

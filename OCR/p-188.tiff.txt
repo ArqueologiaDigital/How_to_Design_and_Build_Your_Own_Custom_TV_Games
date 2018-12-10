@@ -1,0 +1,56 @@
+the ball until the next serve begins.
+
+Figure 6-4 shows a relaible time delay circuit. In this instance, a
+negative-going pulse at pin 6 of ICl—A initiates a monostable timing
+interval equal to 1.1 times the product of R1 and C1. When that
+interval is over, capacitor C2 passes a negative-going pulse to the
+trigger input of ICl-B which, in turn, generates a 10-ms positive
+pulse.
+
+The positive pulse from ICl-B thus occurs at the end of the time
+delay interval, an interval set by the time constant of ICl-A.
+
+The timing can be initiated by any of the start or stop circuits
+described thus far in this chapter, provided the trigger input of ICl-A
+sees a negative-going or active-low pulse that has a duration less
+than the time constant of R1 and C1.
+
+The whole timing operation can be locked out by pulling the
+LOCK terminal (pin 4 of ICl-A) to logic 0. This terminal must be
+connected to +5V if the lockout feature is not to be used.
+
+A Design Example
+
+Before leaving the subject of start/ stop controls, it is important
+to take a close look at how these circuits can be combined to yield the
+desired control effect. There are countless possibilities, using just
+the circuits described here. If you are willing to add a few more gates
+and passive components, you will ﬁnd you are in a position to create
+just about any sort of control scheme you will ever want.
+
+The following discussion is intended to lead the reader through
+a control design procedure, step by step. Although the discussion is
+built around one particular example, the methods employed can be
+applied to any sort of design situation for game controls.
+
+The ﬁrst step is to determine precisely what the control
+scheme is supposed to do. A ﬂow chart is helpful here. The ﬂow
+chart in Fig. 6-5a illustrates the operation of a start/stop control
+scheme that has the following characteristics.
+
+The player is to initiate a game or game cycle by depressing a
+START pushbutton. As soon as the button is depressed, it should be
+locked out until the cycle is completed. The ﬂow chart thus shows a
+manual start operation at the beginning of the cycle, followed im-
+mediately by a switch lockout operation.
+
+As the START switch is locked out, the game begins. It isn’t
+important What the game is at this point. Whatever the game might
+do, there always comes a time when it should be reset. Suppose, for
+example, the START switch launches a rocket ﬁgure on the screen.
+The moment the switch is depressed, the rocket begins to move,
+
+188
+
+ 
+

@@ -1,0 +1,133 @@
+ 
+
+TA HG
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AFIG
+B BLANK 9
+iCZ-D 9 1o —— 8
+_ GAME
+ICI-C 12 I08 B v10
+.13..
+13 12
+7 icz-F
+ARST 7
+4 14
+IC3-B
+5 BRST
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+11
+ICB-D
+
+ 
+
+10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8
+@
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+%R4 :95—
+‘ 1M 10 9 1M
+13
+. IC7-B 8
+' > R6
+1.5M
+12
+-3: 03
+TM ”I‘m
+
+ 
+
+IC1—7410 TRIPLE 3—INPUT NAND
+IC2. 9—7404 HEX INVERTER
+IC3—7400 QUAD 2-INPUT NAND
+1C4. 5—7402 QUAD 2-INPUT NOR
+IC6. 7—566 DUAL TIMER
+
+C4 lC8—7420 DUAL 4-INPUT NAND
+
+ 
+
+ 
+
+Fig. 7-8. Schematic diagram for the game logic circuit board.
+
+255
+
+ 
+

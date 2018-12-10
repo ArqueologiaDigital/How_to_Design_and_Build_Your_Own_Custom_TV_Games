@@ -1,0 +1,80 @@
+secondary ﬁgure then leaves the primary ﬁgure, taking on a speed
+and direction that is dictated by the set of control data present the
+moment the missile is ﬁred. In the case of the Missile and Torpedo
+Attack games described earlier in this chapter, the missile leaves the
+primary ﬁgure with the same speed and direction the primary ﬁgure
+had at the moment of launching. In this case, however, the missile
+leaves in the same direction, but at a faster speed. And that means
+the secondary—ﬁgure controls must be loaded with speed and direc-
+tion data that is entirely different from that of its primary ﬁgure.
+
+Figure 7-22 shows a complete analysis of control data that is
+entered into any of the slipping-counter schemes described thus far.
+There are two relevant mathematical equations that show how fast a
+ﬁgure moves across the screen and, alternately, how long it takes to
+move across the screen.
+
+The velocity (v) is expressed in rather unusual units of screens .
+per second. It is possible to use other, more conventional units of
+speed, such as inches per second, but such units vary with the size of
+the experimenter’s TV screen. The screens-per-second unit of
+speed on the screen.
+
+The velocity of a ﬁgure, in either the horizontal or vertical
+direction, is determined by the ﬁrst equation in Fig. 7-22. Note that
+
+PLAYER CONTROL PANEL
+© 0 (IDENTICAL CONTROLS FOR
+
+BOTH PLAYERS)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+FIRE HOFl VEFlT
+REPLACE HOR AND VERT
+CONTROLS WITH A JOYSTICK
+FOR EASIER AND MORE
+REALISTIC OPERATION
++5V
+COMM
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+F'RE 500K 500K
+
+i
+
+'l'RIG HOR ‘ VERT
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 7-21. Control panel and schematic for each player.
+
+291
+
+ 
+

@@ -1,0 +1,113 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+U U U U
+I :I: :I: I 0 0 O o
+> > > >
+- E % % % 9.- % % %
+II 1 t T I II A 1""
+F9 8115! '9 8|11|5
+14 12
+,.~_____._.__.¢1 |C7 1: I08
+——0
+2131 1° 213] "ll.
+‘ 14
+101-0
+._1 Tie
+2
+HINTP—bs-
+HMRSF—I? —>4 HML
+VINTP —-- [cs
+VMRST—stﬁ- ——>VML
+Rs 5: m ‘48
+2.2K‘ 05.. 470K _
+lCS-D F1 9 ,BT
+I01, 2—7400 QUAD
+2-INPUT NAND
+Ice—7404 HEX
+INVERTER
+IC4. 5—556 DUAL TIMER
+Ice—74157 QUAD 2:1
+MULTIPLEXER
+:07, a, 9—7493 BINARY
+COUNTER
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 8-18. Logic board schematic for Golf
+
+341
+
+ 
+

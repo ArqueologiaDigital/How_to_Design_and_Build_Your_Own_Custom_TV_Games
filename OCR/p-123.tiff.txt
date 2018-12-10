@@ -1,0 +1,57 @@
+useful for building a TV game, it certainly illustrates some of the fun
+you can have creating Video graphics with this system.
+
+Figure 4—24 illustrated a way to build the image of a cowboy.
+The circuit was much simpler in that case, but it was using a’foldover
+technique that demanded a symmetrical pattern. The proﬁle in Fig.
+4—28b, however, is a nonsymmetrical version of the same hombre.
+
+It is possible to spend many, many hours playing with this
+matrix-generating scheme. If you want to make the ﬁgures smaller,
+simply scale down the SELECT, WINDOW, and D INPUT specifi-
+cations one or two orders of magnitude. Cutting each of the speciﬁ—
+cations in half, for instance, cuts the size of the image in half.
+
+Play with this system as long as you want. Just because you are
+having fun with it doesn’t mean you aren’t learning anything. Keep
+track of your experiments, noting both your failures and successes.
+That information will prove invaluable later on.
+
+The extended matrix can be adjusted to form a horizontally
+oriented, 16x8 pattern. See the suggested speciﬁcations and pat-
+tern in Fig. 4-29.
+
+The display in Fig. 4-30 merely shows one example of how the
+16x8 extended matrix can be used. The image in this instance is a
+battleship or destroyer. Of course it can be modiﬁed slightly to
+transform it into a submarine or aircraft carrier.
+
+This matrix is good for any sort of relatively complex, horizon-
+tal, nonsymmetrical ﬁgure.
+
+A 256-Cell, Extended Foldover Matrix
+
+The foldover scheme applied to the 128-cell matrix just de-
+scribed yields a 256-cell matrix. The example in Fig. 4-31 shows the
+rather simple additional circuin and the left-hand half of an ever—
+popular tank image.
+
+When you build the circuit and wire it to the speciﬁcations
+shown in Fig. 4-31, you will ﬁnd a full tank image, with its right-hand
+half being a mirror image of the portion shown here. It is often
+advisable to show only the nonfolded half of such patterns, but for no
+reason other than. drawing pictures with 256 cells becomes rather
+tedious. Besides, all the necessary information is contained in the
+original portion.
+
+MULTIPLYING THE NUMBER OF IDENTICAL IMAGES ON THE SCREEN
+
+While a single complex ﬁgure can play a vital role in most kinds
+of TV games, it is often desirable to display a number of identical
+complex ﬁgures on the screen. Take for example the mines for a
+mineﬁeld game or cars in an auto racing game.
+
+123
+
+ 
+

@@ -1,0 +1,58 @@
+All that remains to be discussed is the way the bad guy knows
+
+hevis lined up with the good guy so he can ﬁre a shot. IC1-C senses
+the alignment of the two opposing ﬁgures and generates a negative—
+going pulse that initiates monostable timer IC7-A. This particular
+timer is set for 0.1 second. And at the end of that time, a second
+0.1-second timer (IC7-B) is initiated.
+,. IC1—C senses alignment of the two ﬁgures on the screen, IC7—A
+inserts a O. 1—second delay, and IC7-B is responsible for making the
+bad guy ﬁre a shot. ICl-D in Fig. 8-26 normally shows a ﬁxed logic-1
+output, but if the bad guy ﬁres while he is Mp with the good guy,
+ICl—D senses this fact and generates a GHIToutput.
+
+Recall that a GHITpulse resets the entire game system,
+making it impossible for the good guy to ﬁre another round until the
+player depresses the START pushbutton. Without the 0.1-second
+delay inserted by 1C7 -A, the good guy wouldn’t stand a chance of
+shooting anyone.
+
+ 
+
+Ambush Wiring Diagram
+
+The wiring diagram in Fig. 8—27 indicates this is a rather simple
+and inexpensive game to set up. The only calibration adjustment is
+ﬁxing the value of R13 in Fig. 8-25. This trimpot works with the
+MOVE control to set the range of motion of the good-guy ﬁgure.
+
+'R13 should be adjusted so that moving the MOVE control
+between its two extremes moves the good—guy ﬁgure to the top and
+bottom of the screen.
+
+The ﬁgure board should be operated from one of the +5V
+supplies, while the control board and panel can take their supply
+voltage from the second source.
+
+STORMTROOPER ATTACK
+
+You are the sole defender of a spacecraft. Eight enemy
+stormtroopers begin slowly advancing on your position, and you are
+all armed with deadly ray—gun weapons. You must defend your
+position, Wiping out all eight stormtroopers before they reach your
+position.
+
+The screen diagram in Fig. 8—28 shows the initial formation for
+this Stormtrooper game. You, the good guy, are located at the
+bottom of the screen, and your motion is limited to that part of the
+screen. The eight stormtroopers move straight down the screen
+toward you at the rate of about one—screen—per-71 seconds. In other
+words, you have only about 60 seconds to kill them off.
+
+The control panel includes a MOVE control that lets the player
+move the good guy back and forth along the bottom of the screen, a
+
+359
+
+ 
+

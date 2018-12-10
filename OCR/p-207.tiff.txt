@@ -1,0 +1,112 @@
+ 
+
+HORIZONTAL
+SLIPPING COUNTER (FIG. 5-14)
+
+PINS 7 1‘
+lCS-A
+
+ 
+
+ 
+
+2
+
+ 
+
+ 
+
+PIN 11 I01. I02
+PIN 3 ICS-A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+INTC INTP
+
+VML
+
+¢ 1W1. ~
+I HMRST ‘
+
+MOTION- 2
+
+CONTROL WES-T
+
+BOARD 15 7
+
+FIG. 5-15 74157
+
+5 QUAD 2:1
+15 8 MULTIPLEXER
+
+”E...
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+lNTC '=:
+o = INITIALIZE
+1 = RUN
+
+VINTP
+HINTP
+
+ 
+
+ 
+
+ 
+
+Fig. 6-13. More initialization controls. (a) Interfacing a horizontal slipping counter
+to an initialization control circuit. (b) Interfacing a complete motion control circuit
+to a horizontal and vertical initialization control that uses a quad 2:1 multiplexer.
+
+207
+
+ 
+

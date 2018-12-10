@@ -1,0 +1,55 @@
+combined with the data for image B to produce a composite video
+signal. As long as this gate is open, both images can appear on the
+screen. Closing the gate, however, blanks image A from the screen,
+but lets image B remain.
+
+The blanking operation is controlled by an R-S ﬂip-ﬂop circuit.
+In this instance, it is the circuit shown earlier in Fig. 6-1b. Now the
+ﬂip-ﬂop is controlled by positive-pulse inputs from the contact sens-
+ing circuit and some sort of outside reset circuit.
+
+When the game is reset, the state of the ﬂip-ﬂop is set such that
+the A blank gate is open, allowing image A data to appear on the
+screen. The ﬁrst contact-sensing pulse from the contact sensor,
+however, sets the ﬂip—ﬂop to a state where the A image is blanked
+off.
+
+With the ﬂow chart and block diagram completed, the next step
+is to work out a preliminary schematic diagram. This diagram, along
+with an analysis of the type and number of logic gates required,
+appears in Fig. 6-10a. See if you can properly relate the gate circuits
+in Fig. 6—10a with the operations speciﬁed in the block diagram.
+
+The ﬁnal schematic diagram in Fig. 6-10b shows how this whole
+operation can be implemented with three ICs.
+
+INITIALIZING FIGURE MOTION CONTROLS
+
+Games and game cycles often begin with certain ﬁgures placed
+at particular places on the screen. Such ﬁgures must be set to those
+initial positions whenever some critical event occurs. In the case of a
+table-tennis game, the ball is set to an initial position for serving
+purposes. It is then served, and if the player misses it, the ball
+travels to one side of the screen where it then disappears, being
+served again from the opposite side of the screen. The critical event
+in this case occurs when the ball reaches the opposite side of the
+screen. When that happens, it is ﬁrst blanked and then initialized (set
+to a particular serving position).
+
+Initializing operations are nearly always used in conjunction
+with ﬁgures that move around the screen automatically, although
+some manually controlled ﬁgures use initializing operations as well.
+
+Figure 6—11 shows the basic initializing circuit. It is most often
+used with vertical- and horizontal-slipping counters, and the basic
+idea is to select one of two different sources of reset pulses for the
+counting operation. The two sources of reset pulses are labeled
+slipping-counter reset and initializing reset in this case. The slipping-
+counter reset pulses come from the slipping-counter circuit itself.
+These are the pulses that are normally used for resetting the counter
+to achieve the desired speed and direction of motion. They are
+
+200
+
+ 
+

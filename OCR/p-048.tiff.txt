@@ -1,0 +1,55 @@
+The NAN D gate, followed by an inverter circuit, performs an
+essential operation as far as building static ﬁgures is concerned. In
+the ﬁrst place, you have already seen that this circuit yields an output
+that shows a white bar wherever the white bars at the input of the
+NAND gate overlap. And now it is time to study a second essential
+feature of this NAND/invert combination.
+
+Any black or white bar from one of the basic horizontal— or
+vertical-count sources is always divided equally by a black/white
+alternation of the next-lower-order signal. Although this might seem
+to be a rather obscure fact at the moment, it is important you
+understand it thoroughly. So try an example with your Tinkerbox
+arrangement.
+
+Feed 3 256H signal to the input of the NAND gate and note the
+signal on the TV screen as generated at the output of the inverter. It
+should be the now-fannliar 256H vertical pattern: a black space
+turning to white just left of center. Now apply the next lower-order
+H signal, 128H, to a second input of the inverter. That new
+waveform should cut the 256H pattern in half. It divides the white
+portion of 256H into equal-sized black and white—black ﬁrst, then
+White.
+
+This demonstrates the fact that any basic horizontal- or
+vertical-count display has its white section(s) cut in half by a black/
+white alternation of the next-lower-count input. The black section of
+256H is, incidentally, being cut in two also. But since this particular
+NAND/invert combination yields only overlapping white areas, the
+division of the black section cannot be seen on the screen.
+
+To check your understanding of this principle, what do you
+suppose will happen when you add a third input, speciﬁcally 64H, to
+the NAN D gate circuit? If 256H and 128H are already there, the 64H
+input should cut the white area of 128H in half—black ﬁrst, then
+white.
+
+The next-lower-order H signal is 32H; and if it is included as a
+fourth input to the NAND gate, it cuts the bar in half again. This
+procedure can continue until all eight inputs on the N AN D gate are
+used.
+
+While running this experiment, notice that the white bar on the
+screen seems to grow narrower as each input is added. Further-
+more, it is narrowing from the left-hand side. The right-hand side is
+remaining ﬁxed. Bear this effect in mind while considering the next
+set of experiments.
+
+Remove all inputs to the 8—input NAND gate except 256 H. The
+image on the screen should then be the standard black-to-white
+256H signal. Apply the 128H signal again, but run it through an
+
+48
+
+ 
+

@@ -1,0 +1,87 @@
+is to get all this video, sync, and blanking information into a conven-
+
+tional TV receiver.
+
+It is possible to build VHF modulators from scratch, but consid-
+ering the fact these little circuits are now commercially available for
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MOD IN = rf MODULATOR INPUT
+
+ 
+
+CVID = UNMODULATED COMPOSITE VIDEO
+GAME VID IN = INPUT FROM ANY EXTERNAL GAME CIRCUIT
+
+PIN FUNCTION PIN FUNCTION
+1 +5 V-A 23 COMM
+2 +5 V-B 24 1V
+
+3 HBLANK 25 2V
+
+4 HRST 26 4V
+
+5 +5 V (SOURCEBOX) 27 8V
+
+6 nc 28 16V
+
+7 no 29 32V
+
+8 no 30 64V
+
+9 audio in 31 128V
+10 no 32 256V
+
+1 1 no 33 no
+
+12 COMP SYNC 34 256H
+13 MOD IN 35 128H
+14 CVID 36 64H
+15 no 37 32H
+16 GAME VID IN 38 16H
+17 no 39 8H
+
+18 no 40 4H
+
+19 VRST 41 2H
+
+20 VBLANK 42 1H
+
+21 no 43 HCLK
+22 COMM 44 +5 V-A
+
+NOTE:
+
+COMP SYNC = UNMODULATED COMPOSITE SYNC
+
+MOD IN AND CVID ARE NORMALLY SHORTED TOGETHER
+
+ 
+
+ 
+
+Fig. 2-11. Listing of power suppIy terminais and signals that must be present at
+
+the interface plug.
+
+37
+
+ 
+

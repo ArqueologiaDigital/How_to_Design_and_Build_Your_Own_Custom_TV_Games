@@ -1,0 +1,70 @@
+ 
+
+IC1, 2, 3, 4—7485 4-BIT COMPARATOR
+ICS—7486 QUAD EXCLUSIVE-OR
+ICES—7400 QUAD 2—INPUT NAND
+IC7—7402 QUAD 2-INPUT NOR
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+C1 AND CZ DETERMINE
+HORIZONTAL AND VERTICAL
+SIZE
+
+ 
+
+ 
+
+Fig. 8-4. Circuit diagram for a complete position programming system.
+
+counters, data latches, multiplexer pattern generators, or random
+access memories.
+
+Figure 8-7 shows how a set of binary counters can be used for
+specifying position data. The essential idea in this case is to vary the
+position of a ﬁgure each time the circuit is clocked. One phase of the
+
+317
+
+ 
+

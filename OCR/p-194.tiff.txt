@@ -1,0 +1,110 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+R1 R2 R3
+2 2K 2.2K 14 1M 14 ICS-A
+~ 6 5 2 ‘— 1
+C1 1-4 3
+"i .omF ‘CM .2...
+START _4- 2 5 '
+es 4
+,-
+.01 5
+“F [0343 GAME
+_1_ 7 ENABLE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+RESET R4 7
+4700 “324‘
+
+ 
+
+ 
+
+ 
+
+.17
+
+ 
+
+ 
+
+ 
+
+condition in the game that calls for resetting the system, it initiates
+the 5-second delay interval at ICZ-A. After that interval is over,
+ICZ-B generates a pulse that ultimately triggers pin 6 of IC3-B to
+disable the game and unlock the START switch circuit.
+
+It would be a good idea to dream up a few control systems of
+your own, following the procedures outlined here. This same proce-
+dure, in a somewhat more elaborate form, is quite necessary for
+planning entire game systems. Get the procedure clear in your mind
+now, and you'll ﬁnd you have a powerful design tool at your disposal
+later on.
+
+194
+
+ 
+

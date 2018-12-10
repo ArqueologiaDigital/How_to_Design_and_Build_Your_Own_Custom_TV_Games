@@ -1,0 +1,60 @@
+ 
+
+I I I I
+_[ v BLANK ]_
+| I l
+
+i i VSYNC
+
+4 8 1 6
+V-COUNT
+
+ 
+
+O
+
+ 
+
+ 
+
+r
+Fig. 2-8. Vertical blanking and sync waveforms.
+
+The vertical-sync pulse, VSYNC, is generated at IC4-B. This
+particular designation does not appear on the schematic, however,
+because it is never used alone anywhere else in the system.
+
+IC4-B has an output that remains at logic 1 as long as VBLAN K
+is at 0. When VBLANK rises to logic 1, indicating it is time to blank
+the vertical retrace on the TV screen, IC4—B allows 4V and an
+inverted version of 8V to pass. The result at the output of IC4-B is a
+negative-going pulse that begins a count 4V and ends at 8V. This is
+the vertical-sync pulse. See the VBLANK and VSYNC pulses illus-
+trated in Fig. 2-8.
+
+The remaining circuitry in Fig. 2-7 is responsible for combining
+both the horizontal- and vertical—sync and blanking pulses, and then
+
+working the composite sync waveform together with the game
+video.
+
+The horizontal— and vertical-sync pulses are effectively com-
+bined in the EXCLUSIVE-OR gate, IC7-A. The output of this gate,
+shown in Fig. 2-9(a), shows the 15, 7 50-Hz horizontal sync pulses in
+a positive-going, active-high format until the vertical-sync pulse
+occurs. At that moment, the horizontal pulses switch to an active-
+low format, providing the effect of a serrated vertical-sync pulse, an
+effect that is necessary for maintaining horizontal sync through
+vertical sync and retrace.
+
+IC7-B serves merely as an inverter for obtaining an inverted
+version of this composite sync signal.
+
+The horizontal— and vertical-blanking pulses are ORed together
+in IC9-C and IC9-D, and then these combined signals are ORed with
+the game video in ICQ-B. The output of IC9-B is thus a combination
+
+34
+
+ 
+

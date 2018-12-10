@@ -1,0 +1,53 @@
+To make a long story short, 1C6 responds to the one line during
+VBLANK where 1V, 2V, 4V, and 8V all at logic 1 at the same time. It
+is only during this one particular line that the horizontal-slipping
+counter can count a cycle that is longer or shorter than the stop-code
+cycle.
+
+Now suppose you have set the HC inputs of the slipping counter
+to 1000, a code that makes the counter run one extra pulse. When
+that one critical scan line occurs during the VBLANK, the counter
+long-counts to set the reset point one HCLK pulse to the right. The
+system then automatically injects the stop code, creating a motion-
+less vertical line that is shifted one HCLK interval to the right of
+where it was on the previous frame. Since this shifting takes place
+once during each frame, the vertical bar moves gradually to the
+right, one HCLK interval per frame, or 60 HCLK intervals per
+second.
+
+Motion to the left is accomplished in much the same fashion,
+except the slipping counter is forced to short—count during that one
+critical line in the VBLANK interval. The table accompanying the
+schematic diagram in Fig. 5-14 summarizes the horizontal-motion
+codes for this system.
+
+Construct the circuit in Fig. 5-14 and try it for yourself. You can
+create logic-0 at the HC inputs by connecting the points to COMM.
+You can create a logic-1 input by connecting a jumper to +5V, but
+that isn’t really necessary with these TTL circuits, because no
+connection at all lets the inputs assume a logic-1 condition.
+
+You can use any one of the HM outputs for this experiment,
+simply connecting one of them to GAME VID IN. The MM (max/
+min) output of 1C2 makes a nice take-off point for a video signal too.
+
+A Complete SIipping-Counter-Motion-Control Board
+
+The vertical— and horizontal-slipping—counter circuits can be
+easily assembled on a single PC card, providing the experimenter
+with a universal digital-motion card. This card can be used for
+experiments aimed at getting a better understanding of slipping-
+counter motion control. But equally important, it can be used as a
+motion control board for any number of TV game circuits. A bit of
+time and effort invested in such a board will pay big dividends later in
+your work.
+
+The universal slipping-counter motion board, shown in Fig.
+5-15, has provisions for digitally controlling the speed and direction
+of both vertical and horizontal motion. Input connections to the
+Sourcebox unit include HCLK, HBLANK, HRST, VBLANK, and
+
+17a
+
+ 
+

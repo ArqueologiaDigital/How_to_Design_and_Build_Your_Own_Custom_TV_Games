@@ -1,0 +1,15 @@
+You must play with this scheme for a while to get a real
+understanding of how it works. Keep it simple at ﬁrst, starting with
+the circuit in Fig. 4-35, then move on to one that uses two multiplex-
+ers for generating the basic ﬁgure and one for determining the
+repeated pattern.
+
+It is important to master this technique now. Later chapters
+dealing with complete games, and the motion of ﬁgures assume an
+understanding of the complex-figure and pattern-generating
+schemes.
+
+136
+
+ 
+

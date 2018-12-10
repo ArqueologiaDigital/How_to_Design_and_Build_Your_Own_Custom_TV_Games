@@ -1,0 +1,83 @@
+ 
+
+LAUNCH POSITION
+
+ANTIBALLISTIC 1 6
+
+MISSILE (PLAYER A) 0:1131\\
+, LAUNCH CONTROL sF 0 SH 0 0 LAUNCH
+PANEL
+
+ 
+
+ 
+
+ 
+
+ 
+
+LOAD
+
+ 
+
+ANTIBALLISTIC
+LAUNCH
+
+T POSITIONS
+
+16 SWITCH I
+COMBINATIONS
+1 1 1 1 O 0 0 0
+LT. EXTREME FIT. EXTREME
+
+POS SF SG SH SI
+
+LAUNCHAI 13$?)ch i/I13’I
+
+i-IF-Ii
+
+O 0
+LAUNCH LOAD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PUSHBUTI'ON SWITCHES ARE NO. TYPE
+(RADIO SHACK 275-1547)
+TOGGLE SWITCHES ARE SPST TYPE
+(RADIO SHACK 275—324)
+
+ 
+
+ 
+
+ 
+
+Fig. 7-2. PIayerA control panel, range of launch positions, and panel schematic.
+
+Player Bs controls are enabled only while the attack missile is in
+its blanked, initial position. Player B can set the initial attack altitude
+to any one of eight positions in the upper half of the screen by setting
+the positions of switches SC, SD, and SE. Setting all three INITIAL
+ALTITUDE switches to their 1 positions ﬁxes the maximum al—
+titude, while setting them all to their 0 positions ﬁxes the minimum
+altitude. There is no need to depress any sort of loading button in this
+particular case.
+
+Player B also sets the attack velocity and rate of descent. There
+are four possible velocities and rates of descent set by switches SA
+and SB. See the chart in Fig. 7—3. Setting the attack velocity is a
+matter of first setting SA and SB to the desired positions, then
+depressing the VELOCITY pushbutton. The same two switches,
+
+237
+
+ 
+

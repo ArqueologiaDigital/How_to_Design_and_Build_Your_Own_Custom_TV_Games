@@ -1,0 +1,233 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+OE
+
+"22
+
+3E
+
+ 
+
+SE
+
+SE
+
+[OE
+
+HE
+
+l2E
+
+ 
+
+16E
+
+I78
+
+tBE V
+
+I9E
+
+20E
+
+21E
+
+225
+
+236
+
+ 
+
+24E
+
+25E
+
+' as:
+
+27E
+
+28E
+
+295
+
+30%
+
+338'
+
+ 
+
+325
+
+33E
+
+345 ,
+
+35E
+
+365
+
+37E
+
+38E
+
+39E
+
+ 
+
+40E
+
+41E
+
+42E
+
+43E
+
+44E
+
+45E
+
+46E
+
+47E
+
+ 
+
+48E
+
+49E
+
+‘505
+
+51E
+
+52E
+
+535
+
+54E
+
+55E
+
+ 
+
+565
+
+ 
+
+ 
+
+57E
+
+ 
+
+SSE
+
+ 
+
+595
+
+ 
+
+60E
+
+GIE
+
+ 
+
+ 
+
+625
+
+ 
+
+63E
+
+ 
+
+ 
+
+ 
+
+FOLD OVER CIRCUIT
+
+ 
+
+SELECT: SD = 2H F 16H
+S1 =4H F 16H
+S2 = 8H F 16H
+53 =2V
+S4 =4V
+SS =8V
+
+WINDOW: ESEFI
+
+D INPUTS:
+
+1 28H
+64H
+32H
+
+1 28V
+
+034 :0
+
+035 = 16V
+042 =1sv
+045 = 16V
+D46 = 16V
+047 = 16V
+050 =TEV
+052 =16V
+053 = 16V
+054 =16V
+055 =16V
+D56 =TEV
+057 =TG'V
+
+_" D58=0
+
+023 =W
+024 = 16V
+025 = 16V
+026 =0
+
+027 = 16V
+023 = 16V
+029 = 16V
+030 :0
+
+031 =W
+032 = 16V
+035 = 16V
+
+059 = W
+D60 = 16V
+D61 = 16V
+
+ 
+
+Fig. 4-31. Circuit, specifications, and half drawing of a tank figure. The half
+
+drawing is adequate for determining the speciﬁcations for any folded image.
+
+Any of the circuits for generating broad bars and rectangles
+(see Chapter 3) can also serve as window generators for a complex-
+ﬁgure generator. The result is a regular pattern of identical complex
+ﬁgures on the screen. Use any of the bar or rectangle generators
+
+128
+
+ 
+
+ 
+

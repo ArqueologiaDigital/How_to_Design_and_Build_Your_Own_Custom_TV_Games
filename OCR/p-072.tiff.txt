@@ -1,0 +1,55 @@
+determines the horizontal position of the rectangle or
+square, and its horizontal width determines its ﬁnal width.
+
+2. Build a vertical white line or bar as described in Recipe for a
+Vertical Line or Bar. The position of this bar or line deter-
+mines the vertical position of the rectangle, and its horizon-
+tal height ﬁxes the height of the ﬁnal product.
+
+’3. If the 8—input NAND gate is used for building these two
+lines or bars, transfer them to simpler NAND gates. A line
+or bar requiring four inputs, for example, can be transfer-
+red to one section of the dual 4-input NAND gate.
+
+4. Run the outputs of the two sets of NAND gates through
+INVERT gates and then to the inputs of a Z-input NAN D
+gate.
+
+5. Invert the output of that 2-input NAND gate and apply the
+resultant signal to CVID—and presto! There’s the square
+or rectangle. This step, incidentally, is responsible for
+creating a white square on a black ﬁeld. The situation can
+be easily reversed (same square, but black on a white field)
+by omitting the ﬁnal inverting operation—take the CVID
+from the ouput of the 2—input NAND gate described in
+step 4.
+
+Try building some rectangles of your own, specifying a variety
+of dimensions and positions on the screen. If you want to make some
+very small rectangles, you will ﬁnd the RC line-generating technique
+is simpler than the basic NAN D-gate approach.
+
+Sculpturing Rectangles
+
+There is an alternate procedure for building a rectangle that
+sometimes saves some time and is perhaps more fun to use. First
+build the basic rectangle circuit shown in Fig. 3-18, but without
+specifying the exact horizontal— and vertical-count inputs. The
+screen should be completely white at this point in the procedure, and
+it is convenient to assume the circuit is generating a full-screen white
+rectangle.
+
+Next, apply a 256H or 256H signal to one input of IC2-A. The
+full-screen rectangle will narrow in from one side or the other,
+depending on the phase of the 256H signal you use. Then apply a
+128V or 128V signal to one input of ICZ-B, and the white rectangle
+will shrink down from the top or bottom, again, depending on the
+phase of the 128V signal you use.
+
+Then apply an inverted or noninverted 128H signal to another
+input of ICZ—A and watch the rectangle narrow even more. Apply a
+
+72
+
+ 
+

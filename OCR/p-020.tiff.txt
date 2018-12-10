@@ -1,0 +1,56 @@
+plug-in game modules and the so-called tinkerboxes
+(breadboard units intended for se1f~learning experiments
+and game design). With the notable exception of the
++1.5-V supply voltage for the rf modulator, the power
+supply gets its power from a standard 120-VAC, 60-1-12
+source.
+
+2. 7-MHz oscillator—This is the master clock oscillator for
+the entire TV game system. For best results, this should
+be a crystal-controlled, 14-MHz oscillator, followed by a
+toggling ﬂip-ﬂop that both divides the crystal frequency by
+two and assures a clean, 7-MHz HCLK waveform.
+
+3. Horizontal-count source—The horizontal-count source
+
+’ generates a 9-bit binary counting code that divides the
+game screen into 455 equal horizontal segments. Each
+horizontal scan line on the screen is thus divided into 455
+discrete sections, each of which is capable of rendering one
+bit of horizontal video information.
+
+The nine binary—counting outputs are labeled 1H, 2H,
+4H, 8H, and so on through 256H, with 1H being the
+least-significant (highest-frequency) output and 256H
+being the most—signiﬁcant output bit.
+
+The horizontal-count source also generates an HRST
+(Horizontal ReSeT) pulse that is used for clocking the
+vertical-count source and synchronizing the operation of
+some game circuits. An inverted version of this positive-
+going HRST pulse, designated HRST, is used for generat-
+ing horizontal-sync pulses.
+
+4. Horizontal sync and blanking generator—The inverted
+HRST pulse from the horizontal-count source is converted
+to horizontal sync and blanking pulses in this part of the
+Sourcebox unit. The horizontal-sync pulse (HSYNC) ulti-
+mately triggers the TVs horizontal retrace operation. The
+horizontal-blanking pulse (HBLANK) is likewise used for
+blanking horizontal retrace on the TV screen and for cer-
+tain kinds of control operations for the video games.
+
+5. Vertical-count source—The vertical-count circuit is almost
+identical to its horizontal counterpart. It generates a 9-bit
+binary count that divides the receiver’s raster into 262
+vertical segments, or lines. In a manner of speaking, this
+circuit provides information regarding the position of the
+TV’s beam in the vertical sense.
+
+Like the horizontal-count source, the nine outputs are
+labeled 1V through 256V, with IV being the least-
+
+ 
+
+ 
+

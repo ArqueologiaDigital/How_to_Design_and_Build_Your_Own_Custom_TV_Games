@@ -1,0 +1,56 @@
+The ball, in other words, travels for a longer period of time off
+the green than it does when it is on the green. R12 can be adjusted to
+give a gooisgeed difference between a drive and putt swing.
+
+The RST input to ICS—B is responsible for locking out the
+ball-travel timer whenever the ball touches the hole. The ball cannot
+be moved once it is in the hole. It can be released only by depressing
+the TEE switch, an action which reinitializes the system at a new
+point determined by the program counter.
+
+The A/ D converter circuitry occupying most of this logic board
+in Fig. 8-18 is simply that required for controlling the speed of the
+ball from potentiometers. The circuit is taken directly from the
+discussion surrounding Fig. 7-12. The HCONT and VCONT inputs
+come directly from the potentiometers (or joystick) on the control
+panel.
+
+The horizontal portion of the A/D speed control is built mainly
+around IC4~A and counter IC7. While the speed is actually controlled
+by the RIGHT/ LEFT control on the player’s panel, trimmer resistor
+R2 is used for calibrating the speed. To adjust this HTRIM control,
+set the RIGHT/ LEFT potentiometer on the control panel for
+maximum right speed, then trim HTRIM for the desired maximum
+right speed. Then set the RIGHT/LEFT control to the opposite
+extreme and readjust HTRIM for good left motion.
+
+Continue working the RIGHT/ LEFT control between its two
+extremes, adjusting HTRIM as necessary to get smooth right-and—
+left control from the panel.
+
+Work through the same set of adjustments for the UP/ DOWN
+control on the panel, using VTRIM to calibrate the two extremes. It
+
+is IC4-B, you see, that works with counter IC8 to produce vertical—
+ball-motion codes.
+
+The outputs of the A/D converter section are 1PHC through
+SPHC (horizontal speed and direction codes) and 1PVC through
+8PVC (vertical speed and direction codes).
+
+The circuit in Fig. 8-19 is called the Figure Board on the wiring
+block diagram. This board includes circuitry for converting the
+output of the program counter into position information for the hole
+and green, detecting contact between the ball and green or ball and
+hole, and changing the color of the ball from white to black as it
+moves onto the green.
+
+The size and position of the green is determined by comparator
+Circuits IC7 and 1C9, where IC7 determines the horizontal compo-
+nent and ICQ ﬁxes the vertical component. These two ICs compare
+board inputs CA through CD with horizontal— and vertical-count
+
+342
+
+ 
+

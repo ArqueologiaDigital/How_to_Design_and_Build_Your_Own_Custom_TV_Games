@@ -1,0 +1,58 @@
+and output designations carrying an “A” preﬁx denote connections to
+Player A’s systems, while those carrying a “B” preﬁx indicate
+connections in Player B’s system.
+
+It might be helpful at this point to look ahead a bit to the wiring
+block diagram in Fig. 7-27. You can see the two special Dogﬁght
+boards, the vector and ﬁgure boards, servicing two complete
+tagalong systems.
+
+Now notice that the vector board in Fig. 7 -25 has four of the 2 x
+vector multiplier circuits described previously in Fig. 7-23. Each
+receives a set of four primary—ﬁguremotion-control ’bits from the
+tagalong control boards.
+
+The ﬁrst of these four 2 X vector circuits accepts bits AIPHC
+through A8PHC. These are Player A’s primary ﬁgure horizontal-.
+motion codes. The outputs from this same circuit, designated
+AlPHC’ through A8PHC’, are the 2x-corrected motion codes for
+Player A’s secondary ﬁgure horizontal-slipping counter.
+
+The vector circuit having inputs AIPVC through A8PVC gets
+its data from Player A’s primary ﬁgure Vertical-motion control cir-
+cuit; and the outputs (AlPVC’ through ASPVC’) go to his secondary
+ﬁgure vertical-control circuit.
+
+The two remaining vector circuits in Fig. 7-25 perform exactly
+the same operation on Player B’s motion-control codes.
+
+IC8-A in Fig. 7-25 is a timer that is programmed for monostable
+operation. Whenever Player A despresses his FIRE button, a
+negative-going pulse at ATRIG initiates a l-second output pulse
+from ICS-A. This output, labeled AF IRE, is responsible for separat—
+ing Player A’s missile from his aircraft. As noted in Fig. 7-27, AF IRE
+is connected to the FIRE input on Player A’s tagalong control board.
+
+The timing operation continues until the monostable completes
+its normal 1—second interval or a negative-going AMRST pulse
+occurs at pin 4. As described in connection with the circuit in Fig.
+7-26, this AMRST pulse occurs whenever Player A successfully
+shoots down his opponent.
+
+Player B’s ﬁring circuit, built around IC8-B, works the same
+way. BTRIG is taken from Player B’s control panel FIRE button, the
+BFIRE output separates his missile from aircraft B, and the timer
+can be reset immediately by a negative-going pulse at BMRST.
+
+The compact pulse generator made up of IC7-E, IC9-A, and
+IC7-F merely generates the 128P pulse required for any tagalong
+motion control system. In this case, the 128P pulse services the
+tagalong systems for both players.
+
+Since this Dogﬁght game runs continuously, there is no need for
+any sort of game resetting operations, and as a result, it is possible to
+
+297
+
+ 
+

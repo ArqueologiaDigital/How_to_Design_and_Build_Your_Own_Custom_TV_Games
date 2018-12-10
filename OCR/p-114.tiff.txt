@@ -1,0 +1,102 @@
+ 
+
+ 
+
+00 01 02 03 SELECT: SO=8H
+S1=16H
+04 05 06 07 52=3V
+S3=16V
+DB 09 DIO on 34:32"
+WINDOW: 256H
+0:2 0:3 014 0:5 Van
+5474
+5330
+BIG DI? DIB 0:9 128v
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+020 DZI 022 023
+
+ 
+
+0 iNPUTS: o, 1, 64V, 64V,
+024 025 026 027 As REQUIRED
+
+ 
+
+028 D29 D30 DB!
+
+ 
+
+DOE DIE DZE 03E
+
+ 
+
+D4E D5E 06E DTE
+
+ 
+
+D8E 09E DiOE DHE
+
+ 
+
+DIZE DISE DI4E DISE
+
+ 
+
+DISE DITE DIBE DISE
+
+ 
+
+I020E DZIE D22E 023E
+
+ 
+
+D24-E 025E 026E D27E
+
+ 
+
+028E 029E D30E DBIE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4 x 16 EXTENDED
+MATRIX
+
+ 
+
+ 
+
+ 
+
+Fig. 4-22. Configuration and sample specifications fora 4 x 16 extended matrix.
+
+is perhaps one of the most useful of all. Connected to the basic
+64-cell circuit as indicated in Fig. 4-23, the EXCLUSIVE-OR circuit
+expands the matrix to a 8x16 format.
+
+The matrix in Fig. 4-23 is a folded matrix that requires sym-
+metry about the vertical line running through its center, but in actual
+
+114
+
+ 
+

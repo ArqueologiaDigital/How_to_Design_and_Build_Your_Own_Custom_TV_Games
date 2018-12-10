@@ -1,0 +1,54 @@
+torpedo by depressing a FIRE pushbutton, the attack torpedo is free
+to move along the path that the attack craft was following at the time.
+The AC player must head directly toward the target, ﬁre his tor-
+pedo, and then pull away from the target before colliding with it. The
+launched torpedo follows the original path to the target.
+
+While the defensive player can, indeed, destroy the attack craft
+with a defense torpedo, he cannot destroy the attack torpedo after it
+has been ﬁred. {
+
+Figure 7 - 10c shows the four different images that can appear on
+the screen at any given moment: DT (defense torpedo), AC (attack
+craft), AT (attack torpedo), and the target.
+
+The defense torpedoes can be launched at any time along the
+paths shown by dashed lines. The attack craft can be moved in any
+direction and at any speed within the Viewing area, carrying the
+attack torpedo until it is launched by the aggressor. The attack craft
+is free to move through the left- and right-hand edges of the screen,
+but it “crashes” if it touches the top or bottom. The dotted lines in
+Fig. 7-10c indicate one particular AC attack run.
+
+The aggressor has full control over the attack craft except when
+one of three reset conditions occur. According to the ﬂowchart in
+Fig. 7-10a, the attack craft is automatically reset (and destroyed)
+when AC=EDGE1, AC=TARG, or DT=AC. Translating these
+choice—point operations into plain English, DT=AC means one of the
+defense torpedoes strikes the attack craft, a score in favor of the
+defensive player.
+
+AC=TARG means the attack craft itself collides with the target
+image. This represents a draw or a score for the defensive player,
+depending on whether or not the attack torpedo is still on board the
+attack craft. If the torpedo is still on board the attack craft when the
+latter collides with the target, both the target and attack craft are
+destroyed, a draw sequence. If the torpedo has been launched when
+the attack craft collides with the target, however, only the attack
+craft is destroyed. Another point for the defensive player.
+
+AC=EDGE1 is a condition where the aggressor steers the
+attack craft too high or low on the screen. The attack craft must
+remain between the top and bottom of the screen. Touching either of
+these two boundaries destroys the attack craft and represents a
+default score for the defensive player.
+
+So according to Fig. 7-10a, the attack craft is ﬂashed on and off,
+and reset to a starting position whenever it is hit by one of the
+defense torpedoes, hits the top or bottom of the screen, or collides
+with the target. The AC reset position, by the way, is at the left-hand
+
+258
+
+ 
+

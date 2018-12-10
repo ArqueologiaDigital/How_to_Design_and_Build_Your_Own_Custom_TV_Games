@@ -1,0 +1,54 @@
+three just mentioned and a slipping-counter board from Fig. 5—15. Of
+course there are two separate control panels that have already been
+described in Figs. 7-2 and 7-3.
+
+After studying the game’s ﬂow chart and block diagrams in
+some detail, there is little need for a highly detailed description of the
+circuits themselves. The overall wiring block diagram in Fig. 7—9 will
+prove invaluable when analyzing the operation of the system at the
+circuit-board level.
+
+Figure 7-6 shows a board containing most of the control ele-
+ments for the antiballistic missile system. ICs l-A and 6-F, along
+with C1 and R7, merely transform the negative-going launch sig_na_l_
+into a brief, negative- -going pulse. IC2-A and ICZ- C make up the R- S
+ﬂip-ﬂop that 15 set so that pin 3 15 at logic 1 and pin 815 at logic 0
+whenever that pulse occurs.
+
+10s 2— B, 2- D, and 1- B make up the initialization control circuit.
+Whenever the antiballistic missile is in its reset position, this circuit
+delivers an inverted VRST pulse to the loading input of the vertical-
+slipping counter, 1C7, and 1C8. Whenever the missile is launched,
+however, the initialization-control circuit delivers the output of
+ICl-D back to the load input of the slipping counter.
+
+The four sections of 1C3 determine the pattern of inverted and
+noninverted H—count signals for determining the initial horizontal
+position of the antiballistic missile. See details in connection with the
+circuit in Fig. 6-17. These position-determining signals pass directly
+through IC9, a quad D latch, as long as the system Is in its reset
+condition and the LOAD button 13 depressed. 101- A 1s _responsible
+for AN Dmg the launch status information from the R- S flip-ﬂop and
+the POS logic level from the player’s LOAD button.
+
+Whenever the LOAD button is released or the missile is
+launched, pins 4 and 13 of IC9 go to logic 0, thereby placing the
+latches into their memory modes. The horizontal-position data that
+existed the moment the circuit is latched then remains ﬁxed at the
+inputs of IC5-A.
+
+The position of the antiballistic missile in the horizontal plane is
+actually deﬁned by IC5-A. Since this pluse is too Wide for generating
+the horizontal width of the antiballistic missile, it is shorted in the
+circuit made up of IC1-C, IC6-C, R6, and C2. The value of C2 can be
+changed to suit the designer’s own impression of how wise the
+antiballistic missile ﬁgure ought to be.
+
+The height and vertical position of the antiballistic missile are
+both determined by the pin-12 output of the higher-order vertical-
+slipping counter, 1C8. This output is inverted by IC6-D and effec-
+
+246
+
+ 
+

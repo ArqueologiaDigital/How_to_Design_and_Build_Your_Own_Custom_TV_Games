@@ -1,0 +1,110 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 I 2 3 4 5 6 7
+8 9 I0 II I2 I3 I4 I5
+I6 I7 [8 19 20 2I 22 27
+24 25 26 27 28 29 30 3|
+32 33 34 35 36 37 38 39
+40 4I 42 43 44 45 46 47
+48 49 50 5I 52 53 54 55
+56 57 58 59 60 6I 62 63
+05 I5 25 35 45 55 65 75
+8E 95 I05 II5 I25 I35 I45 155
+I65 I75 l8E I95 205 2I5 225 235
+245 255 265 275 285 295 305 3I5
+325 335 345 355 365 375 385 395
+405 4I5 425 435 445 455 465 475
+465 495 505 5|E 525 535 545 555
+56E 575 58E 595 605 6I5 625 635
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SELECT: $0 = 8H
+81 = 16H
+82 = 32H
+S3 = 8V
+S4 = 16V
+85 = 32V
+
+WINDOW: 256H
+128H
+
+64 H
+
+128V
+
+DATA IN: 1. 0, 64V. EV,
+AS REQUIRED
+
+ 
+
+Fig. 4-27. Conﬁguration and sample speciﬁcations for an 8 x 16 extended
+
+matrix.
+
+ﬁnd a rather large white rectangle occupying the lower right-hand
+quadrant of the screen. Connecting any of the D inputs to logic 0
+creates a black cell in the corresponding matrix position and in its
+extended location as well.
+
+The two examples in Fig. 4-28 include a rather novel footprint
+and the proﬁle of a cowboy. While the footprint might not be very
+
+122
+
+ 
+
+ 
+

@@ -1,0 +1,54 @@
+256P input and the one on the right is the 1P bit. You should ﬁnd a 1H
+line running down the center of the screen.
+
+What is happening here? By programming the P inputs to
+100001010, you are asking the circuit to look for that particular
+pattern of Is and Os from the H-count outputs of the Sourcebox. And
+since that particular H-count occurs at the center of the screen, it
+follows that the comparator circuit generates its output at that
+particular moment. See the master counting table in Chapter 2 for
+other program patterns.
+
+There are two conditions that will not show a line on the screen.
+If the program inputs specify an H—count in the horizontal blanking
+region, the comparator generates a line ﬁgure, but it is lost in the
+blanking region. In the other case, you can program counts that are
+larger than the number of H—counts in a line—larger than binary
+111000110 or decimal 454. In this instance, you are asking the circuit
+to look for a number that Sourcebox never generates, and as a
+result, the line is never generated at all.
+
+The same basic ideas apply when using this comparator scheme
+with V-count inputs. Here the circuit generates a horizontal line that
+is 1V wide and in a position determined by the pattern of logic levels
+at the P inputs. As in the case of the horizontal-comparison experi-
+ment, programs calling for a line in the vertical—blanking region or
+any calling for a line at 100000101 (decimal 261) or more do not
+generate visible lines.
+
+So if the circuit in Fig. 8-2a is wired for H-count programming,
+you can ﬁx the position of a 1H vertical line anywhere on the screen
+between 000000000 (extreme left side) and 11100101 (extreme
+right side). The pattern of Os and Is at the P inputs correspond
+exactly to the inputs to a NAN D gate as speciﬁed in Chapter 3. In
+essence, this comparator circuit works as a 9-input NAN D gate for
+ﬁxing the size and position of a line on the screen. The only differ-
+ence here is that the programming can be changed much easier than
+for a hard-wired NAND gate.
+
+Once you have built this comparator circuit and you are certain
+you understand how to program the P inputs to set the position of the
+lH—wide vertical line, set the position to some convenient viewing
+place on the screen, and connect the 1P input to the 1H input. Now
+input 1 and 1P are both operating from 1H. They are always equal.
+The result is a line that is ZH-clock-pulses wide. You can still adjust
+the position of the line from program inputs 2P through 256P, but
+now the line is wider.
+
+Then connect 2P to input 2 and 2H. With the two lower-order
+program inputs thus connected to their respective H—count inputs,
+
+310
+
+ 
+

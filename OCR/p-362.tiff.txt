@@ -1,0 +1,55 @@
+START button for beginning a new game and attack sequence, and a
+FIRE button that makes the good guy shoot a beam Of light at the
+stormtroopers.
+
+Depressing the START button initializes the position of all eight
+stormtroopers at the top of the screen. Their advance toward the
+good guy begins immediately. The stormtroopers are rigged so that
+they all ﬁre a volley of shots at the good guy 0.1 second after they
+sense one of them is lined up with the good guy. The good guy can
+ﬁre at any time by depressing the FIRE button, but he, too, must be
+lined up with one of the stormtroopers before scoring a kill.
+
+Whenever the good guy hits one of the stormtroopers, they all
+disappear from the screen for about 0. 5 second, then reappear with
+the dead guy missing from the display. The main object of the game
+is to kill them all in this fashion before any one of them reaches the
+bottom of the screen.
+
+If any live stormtroopers reach the end of the screen, the good
+guy’s position, the game automatically stops to indicate a win for the
+bad guys. The game has to be manually started to begin another
+attack sequence.
+
+The game is also terminated in the event the good guy manages
+to wipe out all eight stormtroopers. This indicates a win for the good
+8“)“
+
+This is a fast-paced game that is very difﬁcult to win without a
+lot of practice. Until a player masters the game, he might want to
+score on the basis of the number of stormtroopers killed in 10
+consecutive attack sequences, trying to beat this lO-game sequence
+of scores.
+
+Figures 8-29 through 8-33 show the general block diagram,
+schematics for the three circuit boards, and a wiring block diagram.
+The game takes advantage of the slow-motion feature of pro-
+grammable position-control comparators. It is not possible to make
+the stormtroopers advance so slowly using a slipping-counter
+motion-control scheme.
+
+A second feature of this game is its ability to blank ﬁgures from
+the screen when they are “hit, ” and then keep track of the number of
+remaining stormtroopers. Both of these features, extra-slow motion
+and selective elimination of ﬁgures from the screen, can be de~
+veloped into a number of other custom TV—game systems.
+
+Theory of Operation
+
+As indicated on the block diagram in Fig. 8-29, depressing the
+START button both starts S MOTION and resurrects all previously
+
+362
+
+ 
+

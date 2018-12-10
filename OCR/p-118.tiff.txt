@@ -1,0 +1,55 @@
+multiplexer provides 16 more basic cell locations. Most experimen-
+ters, however, begin questioning the feasibility of expanding the
+complex-ﬁgure generating system beyond a certain point.
+
+Is the ability to create a large and highly detailed pattern worth
+the trouble of working with all the multiplexer hardware? Only you
+can answer that question. It depends on what you are trying to do
+and what it’s worth to you in the long run.
+
+This section deals with an especially useful 64—cell generator. It
+is built around four 16:1 multiplexer ICs, thus giving the experi-
+menter 64 data-input programming terminals. As described earlier
+in this chapter, any basic multiplexer—type ﬁgure generator can be
+easily modiﬁed to double the number of matrix cells. In this particular
+case, the experimenter has access to 128 cells. Then the user might
+elect to use a foldover scheme, thereby extending the number of
+cells to 256.
+
+It turns out that this 64-, 128-, 256-cell matrix system is
+adequate for generating some of the most popular ﬁgures found on
+commercial TV games: cowboys, baseball players, tanks, aircraft of
+all sorts, an endless variety, really. Just look at some of the patterns
+used as examples through the remainder of the section.
+
+The 64-Cell Generator Circuit
+
+The 64-cell generator circuit in Fig. 4-26 uses four 16:1 multi-
+plexer ICs. The 4 lower-order select inputs to the system, 80
+through 83, select one of the 16 data inputs on each multiplexer. And
+the demultiplexer circuit, ICE), is responsible for enabling one of the
+four multiplexers, depending on the status of the two higher—order
+select inputs, S4 and SS.
+
+The system is windowed and the outputs of the multiplexers
+are NANDed in a fashion identical to the 32—cell generator in Fig.
+4-17.
+
+The purpose of the four inverters, ICl-A through lCl-D, re-
+quire some special explanation. It is a fact of TTL technology that
+most ICs in that family are capable of driving up to 20 other TTL-
+type circuits. Normally a gate drives far less than 20 others, so the
+problem of overloading the output never becomes an important
+design factor.
+
+When using the matrix-extension technique (expanding the cell
+count from 64 to 128 in Fig. 4-26) one of the H- or V-count outputs
+from the Sourcebox unit might have to drive 20 or 30 D inputs at the
+same time. Whenever a particular complex-pattern circuit calls for
+driving more than about 15 D inputs from the same source, that
+source ought to be buffered. And that’s the purpose of 1C1.
+
+118
+
+ 
+

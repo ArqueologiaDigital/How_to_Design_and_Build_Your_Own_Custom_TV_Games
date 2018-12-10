@@ -1,0 +1,53 @@
+timer, it can be reset anytime a new bad guy appears, whether the
+old one managed to live 5 seconds or not. If a bad guy can survive
+through the normal timing interval of IC8-B, a pulse generator
+composed of IC2-C and ICZ-D creates a brief negative-going pulse
+that ultimately resets the monostable action once again.
+
+The LOAD output in Fig. 8-25 is normally at logic 0, rising to
+logic 1 only long enough to call up a new bad-guy ﬁgure. The
+remainder of the Ambush circuitry is shown on the Ambush-ﬁgure
+board in Fig. 8-26.
+
+The special feature of the Ambush game is its ability to generate
+bad-guy ﬁgures at random positions on the left-hand side of the
+screen. 1C4 and 1C5 in Fig. 8-26 make up a pair of programmable
+position controls. IC4 is responsible for ﬁxing the vertical compo—
+nent and 1C5 sets the horizontal component of the bad-guy ﬁgure. It
+is the 4-bit logic levels from IC6, however, that determine the bad
+guy’s position.
+
+IC6 is a 4-bit latch, or memory, circuit. The data input in this
+case comes from the 1V, 2V, 4V, and 8V connections of the Source-
+box. This 4-bit data is loaded into the latch only when the LOAD
+input to pins 4 and 13 is at a logic-1 level. This loading condition
+occurs only for a brief interval when the control board operations call
+for seeing a new bad-guy ﬁgure. Once the data is loaded, it is held at
+the outputs of IC6 until the control system calls for a new bad-guy
+ﬁgure.
+
+Since the data inputs to IC6 come from a counter system that is
+running continuously, and since the LOAD pulse occurs at some
+time that is determined by the game action, it follows that the data
+loaded into IC6 is virtually random in nature. In essence, IC6 works
+as a random-number generator.
+
+Accepting the notion that 106 is a random-number generator, it
+should become apparent that the horizontal- and vertical-
+programming data to 1C5 and 1C4 occurs in a random sequence. The
+bad-guy ﬁgure thus appears on the screen at some position deter-
+mined strictly by the random number from IC6 and the wiring
+between IC6 and the program inputs of 1C4 and 1C5.
+
+The horizontal and vertical components from 1C4 and 1C5 are
+NANDed together in ICl-A to create a bad-guy ﬁgure that measures
+16V>< 16H. This image is passed through IC2-A, where it can be
+ﬂashed whenever the good guy scores a hit. The horizontal and
+vertical components of the good-guy ﬁgure are combined in IC2-C.
+And after that, the two ﬁgures are effectively ORed together by
+IC2-B and ICl-B to create the game’s video output.
+
+358
+
+ 
+

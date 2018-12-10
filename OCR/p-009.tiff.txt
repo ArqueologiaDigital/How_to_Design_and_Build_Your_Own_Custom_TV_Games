@@ -1,0 +1,16 @@
+Special Notes to the Reader
+
+- FCC regulations prohibit connecting the output of any rf
+source to an external antenna. The antenna must be com-
+pletely disconnected from the TV receiver before any of
+the video circuits described in this book are connected to
+the set via rf modulators.
+
+- While most of the circuits in this book have been orginated
+by the author, one or more circuits, techniques, and names
+
+of games may be covered by current US. patents and
+trademarks.
+
+ 
+

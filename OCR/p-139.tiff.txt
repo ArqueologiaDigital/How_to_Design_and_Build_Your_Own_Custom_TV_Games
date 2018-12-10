@@ -1,0 +1,84 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SPECIFIED SUBSTITUTE
+FIRST SECOND
+556 555 555
+I 7
+2 e
+5 5 N. A.
+4 4
+5 3
+6 2
+7 I I
+8 2
+9 3
+I0 NA. 4
+I I 5
+I2 6
+l3 7
+l4 8 a
+(C)
+
+ 
+
+ 
+
+Fig. 5-1. Some le used for the first time. (a) Pinout and function table for the
+74191 counter. (b) Pinoutsfor the 556 and 555 timers. (c) A chart showing how to
+
+substitute two 555 timers tor a single 556 dual time. Numbers indicate pin
+numbers.
+
+MOTION-CONTROL TINKERBOX
+
+If you have been performing the experiments outlined in Chap-
+ters 3 and 4, you should have at hand a good assortment of NAND,
+NOR, and invert gates. You will need them for the motion-control
+Tinkerbox.
+
+In addition, you will need some 555 monostable multivibrators
+(timers or the 556 dual timers), a few more 7493 counters such as
+those used in the Sourcebox, and some 74191 presettable up—down
+binary counters. Study the diagrams in this chapter, making up a list
+of ICs you might have to order now.
+
+You will need the timers for performing the experiments in the
+ﬁrst part of this chapter, but fortunately, they aren’t difﬁcult to find
+these days. You might have to send away for the 74191 counters, but
+here you have some lead time because they aren’t required for a
+while.
+
+Figure 5-1 shows the pinouts for the 555 and 556 timers and the
+74191 counter. Most fo the circuits described in this call for using
+556 dual timers. You can, however, substitute two 5555 by making
+the changes in pin numbers as indicated on the chart in Fig. 5—1.
+
+The counter in Fig. 5-1a is in its normal counting mode
+whenever the ENAB input is at logic 0, the load input, L, is at logic 1,
+
+139
+
+ 
+

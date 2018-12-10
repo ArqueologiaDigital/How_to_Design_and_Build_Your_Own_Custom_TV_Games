@@ -1,0 +1,55 @@
+The Stormtrooper board in Fig. 8-31 keeps track of the live
+stormtroopers, generates the horizontal component of the
+stormtrooper ﬁgures, and senses when they are all killed. 1C3 in Fig.
+8-31 determines which one of the eight stormtroopers is hit and
+changes the state of the appropriate J—K ﬂip-ﬂop, IC6—A through
+IC9-B. Information from the “live” ﬂip-ﬂops is then recombined in
+ICE to generate the horizontal component of the remaining
+stormtroopers. 1C4 senses the condition where all eight
+stormtroopers are killed before any of them reach the good guy’s
+position at the bottom of the screen.
+
+1C3 and 1C5 in Fig. 8- 31 make up an addressable de-
+multiplexer/multiplexer combination having a set of eightJ- K ﬂip-
+ﬂops standing between them. The demultiplexer and multiplexer
+circuits are addressed from the same source of counting signals.
+32H, 64H, and 128H. (The board’s 128H input is inverted by ICZ-B
+before it is applied as the 128H address bit.) Since the demultiplexer
+and multiplexer ICs are operated from the same three address lines,
+it follows that they scan their data in precisely the same sequence.
+
+These are 8- line devices. That is to say, the demultiplexer
+(1C3) takes a single input line and splits the data into eight scanned
+output lines. The multiplexer (1C5) works just the other way around,
+accepting eight scanned inputs and reassembling them into a single
+output line, SH or SH. The eight outputs from the demultiplexer go
+to eight different J— K ﬂip- ﬂops, each representing the dead-or-alive
+status of each stormtrooper. The active- high Q output of each
+ﬂip-ﬂop then makes up an input line to the multiplexer.
+
+Each address count represents the horizontal position of a
+stormtrooper. When the address input—s to the demultiplexer/
+multiplexer combination are 32H: 64H=128H=O, for example, the
+beam on the screen is generating the horizontal component of the
+first stormtrooper on the left. When the count changes to 32H=1,
+64H=128H=0, the beam is scanning the second stormtrooper from
+the left. This demultiplexer/multiplexer scanning process continues
+through the eighth address combination, 32H=64H=128H =1, the
+point on the screen representing the horizontal position of the last
+stormtrooper on the right.
+
+This addressing scheme thus scans the stormtroopers one at a
+time, beginning at the left-hand end of the line. In Fig. 8-31, IC6-A
+determines the dead-or-alive status of the ﬁrst stormtrooper, ICES-B
+takes care of the second stormtrooper from the left, and so on
+through IC9-B that determines the status of the last stormtrooper
+on the right.
+
+ 
+
+ 
+
+370
+
+ 
+

@@ -1,0 +1,53 @@
+edge of the screen, about halfway between the top and bottom. The
+attack player has no control over the reset position and timing.
+
+Now suppose the defensive player launches a defense torpedo.
+Once launched, a defense torpedo continues its rather rapid upward
+motion until one of two events occur: the DT strikes the attack craft
+(DT=AC) or the DT images reaches the top of the screen
+(DT=TOP). In either case, the DT image is reset immediately and
+the defensive player is ready to launch another one.
+
+Figure 7-10b is the flow chart for the attack torpedo. One of two
+things must happen after the aggressor launches a torpedo. The
+torpedo can strike the target (AT=TARG), causing the target image
+to ﬂash and then returning the torpedo to the attack craft. The other
+thing that can happen after launching the attack torpedo is that it
+misses the target and moves to the top, bottom, or right-hand edge
+of the screen. These three edges, designated EDGEZ, represent
+the limits of the ATS travel. Hitting any one of them immediately
+resets the position of the AT to the attack craft. There is no score for
+either player.
+
+Torpedo Attack Game Panels
+
+Figure 7 -11 shows the general layout of the two control panels
+for the Torpedo Attack game. The panel for the DT player consists
+of four pushbuttons switches, labeled 1 through 4, that launch
+defense torpedoes. The numerals represent the four torpedoes
+located in the relative positions indicated in Fig. 7-10c.
+
+The defense player can launch any one of the torpedoes at any
+time and in any sequence. But a launched torpedo must complete its
+cycle (either hitting the top of the screen or the attack craft) before
+another can be launched. .
+
+The control panel for the attack player, Fig. 7—11b, includes a
+pair of controls for steering the attack craft and a FIRE pushbutton
+for launching the attack torpedo. The attack player can control the
+motion of his craft as indicated by the arrows on the control panel. A
+serious experimenter might want to replace the two AC motion
+controls with a single two-dimensional joystick control, thereby
+making the steering and ﬁring operations somewhat less awkward.
+
+Potentiometer Control of Speed and Direction
+
+All of the slipping-counter speed and direction controls de—
+scribed thus far call for inserting a 4-bit binary number that deter—
+mines the direction and speed of the apparent motion. The Missile
+Attack II game, for example, lets the player controlling the attack
+
+259
+
+ 
+

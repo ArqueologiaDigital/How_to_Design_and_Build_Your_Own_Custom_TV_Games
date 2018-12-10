@@ -1,0 +1,37 @@
+for instance, to begin your study of TV games in the middle of the
+book, because each chapter assumes an understanding and some
+experience with the ideas presented in all the previous chapters.
+
+Build up the systems one step at a time, performing the
+suggested experiments and trying some of your own. Hands-on
+experience is the key to designing games of your own, and the only
+way to get that kind of experience is by doing the work suggested
+here.
+
+LOCATING PARTS
+
+Most of the parts speciﬁed in this book are available from stores
+such as Radio Shack. In many instances, Radio Shack part numbers
+are speciﬁed for the beneﬁt of experimenters who are not fully
+
+_ acquainted with other sources and substitution procedures.
+
+Not all parts are available from Radio Shack, but it is not difﬁcult
+to locate them from the many mail—order houses advertising surplus
+in newsstand electronics magazines.
+
+ASSEMBLING THE SYSTEMS
+
+There are few speciﬁc notes in this book concerning the ﬁnal
+assembly of game circuits. It is left to the experimenter to devise
+clever assemblies of his or her own, thereby removing the limita-
+tions on fun and imagination that characterize commercially available
+TV game systems.
+
+Of course this approach puts something of an extra burden on
+the beginner, but what better way to learn than by doing?
+
+17
+
+ 
+

@@ -1,0 +1,45 @@
+ 
+
+ORHC
+4RHC
+RRHC
+IRHC
+
+   
+
+IC1, 2—7400 QUAD 2-INPUT NAND
+
+lC3—7404 HEX INVERTER
+
+1C4, 5—7486 QUAD EXCLUSIVE-OR
+
+ICE, 7. 8, 9—74153 DUAL 4:1
+MULTIPLEXER
+
+4H6
+2PMC
+
+0 U
+>
+
+a :
+" N
+
+0
+
+>3
+I x
+' I
+
+ 
+
+ 
+
+ 
+
+Fig. 8-20. Game Control board schematic for Goh‘.
+
+347
+
+ 
+

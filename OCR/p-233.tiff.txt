@@ -1,0 +1,40 @@
+Chapter 7
+A Collection of War Games
+
+ 
+
+It would be possible to devote at least several more chapters to all
+sorts of special game controls, ﬁrst presenting some basic control
+circuit and then demonstrating a speciﬁc application. But this is a
+good time to change the form of presentation, describing a game
+ﬁrst, and then showing some of the special controls it uses.
+
+Although you can certainly build any of the games in this chapter
+without referring to anything else in this book but Chapter 2, it would
+be wise to complete your study of the entire book ﬁrst.
+
+For instance, you will notice that the ﬁgures used in the war
+games described here are more rectangles, and not interesting,
+complex ﬁgures. You have the option of using the material in Chapter
+4 to generate such ﬁgures from the simpler ones used here.
+
+For the sake of overall simplicity, the games in this chapter do
+not include any audio and scoring circuits. These, too, can be added
+with great effect later on, but of course, you must complete a study
+of the material relating to audio effects and scoring ﬁrst.
+
+And ﬁnally, you ought to be aware of ﬁgure-rotation effects.
+None of the ﬁgures in this chapter can be rotated on the screen; so if
+you want to add the rotation features, you must study the more
+advanced chapter dealing with that particular subject.
+
+Don’t be mislead into thinking the games in this chapter are
+overly elementary, however. While these games are, indeed limited
+with respect to the ﬁner niceu'es of video-game technology, their
+control schemes are as complex and meaningful as any you will ﬁnd
+anywhere.
+
+233
+
+ 
+

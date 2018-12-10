@@ -1,0 +1,72 @@
+ 
+
+H-COUNT
+
+Iili
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+INPUTS
+«K
+2 14
+1
+(OUTPUT)
+3 7
+V-COUNT + 7
+iNPUTS “1-7402
+
+QUAD 2-INPUT NOR
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3-19. A simplified rectangle-building or sculpturing circuit
+
+Rather than inverting the output of each line—generating circuit,
+applying the signals to a NAND gate and then inverting the result,
+simply take the outputs directly from the line—generating NAND
+gates and apply them to the inputs of a 2—input NOR gate—one
+section of a 7402 quad 2-input NOR IC package. Compare the basic
+Tinkerbox rectangle—generating circuit in Fig. 3-18 with the
+simpliﬁed N OR—gate version in Fig. 3—19.
+
+The circuit in Fig. 3-19 takes advantage of one of De Morgan’s
+logic theorems that says two signals can be ANDed together by
+performing a NOR operation on inverted logic inputs. Well, the
+signals from the line—generating NAN D gates are really inverted
+versions of the lines they are to generate. (Note that those outputs
+generate black lines on a white ﬁeld.) 80 running them directly to a
+NOR gate yields an ANDed output; and that’s exactly what the
+rectangle—building operation is based on.
+
+NOR gates are used quite frequently throughout this book
+where it is necessary to AND together signals that are already in an
+inverted state. Using that one NOR gate eliminates the need for at
+least three inverter circuits.
+
+COMBINING ANY NUMBER OF STATIC FIGURES ON THE SCREEN
+
+Single lines, bars, and rectangles—the sort of ﬁgures described
+throughout this chapter—have little value in themselves. Two or
+
+74
+
+ 
+

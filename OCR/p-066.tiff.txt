@@ -1,0 +1,102 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+14
+7474 DUAL 5 9
+D FLIP-FLOP J L We
+2—D Q Q 0—12
+3 CLK CLK ——11
+4—0 P P 0—10
+1—0 C 5 ’5 C 0—13
+_| '— ICOMM
+6 8 7
+P c o CLK QIE MODE
+0 I x x o PRESET
+l o x x o I CLEAR
+I I I I I o READI
+I I o I o I READO
+I I x o aim-I MEMORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3-13. The 7474 dual D flip-ﬂop circuit and truth table. (The Xs designaie
+“don’t care" conditions, while the arrows indicate the need for a positive-going
+level change).
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+256H —-2— D Q i-VBAR 256H
+TO CVID
+LOWER—ORDER 3
+HINPUT
+7 VBAR
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3-14 Using the D flip—ﬂop to generate a board, center-crossing vertIcai bar.
+
+66
+
+ 
+

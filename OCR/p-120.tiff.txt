@@ -1,0 +1,144 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SELECT
+$ Q
+
+76
+
+M
+
+A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—15
+S4 -—14
+35_______ 1113
+em DO — 8 105
+
+01 —7
+D2 —e
+03 -—-5
+D4 —-4
+D5 —3
+DG —2
+7 —1
+1— D8 —-23
+—2—— 99 —22
+
+; -:’— D10- 21
+
+8 —5-— 011—20
+
+_2_ ——- D12- 19
+
+3 .6— D13— 18
+
+11- 014—17
+32- Dis—16 —
+9%.J
+10
+11
+12
+
+ 
+
+ 
+
+74155—DUAL 1:4
+DEMUI TIPLEXER
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The em connection comes from the appropriate H- or V-count
+source. As far as that source is concerned, it has only one load
+connected to it. ICl-A inverts that signal, producing a useful é
+source that can drive up to 20 D inputs. The output of ICl-A is
+inverted by ICl-B to yield a noninverted “e” source that can likewise
+drive up to 20 D inputs. The last 2 inverters perform the same
+function as the ﬁrst 2, providing 20 additional sources of inverted and
+noninverted ﬁgure-expansion signals.
+
+Suppose, for example, a Eticular expanded matrix pattern
+calls for 25 32H inputs and 22 32H signals. The 32H signal from the
+
+120
+
+iéglii
+
+ 
+

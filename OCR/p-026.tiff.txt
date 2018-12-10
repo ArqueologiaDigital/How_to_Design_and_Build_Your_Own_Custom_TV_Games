@@ -1,0 +1,54 @@
+not because the audio signal is part of the horizontal system, but
+because there is little space for putting it anywhere else in the
+Sourcebox unit.
+
+The entire circuit can be mounted on a standard 44-pin, 4- by
+4-inch card, such as a Radio Shack 276-153. In fact all of the circuits
+and systems described in this book can be built onto such a board and
+then plugged into the appropriate edge-card connector (Radio Shack
+276—1551). The numbers in parentheses in Fig. 2—4 indicate card pin
+numbers arbitrarily assigned to the card-and-connector assembly.
+
+The heart of the horizontal system, and indeed the video game
+as a whole, is the 14—MHz oscillator circuit. This little circuit is made
+up of a crystal cut to about 14 MHz and TTL digital inverters 1C7 -A
+and IC7-B. Actually the crystal should have a frequency rating as
+close as possible to 14.3 MHz, although the system will allow values
+within 2% of 14.3 MHz. James Electronics supplies an ideal crystal
+for the job (14.31818 MHz). Order part number CY14A, James
+Electronics, 1021 Howard Ave., San Carlos, CA 94070.
+
+Although the oscillator is basically a digital circuit, the
+waveforms from IC7-A and IC7—C appear sinusoidal on an oscillos—
+cope. The toggled J-K ﬂip-ﬂop, ICl-A, isolates the oscillator from
+the rest of the circuitry and divides the 14. 3-MHz frequency by two.
+The output of ICl—A is thus a quasi-sinusoidal waveform having a
+frequency close to 7.015 MHZ. This is the system's HCLK signal.
+
+1C2, 1C3, and ICl-B make up the 9-bit horizontal-count source.
+1C2 and 1C3 are ordinary 4-bit binary up counters connected so that
+they generate an 8-bit binary count. IC1-B is a toggled J-K ﬂip-ﬂop
+that generates the 9th bit. Note that the outputs of these counters
+are labeled 1H through 256H, the labels used so frequently through-
+out this book.
+
+The nine horizontal—count sources are connected directly to
+output terminals, but there is a selection of ﬁve of them that also go
+to the inputs of 1C4, an 8—input NAND gate. This is all part of a circuit
+that restricts the counting range of the horizontal—count source to
+455 HCLK pulses. A 9-bit counter without this resetting circuit
+would count 511 states.
+
+The resetting circuitry senses a count of 454 at IC4, generating
+a negative-going pulse at the D input of ICSA. IC5A is an edge-
+triggered D ﬂip-ﬂop which sets its Q output to the D-input logic level
+whenever its CLK input shows a positive-going edge. ICS-A is
+clocked by HCLK in this case; and as long as the horizontal—count
+source is generating numbers less than 454, the Q output of_IC5-A
+remains at a logic-1 level. The complemented output from Q is at
+logic 0 at the same time.
+
+26
+
+ 
+

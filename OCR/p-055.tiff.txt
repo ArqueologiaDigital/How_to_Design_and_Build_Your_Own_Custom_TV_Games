@@ -1,0 +1,53 @@
+ 
+
+Creating intersecting parallel lines, both horizontal and vertical,
+is a simple matter of extending the Tinkerbox techniques already
+described in this chapter. First build the lines one at a time, using the
+8—input NAN D gate and inverter system. Keep track of the “formu-
+la” for each line, then reduce them to simpler NAN D-gate inputs.
+
+Next combine the vertical lines as shown in Fig. 3-6, and then
+combine the two horizontal lines in the same fashion. All that remains
+to be done at that point is to combine the two sets of parallel lines into
+one image. Figure 3—7 shows how this can be done.
+
+Figure 3-7a shows the most straightforward technique for
+combining pairs of horizontal and vertical parallel lines. The idea is to
+build the horizontal and vertical parallel lines separately as described
+in the previous section of this chapter. Then combine the two sets of
+lines by ﬁrst inverting them and then applying them to separate
+inputs of a 2-input NAN D gate. The output of that ﬁnal NAN D-gate
+stage yields the composite image.
+
+While this might be the most straightforward technique, it is not
+the most efﬁcient. It is possible to do the same job using the circuit in
+Fig. 3-7b. '
+
+To understand how the circuit in Fig. 3-7b works, let’s assume
+you have used the recipes for vertical and horizontal lines to get the
+line-generating speciﬁcations—~the combinations of inverted and
+noninverted count inputs for each of the four lines. After reducing
+these input speciﬁcations to the point where you are using the
+simplest possible input NAND gates for each line, simply connect
+the outputs of the four NAND gates to a 4-input NAND gate. You will
+ﬁnd that the output of that ﬁnal NAND-gate circuit creates an image
+identical to the output of the more complicated looking circuit in Fig.
+3-7af
+
+In fact it is possible to use the general circuit in Fig. 3—7b to
+combine any number of different lines on the screen. Simply build the
+horizontal and vertical lines separately, reduce the input NAN D gate
+circuits to their simplest form, and then connect the outputs of each
+of the line-generating NAND gates to an output NAN D gate. If the
+output NAN D gate happens to be a 7430 8-input NAND gate, it is
+possible to combine as many as eight different combinations of
+horizontal and vertical lines into one image.
+
+The circuits in Fig. 3-8 show the author’s circuits for generating
+the tic-tac-toe pattern and a full-screen border for many different
+kinds of video games. The circuits are essentially identical, the only
+difference being the spacing of the pairs of horizontal and vertical
+parallel lines. Of course it is possible to create the same patterns, but
+
+55
+

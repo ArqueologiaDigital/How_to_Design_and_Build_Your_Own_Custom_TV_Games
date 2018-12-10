@@ -1,0 +1,53 @@
+four inputs, transfer the NAND connections to one of the 4-input
+NAND gates in 1C2. The idea here is to (1) free the 8-input NAND
+gate for building another line and (2) reduce the circuit to the
+simplest possible gate conﬁguration.
+
+With the ﬁrst vertical line designed and reduced to the simplest
+possible NAN D gate circuit form, repeat the entire process for the
+second vertical line. When you are ﬁnished with this part of the
+project, you should have two separate NAND-gate circuits, one for
+each of the two vertical lines.
+
+All that remains to be done is to combine the two on the TV
+screen at the same time. Figure 3-6b shows how this is done. Simply
+connect the outputs of the two line-generating NAND gates to the
+inputs of a 2-input NAND gate. That ﬁnal NAND operation effec-
+tively combines the two line signals in a logic ORing fashion, yielding
+an image on the screen showing both of your designated vertical
+lines. Note that there are no inverters used past the line-forming
+NAND gates.
+
+While you are working with this particular parallel-line circuit,
+connect GAME VID IN to the inputs of the ﬁnal NAND-gate stage.
+You will ﬁnd that the inputs to this gate each carry one of the lines
+you built—but the image has the blacks and whites reversed. You
+will see a black vertical line on a white ﬁeld. The lesson here is that a
+NAND gate can OR together two signals if they are in an inverted
+form. This effect takes advantage of something called De Morgan’s
+theorem from basic texts on digital electronics.
+
+After you’re convinced you understand how to create parallel
+vertical lines of any relative width and spacing on the screen, draw an
+exact diagram of your ﬁnal circuits for future reference and try the
+same procedure for building pairs of horizontal lines. First build the
+lines separately, using the 8—input NAND gate and inverter, then
+transfer the circuit to smaller NAND-gate devices. Combine the two
+lines as shown in Fig. 3-6b. Refer to the Recipe for a Horizontal Line
+or Bar as necessary.
+
+Building lntersecting Horizontal and Vertical Lines
+
+The Line/Bar Tinkerbox assembly can be used for creating
+intersecting horizontal and vertical lines. Suppose, for example, the
+experimenter wants to build a tic-tac-toe pattern on the screen. This
+is essentially a pair of vertical and a pair of horizontal parallel lines
+combined into one picture. And if the lines are ﬁxed at the extreme
+
+edges of the screen, it appears they are creating a border for many
+different kinds of TV games.
+
+54
+
+ 
+

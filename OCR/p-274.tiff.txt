@@ -1,0 +1,58 @@
+dent of its primary counterpart until an ATRST pulse occurs. The
+ATRST pulse resets the ﬂip-ﬂop and returns FIRE to logic 1,
+thereby superimposing the AT ﬁgure onto the AC ﬁgure.
+
+The block diagram in Fig. 7-15c represents the game logic
+portion of the system. Studying this block diagram in conjunction
+with the two previous block diagrams and the ﬂow chart in Fig. 7-10
+should lead to a good understanding of what this part of the system
+does.
+
+The target ﬁgure, located in the lower right-hand corner of the
+screen, is ﬁxed by a set of H- and V-count inputs from the Sourcebox
+unit. An inverted version of the target image is then directed to the
+AT=TARG logic block which generates a set of pulses whenever
+the attack craft ﬁgure (AFT) touches the target ﬁgure.
+
+Whenever AT=TAGR in this fashion, the logic block sets the
+target ﬂash time to indicate a score for the aggressor. The target
+image is ﬂashed at a rate determined by the TARG FLASH block and
+for an interval ﬁxed by TARG FLASH TIME.
+
+At the end of the target ﬂashing time, a pulse generator pro-
+duces a pulse that resets the attack-torpedo image back to the
+attack-craft image ——wherever it might be at the time.
+
+ED GEZ is not displayed on the screen, but it plays a vital role in
+the game. Recall that EDGEZ is deﬁned as the top, bottom, and
+right-hand edge of the screen. The EDGEZ logic block generates
+this set of invisible boundaries from VBLAN K (top and bottom) and
+HRST (right-hand edge).
+
+AT=EDGE2 LOGIC compares EDGEZ with ATFIG.
+Whenever they coincide, indicating the attack torpedo is running out
+of bounds, this block generates a pulse that ultimately resets the
+position of the attack torpedo back to the attack-craft ﬁgure.
+
+The EDGEl LOGIC block uses VBLANK to deﬁne the invisi~
+ble top and bottom boundaries. Whenever the attack-craft ﬁgure
+(ACFIG) touches one of these two boundaries, the AC=EDGE1
+LOGIC block generates a pulse that initiates a ﬂashing time for the
+attack-craft image. This represents a default score for the defensive
+player. The aggressor has run his craft out of bounds.
+
+The attack-craft ﬁgure is also ﬂashed whenever the AC =TARG
+block senses contact between the attack craft and the target. Again,
+this represents a default score for the defensive player.
+
+And ﬁnally, the attack-craft ﬁgure is ﬂashed when AC=DT (a
+defense torpedo strikes the attack craft). The AC=DT LOGIC block
+takes care of this operation.
+
+The AC FLASH TIME is thus set under any one of three
+conditions: AC=EDGE1, AC=TARG, and AC=DT. All three in-
+
+274
+
+ 
+
