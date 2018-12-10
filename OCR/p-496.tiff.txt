@@ -1,0 +1,79 @@
+ 
+
+ 
+
+ 
+
+ 
+
+V-COUNT FREQUENCY
+OUTPUT ( Hz)
+
+1 V 7893
+2V 3945
+4V 1 973
+8V 987
+16V 493
+32V 247
+64V 123
+1 28V 62
+256V 62
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 12-1. Approximate frequencies from V-count sources.
+
+level for a period of time determined by the product of 1.1 times the
+values of R3 and C2.
+
+Setting the pin—3 output of the 555 to logic 1 in this fashion opens
+the 2—input NAN D gate, allowing the 4V signal to pass through to the
+audio ampliﬁer in the Sourcebox unit. The player thus hears a 1973-
+Hz tone which, in this particular case, lasts about 110 ms. The sound
+is very much like that of a table-tennis ball hitting a paddle.
+
+Of course the tone duration can be modiﬁed by altering the
+values of R3 and C2, and the tone frequency can be changed by
+selecting a different V-count input.
+
+The circuit is perfectly compatible with any of the video games
+that include a ﬁgure-contact operation. Most of these operations
+generate a negative-going pulse that can be connected to the timer
+through C1. R1 and S can be normally omitted in such cases.
+
+This circuit can also be connected to the SWING pushbutton on
+the Golf game (Chapter 8). The effect is a “plink” sound every time
+the player hits the ball.
+
+Connect this circuit to the HIT terminal in the Pinball game
+(Chapter 10), and you will hear the “plink” sound every time the ball
+rebounds from one of the barriers or paddles.
+
+It is sometimes desirable to generate more than one “plink”
+frequency in a game. Suppose, for example, you want two different
+sounds of this sort, each switched on by a different event on the
+screen. Figure 12-3 shows how this can be done.
+
+Basically, the circuit ORs together the tones from the two
+“plink” circuits. The occurrence of event A switches on IC l-A, and
+allows the 4V frequency to pass through IC2—A and ICZ-B to the
+audio ampliﬁer in the Sourcebox unit. By the same token, the
+occurrence of event B switches ICl-B to its active state, allowing
+the 8V frequency to pass to the audio ampliﬁer.
+
+496
+
+ 
+

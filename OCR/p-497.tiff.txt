@@ -1,0 +1,87 @@
+In this particular example, event A causes the player to hear a
+1973-Hz tone that lasts only about 0. 1 second. Event B, on the other
+'hand, causes a 987 -Hz tone that lasts about 0.25 second. The overall
+effect is a higher-pitched and shorter “plink” sound for event A, and a
+lower-pitched and longer “ploonk” sound for event B.
+
+Again, any of the timing values for the monostables and the
+V-inputs can be altered to suit your own needs.
+
+Replacing ICZ-B, the output that effectively ORs together the
+different tones, with a 4—input NAND gate allows the circuit to
+respond to four different kinds of events calling for an equal number
+of different tones and tone durations.
+
+Deedie-Deedle Sounds
+
+Space games and ray guns call for weird little sounds that cannot
+be easily generated from single V—count sources. They can be
+created, however, by rapidly alternating between two different tone
+sources. See the example in Fig. 12-4.
+
+ICl-A in Fig. 12- 4 is connected as a free-running multivibrator
+having a frequency ﬁxed by the values of R2, R3, and C2. In this
+particular case, the frequency is on the order of 4 Hz. This circuit
+determines the “deedle-deedle” rate.
+
+The output of ICl-A alternately gates on IC2—C and ICZ-B.
+Whenever the output of IC1-A is at logic 1, ICZ-C is gated on,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++5v
+- ’i“ 4v
+R1 R2 1N914 R3 V4'7400
+22K 22K 1M
+C1 4 8
+2 3 TO AUDIO
+.1MF IN
+5 555 5
+ei 7
+1 02 __
+.1p.F ”N
+TONE DURATION = 1.1 R302
+/7 7
+
+ 
+
+ 
+
+ 
+
+Fig. 12-2. Experimental circuit for gating V-count tones on and off.
+
+497
+
+ 
+

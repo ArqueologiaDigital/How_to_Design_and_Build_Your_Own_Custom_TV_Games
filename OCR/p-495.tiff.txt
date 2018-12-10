@@ -1,0 +1,38 @@
+Chapter 12
+Sound Effects
+
+ 
+
+Most commercial video games feature some interesting sound ef-
+fects. Such effects are rarely a vital part of the games, themselves,
+but they add to the fun of the whole thing.
+
+Rather than presenting a wide variety of sound-generating
+circuits that have speciﬁc applications, this chapter shows how
+certain classes of sounds can be generated, leaving it to the know-
+how and imagination of the experimenter to apply them as desired.
+
+TUNES FROM THE V-COUNT SIGNALS
+
+Figure 12-1 lists some of the frequencies in the audio range that
+are available directly from the V-count outputs of the Sourcebox
+unit. These tones are available continuously as long as the Source-
+box unit is turned on. To get a good idea how these signals sound,
+connect any one of them directly to the AUDIO IN pin on the
+Sourcebox, adjusting the volume control for a comfortable listening
+level.
+
+Steady tones are rarely useful for video games, however, so
+there must be some provisions for switching them on and off at the
+appropriate times. Figure 12—2 shows an experimental breadboard
+circuit for controlling the tone from a negative-going control pulse.
+
+The circuit in Fig. 12—2 is basically a monostable multivibrator
+built around a 555-type timer. Whenever switch 8 is depressed, a
+short negative-going pulse is coupled through C1 to the trigger input
+of the monostable circuit. Its output from pin 3 then goes to a logic-1
+
+495
+
+ 
+

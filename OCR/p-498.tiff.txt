@@ -1,0 +1,98 @@
+ 
+
+4V
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+R1 R2
+22K D1 >1 1M 14
+EVENT Ci 4 14 ‘ 1 3
+1;} s 5 2
+1,uF _
+IC1_A 1-—1 ICZA
+2
+_ 02
+.1p.F
+:1; L: 6
+Icz-s AUDIO
+8V
+R3
+R4
+22K D2 '—1 W L-
+EVENT C3 10 8
+B a 10
+1]— 1MP 13 7 IC2-C
+|Ci-B12
+c4
+
+ 
+
+ 
+
+ 
+
+7 .22[J.F
+IC1—556 DUAL TIMER
+
+lCZ—7400 QUAD 2-INPUT NAND
+D1, 2—1 N914 OR EQUIV
+
+ 
+
+ 
+
+ 
+
+Fig. 12-3. Circuit for combining V-count tones from two different sources.
+
+thereby allowing the 4V frequency to pass. The inverter action of
+ICZ-A, however, transforms the logic 1 from ICl-A to a zero level
+that gates off ICZ—B. Whenever IC1-A switches to its 0 output state,
+the situation is reversed: ICZ—B is gated on to allow the 8V signal to
+pass and ICZ—C is gated off.
+
+Neither of these frequencies appears at the AUDIO output of
+the circuit unless IC3-A is gated on by a logic-1 level at its pin—2
+input. And that signal comes from IC1-B.
+
+ICl-B is connected as a monostable multivibrator that is set to
+its timing state only when the desired triggering event occurs.
+Maybe this event occurs when the player depresses the trigger on
+some sort of ray gun. In any event, a negative-going pulse at C1
+starts the timing action of ICl-B and allows the “deedle-deedle”
+sounds to pass through IC3-A to the audio ampliﬁer.
+
+498
+
+ 
+

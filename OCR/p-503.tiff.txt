@@ -1,0 +1,106 @@
+The basic D/A converter is made up of a resistor~ladder net—
+work. Two of them are shown in Fig. 12—7. The larger circuit in Fig.
+12-7a can accept an 8-bit digital word at inputs P0 through P7, while
+the simpler one in Fig. 12-7b can be used with 4-bit digital words.
+
+In either case, the voltage appearing at the junction of R3 and
+R4 is proportional to the value of the binary number applied to the P
+inputs. That voltage level is then used to set the frequency of a
+555-type free-running multivibrator. The TONE input to the 555
+oscillator is used for gating the sound on and off. When this input is at
+logic 1, the tones appear at the AUDIO output connection. Setting
+that TONE input to logic 0, however, silences the circuit.
+
+The values of R1, R2, and C1 determine the range of frequen—
+cies available from the circuit. The larger these values, the lower the
+tones. The P inputs to the ladder network then determine the
+frequency within that selected range that will appear at the AUDIO
+terminal. While the analog voltage to the CV input of the 555 timer is
+proportional to the size of the binary number applied to the P inputs,
+it turns out that the selected frequency is inversely proportional to
+the binary number. The larger the number, the lower the audio tone.
+
+So if the eight P inputs in Fig. 12-7a are connected to the
+outputs of an 8-bit binary counter, the tone sweeps downward when
+the counter is counting upward, and the tone sweeps upward when
+the counter is counting downward. Figure 12-8 shows a rather
+simple circuit for experimenting with the tone generator. The out-
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+P0 P1 P2 P3 P4 P5P6 P7
+T I ll ll II II
+3267I16 326716
+4—0 74191 13 4: 74191
+vnsr) 14> 14>
+(OR OTHER
+V-COUNT 5 8- 5 8
+SIGNAL)
+/\
+SDIR Nb
+1=DN
+0=UP
+
+ 
+
+ 
+
+ 
+
+Fig. 12-8. An 8-bit counter for generating whistle effects from the circuit in Fig.
+12-7a.
+
+503
+
+ 
+

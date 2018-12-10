@@ -1,0 +1,97 @@
+The circuit in Fig. 12-6b can create the sound of machine gun
+ﬁre. In this instance the noise signal is gated on and off by a
+free-running multivibrator. As long as the FIRE input is at the logic-1
+level, this oscillator runs at about 4 Hz, gating the NAN D gate on and
+off, ultimately producing a string of staccato-like noise bursts. The
+ﬁring rate can be adjusted by changing the values of R1 or R2, or
+both.
+
+Another source of game sounds takes advantage of a simple
+digital-to—analog (D/ A) converter circuit. The idea is to translate any
+source of digital words into a voltage level, and then use that voltage
+level to create tones of various frequencies. Such a scheme is useful
+for generating buzzing sounds that vary in pitch with the speed of a
+ﬁgure moving on the screen or whistling sounds for falling bombs.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1/4-74OO
+a ﬁDD—m
+7 4s
+NOISE
+A __c
+.1 F
+1 p—J p.
+/7 7
++5v ——
+8 £30K
+1A7400
+
+ 
+
+ 
+
+555 AUDIO
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++
+1 T 1p.F
+
+/77
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 12—6. Circuits for controlling noise sounds. (a) Single gunshots or explo-
+sions. (b) Machine gun effects.
+
+501
+
+ 
+

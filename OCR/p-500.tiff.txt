@@ -1,0 +1,56 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Q1. 2——ANY LOW-POWER NPN
+AUDIO TRANSISTOR
+
+Q3, 4—ANY LOW- OR MEDIUM-POWER
+PNP AUDIO TRANSISTOR
+
+ 
+
+ 
+
+i
+Fig. 12—5. A basic noise generator for explosion effects.
+
+emitter—base junction of Q1. The breakdown current is controlled at
+a safe level by resistor R1. The collector on that same transistor is
+not used. But the noise it generates can be ampliﬁed by Q2, and then
+further ampliﬁed and adjusted to TTL logic levels by Q3 and Q4.
+
+Since this circuit generates the noise continuously, its output
+must be applied to a control circuit to give the impression of explo-
+sions or gunﬁre. The circuits in Fig. 12- 6 illustrate two kinds of noise
+controls.
+
+The circuit in Fig. 12-6a uses a simple monostable multivibrator
+circuit to control the on-time of the noise signal fed to the audio
+ampliﬁer. The monostable is set to its active timing mode whenever
+the SHOOT input experiences a brief negative-going pulse. The
+positive- -going timing pulse from pin 3 of the 555 then gates on the
+
+- NAN D gate, allowing the noise signal to pass to the audio ampliﬁer in
+the Sourcebox unit.
+
+The monostable remains in its active condition for a period of
+time determined by the values of R2 and C2. In this particular
+instance the timing is set for about 0.1 second, giving the impression
+of a single gunshot each time a negative-going pulse appears at the
+SHOOT input.
+
+The duration of the explosion sound can be lengthened by
+increasing the value of R2, thereby giving the impression of a bomb
+exploding.
+
+500
+
+ 
+

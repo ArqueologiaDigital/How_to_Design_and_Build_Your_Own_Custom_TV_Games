@@ -1,0 +1,20 @@
+puts of the 74191 counters interface directly with the P inputs of the
+circuit in Fig. 12—7a.
+
+It is possible to generate a lot of interesting sounds by combin-
+ing the circuits in Fig. 12-7a and 12—8. It is left to the experimenter to
+play with the circuit and come up with sounds that seem fun and
+useful for custom TV games.
+
+The smaller D/A converter in Fig. 12-7b is especially useful for
+translating the 4-bit VC or HC inputs to a slipping-counter circuit into
+audio tones. Simply replace the larger resistor network in Fig. 12-7:
+with the simpler one in Fig. 12-7 b, and then connect the four P inputs
+to the VC or HC terminals of a slipping-counter control. Adjust the
+values of R1 and C1 to get the range of frequencies that seem most
+appropriate for the game scheme.
+
+504
+
+ 
+
