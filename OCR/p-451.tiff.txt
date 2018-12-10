@@ -1,0 +1,39 @@
+Chapter 11
+Animation and
+Rotation of Complex Figures
+
+ 
+
+Figure animation and rotation belong to a class of special effects that
+is seldom critical to the operation of a Video game system. These
+effects can, however, lend a special touch of interest that heightens
+the players’ sense of reality.
+
+The circuits suggested in this chapter can actually be applied
+without reference to any particular game. Most experimenters will
+agree that building the complex ﬁgures in Chapter 4 offered a unique
+opportunity to create some fascinating images on the screen. Now
+there is the chance to add-the dimension of motion, animation and
+rotation, to them.
+
+Figure rotation is a special class of motion calling for rotating the
+ﬁgure on the screen about an imaginary axis extending at right angles
+to the plane of the screen—in and out of the screen. One of the more
+common ﬁgure rotation effects can be found in connection with a
+popular commercial combat game where two tanks chase each other
+around the screen. The tank ﬁgure moves only in a forward direc-
+tion; the player has the ability to rotate the ﬁgure, making it possible
+to move it in virtually any direction.
+
+This ﬁgure—rotation feature is actually a form of animation, but
+as demonstrated later in this chapter, it is a form of ﬁgure animation
+and motion that calls for an unusually high degree of system planning.
+
+An experimenter cannot hope to master the fundamentals of
+ﬁgure animation and rotation without first getting a complete under—
+standing of how complex ﬁgures are built in a matrix format. Readers
+
+451
+
+ 
+

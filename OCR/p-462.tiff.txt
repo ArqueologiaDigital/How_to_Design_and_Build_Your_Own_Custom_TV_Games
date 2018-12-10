@@ -1,0 +1,63 @@
+There is some ﬁgure distortion introduced in these images, but
+it turns out that the distortion is far more apparent when viewing the
+static frames than when they are in motion on the screen.
+
+The approach to designing a circuit for this animation sequence
+is identical to that of the 4-frame walking sequence described earﬁor
+in this chapter:
+
+1. Draw the basic ﬁgure sequence in standard matrix formats
+(Fig. 11-5).
+
+2. Reduce the number of images, if possible, by noting
+whether any are simple mirror images of others.
+
+3. Assign logic levels to_the nonextended portion of the mat-
+rices, using an X or X to indicate the third-order H-count
+(Fig. 11-6a).
+
+4. Note any D inputs that show identical combinations of
+
+inputs through all the frames (Fig. 11-6b).
+
+Prepare a truth table for each class of D inputs (Fig. 11-6c).
+
+Devise logic circuits for solving the truth table.
+
+Complete the circuit design and assign H- and V-count
+
+.- parameters for ﬁgure size and position on the screen (Fig.
+11-7).
+
+It can be seen from the drawings in Fig. 11-5 that half the
+ﬁgures are mirror images of others. Frame 8, for instance, is a
+vertical mirror image of frame 1, and so are frames 7 and 2, 6 and 3,
+and 5 and 4. There are thus only four unique frames to be generated
+by an 8 x8 extended matrix generator. The mirror-image frames are
+generated from the same data circuitry, but with the H-count ad—
+dresses running backward instead of forward.
+
+Figure 11-6a shows the logic levels assigned to the matrix
+generator’s D inputs for the four basic frames, while the equations in
+Fig. 11-6b show those D inputs that are the same.
+
+Figure 11-6c summarizes the representative D inputs that
+require something other than constant 0, 1, or X. It shows, in other
+words, those D inputs calling for some sort of logic manipulation
+between the four basic frames.
+
+Now it is time to appreciate the operation of the dual 2-line-te-
+4—line decoder described in Fig. 11-1. Note the sequence in Fig.
+11~6c for D0, D8, D16, and D24. Grouping them together yields a
+pattern of logic levels that closely resembles the truth tables in Fig.
+11-1. These D inputs to the matrix generator can be derived directly
+from a 4-line decoder by applying B0 and B1 to the select inputs, A
+and B respectively, feeding the four 2Y outputs through inverters,
+and applying X to the C2 input. See this done with IC3—A in Fig. 11-7.
+
+>199“
+
+462
+
+ 
+

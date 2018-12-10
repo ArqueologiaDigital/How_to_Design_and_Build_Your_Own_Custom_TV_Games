@@ -1,0 +1,98 @@
+A further study of the table in Fig. 11-6c shows a decoder-type
+pattern for D22, D23, D15, and D6. In this instance, a single X
+appears in the company of three 0s, and the pattern is that achieved
+by inverting the outputs of the lY decoder section in Fig. 11—1. So
+applying the X input to pin 1 of IC3-B, selecting with B0 and BI, and
+inverting the outputs of that particular decoder section yields the
+information required for D22, D23, D15, and D6.
+
+A single dual-decoder package, 1C3, is thus capable of generat-
+ing programmable data inputs for 12 cells in the animation matrices.
+Completing the work speciﬁed in Fig. 11-6c is then a matter of
+manipulating the logic levels already available.
+
+ 
+
+ 
+
+ 
+
+PosmON A
+
+1
+2
+3
+4
+
+U
+
+S
+xooxaooo oxcxxlxoo ooxxxoxlo oooxooox| FRAME
+ooox-><loo xooxxoxlo oxxxxooxloooxoooo FRAME
+oooxax|oc oooxxoxlxixxoxxooo ooxxoooo FRAME
+oooxdx|><|><|ooo><><ooo oooxxooo xxxxoooo FRAME
+
+ 
+
+B DO=D9=D18
+o1=02=Ds=oio=ozi=029=oao=o
+D4=D11=D12=D19=DZO=DZS=X
+
+ 
+
+ 
+
+‘0‘” mehwmao
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+18 C 8180 Do050608D13014D15016017022023024026
+19 FHAMEiooioooxooogxoog
+20 FRAM5201ooonxogggoxogg
+21 FRAME31ooxoooxxxxoo_o_§
+22 FRAME411OXXOOOOOOOOXX
+23
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11—6. Truth-table analysis of the 8—frame animation sequence in Fig. 11-5.
+(a) D-input programming for primary frames 1, 2, 3 and 4. (b) Summary of
+equations showing data inputs having identical programming for all four primary
+frames. (c) Simplified truth table for the matrix D-input programming.
+
+464
+
+ 
+

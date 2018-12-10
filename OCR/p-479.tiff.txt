@@ -1,0 +1,55 @@
+The circuit in Fig. 11-15, derived from the rationale in Fig.
+11-14, can be considered a universal 90° rotator for 8 x 8 matrix
+ﬁgures. The circuit calls for six 4:1 multiplexers, each feeding the
+appropriate data to a select input on the matrix generator. The
+circuit satisﬁes the truth table in Fig. 11-15, and that table is based
+on the data derived from the basic 8 x 8, 90° shifting requirements
+in Fig. 1144.
+
+So much for the basic 8 X 8 90° shifter. Now consider how it
+can be combined with an animation sequence to rotate the ﬁgure of a
+tank on the screen.
+
+Figure 11-16 shows a tank ﬁgure built within an 8 X 8 extended
+matrix. This is a 4-frame animation sequence that can be program-
+med at the D inputs of the matrix generator in Fig. 4—17.
+
+Frame 1 shows the tank in its basic 0° position. This is probably
+the best tank ﬁgure that can be constructed within an 8 x 8 matrix.
+Frame 2 then shows the tank ﬁgure rotated clockwise by 22. 5°. The
+image is terribly distorted, but it is the best we can do with a 64-ce11
+matrix. And besides, the distortion really doesn’t seem so bad to
+players lost in the action of a video game.
+
+Frame 3 then shows the tank ﬁgure rotated to 45°, an additional
+22.5° from that in frame 2. The distortion is somewhat less objec-
+tionable in this case. _
+
+And ﬁnally, frame 4 shows the same ﬁgure rotated to 67.5°.
+
+The scheme involves a total of four unique animation frames.
+There is no way any one of these frames can be derived from another
+by performing any sort of shifting operation. It is possible, however,
+to generate 12 additional frames by rotating each of them through a
+complete sequence of 90° intervals. If frame 1 is rotated 90°, for
+instance, the impression is that of a tank ﬁgure pointing to the right.
+Another 90° shift on that same frame yields a total of 180°, thereby
+making the tank ﬁgure point toward the bottom of the screen. Yet
+another 90° shift transforms frame 1 into a tank ﬁgure pointing to the
+left (a total of 270° angular shift).
+
+This 90°—shifting sequence can be applied to any one of the four
+basic frames, producing a total of 16 tank images, images giving the
+impression of a full 360° rotation at 22.5° increments.
+
+Before carrying the discussion of 90° shifting any further, it is
+necessary to work out the circuit for generating the four frames in
+Fig. 11-16. This is done using the same procedures outlined in the
+ﬁrst part of this chapter. The data resulting from this procedure is
+summarized in the tables in Fig. 11-17. Figure 11-18 then shows the
+appropriate circuitry.
+
+479
+
+ 
+

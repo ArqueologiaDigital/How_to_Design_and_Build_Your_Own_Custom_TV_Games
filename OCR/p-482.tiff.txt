@@ -1,0 +1,41 @@
+ 
+
+ 
+
+. 0° V 225°
+FRAME1 FRAME2
+
+   
+
+45° ‘ V} 1 675°
+FRAMES FRAME4
+
+ 
+
+ 
+
+ 
+
+Fig. 11-16. Fourcritlcal frames for rotating a tank figure at 22.5-degree intervals.
+
+There should be no reason to explain the derivation of the
+circuit in Fig. 11-18 in great detail because it follows the principles
+already outlined for a 4—frame animation sequence.
+
+What is most important here is to combine the 8 x 8 90°,shift-
+ing circuit (Fig. 11-15) with the 4-frame animation generator (Fig.
+11-18) with the 8 X 8 extended matrix generator in Fig. 4—17.
+Figure 11-19 shows how these circuits are combined. If the scheme
+is combined with the control circuit in Fig. 11-20, the result is a tiny
+8H x 8V tank ﬁgure that can be rotated into any one of 16 positions,
+in a direction set by the logic level at the DIR input, and at a rate
+determined by the setting of the RATE control.
+
+Any custom-designed ﬁgure can be worked into this circuit.
+The 90° rotator circuit never changes. Only the D-input program—
+ming changes. Of course the Whole system can be systematically
+
+482
+
+ 
+

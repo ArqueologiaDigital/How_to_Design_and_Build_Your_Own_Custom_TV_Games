@@ -1,0 +1,57 @@
+who feel they are not prepared to design animated ﬁgures would do
+well to study the principles outlined in Chapter 4 once again.
+
+FIGURE ANIMATION
+
+The basic idea behind ﬁgure animation (and rotation as well) is
+to present a series of ﬁgures on the screen in a fashion that creates
+the illusion of motion. The scheme might consist of four different
+complex ﬁgures, each differing from the others in some peculiar
+way. And when they are ﬂashed onto the screen in a relatively rapid
+sequence, the observer gets the impression of motion or animation.
+
+The idea is identical to ﬁlmed animation. In this video situation,
+however, the length and complexity of the animated sequence is
+necessarily limited by the cost and complexity of the circuitry in-
+volved.
+
+So the following discussion presents the basic formula for
+generating a simple animated sequence. While the examples are
+kept on a rather simple level, the basic scheme can be extended
+indeﬁnitely, or at least as far as time, money, and patience can carry
+it.
+
+One of the principle IC devices required for generating an
+animated sequence is a dual 1-line-to-4-line decoder, 74155. This
+particular device has been speciﬁed in earlier game systems, but it is
+not important to understand its modes of operation in greater detail.
+
+Figure 11-1 shows the 74155 device, ﬁrst in a functional block
+diagram form (Fig. 11-1a), then the pinout (Fig. 11-2b), and ﬁnally in
+a truth-table form (Fig. 11-1c).
+
+The device is divided into two separate sections as shown in
+Fig. 11-13. As illustrated in the truth tables, any logic level present
+at a C input is delivered to one of the four outputs of each section,
+depending on the status of select inputs A and B.
+
+Suppose, for example, A=0 and B21. This select status
+selects output Y2 for both sections, delivering an inverted version of
+C1 to output 1Y2 and a noninverted version to output 2Y2. A given C
+input can appear at one, and only one, of its respective Y outputs.
+
+Setting one of the G inputs to logic 1 effectively turns off the
+device, causing all Y outputs for that section to take on a logic-1
+condition, regardless of the status of the C input.
+
+As clearly shown in the sections that follow, this decoder device
+plays a vital role in altering the data directed to the matrix—generating
+schemes already presented in Chapter 4.
+
+Figure 11—2 shows a simple 4-frame animation sequence. The
+ﬁgure in this case is that of a man walking into or out of the plane of
+
+452
+
+ 
+

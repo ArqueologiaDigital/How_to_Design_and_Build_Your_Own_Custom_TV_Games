@@ -1,0 +1,22 @@
+The general procedure is to determine the sine and cosine of
+the angles, then use the table in Fig. 7 ~22 to find the closest possible
+velocities for each. The sine of the angle determines the vertical
+velocity, while the cosine determines the horizontal velocity.
+
+Table 11-21b shows the results of this translation process,
+assuming it will be carried out by means of a set of multiplexer
+circuits.
+
+The resulting circuit diagram for the angle-to-motion translator
+is shown in Fig. 11-22. Figure 11-23 shows how the translator
+interfaces with the 8 X 8 rotatable ﬁgure and a slipping-counter
+board.
+
+A similar approach using universal position programmers
+(Chapter 8) would provide a much wider range of ﬁgure speeds, but
+only at the cost of greater circuit complexity.
+
+493
+
+ 
+

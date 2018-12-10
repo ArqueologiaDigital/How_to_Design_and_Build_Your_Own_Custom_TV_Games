@@ -1,0 +1,111 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(n ,_ (o ,_
+A 5 m3 5 NE
+a. 22 o. 22
+z a; a e:
+D LLLL O LLLL
+0 00 16 00
+1x0 17 01
+2 0X 1811
+311 19 Y?
+411 20 2‘)?
+5 00 2111
+6 X0 22 00
+7 0X 23 oo
+8 00 24 oo
+9 00 2513?
+10 XX 26 x0
+1111 27 RR
+1211 28 XX
+13 xx 29 xx
+14 oo 30 .1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+B D0=05=DB=D9=014=D15=D16=D22=DZ3=D24=D31=0
+Dt=DS=D26
+
+D2=D7
+
+D3=D4=D11=D12=018=D21=DBO=1
+
+D10=D13=D29
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+D17
+019=D20=027=D28
+025
+
+C BO 00010203010017019025
+FRAME10 oxo1x o 71
+FRAME2100X1X17X
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-3. Truth-table analysis of the 4'-frame animation sequence in Fig. 11 -2.
+(a) D-input programming for frames 1 and 2. (b) Equations showing data inputs
+having identical programming for both primary frames. (0) simplified truth table
+for matrix D-input programming.
+
+when B0 is changed to logic 1, input D2 to the matrix generator
+should be changed to X.
+
+Making this step calls for a rather experienced outlook on digital
+logic design. The procedures are rather straight-forward for experi-
+
+457
+
+ 
+

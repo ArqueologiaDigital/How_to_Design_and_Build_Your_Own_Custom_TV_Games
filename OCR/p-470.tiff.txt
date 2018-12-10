@@ -1,0 +1,56 @@
+FIGURE ROTATION
+
+Being able to move a ﬁgure around on the screen is one matter,
+but making it appear to turn in the direction of motion is something
+else. There are a number of popular TV games on the market today
+that feature such rotation effects—an airplane that always turns in
+the direction of its motion; a tank ﬁgure that rotates and moves in any
+direction, but always forward; or a gun that can be rotated and aimed
+in any direction.
+
+Figure rotation is a special case of ﬁgure animation, but it calls
+for even closer preliminary analysis and greater patience and insight
+with the circuit design.
+
+Figure 11-8 shows an extremely simple, almost trivial, example
+of ﬁgure rotation. The image in this case is one that might be
+described as an X ﬁgure on a black ﬁeld. The basic position is
+represented by frame 1, while frames 2 and 3 show the same ﬁgure
+rotated clockwise 30° and 60° respectively. A further rotation of 30°
+would carry it to a total rotation of 90°; but since this is a completely
+symmetrical ﬁgure, the 90° rotation looks exactly like frame 1.
+
+The appearance of rotation for this simple ﬁgure is thus possible
+with three different frames, and those three frames can be gener-
+ated by a 4 x 4 matrix generator, such as the one shown in Fig. 4-5.
+The D inputs for each frame are speciﬁed below the drawings. And in
+keeping with the animation processes outlined in the ﬁrst part of this
+chapter, Figs. 11-8b and 11-80 show the truth tables and equalities
+required for designing the appropriate D-programming circuitry.
+
+D0, D1, and D2 appear in Fig. 11-8b to be inverted outputs
+from a 2-line-to-4-line decoder. And indeed they can be generated
+that way. See 1C3 and 1C4 in Fig. 11-9. Input D5 is simply logic 1. So
+it, along with the four others equal to it, is connected directly to a
++5V source.
+
+These steps complete the D-input programming. All that re-
+mains is to apply the select and windowing inputs. Using the speciﬁ-
+cations in Fig. 11-9, the little ﬁgure measures 32H x 32V and is
+located just below and right of the center of the screen.
+
+As the experimenter adjusts the frequency of the 555-type
+astable multivibrator, 1C1, the 3-count counter (ICZ) generates the
+sequence 00, 01, 10, 00, 01...at a variable rate. The overall impres-
+sion is that the figure rotates clockwise on the screen. The faster the
+multivibrator runs, the faster the ﬁgure appears to rotate.
+
+The Importance of 90°-lncrement Rotation
+
+The matter of rotating complex, nonsymmetrical ﬁgures calls
+for some techniques that aren’t required for the simpler forms of
+
+470
+
+ 
+

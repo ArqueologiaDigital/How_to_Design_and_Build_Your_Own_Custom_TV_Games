@@ -1,0 +1,53 @@
+inverting operation between D2 and D25, and that is performed by
+IC3-D.
+
+Finally, it can be seen from Fig. 11-3c that D17 is equal to B0.
+50 the ﬁnal D connection is one where the B0 output of IC2—A is
+connected directly to the D17 input of the matrix generator.
+
+The circuit as described to this point is capable of distinguishing
+frames 1 and 2. What remains is the procedure for inverting the
+direction of horizontal counting in order to produce the mirror
+images for frames 3 and 4. This is accomplished by inverting the
+H-count inputs to select lines SO, 81, and 82 while Blzl. And it is a
+simple matter of running these H-count levels through EXCLUSIVE
+OR gates, IC4—A through IC4-C. Whether these select lines count
+forward or in reverse depend on the logic level from IC2-B, counting
+forward while B1=0 (frames 1 and 2) and counting in reverse while
+B1=1 (frames 2 and 3).
+
+The 2-bit binary counter composed of IC2-A and IC2-B thus
+generates a sequence of four binary numbers, each representing one
+of the four frames in the animation sequence. The rate of counting is
+ﬁxed by the SSS-type astable multivibrator, IC-l. Adjusting the
+RATE control sets the animation rate.
+
+The H—count speciﬁcations shown in Fig. 11-4 generate a ﬁgure
+that is 32H x 32V in size. The recommended window inputs set the
+position of the ﬁgure near the lower right—hand corner of the screen.
+Of course all these H- and V—count signals can come from a slipping
+counter circuit, thereby making it possible to move the animated
+ﬁgure around the screen while it is going through its walking mo-
+tions.
+
+The RUN/STOP input to 101 gives the experimenter the
+option of ﬁxing the figure in its frame-1 position, while the
+BLAN K/UN BLAN K input to the matrix generator allows the entire
+ﬁgure to be blanked from the screen.
+
+This particular animation sequence does not call for an applica-
+tion of the 2-line-to-4—line decoder described in Fig. 11-1. Before
+leaving this discussion of ﬁgure animation, we should look at a
+somewhat more complicated case where this circuit becomes a
+valuable asset.
+
+Figure 11—5 shows an 8-frame animation sequence. The object
+in this case is a tereter-totter on a pedestal. Ultimately the eight
+frames will be ﬂashed onto the screen in rapid sequence, giving the
+visual impression of a teeter-totter action (an action, incidentally,
+that is part of a very popular coin-operated TV game).
+
+459
+
+ 
+

@@ -1,0 +1,101 @@
+Now if the ﬁgure is going to rotate in 45° steps, it follows that
+the sequence will use eight animation frames: 0°, 45°, 90°, 135°,
+180°, 225°, and 315°. An additional 45° rotation carries the ﬁgure
+back to its original 0° position. See the sequence in Fig. 11-10.
+
+From the foregoing discussion of animation sequences, it might
+be assumed that one doesn’t need eight different sets of D-input
+matrix programs to accomplish this rotation effect. The 180° ﬁgure,
+for instance, is a vertical reﬂection of the 0° ﬁgure, the 270° ﬁgure is
+a horizontal reﬂection of the 90° one, the 135° ﬁgure is a vertical
+reﬂection of the 45° version, and ﬁnally the 315° image can be
+derived by a vertical reﬂection of the 225° ﬁgure. The eight ﬁgures
+can thus be obtained by performing either a horizontal— or vertical-
+reﬂection operation on just four of them. It would be possible to
+generate this sequence by establishing a D-input matrix program for
+four of them, then reversing the direction of horizontal or vertical
+counting to get the other four.
+
+That’s not too bad. But notice how coarse the rotation effect
+would be. The player would not see anything resembling a smooth
+rotation. The figure would appear to snap around in 45° intervals.
+And overcoming that problem is a matter of rotating the ﬁgure in
+ﬁner angular increments.
+
+So let’s suppose. you try rotating a complex ﬁgure in 22V2°
+increments, cutting the minimum angular increment in half. Does
+this double the number of images in the animation/rotation se-
+quence? No, it quadruples the number of ﬁgures, apparently making
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0° 45° 1 80° 225°
+____.___. d—G—
+900 135° 270° 315°
+
+ 
+
+ 
+
+ 
+
+Fig. 1 1-10. Deﬁnitions of rotation through 360 degrees at 45-degree increments.
+
+473
+
+ 
+

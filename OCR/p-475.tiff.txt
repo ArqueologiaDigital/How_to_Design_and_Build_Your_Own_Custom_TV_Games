@@ -1,0 +1,86 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0001 02 03 30 20 1o 00
+10111213 31211101
+20 21 22 23 32 2212 02
+30 31 32 33 33 2313 03
+0° 90°
+SO=H0 so=v0
+s1 :H1}H FORWARD S1=V1}VFORWARD
+52 = V°}v FORWARD 32 =3 H REVERSE
+$3 2 V1 33 = H1
+33 32 31 30 0313 23 33
+23 22 21 20 02 12 22 32
+13121110 01112131
+03020100 001020 so
+130° 270°
+so =F1'6 so =VT)
+S1 =ﬁ1‘} H REVERSE S1 =T/T v REVERSE
+82 =V6 $2 2 HO}
+_ H F RWARD :
+33 = v1 V REVERSE 83 : H1» 0
+
+ 
+
+ 
+
+ 
+
+Fig. 11-11. 90-degree shifting matrices and corresponding address specifica-
+tions.
+
+What we have here is the ability to rotate any 4 x 4 matrix-
+generated ﬁgure in increments of 90°. The table in Fig. 11-1231
+shows the combinations of H- and V-counts to be applied to the
+matrix—select inputs at the four different angles. The angles are
+selected by an external source of 2-bit binary numbers, B0 and B1.
+When BO=B1=0, for example, the ﬁgure will be in its basic 0°
+position. But when B021 and B120, the 90° image is selected.
+
+The circuit in Fig. 11-12b shows how the various angle patterns
+can be obtained by running the two B inputs through their 2-bit
+binary counting sequence. It is really just a set of four 4: 1 multiplexer
+circuits, each one providing an output for each of the four select lines
+to the matrix generator.
+
+A careful study of the circuit in Fig. 11-12b shows that it
+satisﬁes the truth table in Fig. 11—123. And since that truth table is
+derived from the matrix-rotation scheme in Fig. 11-11, it ultimately
+follows that the circuit in Fig. 11-12b will do the job. A single ﬁgure
+
+475
+
+ 
+

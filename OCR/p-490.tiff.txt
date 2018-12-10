@@ -1,0 +1,103 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ANGLE" ROTATION SLlPPING-COUNTER
+A (DEG) CODE MOTION CODES
+— 83828180 HO HO HO HO VCVC VCVC
+8 4 2 1 a 4 2 1
+o o o o o 1 o o 1 1 1 1 1
+22.5 o o o 1 o 1 1 1 1 1 1 o
+45 o o 1 o o 1 1 o 1 1 o 1
+67.5 o o 1 1 o 1 o 1 1 o 1 1
+90 o 1 o o o 1 o o 1 o o 1
+112.5 0 1 o 1 o 1 o 1 o 1 1 1
+135 o 1 1 o o 1 1 o o 1 o 1
+157.5 0 1 1 1 o 1 1 1 o 1 o o
+180 1 o o o 1 o o 1 o o 1 1
+202.5 1 o o 1 1 o 1 1 o 1 o o
+225 1 o 1 o 1 1 o o o 1 o 1
+247.5 1 o 1 1 1 1 o 1 o 1 1 1
+270 1 1 o o 1 1 1 o 1 o o 1
+292.5 1 1 o 1 1 1 o 1 1 o 1 1
+31s 1 1 1 o 1 1 o o 1 1 o 1
+337.5 1 1 1 1 1 o 1 1 1 1 1 o
+B *O°=STFlAlGHT UP
+8HC 4HC 2H0 1HC eve 4vc 2vc we
+DO 1 o o E E E 1 1
+D1 133 E 1 1 E 1 E 32
+D2 133 1 E o E o 1
+D3 133 1 o 1 E 83 1 E
+D4 BS ' 1 133 1 o o -
+D5 133 1 0 BS E 1 -
+D6 133 1 E 33 1 o -
+D7 BS E 1 - Ba Ba -
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-21. Truth-table analysis of the relationships between angle of rotation
+and direction of motion across the screen. (a) Table of codetranslations between
+rotation codes and slipping-counter motion codes. (b) Summary of slipping-
+counter speed control codes as afunction of D-input programming for translating
+them from rotation-code inputs.
+
+Figure 11-21 shows the truth—table analysis behind such an
+angle-to-motion translator. Figure 11-21a speciﬁes the desired set
+of rotation angles as well as the rotation codes established for an
+8 x 8 matrix ﬁgure. See Fig. 11-13. The task is then to relate these
+
+rotation codes with appropriate horizontal and vertical slipping-
+counter-control codes.
+
+490
+
+ 
+

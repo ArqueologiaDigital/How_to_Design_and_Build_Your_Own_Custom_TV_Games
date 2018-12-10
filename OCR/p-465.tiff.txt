@@ -1,0 +1,53 @@
+Input D17, for example, uses two? terms that can be derived
+by ORing together D8 and D16. IC6-A accomplishes this task, taking
+advantage of the fact that inverted data at the input of a NAND gate
+yields an OR function. D14 is obtained in a similar fashion, effectively
+ORing together D15 and D23. IC7-A and IC4-E work together to OR
+D17 and D24 to produce the D26 input.
+
+D5 and D13 could be derived from ORed combinations of other
+D inputs, but more for the sake of illustration than anything else, the
+circuit in Fig. 11-7 shows them being generated in a different man-
+ner. D5 seems to have a close relationship with the B1 frame-select
+bit (D5=0 when 8120, and D5=X when B1=1). So it is possible to
+generate the D5 signal by gating it off while B1=0 and allowing X to
+emerge when B121. This is a simple AND operation performed by
+the NOR gate, IC7—7, operating from inverted versions of B1 and X.
+
+D13, on the other hand, shows Xs as long as B1=0, and it
+outputs Os as long as B1 = 1. This is, again, a basic AND operation
+that can be carried out by IC7-B.
+
+The data inputs to the 8 x 8 extended matrix generator are
+thus completely satisﬁed for all eight frames of the animation se—
+quence. All that remains to be done is force the H—count select inputs
+to run in reverse for frames 5 through 8. This is easily accomplished
+by the three EXCLUSIVE OR gates, IC8—A through IC8-C. Select
+inputs SO, 81, and S2 run forward as long as B2 is at logic O—through
+the ﬁrst four frames. As B2 rises to logic 1 through the last four
+frames, the H-count data is inverted by the EXCLUSIVE OR gates,
+effectively forcing the count at the select inputs to run in reverse and
+creating the mirror images of frames 1 through 4.
+
+The rate of the teeter-totter effect is adjusted by the RATE
+ADJUST resistor which, in turn, sets the counting frequency of 1C2,
+the frame counter.
+
+Using the H- and V-count speciﬁcations in Fig. 11-7, the
+teeter—totter ﬁgure measures 32H X 32V and is located near the
+lower right-hand corner of the screen. Of course these speciﬁcations
+can be altered to select any desired size and position.
+
+It is not easy to design and build a video animation sequence.
+But the possibilities are unlimited. In fact some experimenters have
+chosen to make a hobby of ﬁgure animation alone. Animation effects
+can add a great deal of interest to TV games, but the designer must
+have the experience and patience to do the job in his own way.
+Beginners are encouraged to avoid complex animation sequences
+until they feel they have the necessary experience and know-how to
+take on the job.
+
+465
+
+ 
+

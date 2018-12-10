@@ -1,0 +1,68 @@
+programmed into the D inputs of the matrix generator can be rotated
+to any one of four different positions.
+
+The circuit in Fig. 11-12c shows a circuit for controlling the
+rotation. Adjusting the RATE potentiometer sets the rate of rota-
+tion. The logic level presented to the DIR (direction) input deter-
+mines whether the ﬁgure rotates in a clockwise or counter clockwise
+direction.
+
+So how can this 90°-shift procedure be used for simplifying the
+rotation of figures through much smaller increments? Rotating a
+ﬁgure through 45° increments is ﬁrst a matter of working out two
+D-input programs, one for the basic 0° position and another for the
+45° position. One additional rotation bit is required for selecting one
+of the two basic ﬁgures, while the two shown in Fig. 11-12 are
+necessary for determining how much either ﬁgure is shifted.
+
+The table in Fig. 11-13 shows the rotation sequence for turning
+any 4 x 4 matrix ﬁgure through a full 360 degrees in a clockwise
+direction and at intervals of 45°.
+
+Rotation of an 8 x 8 Figure at 221/2° Intervals
+
+The 45° rotation sequence just described is presented as an
+example of how such a scheme should work. For an acceptable visual
+impression of relatively smooth rotation, the ﬁgure should advance
+at angles no greater than 221/2°. This section uses a speciﬁc exam-
+ple, a tank ﬁgure, to show how the principles of ﬁgure animation and
+90° shifting can be combined to transform a very complicated rota-
+tion situation into a reasonably simple format.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ROTATION ROTATION
+CONTROL OPERATION EFFECT
+B1 BO BS
+
+0 0 0 0° IMAGE WITH 0° ROTATION 0°
+0 O 1 45° IMAGE WITH 0° ROTATION 45°
+0 1 0 0° IMAGE WITH 90° ROTATION 90°
+0 1 1 45° IMAGE WITHI 90° ROTATION 135°
+1 0 0 0° IMAGE WITH 180° ROTATION 180°
+
+1 0 1 45° IMAGE WITH 180° ROTATION 225°
+
+1 1 0 0° IMAGE WITH 270° ROTATION 270°
+
+1 1 1 45° IMAGE WITH 270° ROTATION 315°
+
+ 
+
+Fig. 1 1-13. Table of rotation/frame selection for rotation a complex figure through
+360 degrees at 45-degree increments.
+
+477
+
+ 
+

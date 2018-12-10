@@ -1,0 +1,52 @@
+represents the 3rd lowest-order V-count bit used for generating the
+ﬁgure. It will be assigned a speciﬁc V-count designation once we are
+in a position to specify the size of the ﬁgure.
+
+In Fig. 11-3a, a 0 entry represents a matrix cell that is black in
+both halves of the ﬁgure. A 1 entry represents a cell that is always
+white. The X entries are necessary where the cell is black in the
+upper half __o_f the ﬁgure, but white in its lower, extended counterpart.
+Finally, a Xentry represents a cell that is white in the upper half of
+the frame, but black in the lower. There are no other logical pos-
+sibilities than these.
+
+After making up the sequence of frames and, hopefully, ﬁnding
+some similarities that make it possible to reduce the number of
+different images, the next step is to generate a ﬁgure-generating
+data sequence such as that in Fig. 11-3a. If the D inputs speciﬁed for
+frame 1 are applied to the extended matrix circuit, the image in frame
+1 appears on the screen. If, on the other hand, the data speciﬁed in
+frame 2 is applied to the matrix generator, the ﬁgure will appear as
+shown in frame 2 of Fig. 11-2.
+
+It ought to be clear at this point that a thorough understanding of
+the complex ﬁgure schemes in Chapter 4 are all important to video
+animation. If you are lost at this point, you must return to the
+material in Chapter 4 to get caught up.
+
+Now a careful study of the truth table in Fig. 11—3a should
+uncover a number of data inputs that are the same from both frame 1
+and 2. The information in Fig. 11-3b summarizes these similarities.
+There are 11 instances where the data for frames 1 and 2 are both 0,
+and then there are 7 cases where the data is 1 irﬁmth frames. Only
+D17 and D25 are totally unique, showing 01 and 1X respectively. So
+of the two pairs of 32 data inputs required for this particular anima-
+tion s_equence, there are only 8 different combinations of Os, ls, Xs
+and X5. Simpliﬁcation. That is the key to the successful design of
+video animation circuitry.
+
+The eight different combinations are summarized in Fig. 11-3c.
+The eight sequences, for the sake of simplicity, are designated
+according to the ﬁrst term in the equality expressions in Fig. 11-3b.
+Bear in mind, for instance, that the programming for D1 in Fig. 11-3c
+will also apply to data inputs D6 and D26, as speciﬁed in Fig. 11-3b.
+
+The next step is to derive some logic circuitry that will alter the
+data inputs to a single 8 x 8 extended matrix circuit, distinguishing
+frame 1 data from that required for frame 2 by the status of a control
+bit, B0. When BO=O, for example, D2 should be equal to logic 0, but
+
+456
+
+ 
+

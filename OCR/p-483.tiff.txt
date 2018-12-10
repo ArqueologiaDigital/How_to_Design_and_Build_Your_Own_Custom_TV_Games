@@ -1,0 +1,115 @@
+expanded to accommodate more complex and less distorted ﬁgures.
+If it appears to an advanced experimenter that the complexity of the
+whole scheme is getting out of hand, he can resort to using a
+programmable read-only memory (PROM). This device is most
+often used by engineers who design high-quality commercial Video
+games calling for ﬁne rotation of complex ﬁgures.
+
+COMBINING ROTATION AND FIGURE MOTION ACROSS THE SCREEN
+
+All of the animation and rotation effects described thus far
+assume the ﬁgure will not move across the screen as the rotation
+takes place. It is often desirable to combine rotation and slipping-
+counter motion effects to heighten the impression of reality.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+m IMAGE __
+(0E9 D0=D7=D26 01s
+52% 01 017
+%§% 3, f0 02:010 013
+Egg 3353038 03:04:011=022 019
+05 020
+o xxxo 06 021
+1 xxox 08 0232030
+2 x 1 1 1 09 024:025=031
+3 1 x 1 1 012 027:028
+4 1x11 013 029
+5 x1x1 014:020
+6 x110 D15
+7 xxxo
+8 1x00
+9 1Y11
+‘IO X111 BIBO D15021 DOD! DZDBDSDIZD13 D9 D17D19D27029
+111x11 0010XXX1x1x11177
+1211x1 o1o1xx1x1117Y171
+13 x11x 1011x011xx111Y11
+141x1x11110x1111x17111
+15 1011 w—I \—v—J “—‘W—d B—W—’
+16 10?? 1s.Os XsOs 1s,Xs 15 XS
+17 1717
+13 011?
+‘9 1.1.)“ B1 BO 06D8D16D18023D24DZO
+20 1x1x
+210111 oox11o_1__1_1
+221x11 o11xg1xxY
+231707 1010Xl_o_Y1
+24 1Y70 1 1 007 x x o x
+25 1xxo
+26 YYYI MIXED
+27 7711
+28 77611
+29 7111
+30 170?
+31 1Y70
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-17. Truth-table analysis of the tank rotation.
+
+483
+
+ 
+

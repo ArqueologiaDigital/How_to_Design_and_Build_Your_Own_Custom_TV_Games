@@ -1,0 +1,97 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A 00010203 04050607 7060504030201000
+1011121314151617 7161514131211101
+202122 23 2425 2627 72 62 5242322212 02
+30313233 3435 36 37 7363 5343332313 03
+4041424344454647 7464 544434 241404
+50 5152 53 54 55 56 57 7565554535251505
+60 6162 6364 65 6667 76 66 564636 261606
+707172 73 74 7576 77 77 67 574737 271707
+
+0° 90°
+77 76 75 74 73 72 7170 0717 27 37 47 57 67 77
+67 666564 63 626160 0616263646566676
+57 56 55 54 53 52 5150 051525 3545 55 65 75
+47 46 45 44 43 42 4140 0414 24 34 44 54 64 74
+3736 35 34 33323130 031323 3343 5363 73
+27262524 23 22 2120 021222 3242 526272
+1716151413121110 0111213141516171
+07 06 05 04 03 02 01 00 0010 203040 50 60 7o
+180° 2700
+B 0° 90° 180° 270°
+so=H0 so=v0 SO=H0 so=v0
+81=H1 s1=v1 61 =m s1=W
+s2=H2 s2=v2 32=Wé s2=ﬁ
+s3=v0 53=ﬁ6 53=W 33=H0
+34=v1 3427-17 34:71’ 54=H1
+ss=v2 ss=ﬁ§ 852W SS=H2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-14. Matrix rationale for shifting 8x8 complex figures at 90'degrees. (a)
+8x8 matrices with each cell showing the octal equivalent of the applied counting
+sequence. (b) Truth—table summary of addressing required for each 90-degree
+shift.
+
+Figure 11-14 shows the 90° shifting rationale for an 8 x 8
+matrix. The procedure for generating these matrices is identical to
+that of the simpler scheme in Fig. 11-11. The number of cells,
+however, has been increased substantially.
+
+Using an 8 x 8 matrix generator calls for six select lines,
+designated SO through 55. (Compare Fig. 11-14b and the matrix
+generator in Fig. 4—17.) Three of the select lines have inverted or
+noninverted H-counts applied to them, while the other three have
+inverted or noninverted V-counts connected to them. The 90°
+shifting is accomplished by varying this pattern of H- and V-count
+inputs as shown in Fig. 11-14b.
+
+478
+
+ 
+

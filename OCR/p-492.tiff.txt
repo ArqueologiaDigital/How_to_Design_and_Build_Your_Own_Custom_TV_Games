@@ -1,0 +1,142 @@
+ 
+
+ 
+
+03' STOP
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+__._('
+‘ ,%MOVE
+>
+g BO BO
+B1 B1
+TRANSLATOR
+BS ¢—-———— 83
+FIG. 11-22 _ ._
+( ) B2 C B2
+I? BE
+FIGURE
+Egg ggggg ROTATION
+"N‘rmFva SYSTEM
+' (FIG. 11-19)
+2HM 2H
+4HM 4H
+8HM 8H
+16HM 16H
+SLIPPING- 32HM 32H
+COUNTER 64HM 64H
+CIRCUIT
+(F'G- 5'15) 128HM 128H
+2VM 2v
+4VM 4v
+8VM 8V
+16VM 16V
+32VM 32v
+64VM‘ 671V
+1:7, ‘5 128VM 128V
+E 3‘ 1% I3
+I: |> !>
+
+-—>
+OUTPUT
+
+ 
+
+ 
+
+ 
+
+ 
+
+L?
+
+A
+V
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-23. The translator interfaces with the rotatable figure and slipping-
+
+counter board.
+
+492
+
+ 
+
+ 
+

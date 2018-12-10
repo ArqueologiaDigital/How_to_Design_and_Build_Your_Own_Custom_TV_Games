@@ -1,0 +1,87 @@
+ 
+
+           
+
+FRAME 2 FRAME 3
+O1 10 '
+
+D10
+D11
+D12
+D13
+D14
+
+D15
+
+1
+0
+O
+1
+0
+1
+1
+0
+D8 0
+1
+1
+0
+1
+0
+0
+1
+
+o—JOoO—ﬁ—l—l—b-A—iOOOJO
+
+OO-‘O-‘d—‘OO—J—‘dO—AOO
+
+ 
+
+ 
+
+ 
+
+B1 80 DO D1 D2 DS D4 D5 D6 D7 D8 D9 D10 D11 D12 D13 D14 D15
+00 1 0 0 1 0 1 1 0 0 1 0 1 O O 1
+01 O 1 0 0 0 1 1 1 1 1 0 O O 1 0
+1O 0 0 1 0 1 1 1 0 0 1 1 0 1 0 O
+
+ 
+
+ 
+
+ 
+
+ 
+
+C DO=D3=D12=D15
+D1=D7=D14
+
+oe=o4=on =D13
+os=oe=ogzo1o
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-8. A very simple animation/rotation sequence. (a) Figures and corres—
+ponding D-input matrix programming. (b) Simplified truth table. (0) List of D
+inputs having identical programming through all three frames.
+
+ﬁgure animation. To get an appreciation for the situation, suppose
+you want to rotate a ﬁgure through a full 360° turn at increments of
+45°. Now that is a very coarse rotation sequence. The ﬁgure will
+appear to jump from one 45° angle to the next in a very unrealistic
+fashion. But this is simply an example.
+
+471
+
+ 
+

@@ -1,0 +1,54 @@
+the whole affair four times as complicated! If anything useful is to be
+done ‘with this matter of rotating complex ﬁgures in a realistic
+fashion, there has to be a special trick for simplifying the whole thing.
+That trick is 90° rotations.
+
+The previous analysis of the rotation sequence in Fig. 11-10
+showed that it could be done with four programmed ﬁgures (0°, 90°,
+45°, and 225°) by reversing the horizontal or vertical counting to
+obtain the other four ﬁgures. Using a 90°-shift operation, however,
+it is possible to generate all eight ﬁgures from just two matrix
+programs, the 0° and 45° images.
+
+While the sequence in Fig. 11-10 is built around 45° incre—
+ments, it can be seen that the 0° image can be shifted by 90° to get
+the images for 90, 180, and 270 degrees, while the 45° image can be
+shifted in 90° increments to get the images for 135, 225 and 315
+degrees. Using this 90°-shift technique, it is possible to get all eight
+frames from the D-input matrix programs for 0° and 45°. And in fact
+a 16-frame rotation sequence (221/2° intervals) can be derived from
+just four D-input matrix programs.
+
+Figure 11—11 shows the rationale behind rotating a single 4 x 4
+matrix image in 90° increments by varying the select format, rather
+than the D-input programming. In this case, the basic 0° matrix is
+generated in the usual fashion, applying the least-signiﬁcant H—count
+bit (H0) to SD of the matrix generator, the most-signifcant H-count
+(H1) to SI, and so on. The numerals in the matrix cells indicate their
+relative positions, with the ﬁrst digit being the decimal value of select
+inputs SO and SI, and the second being the decimal value of the bits
+applied to select inputs 52 and 83.
+
+Achieving a 90° clockwise rotation from the basic matrix is a
+matter of shifting the counts around the matrix. In the 90° ﬁgure, 00
+replaces, 03, 03 replaces 33, and so on. Any complex ﬁgure con-
+structed within the 0° matrix will appear shifted 90° clockwise if it is
+again constructed in the 90° matrix.
+
+Making this 90° shift calls for applying the two V-count inputs to
+what is normally considered the H—count inputs, SO and 81. Fur-
+thermore, the H—count bits are inverted before applying them to 82
+and 53 of the matrix generator, effectively reversing their direction
+of count.
+
+Another 90° shift in the clockwise direction takes us to the 180°
+matrix, where the H- and V-count bits are applied to their usual
+select inputs, but inverted to force both to count in reverse. A ﬁnal
+90° shift yields the matrix for 270°. The connections to the select
+inputs are similar to those required for the 90° image, but in this case
+it is the V—count inputs that run in reverse.
+
+474
+
+ 
+

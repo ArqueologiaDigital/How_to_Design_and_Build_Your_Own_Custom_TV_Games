@@ -1,0 +1,39 @@
+ 
+
+ 
+
+‘ FRAME 1 FRAME 2
+B1 BO 00 O1
+
+      
+
+FRAME 3 FRAME 4
+1O 11
+
+ 
+
+ 
+
+ 
+
+Fig. 11-2. A simple 4-frame animation sequence.
+
+requires two address lines. The frame addresses, designated B1 and
+B0, determine which one of the four frames will appear on the screen
+at any given moment. When B1=BO=0, for example, the ﬁrst frame
+should appear on the screen. Then when B1=0 and BO=0, the
+second frame should appear, and so on through the sequence. If this
+2-bit counting sequence is taken from a binary counter circuit, the
+sequencing will take place automatically, thereby generating the
+desired animation effect.
+
+The table in Fig. 11-33 shows a complete breakdown of frames
+1 and 2 in terms of the data inputs required for an 8 x 8 extended
+matrix generator circuit. The procedure for determining the data
+requirements is identical to that described in connection with the
+basic 8 X 8 extended matrix in Fig. 4-18. The “X” in this case
+
+455
+
+ 
+

@@ -1,0 +1,155 @@
+ 
+
+ 
+
+RATE ADJUST
+
+ 
+
+ 
+
+E
+
+ 
+
+R1
+22K
+
+ 
+
+ 
+
+ 
+
+STOP = 0
+RUN 1
+
+ 
+
+|C1
+
+E R2
+‘ 500K
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+R3 é
+47K ‘
+
+ 
+
+ 
+
+>1
+
+~C>14
+
+ICZ
+
+ 
+
+ 
+
+ 
+
+ 
+
+/77
+101—555 TIMER
+
+C1 _
+1;;F"
+
+ 
+
+1O
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+lCZ—7493 BINARY COUNTER
+
+103—74155 DUAL 2-LlNE-TO- 4—LINE
+
+DECODER
+lC4.5—7404 HEX INVERTER
+lC6-—-7400 QUAD 2-INPUT NAND
+lC7—7402 QUAD 2-INPUT NOR
+
+[08—7486 QUAD EXCLUSIVE-OR
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+16 9
+10
+lCS—A
+15 11
+14 12
+13 3
+12 BO
+9 B1
+82
+7
+61
+103-8
+1 5
+2 4
+8
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

@@ -1,0 +1,118 @@
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+?YTTTT
+vo v1v2 H0 H1 H2
+ea - 33 8x8 90° ROTATOR
+132 132 (FIG. 11-15) 8x3
+95 EXTENDED
+ROTATION MATRIX
+CONTROL GENERATOR
+(FIG. 11-20) x n-lNPUTS (FIG. 4-17)
+31 8‘ D-lNPUT D0031
+50 so PROGRAMMING -
+(FIG. 11-18) OUTPUT
+256H-‘—*
+12'a‘H‘—--t
+m A m (NH—«o
+E g 3 E 3 32H-—> wmoow
+o .- I ‘—'
+8 ~ same 2 w 3- ‘6” 'NPUTS
+123v—s
+o o o o 0 0° 0 {SW—H
+22.5 o o o 1 225° 5 a2v—u
+45 o o 1 0 45° 0
+67.5 o o 1 1 575° 0
+so a 1 o 0 0° 90
+112.5 a 1 a 1 225° 90
+135 o 1 1 0 45° so
+157.5 0 1 1 1 67.5” so
+130 1 o o 0 0° 180
+202.5 1 o o 1 225° 150
+225 1 o 1 0 45° 130
+247.5 1 o 1 1 675° 130
+270 1 1 o 0 0° 270
+292.5 1 1 o 1 225° 270
+315 1 1 1 0 45° 270
+337.5 1 1 1 1 575° 27o
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11-19. Block diagram and code table for rotating the tank figure in either
+direction through a full 360 degrees at 22.5-degree increments.
+
+In principle, the rotation schemes are devised as described in
+this chapter, and the motion effects are achieved by using the H- and
+V-count outputs of a slipping-counter board, rather than those from
+the Sourcebox. The only difﬁcult part is coordinating the direction of
+motion across the screen with angle of rotation of the ﬁgure.
+
+If the tank ﬁgure in Fig. 11-16 is set for a 45° rotation, it should
+move up the screen and toward the right. If it is rotated to 180°, it
+should move straight down.
+
+Coordinating the rotation angle with the direction of motion
+across the screen is a matter of translating the angle codes (B3, B2,
+B1, and BO in Fig. 11—18) into appropriate speed and direction codes
+for a set of horizontal and vertical slipping counters.
+
+488
+
+ 
+
