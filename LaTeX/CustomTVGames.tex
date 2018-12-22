@@ -284,106 +284,140 @@ The 5-V regulator assemblies tend to run a bit hot at times. To reduce the chanc
     \caption{Horizontal source board schematic diagram.}
 \end{sidewaysfigure}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/fig2-5}
+    \caption{Horizontal blanking and sync waveforms.}
+\end{figure}
+
 Figure 2.4 is a complete schematic diagram for the circuit that generates all the horizontal counting, sync, blanking, and reset pulses. This particular circuit board also holds the audio amplifier IC, not because the audio signal is part of the horizontal system, but because there is little space for putting it anywhere else in the Sourcebox unit.
 
 The entire circuit can be mounted on a standard 44-pin, 4- by 4-inch card, such as a Radio Shack 276-153. In fact all of the circuits and systems described in this book can be built onto such a board and then plugged into the appropriate edge-card connector (Radio Shack 276-1551). The numbers in parentheses in Fig. 2.4 indicate card pin numbers arbitrarily assigned to the card-and-connector assembly.
 
-The heart of the horizontal system, and indeed the video game as a whole, is the 14—MHz oscillator circuit. This little circuit is made up of a crystal cut to about 14 MHz and TTL digital inverters 1C7 -A and IC7-B. Actually the crystal should have a frequency rating as close as possible to 14.3 MHz, although the system will allow values within 2\% of 14.3 MHz. James Electronics supplies an ideal crystal for the job (14.31818 MHz). Order part number CY14A, James Electronics, 1021 Howard Ave., San Carlos, CA 94070.
+The heart of the horizontal system, and indeed the video game as a whole, is the 14-MHz oscillator circuit. This little circuit is made up of a crystal cut to about 14 MHz and TTL digital inverters IC7-A and IC7-B. Actually the crystal should have a frequency rating as close as possible to 14.3 MHz, although the system will allow values within 2\% of 14.3 MHz. James Electronics supplies an ideal crystal for the job (14.31818 MHz). Order part number CY14A, James Electronics, 1021 Howard Ave., San Carlos, CA 94070.
 
-Although the oscillator is basically a digital circuit, the waveforms from IC7-A and IC7—C appear sinusoidal on an oscilloscope. The toggled J-K flip-flop, ICl-A, isolates the oscillator from the rest of the circuitry and divides the 14. 3-MHz frequency by two. The output of ICl—A is thus a quasi-sinusoidal waveform having a frequency close to 7.015 MHZ. This is the system's HCLK signal.
+Although the oscillator is basically a digital circuit, the waveforms from IC7-A and IC7-C appear sinusoidal on an oscilloscope. The toggled J-K flip-flop, IC1-A, isolates the oscillator from the rest of the circuitry and divides the 14.3-MHz frequency by two. The output of IC1-A is thus a quasi-sinusoidal waveform having a frequency close to 7.015 MHz. This is the system's HCLK signal.
 
-1C2, 1C3, and ICl-B make up the 9-bit horizontal-count source. 1C2 and 1C3 are ordinary 4-bit binary up counters connected so that they generate an 8-bit binary count. IC1-B is a toggled J-K flip-flop that generates the 9th bit. Note that the outputs of these counters are labeled 1H through 256H, the labels used so frequently throughout this book.
+IC2, IC3, and IC1-B make up the 9-bit horizontal-count source. IC2 and IC3 are ordinary 4-bit binary up counters connected so that they generate an 8-bit binary count. IC1-B is a toggled J-K flip-flop that generates the 9th bit. Note that the outputs of these counters are labeled 1H through 256H, the labels used so frequently throughout this book.
 
-The nine horizontal—count sources are connected directly to output terminals, but there is a selection of five of them that also go to the inputs of 1C4, an 8—input NAND gate. This is all part of a circuit that restricts the counting range of the horizontal—count source to 455 HCLK pulses. A 9-bit counter without this resetting circuit would count 511 states.
+The nine horizontal-count sources are connected directly to output terminals, but there is a selection of five of them that also go to the inputs of IC4, an 8-input NAND gate. This is all part of a circuit that restricts the counting range of the horizontal-count source to 455 HCLK pulses. A 9-bit counter without this resetting circuit would count 511 states.
 
-The resetting circuitry senses a count of 454 at IC4, generating a negative-going pulse at the D input of ICSA. IC5A is an edge-triggered D flip-flop which sets its Q output to the D-input logic level whenever its CLK input shows a positive-going edge. ICS-A is clocked by HCLK in this case; and as long as the horizontal—count source is generating numbers less than 454, the Q output of IC5-A remains at a logic-1 level. The complemented output from Q is at logic 0 at the same time.
+The resetting circuitry senses a count of 454 at IC4, generating a negative-going pulse at the D input of IC5-A. IC5-A is an edge-triggered D flip-flop which sets its Q output to the D-input logic level whenever its CLK input shows a positive-going edge. IC5-A is clocked by HCLK in this case; and as long as the horizontal-count source is generating numbers less than 454, the Q output of IC5-A remains at a logic-1 level. The complemented output from \NOT{Q} is at logic 0 at the same time.
 
-One HCLK pulse after the count reaches 454, however, IC5—A loads its Q output with a logic-0 level and the Qoutput takes on a logic—1 level. This condition immediately clears all nine bits from the horizontal-count source to zero, thus restarting the 455«step operation all over again.
+One HCLK pulse after the count reaches 454, however, IC5-A loads its Q output with a logic-0 level and the \NOT{Q} output takes on a logic-1 level. This condition immediately clears all nine bits from the horizontal-count source to zero, thus restarting the 455-step operation all over again.
 
-The signal from the Q output of IC5-A is thus a negative-going pulse that lasts for one HCLK pulse interval and occurs at the very beginning of each horizontal-count cycle. A positive- going version of that same pulse, HRST, is directed to 1C2, 1C3, and the plug assembly leading to the outside world.
+The signal from the Q output of IC5-A is thus a negative-going pulse that lasts for one HCLK pulse interval and occurs at the very beginning of each horizontal-count cycle. A positive-going version of that same pulse, HRST, is directed to IC2, IC3, and the plug assembly leading to the outside world.
 
-The circuit build around the four Z-input NAND gates of 1C6 are responsible for generating the horizontal blanking (HBLANK) and inverted horizontal sync (HSYQLpulses. IC6-B and lC6-C make up what is commonly known as a R—S f lip-flop. Whenever the negative—going HRST pulse is directed to the pin—10 input of IC6-C, the output of that same 1C is set to a logic—1 level. The device remains in that state while the horizontal—count source is cleared and restarted. The moment the count reaches 80, as determined by the 16H and 64H inputs to IC6-A, this flip-flop circuit is reset so that the pin—8 output of IC6-C returns to logic 0. This point then remains at logic 0 until another HRSTpulse occurs.
+The circuit build around the four 2-input NAND gates of IC6 are responsible for generating the horizontal blanking (HBLANK) and inverted horizontal sync (\NOT{HSYNC}) pulses. IC6-B and IC6-C make up what is commonly known as a \NOT{R}—\NOT{S} flip-flop. Whenever the negative-going HRST pulse is directed to the pin-10 input of IC6-C, the output of that same IC is set to a logic-1 level. The device remains in that state while the horizontal-count source is cleared and restarted. The moment the count reaches 80, as determined by the 16H and 64H inputs to IC6-A, this flip-flop circuit is reset so that the pin-8 output of IC6-C returns to logic 0. This point then remains at logic 0 until another \NOT{HRST} pulse occurs.
 
 The real significance of the output of IC6-C is that it generates the system’s HBLANK pulse, a positive pulse that begins as the horizontal-count circuit is reset to zero and ends 80 HCLK pulses later. Ultimately the beam on the TV screen will be blanked off through this 80-pulse, horizontal blanking interval.
 
-The horizontal sync pulse is generated at IC6-D. This NAND gate is normally gated off by the logic-0 level from IC6-C. Whenever lC6—C is generating an HBLANK signal, however, IC6-D is open to the 32H signal at its pin-12 input. An inverted version of 32H thus appears at the output of IC6-D, but only through the horizontal blanking interval. See the waveforms in Fig. 2-5.
+The horizontal sync pulse is generated at IC6-D. This NAND gate is normally gated off by the logic-0 level from IC6-C. Whenever IC6-C is generating an HBLANK signal, however, IC6-D is open to the 32H signal at its pin-12 input. An inverted version of 32H thus appears at the output of IC6-D, but only through the horizontal blanking interval. See the waveforms in Fig. 2.5.
 
-Looking at the HBLANK and HSYNC sequence in detail, the positive HBLAN K pulse begins first. Thirty-two clock pulses later, the inverted HSYNC pulse begins, lasting through count 64. HBLANK finally ends at count 80. The overall effect is a combination of horizontal blanking and sync pulses that work very much like their counterparts in a commercial TV broadcast signal.
+Looking at the HBLANK and HSYNC sequence in detail, the positive HBLANK pulse begins first. Thirty-two clock pulses later, the inverted HSYNC pulse begins, lasting through count 64. HBLANK finally ends at count 80. The overall effect is a combination of horizontal blanking and sync pulses that work very much like their counterparts in a commercial TV broadcast signal.
 
-The only purpose of audio amplifier 1C8 is to amplify any special—effects sounds and match the circuit to an 8-ohm loudspeaker. Since audio special effects are not described until Chapter 10, the volume control and loudspeaker need not be connected at this time.
+The only purpose of audio amplifier IC8 is to amplify any special-effects sounds and match the circuit to an 8-ohm loudspeaker. Since audio special effects are not described until Chapter 10, the volume control and loudspeaker need not be connected at this time.
 
 % Fig. 25. Horizontal blanking and sync waveforms.
 
-The volume control, speaker, and amplifier arrangement are shown in more detail in Fig. 2-6. Control R5 should be mounted on the front panel of the Sourcebox, while the loudspeaker can be positioned at any convenient place inside the box.
+The volume control, speaker, and amplifier arrangement are shown in more detail in Fig. 2.6. Control R5 should be mounted on the front panel of the Sourcebox, while the loudspeaker can be positioned at any convenient place inside the box.
 
 \section{VERTICAL SOURCE AND COMPOSITE VIDEO BOARD}
 
-The circuit in Fig. 2-7 shows the complete schematic diagram for the vertical-count source and composite video generator. The vertical-count source consists of 1C1, 1C2, 1C3, IC4-A, and 1C5. The remainder of the circuit is responsible for composite video operations.
+The circuit in Fig. 2.7 shows the complete schematic diagram for the vertical-count source and composite video generator. The vertical-count source consists of IC1, IC2, IC3, IC4-A, and IC5. The remainder of the circuit is responsible for composite video operations.
 
-The vertical-count source is a 9-bit binary counter made up of two 4—bit counters and a toggled J -K flip-flop, 1C3. The natural counting range for a 9-bit counter is between 0 and 511; but like the horizontal-count generator, this circuit is fixed so that it counts a much more limited range.
+The vertical-count source is a 9-bit binary counter made up of two 4-bit counters and a toggled J-K flip-flop, IC3. The natural counting range for a 9-bit counter is between 0 and 511; but like the horizontal-count generator, this circuit is fixed so that it counts a much more limited range.
 
-Note that the two counters, 1C1 and 1C2, are cleared by the Q output of ICS, while the J -K flip-flop (1C3) is cleared to zero by the Q output of 1C5. 1C5 is a positive-edge triggered D flip-flop having a Q output that takes on the logic level of its D input whenever the CLK input shows a positive-going edge. The flip-flop in this case is clocked by HRST from the Horizontal Source board-at a frequency very close to 15,750 Hz.
+Note that the two counters, IC1 and IC2, are cleared by the \NOT{Q} output of IC5, while the J-K flip-flop (IC3) is cleared to zero by the Q output of IC5. IC5 is a positive-edge triggered D flip-flop having a Q output that takes on the logic level of its D input whenever the CLK input shows a positive-going edge. The flip-flop in this case is clocked by HRST from the Horizontal Source board - at a frequency very close to 15,750 Hz.
 
-NAND gate IC4-A keeps the D input to 1C5 pulled up to logic 1 most of the time, so the repeated HRST pulses at the CLK input keep the Q output of ICS fixed at logic 1 most of the time. There is a time, however, when the D input to 1C5 is set to logic 0: when the 1V, 4V and 256V inputs to IC4—A show logic 1 at the same time. This condition represents count 261 from the vertical-count source, and it is responsible for clearing the counters back to zero.
+NAND gate IC4-A keeps the D input to IC5 pulled up to logic 1 most of the time, so the repeated HRST pulses at the CLK input keep the Q output of IC5 fixed at logic 1 most of the time. There is a time, however, when the D input to IC5 is set to logic 0: when the 1V, 4V and 256V inputs to IC4-A show logic 1 at the same time. This condition represents count 261 from the vertical-count source, and it is responsible for clearing the counters back to zero.
 
 The vertical-count section thus generates 260 different patterns representing that many vertical lines on the screen.
 
-The vertical-blanking and sync pulses are generated in a fashion almost identical to the corresponding horizontal section. One difference is that this circuit is built around a flip—flop triggered by positive-going, rather than negative-going, pulses.
+The vertical-blanking and sync pulses are generated in a fashion almost identical to the corresponding horizontal section. One difference is that this circuit is built around a flip-flop triggered by positive-going, rather than negative-going, pulses.
 
-The VBLANK generating flip-flop is composed of NOR gates IC6-A and IC6—B. The pin-4 output of IC6B is at logic 0 most of the time, rising to logic 1 only when a VRST (vertical reset) pulse occurs at the Qoutput of 1C5. This pulse sets the pin-4 output of IC6—B to logic 1 and, as described earlier in this section, clears the vertical-count source to zero.
+The VBLANK generating flip-flop is composed of NOR gates IC6-A and IC6-B. The pin-4 output of IC6-B is at logic 0 most of the time, rising to logic 1 only when a VRST (vertical reset) pulse occurs at the \NOT{Q} output of IC5. This pulse sets the pin-4 output of IC6-B to logic 1 and, as described earlier in this section, clears the vertical-count source to zero.
 
-The VBLANK signal remains at this logic-1 level until the 16 V signal at the input of IC6-B goes to logic 1. This action returns the pin-4 output of IC6-B to zero and, in fact, forces it to remain at 0 until another VRST pulse occurs.
+The VBLANK signal remains at this logic-1 level until the 16V signal at the input of IC6-B goes to logic 1. This action returns the pin-4 output of IC6-B to zero and, in fact, forces it to remain at 0 until another VRST pulse occurs.
 
-The VBLAN K signal thus goes to logic 1 the instant the vertical counters are reset to zero, and it remains in that condition until the counters increment to count 16. VBLANK can then be described as a positive-going pulse that lasts 16 HRST pulses.
+The VBLANK signal thus goes to logic 1 the instant the vertical counters are reset to zero, and it remains in that condition until the counters increment to count 16. VBLANK can then be described as a positive-going pulse that lasts 16 HRST pulses.
 
-% Fig. 2-6. The complete audio amplifier system.
-% Fig. 2-7. Vertica‘ source and composite video board schematic.
-% Fig. 2-8. Vertical blanking and sync waveforms.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/fig2-6}
+    \caption{The complete audio amplifier system.}
+\end{figure}
+
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/fig2-7}
+    \caption{Vertical source and composite video board schematic.}
+\end{sidewaysfigure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/fig2-8}
+    \caption{Vertical blanking and sync waveforms.}
+\end{figure}
 
 The vertical-sync pulse, VSYNC, is generated at IC4-B. This particular designation does not appear on the schematic, however, because it is never used alone anywhere else in the system.
 
-IC4-B has an output that remains at logic 1 as long as VBLAN K is at 0. When VBLANK rises to logic 1, indicating it is time to blank the vertical retrace on the TV screen, IC4—B allows 4V and an inverted version of 8V to pass. The result at the output of IC4-B is a negative-going pulse that begins a count 4V and ends at 8V. This is the vertical-sync pulse. See the VBLANK and VSYNC pulses illustrated in Fig. 2-8.
+IC4-B has an output that remains at logic 1 as long as VBLANK is at 0. When VBLANK rises to logic 1, indicating it is time to blank the vertical retrace on the TV screen, IC4—B allows 4V and an inverted version of 8V to pass. The result at the output of IC4-B is a negative-going pulse that begins a count 4V and ends at 8V. This is the vertical-sync pulse. See the VBLANK and VSYNC pulses illustrated in Fig. 2.8.
 
-The remaining circuitry in Fig. 2-7 is responsible for combining both the horizontal- and vertical—sync and blanking pulses, and then working the composite sync waveform together with the game video.
+The remaining circuitry in Fig. 2.7 is responsible for combining both the horizontal- and vertical-sync and blanking pulses, and then working the composite sync waveform together with the game video.
 
-The horizontal— and vertical-sync pulses are effectively combined in the EXCLUSIVE-OR gate, IC7-A. The output of this gate, shown in Fig. 2-9(a), shows the 15, 7 50-Hz horizontal sync pulses in a positive-going, active-high format until the vertical-sync pulse occurs. At that moment, the horizontal pulses switch to an active-low format, providing the effect of a serrated vertical-sync pulse, an effect that is necessary for maintaining horizontal sync through vertical sync and retrace.
+The horizontal- and vertical-sync pulses are effectively combined in the EXCLUSIVE-OR gate, IC7-A. The output of this gate, shown in Fig. 2.9(a), shows the 15,750-Hz horizontal sync pulses in a positive-going, active-high format until the vertical-sync pulse occurs. At that moment, the horizontal pulses switch to an active-low format, providing the effect of a serrated vertical-sync pulse, an effect that is necessary for maintaining horizontal sync through vertical sync and retrace.
 
 IC7-B serves merely as an inverter for obtaining an inverted version of this composite sync signal.
 
-The horizontal— and vertical-blanking pulses are ORed together in IC9-C and IC9-D, and then these combined signals are ORed with the game video in ICQ-B. The output of IC9-B is thus a combination of horizontal— and vertical-blanking pulses and any game video applied from external circuitry to IC9—A.
+The horizontal- and vertical-blanking pulses are ORed together in IC9-C and IC9-D, and then these combined signals are ORed with the game video in IC9-B. The output of IC9-B is thus a combination of horizontal- and vertical-blanking pulses and any game video applied from external circuitry to IC9-A.
 
-These two sets of waveforms—the composite sync from 1C7 -B and video and blanking pulses—are finally amplitude modulated at the 3-state buffer, IC8-A. A precise analysis of this operation is left to experimenters who have some experience with Boolean algebra. The overall effect, however, is shown in Fig. 2-9(b).
+These two sets of waveforms — the composite sync from IC7-B and video and blanking pulses — are finally amplitude modulated at the 3-state buffer, IC8-A. A precise analysis of this operation is left to experimenters who have some experience with Boolean algebra. The overall effect, however, is shown in Fig. 2.9(b).
 
-The composite video waveform in Fig. 2-9(b) clearly shows three distinct voltage levels. The highest voltage level, about +5V, is the domain of the blacker-than-black sync pulses. At the other extreme is the white-video information, at about 0V. Black-video information and the blanking pulses fall between these two extremes, occuring only when the 3-state buffer is put into its high-impedance state by the output of IC6-D.
+The composite video waveform in Fig. 2.9(b) clearly shows three distinct voltage levels. The highest voltage level, about +5V, is the domain of the blacker-than-black sync pulses. At the other extreme is the white-video information, at about 0V. Black-video information and the blanking pulses fall between these two extremes, occuring only when the 3-state buffer is put into its high-impedance state by the output of IC6-D.
 
-The vertical— count and composite-video board in Fig. 2-7 can be assembled on the same kind of 44-pin edge card that the horizontal section is. Both boards should be situated in their respective edge-card connectors in the Sourcebox housing.
+The vertical-count and composite-video board in Fig. 2.7 can be assembled on the same kind of 44-pin edge card that the horizontal section is. Both boards should be situated in their respective edge-card connectors in the Sourcebox housing.
 
-% Fig. 2-9. Composite waveforms. (a) Composite sync. (b) Composite video to the modulator.
-% Fig. 2-10. Suggested cabinet layout for the Sourcebox unit.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/fig2-9}
+  \caption{Composite waveforms. (a) Composite sync. (b) Composite video to the modulator.}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/fig2-10}
+  \caption{Suggested cabinet layout for the Sourcebox unit.}
+\end{figure}
+
 
 \section{THE RF MODULATOR}
 
 The rf modulator is responsible for modulating the composite video (CVID) from the vertical/video board at a VHF frequency that can be selected on TV channels 2, 3, or 4. In a word, the whole idea is to get all this video, sync, and blanking information into a conventional TV receiver.
 
-% Fig. 2-11. Listing of power suppIy terminais and signals that must be present at the interface plug.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/fig2-11}
+  \caption{Listing of power suppIy terminais and signals that must be present at the interface plug.}
+\end{figure}
 
 It is possible to build VHF modulators from scratch, but considering the fact these little circuits are now commercially available for about \$10, the job of building one from scratch is hardly worth the trouble.
 
-Suitable modulators are now being used by microprocessor enthusiasts who want to interface their computer systems with a TV display. 80 the best source of modulators is the amateur computer shops now springing up all over the country. At the time of this writing, Radio Shack is planning to offer a suitable modulator in the near future. Although it is intended specifically for use with that company’s microprocessor system, it would serve our purposes quite well.
+Suitable modulators are now being used by microprocessor enthusiasts who want to interface their computer systems with a TV display. So the best source of modulators is the amateur computer shops now springing up all over the country. At the time of this writing, Radio Shack is planning to offer a suitable modulator in the near future. Although it is intended specifically for use with that company’s microprocessor system, it would serve our purposes quite well.
 
 Mount the modulator inside the Sourcebox unit, as far as possible from the master clock and crystal (to avoid possible rf interference between the two).
 
 \section{SOME MECHANICAL CONSIDERATIONS}
 
-All of the Sourcebox circuitry fits quite nicely into Radio Shack’s “compact” 57/s-by 9- by His-inch cabinet (Radio Shack 270-281). See Fig. 2-10.
+All of the Sourcebox circuitry fits quite nicely into Radio Shack’s “compact” 5 $7\over{8}$-by 9- by 4 $7\over{8}$-inch cabinet (Radio Shack 270-281). See Fig. 2.10.
 
 The two major circuit boards can be inserted into 44-pin edge-card connectors mounted vertically on the inside rear surface of the cabinet. The rf modulator is likewise mounted on that surface, using a 2-terminal, feedthrough TV antenna connector (Radio Shack 274-663). The power supply components are mounted inside the cabinet as described earlier in this chapter.
 
 What has not been adequately described thus far is the means for getting access to the horizontal- and vertical-counting signals as well as any other system inputs and outputs that are vital to the operation of game systems. The most convenient way to interface the Sourcebox with the outside world is by means of another 44-pin edge-card connector that feeds through the back of the cabinet.
 
-All of the connections between the Sourcebox and outside world are made through this connector. Its solder connections are inside the cabinet, connected to the appropriate signal sources as suggested in Fig. 2-11. Getting access to these signals from the outside world is thus a simple matter of plugging the appropriate 4-by 4—inch 44-pin PC card into the plug on the back of the cabinet.
+All of the connections between the Sourcebox and outside world are made through this connector. Its solder connections are inside the cabinet, connected to the appropriate signal sources as suggested in Fig. 2.11. Getting access to these signals from the outside world is thus a simple matter of plugging the appropriate 4-by 4-inch 44-pin PC card into the plug on the back of the cabinet.
 
-No matter how you choose to arrange the circuitry for the Sourcebox unit, bear in mind that you must have convenient access to the supply voltages and signal connections listed in Fig. 2-11.
+No matter how you choose to arrange the circuitry for the Sourcebox unit, bear in mind that you must have convenient access to the supply voltages and signal connections listed in Fig. 2.11.
 
 
 \chapter{Building Static Figures}
